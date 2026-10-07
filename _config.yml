@@ -1,0 +1,27 @@
+title: Timber Empires
+description: Rival districts, land claims, troops, sieges, walls and river warfare for multiplayer Timberborn.
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+plugins:
+  - jekyll-remote-theme
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: false
+baseurl: /TimberEmpires-Docs
+logo: /assets/images/logo.png
+search_enabled: true
+heading_anchors: true
+color_scheme: timber
+aux_links:
+  "Report a bug":
+    - "https://discord.com/channels/1556989523756322856/1556990538736074762"
+  "BeaverBuddies Co-Op/PvP Edition":
+    - "https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327"
+footer_content: "Timber Empires is a mod for Timberborn and isn't affiliated with Mechanistry."
+exclude:
+  - README.md
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
