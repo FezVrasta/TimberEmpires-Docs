@@ -34,6 +34,8 @@ A Barracks or Archery Range is a workplace: its workers are your troops. Pick wh
 
 A recruit picks up a weapon from the barracks, then trains inside for a few hours (see [Troops](../reference/troops.md)). Recruits can't be ordered around and don't fight. A troop that's let go gives its weapon back. Barracks never take beavers sick with badwater, and a troop that catches it goes home and leaves.
 
+Troops don't need roads: they walk anywhere, and climb steps with your siege ladders (see [Getting around](controls.md#getting-around)).
+
 **Rally point.** "Set rally point" in the barracks panel sends each new troop to a spot of your choosing once trained.
 
 ## Weapons

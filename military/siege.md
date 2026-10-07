@@ -37,7 +37,7 @@ Machines with wheels are pushed by their crew. They can't climb a level except u
 
 **Siege Tower.** Roll it to a wall and unload: the crew step out onto the wall walk. Nobody climbs it while it moves.
 
-**Siege Ladder.** Troops and carters use ladders on their own, picking the one that gets them closest to where they're going.
+**Siege Ladder.** Troops and carters use ladders on their own, up or down, picking the one that gets them closest to where they're going. Troops don't need roads, so ladders are how they get up and down steps in the ground away from your paths, not just onto walls (see [Getting around](controls.md#getting-around)).
 
 ## Ammunition
 
