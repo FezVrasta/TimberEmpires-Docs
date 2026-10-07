@@ -32,6 +32,8 @@ Trebuchet Towers and hoardings use ammunition: siege stones, logs or canola oil.
 
 Every building can be damaged and brought down. Walls, towers and machines have their own health (see [Walls and machines](../reference/machines.md)). Other buildings have 40 health per tile, between 60 and 400, and a District Center has 2300.
 
+Walls hold back water, so with [Dam pressure](../settings.md#dam-pressure) on, a wall with too much water behind it takes damage and can give way like a dam (see [Rivers](../playing/rivers.md#dam-pressure)).
+
 Builders repair damaged buildings between jobs, starting an hour after the last hit. Construction priority decides which come first.
 
 While a building is under attack you get an alert and a war horn.

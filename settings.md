@@ -45,7 +45,7 @@ Builders lay roads (they cost nothing but a builder's time), and every District 
 
 ## Dam pressure
 
-Water pushes on dams, levees and floodgates, and thin, tall or unbraced ones give way. See [Dam pressure](playing/rivers.md#dam-pressure).
+Water pushes on dams, levees, floodgates and walls, and thin, tall or unbraced ones give way. See [Dam pressure](playing/rivers.md#dam-pressure).
 
 ## Mixed factions
 
