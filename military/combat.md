@@ -29,7 +29,7 @@ Troops earn points for every enemy they bring down, more for a dangerous enemy a
 ## Healing
 
 - **Rest.** Troops heal 5 health an hour while fed and watered, starting 45 minutes after their last hit.
-- **Herbalists** (Folktails) heal the most hurt troop near them, 40 an hour, and walk to hurt troops close by.
+- **Herbalists** (Folktails) heal the most hurt troop near them, yours or an ally's, 40 an hour, and walk to hurt troops close by.
 - **Field Infirmary** (Iron Teeth). A healing tub on wheels. It treats one troop at a time, 60 an hour, using extract and berries. Troops below 90% health within 10 tiles go to it when no enemy is close.
 
 ## Needs
@@ -40,6 +40,6 @@ Troops get hungry and thirsty faster than other beavers, but tire much more slow
 
 Each troop carries a kit: three days of food and water, and two spares of each piece of its gear. They restock at home, or when it's almost empty, while out.
 
-**Wagon Yard.** Sends supply carts into the field. Each cart is loaded with food, water, siege stones, gears and building materials (logs, planks, metal blocks). Troops within 20 tiles eat and drink from it, take spare gear, and use its materials to build siege machines and ladders. A carter that gets tired or hungry parks the cart and goes home; the next carter picks it up.
+**Wagon Yard.** Sends supply carts into the field. Each cart is loaded with food, water, siege stones, gears and building materials (logs, planks, metal blocks). Troops within 20 tiles eat and drink from it and take spare gear (allies' troops too), and use its materials to build siege machines and ladders. A carter that gets tired or hungry parks the cart and goes home; the next carter picks it up.
 
 **Building in the field.** Troops build Timber Empires' military buildings within 30 tiles of them, carrying up to 8 materials at a time. Siege machines (all but the Trebuchet), ladders and ramps can only be built by troops.

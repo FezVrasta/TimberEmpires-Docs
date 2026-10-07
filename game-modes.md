@@ -5,52 +5,38 @@ nav_order: 2.5
 
 # Game modes
 
-Timber Empires doesn't have a mode switch: how you play depends on whether there are other players, and on who owns which districts. Sides are players: everything in a district belongs to its owner, and anyone else's troops are enemies. There are no teams or alliances between players who own separate districts.
+A multiplayer game has a mode, picked when it's created: the **Multiplayer mode** column on the New Game screens' last page, between the difficulties and their details, when you host a new game or find a match. BeaverBuddies ships Co-op, and Timber Empires adds PvE and PvP. The mode is saved with the game, and players who join get the host's.
 
-| Mode | Players | Against | Win |
+| Mode | Players | Against | Goal |
 |---|---|---|---|
-| [Alone, as an empire](#alone-as-an-empire) | 1 | Bandits | No victory |
-| [Alone, classic](#alone-classic) | 1 | Bandits | No victory |
-| [PvP](#pvp) | 2 or more | Each other and the bandits | [Victory](playing/victory.md) setting |
-| [Matchmade 1v1](#matchmade-1v1) | 2 | Each other and the bandits | [Victory](playing/victory.md) setting |
-| [Co-op](#co-op) | 2 or more | The bandits | No victory |
+| [Co-op](#co-op) | 2 or more, one settlement | Nobody | None, just build |
+| [PvE](#pve) | 2 or more, allied | The bandits | Clear every bandit camp |
+| [PvP](#pvp) | 2 or more | Each other and the bandits | The [Victory](playing/victory.md) setting |
 
-## Alone, as an empire
-
-Single player with [Play alone as an empire](settings.md#play-alone-as-an-empire) on (the default). Your districts are yours, as they would be against other players: land claims, fog of war and owner colors all work. The fog hides the bandit camps until you scout them.
-
-The bandits are your opponents: their camps sit around the map, and from the third cycle they raid you. There's no victory to win, so it's a sandbox for the military side of the mod, and a good way to learn it before playing others.
-
-It needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins.
-
-## Alone, classic
-
-Single player with Play alone as an empire off. Timber Empires' buildings, troops, walls and siege machines are all there, and the bandits still camp and raid, but there's no ownership, no land claims and no fog of war: it's Timberborn with an army.
-
-## PvP
-
-A multiplayer game where each player owns their own districts. Everything on the [Territory](playing/territory.md) page applies: land claims, border protection, fog of war, science per player. Players trade with [trading posts and power exchanges](playing/economy.md), fight with troops and siege machines, and the bandits raid everyone.
-
-How it's won is the host's [Victory](playing/victory.md) setting: last player with beavers, last player with a District Center, or first to launch their wonder.
-
-There are two ways to start:
-
-- **Hosting a game.** Host a new or saved game through BeaverBuddies' Multiplayer menu. In a map with one start, players take districts from the District Center's "Owned by" in its panel, or build their own. With [Mixed factions](settings.md#mixed-factions) on, each player plays their own faction, and a player whose faction isn't on the map yet places a free first District Center.
-- **Matchmaking.** See below.
-
-## Matchmade 1v1
-
-Find a match in the Multiplayer menu pairs you with another player over Steam. Each of you picks a faction, the host's map is used, and both players place their own first District Center wherever they want: it's built at once, with 7 adults, 3 children, 100 berries and 100 water. Factions can always be mixed, and missing mods are downloaded from the Workshop before the match starts.
+Playing alone there's no mode to pick: see [Playing alone](#playing-alone).
 
 ## Co-op
 
-Players build one settlement together in a multiplayer game. Districts nobody owns are shared: everyone can build in them, use them and change their buildings, and their troops fight on one side together. So for co-op, leave the districts unowned: don't pick an owner in the District Center's panel.
+Everyone builds one settlement together. Nobody owns districts, so everything is everyone's: there's no fog of war, no land claims, no border protection and science is shared. There are no bandits and no victory. Timber Empires' buildings, troops and walls are all there to use.
 
-Things to know:
+## PvE
 
-- Turn [Separate science per player](settings.md#separate-science-per-player) off, so unlocks are shared too. With it on, each player still unlocks buildings for themselves.
-- Fog of war, land claims and border protection only matter between owners, so they don't get in the way.
-- Bandit camps are placed as usual, and you can clear them for their loot. Raids only come at districts with an owner, so a co-op settlement isn't raided.
-- There's no victory: it only counts players who own a district.
+Each player owns their districts, with their own land claims and science, but every player is everyone's ally against the bandits. Allies see what each other sees, pass each other's gates, climb each other's ladders, heal and feed each other's troops and build on each other's claimed land (see [Alliances](playing/alliances.md#what-allies-share)).
 
-Once a player takes a district, it's theirs for good, and their troops are a side of their own. Co-op and PvP can mix in one game this way, but the players who own districts are on their own.
+The bandits camp around the map and raid each player from the third cycle. Clear every camp and everyone wins together. You can keep playing after.
+
+## PvP
+
+Everyone for themselves. Each player owns their districts and everything on the [Territory](playing/territory.md) page applies. Players can make [alliances](playing/alliances.md) with each other, and the bandits raid everyone. How the game is won is the host's [Victory](playing/victory.md) setting.
+
+## Hosting and matchmaking
+
+- **Hosting a new game.** Multiplayer, Host new game, then the New Game screens as usual, picking the Multiplayer mode on the last page. In a map with one start, players take districts from the District Center's "Owned by" in its panel, or build their own. With [Mixed factions](settings.md#mixed-factions) on, each player plays their own faction, and a player whose faction isn't on the map yet places a free first District Center.
+- **Find a match.** Pairs you with another player over Steam who picked the same Multiplayer mode. Each of you picks a faction, the host's map is used, and both players place their own first District Center wherever they want: it's built at once, with 7 adults, 3 children, 100 berries and 100 water. Factions can always be mixed, and missing mods are downloaded from the Workshop before the match starts.
+- **Open matches.** The list shows each match's game mode, and joining one plays it in its host's mode.
+
+## Playing alone
+
+**As an empire.** With [Play alone as an empire](settings.md#play-alone-as-an-empire) on (the default), your districts are yours: land claims, fog of war and owner colors all work, and the fog hides the bandit camps until you scout them. The bandits are your opponents, but there's no victory: it's a sandbox for the military side of the mod. It needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins.
+
+**Classic.** With Play alone as an empire off, Timber Empires' buildings, troops, walls and siege machines are all there, and the bandits still camp and raid, but there's no ownership, no land claims and no fog of war.

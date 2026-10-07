@@ -8,7 +8,7 @@ nav_order: 3
 
 **Palisade** (Folktails) and **Wall** (Iron Teeth). Blocks everyone, friend or foe. Nothing can be built on top of it but siege ladders. Click a wall with troops selected and they line up on its walkway (or press N for the nearest).
 
-**Gatehouse.** Lets your side through and shuts when anyone else comes within 5 tiles: enemy troops and workers, bandits. It opens again half an hour after the last of them is more than 7 tiles away. The game's own Closed and Automated gate modes still work. Only the passage shuts; the stairs and the wall walk stay open.
+**Gatehouse.** Lets your side and your [allies](../playing/alliances.md) through, and shuts when anyone else comes within 5 tiles: enemy troops and workers, bandits. It opens again half an hour after the last of them is more than 7 tiles away. The game's own Closed and Automated gate modes still work. Only the passage shuts; the stairs and the wall walk stay open.
 
 **Wall Tower.** A strong point in the wall that sees 8 tiles around. Two versions carry a machine on top:
 

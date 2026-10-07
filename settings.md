@@ -29,7 +29,7 @@ In single player the host settings are yours.
 
 ## Separate science per player
 
-Each player has their own science. Districts earn it for their owner, and whoever unlocks something pays for it and gets it only for themselves. Districts nobody owns earn for a shared pool, which anyone can spend once their own points run out.
+Each player has their own science (in Co-op, science is always shared). Districts earn it for their owner, and whoever unlocks something pays for it and gets it only for themselves. Districts nobody owns earn for a shared pool, which anyone can spend once their own points run out.
 
 ## Border protection
 
@@ -53,11 +53,11 @@ Both factions are loaded, and each player builds with their own. It's read when 
 
 ## Victory
 
-How a game is won: kill all the beavers, destroy the District Centers, or build the wonder first. See [Victory](playing/victory.md).
+How a PvP game is won: kill all the beavers, destroy the District Centers, or build the wonder first. PvE and Co-op have their own goals. See [Victory](playing/victory.md).
 
 ## Bandit camps on new maps
 
-Places bandit camps when a new game starts on a map that has none. See [Bandits](playing/bandits.md).
+Places bandit camps when a new game starts on a map that has none (never in Co-op). See [Bandits](playing/bandits.md).
 
 ## Bandit raids
 

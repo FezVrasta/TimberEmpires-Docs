@@ -20,7 +20,7 @@ Other players' districts don't show up in your lists: the district list at the t
 
 ## Land claims
 
-Claimed land is land other players can't build on. Placing on it shows "This land is claimed by" and the owner's name. Where two claims overlap, the older one wins.
+Claimed land is land other players can't build on, allies aside. Placing on it shows "This land is claimed by" and the owner's name. Where two claims overlap, the older one wins.
 
 **District Centers** claim the land around them, more as the district grows: 8 tiles, plus the square root of twice its population, plus a quarter of its average wellbeing, up to 32.
 
@@ -28,7 +28,7 @@ Claimed land is land other players can't build on. Placing on it shows "This lan
 
 ## Fog of war
 
-In a game with other players you only see what's near your land claims, your buildings, beavers and troops, and your paths. Troops see as far as they fight, more from higher ground. Wall towers see 8 tiles.
+In a game with other players you only see what's near your land claims, your buildings, beavers and troops, and your paths, and the same around your [allies](alliances.md)'. Troops see as far as they fight, more from higher ground. Wall towers see 8 tiles.
 
 Out of sight, other players' buildings, beavers, roads, crops and cursors are hidden. A building you've seen before stays where you saw it, as a frozen copy you can't click, until you see that spot again.
 

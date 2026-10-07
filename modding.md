@@ -130,6 +130,10 @@ Every player needs the same mods. BeaverBuddies compares the host's factions wit
 
 A profile has to be the same on every machine. From a blueprint, it is. From code, register it as your mod starts, on every machine (see below).
 
+## Game modes
+
+Timber Empires adds PvE (`timberempires.pve`) and PvP (`timberempires.pvp`) to BeaverBuddies' Multiplayer mode list, next to its Co-op (`bb.coop`). A mod of yours can add its own modes the same way, through BeaverBuddies' `AddGameMode`: see its [Modding.md](https://github.com/FezVrasta/BeaverBuddies-CoOp-PvP-Edition/blob/master/BeaverBuddies/Doc/Modding.md#game-modes). Timber Empires plays any mode it doesn't know as PvP.
+
 ## The API
 
 `TimberEmpires.Modding.TimberEmpiresApi` is a static class whose methods only take and return .NET, Unity and Timberborn types. Find it by name at runtime and bind each method to a delegate once. If Timber Empires isn't installed the lookup finds nothing, and every call below falls back to doing nothing.
@@ -176,6 +180,8 @@ Bind the rest the same way, with the delegate type matching the signatures below
 | `string OwnerOf(BaseComponent entity)` | The player a building, beaver or machine belongs to, as their BeaverBuddies player ID, or null. A machine a monk converted belongs to the monk's side |
 | `string PlayerName(string playerID)`, `Color PlayerColor(string playerID)` | What other players see. The color is clear until the player has one |
 | `bool IsTroop(BaseComponent beaver)`, `string TroopKindOf(BaseComponent beaver)` | Whether a beaver is a troop (or a recruit), and its kind by name |
+| `bool Friendly(string playerA, string playerB)` | Whether two players are on one side: the same player, [allies](playing/alliances.md), or any two in PvE and Co-op. Use it for anything that should spare friends |
+| `string GameMode()` | The game's [mode](game-modes.md): `bb.coop`, `timberempires.pve` or `timberempires.pvp` |
 
 Everything that reads the game (`FactionOf`, `OwnerOf`, the troop queries) gives the same answer on every machine, so it's safe to call from ticks. Changing anything in the game still goes through BeaverBuddies' events.
 

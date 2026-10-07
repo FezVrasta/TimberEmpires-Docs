@@ -15,7 +15,7 @@ Subscribing on the Steam Workshop pulls in the mods it needs. Every player needs
 
 ## Playing with others
 
-There are a few ways to play, from alone against the bandits to co-op and PvP: see [Game modes](game-modes.md).
+Each multiplayer game has a game mode, Co-op, PvE or PvP, picked on the New Game screens' last page (Multiplayer mode): see [Game modes](game-modes.md).
 
 Timber Empires runs on top of BeaverBuddies, so hosting and joining work the way BeaverBuddies does: Multiplayer on the main menu, then host a new game, host a saved one, join a friend, or find a match.
 

@@ -1,10 +1,12 @@
 ---
 title: Bandits
 parent: Playing
-nav_order: 4
+nav_order: 5
 ---
 
 # Bandits
+
+There are bandits in [PvE](../game-modes.md#pve), where clearing every camp wins the game, and in [PvP](../game-modes.md#pvp). [Co-op](../game-modes.md#co-op) has none.
 
 ## Camps
 
