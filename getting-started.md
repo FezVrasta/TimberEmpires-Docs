@@ -15,6 +15,8 @@ Subscribing on the Steam Workshop pulls in the mods it needs. Every player needs
 
 ## Playing with others
 
+There are a few ways to play, from alone against the bandits to co-op and PvP: see [Game modes](game-modes.md).
+
 Timber Empires runs on top of BeaverBuddies, so hosting and joining work the way BeaverBuddies does: Multiplayer on the main menu, then host a new game, host a saved one, join a friend, or find a match.
 
 **Matchmaking.** Find a match pairs you with another player over Steam. Each of you picks a faction, the host's map is used, and every player places their own first District Center wherever they want on it. That first one is free: it's built at once, with 7 adults, 3 children, 100 berries and 100 water.

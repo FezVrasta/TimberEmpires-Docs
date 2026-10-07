@@ -17,6 +17,7 @@ It plays in multiplayer through [BeaverBuddies Co-Op/PvP Edition](https://steamc
 ## Find your way
 
 - [Getting started](getting-started.md): installing it and starting a match.
+- [Game modes](game-modes.md): alone against the bandits, PvP, matchmade 1v1 and co-op.
 - [Settings](settings.md): what each option does.
 - [Reference](reference/index.md): every cost and number, straight from the game's files.
 - [Modding](modding.md): adding your faction to Timber Empires.
