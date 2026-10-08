@@ -38,7 +38,7 @@ The fog only hides things from you. It doesn't change what happens in the game.
 
 ## Roads and new districts
 
-With [Build roads and new districts](../settings.md#build-roads-and-new-districts) on, builders lay your roads (quickly, and for free), and every District Center after your first costs 100 logs, 120 planks, 60 gears, 30 metal blocks and 800 science, and is built like any other building.
+With [Costly expansion](../settings.md#costly-expansion) on, builders lay your roads (quickly, and for free), and every District Center after your first costs 100 logs, 120 planks, 60 gears, 30 metal blocks and 800 science, and is built like any other building.
 
 ## Colors
 

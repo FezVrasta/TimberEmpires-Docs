@@ -27,7 +27,7 @@ The bandits camp around the map and raid each player from the third cycle. Clear
 
 ## PvP
 
-Everyone for themselves. Each player owns their districts and everything on the [Territory](playing/territory.md) page applies. Players can make [alliances](playing/alliances.md) with each other, and the bandits raid everyone. How the game is won is the host's [Victory](playing/victory.md) setting.
+Everyone for themselves. Each player owns their districts and everything on the [Territory](playing/territory.md) page applies. Players can make [alliances](playing/alliances.md) with each other, and the bandits raid everyone. How the game is won is the [Victory](playing/victory.md) game setting.
 
 ## Hosting and matchmaking
 
@@ -37,6 +37,6 @@ Everyone for themselves. Each player owns their districts and everything on the 
 
 ## Playing alone
 
-**As an empire.** With [Play alone as an empire](settings.md#play-alone-as-an-empire) on (the default), your districts are yours: land claims, fog of war and owner colors all work, and the fog hides the bandit camps until you scout them. The bandits are your opponents, but there's no victory: it's a sandbox for the military side of the mod. It needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins.
+**As an empire.** With [Play as an empire](settings.md#play-as-an-empire) on (the default), your districts are yours: land claims, fog of war and owner colors all work, and the fog hides the bandit camps until you scout them. The bandits are your opponents, but there's no victory: it's a sandbox for the military side of the mod. It needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins.
 
-**Classic.** With Play alone as an empire off, Timber Empires' buildings, troops, walls and siege machines are all there, and the bandits still camp and raid, but there's no ownership, no land claims and no fog of war.
+**Classic.** With Play as an empire off, Timber Empires' buildings, troops, walls and siege machines are all there, and the bandits still camp and raid, but there's no ownership, no land claims and no fog of war.

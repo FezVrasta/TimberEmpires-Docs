@@ -27,7 +27,7 @@ Timber Empires runs on top of BeaverBuddies, so hosting and joining work the way
 
 ## Playing alone
 
-Without other players, turn on [Play alone as an empire](settings.md#play-alone-as-an-empire) (it's on by default). Your districts are yours, land claims and fog of war work as they do against other players, and the bandits are your opponents. It needs the Co-Op/PvP Edition installed even for single player.
+Without other players, keep [Play as an empire](settings.md#play-as-an-empire) on (it's on by default, in the Customize list of the New Game screens' last page). Your districts are yours, land claims and fog of war work as they do against other players, and the bandits are your opponents. It needs the Co-Op/PvP Edition installed even for single player.
 
 With it off, Timber Empires' buildings and troops are still there, but there's no fog, no land claims and no ownership.
 

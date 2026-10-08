@@ -8,7 +8,7 @@ nav_order: 3
 
 ## Science per player
 
-With [Separate science per player](../settings.md#separate-science-per-player) on, each player has their own science. Districts earn it for their owner. Whoever unlocks a building pays from their own points first, then from the shared pool that unowned districts earn into, and gets it only for themselves.
+With [Science per player](../settings.md#science-per-player) on, each player has their own science. Districts earn it for their owner. Whoever unlocks a building pays from their own points first, then from the shared pool that unowned districts earn into, and gets it only for themselves.
 
 ## District specializations
 

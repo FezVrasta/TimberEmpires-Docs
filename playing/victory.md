@@ -10,7 +10,7 @@ How a game is won depends on its [game mode](../game-modes.md). Once a game is w
 
 ## PvP
 
-The host's [Victory](../settings.md#victory) setting decides:
+The [Victory](../settings.md#victory) game setting, picked when the game is created, decides:
 
 - **Kill all the beavers.** You're out when none of your districts has a beaver left, adult or child.
 - **Destroy the District Centers** (the default). You're out when you have no District Center left, built or under construction.
