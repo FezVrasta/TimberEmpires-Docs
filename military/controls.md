@@ -40,7 +40,7 @@ With a wheeled machine selected (catapult or ballista), clicking an enemy both a
 
 Troops and supply carts don't need roads: they walk wherever the ground lets them, across open land and far from your districts. Cut off from their district, they still belong to it and keep their place at their barracks or wagon yard.
 
-They can't climb a step in the ground on their own. That's what **Siege Ladders** are for: build one against a one-level step (or a wall) and your troops and carters use it by themselves, up or down, picking the ladder that leaves them closest to where they're going. Only your own side's troops and carters climb your ladders; other beavers don't use them. The **Siege Tower** (Iron Teeth) climbs two levels, onto a wall's walkway. Machines can't climb ladders: they need a **Siege Ramp**.
+They can't climb a step in the ground on their own. That's what **Siege Ladders** are for: build one against a one-level step (or a wall) and your troops and carters use it by themselves, up or down, picking the ladder that leaves them closest to where they're going. Only your side's troops and carters climb your ladders. The **Siege Tower** (Iron Teeth) climbs two levels, onto a wall's walkway. Machines can't climb ladders: they need a **Siege Ramp**.
 
 ## Keys
 

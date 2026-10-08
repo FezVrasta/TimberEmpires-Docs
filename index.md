@@ -6,9 +6,9 @@ permalink: /
 
 {% include home_hero.html %}
 
-Timber Empires keeps everything Timberborn is and puts the players on one map as rivals. Every player owns their districts, researches on their own, and can send troops, siege machines and fireships at everyone else.
+Timber Empires puts every player on the same map as rivals. Every player owns their districts, researches on their own, and can send troops, siege machines and fireships at everyone else.
 
-It plays in multiplayer through [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327), and alone as a one-player empire against the bandits.
+It plays in multiplayer through [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327), and alone against the bandits.
 
 ## What's in it
 
