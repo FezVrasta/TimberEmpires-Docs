@@ -1,0 +1,10 @@
+<div class="gallery">
+{%- for t in site.data.troops -%}
+  {%- assign f = t[1].factions.Folktails | default: t[1].factions.IronTeeth -%}
+  <a class="gallery-item" href="{{ '/troops/' | append: t[0] | append: '.html' | relative_url }}">
+    {%- if f.shot -%}<img src="{{ '/assets/shots/' | append: f.shot | relative_url }}" alt="" loading="lazy">{%- else -%}<span class="gallery-blank"></span>{%- endif -%}
+    <span class="gallery-name">{{ t[1].name }}</span>
+    <span class="gallery-text">{% if t[1].factions.Folktails and t[1].factions.IronTeeth %}Both factions{% elsif t[1].factions.Folktails %}Folktails{% else %}Iron Teeth{% endif %}</span>
+  </a>
+{%- endfor -%}
+</div>

@@ -1,0 +1,10 @@
+<div class="gallery">
+{%- for b in site.data.buildings -%}{%- if include.category == nil or b[1].category_slug == include.category -%}
+  {%- assign f = b[1].factions.Folktails | default: b[1].factions.IronTeeth -%}
+  <a class="gallery-item" href="{{ '/buildings/' | append: b[0] | append: '.html' | relative_url }}">
+    {%- if f.shot -%}<img src="{{ '/assets/shots/' | append: f.shot | relative_url }}" alt="" loading="lazy">{%- else -%}<span class="gallery-blank"></span>{%- endif -%}
+    <span class="gallery-name">{{ b[1].name }}</span>
+    <span class="gallery-text">{{ b[1].description }}</span>
+  </a>
+{%- endif -%}{%- endfor -%}
+</div>

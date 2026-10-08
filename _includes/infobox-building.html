@@ -1,0 +1,40 @@
+{%- assign b = site.data.buildings[include.id] -%}
+{%- assign fs = b.factions -%}
+<aside class="infobox">
+  <div class="infobox-title">{% if b.icon %}<img src="{{ '/assets/icons/' | append: b.icon | append: '.png' | relative_url }}" alt="">{% endif %}{{ b.name }}</div>
+  {%- assign keys = "Folktails,IronTeeth" | split: "," -%}
+  {%- assign shown = 0 -%}
+  {%- for k in keys -%}{%- if fs[k] -%}{%- assign shown = shown | plus: 1 -%}{%- endif -%}{%- endfor -%}
+  <div class="infobox-tabs" style="--tabs: {{ shown }}">
+  {%- for k in keys -%}
+    {%- assign f = fs[k] -%}
+    {%- if f -%}
+    <input type="radio" name="ib-{{ include.id }}" id="ib-{{ include.id }}-{{ k }}" {% if forloop.first or fs.Folktails == nil %}checked{% endif %}>
+    <label for="ib-{{ include.id }}-{{ k }}">{{ f.faction }}</label>
+    <div class="infobox-panel">
+      {%- if f.shot -%}<img class="infobox-shot" src="{{ '/assets/shots/' | append: f.shot | relative_url }}" alt="{{ b.name }}, {{ f.faction }}">{%- endif -%}
+      <table>
+        <tr><th>Category</th><td><a href="{{ '/buildings/' | append: b.category_slug | append: '.html' | relative_url }}">{{ b.category }}</a></td></tr>
+        <tr><th>Science</th><td>{{ f.science }}</td></tr>
+        <tr><th>Cost</th><td>{% for c in f.cost %}{{ c.amount }} {{ c.good }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td></tr>
+        {%- if f.size %}<tr><th>Size</th><td>{{ f.size }}</td></tr>{% endif -%}
+        {%- if f.workers %}<tr><th>Workers</th><td>{{ f.workers }}</td></tr>{% endif -%}
+        <tr><th>Health</th><td>{{ f.health }}</td></tr>
+        {%- if f.trains %}<tr><th>Trains</th><td>{% for t in f.trains %}<a href="{{ '/troops/' | append: t.slug | append: '.html' | relative_url }}">{{ t.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</td></tr>{% endif -%}
+        {%- if f.makes.size > 0 %}<tr><th>Makes</th><td>{% for m in f.makes %}{{ m.good }}{% unless forloop.last %}, {% endunless %}{% endfor %}</td></tr>{% endif -%}
+        {%- if f.crew %}<tr><th>Crew</th><td>{{ f.crew }}</td></tr>{% endif -%}
+        {%- if f.speed %}<tr><th>Speed</th><td>{{ f.speed }}</td></tr>{% endif -%}
+        {%- if f.range %}<tr><th>Range</th><td>{{ f.range }}</td></tr>{% endif -%}
+        {%- if f.reload %}<tr><th>Reload</th><td>{{ f.reload }}</td></tr>{% endif -%}
+        {%- if f.damage %}<tr><th>Damage</th><td>{{ f.damage }}</td></tr>{% endif -%}
+        {%- if f.structure_damage %}<tr><th>To buildings</th><td>{{ f.structure_damage }}</td></tr>{% endif -%}
+        {%- if f.ammo %}<tr><th>Ammunition</th><td>{{ f.ammo }}</td></tr>{% endif -%}
+      </table>
+    </div>
+    {%- endif -%}
+  {%- endfor -%}
+  </div>
+</aside>
+{%- if b.flavor != "" %}
+<blockquote class="flavor">{{ b.flavor }}</blockquote>
+{%- endif %}

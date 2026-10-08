@@ -14,33 +14,24 @@ With [Science per player](../settings.md#science-per-player) on, each player has
 
 Each district can pick a focus: Food, Wood, Water, Metal, Science or Power, the toolbar's tabs. Workplaces of that kind work 25% faster, and the district's other production workplaces 10% slower. Only the district's owner can pick it, and only once per cycle.
 
-## Trading Post
+## Trading with other players
 
-Two players trade goods through a Trading Post built across the border between their districts, in pairs like a District Crossing.
+Main articles: [Trading Post](../buildings/trading-post.md), [Power Exchange](../buildings/power-exchange.md), [Toll Station](../buildings/toll-station.md) and [Toll Tube Station](../buildings/toll-tube-station.md)
+{: .hatnote}
 
-A deal says what each side gives: "10 logs for 4 planks", say. Each side's owner edits their half, and the deal only runs once both have approved it. Changing it asks the other side to approve again. An approved deal trades whenever both halves have the goods and room for what they get. A post holds up to 10 deals, each half stores 50 of each good, and its workers keep two trades' worth ready.
+- **Trading Post.** Two players trade goods through a pair built across the border between their districts. Both sides approve each deal.
+- **Power Exchange.** Sells power across a border, paid in goods every hour.
+- **Toll stations.** Let your beavers ride another player's ziplines (Folktails) or tubeway (Iron Teeth) for a toll the network's owner sets.
 
 Pending deals raise a "Trade deal to approve" alert, and the Trades tab of the settlement panel lists every deal and power price you're part of.
 
-## Power Exchange
-
-Sells power across a border. Built in pairs like a Trading Post: one half sells, sending power into the other half's network, and is paid in goods every hour.
-
-The seller sets up to 6 prices (how much power for how many of a good) and the most power they'll sell. Each hour the buyer pays in price order until the power they draw is covered. It never sends more than the seller's limit or surplus.
-
-## Toll stations
-
-A Toll Station (Folktails) or Toll Tube Station (Iron Teeth) lets your beavers ride another player's ziplines or tubeway. You build it on their network, and your beavers get on and off only at toll stations. The network's owner sets the toll, or makes it free, and can close the station. Each rider pays when boarding; the owner's haulers collect the tolls.
-
-Only one other district can ride a given network at a time. Connected to its own district's network, a toll station is a plain station.
-
 ## Military production
 
-- **Forge.** Swords, shields, spears and bows, and slings for Folktails. Fuelled by logs.
-- **Armory** (Folktails). Battle axes for berserkers. Needs power.
-- **Gunsmith** (Iron Teeth). Arquebuses and blasting charges. Needs power.
-- **Stone Press.** Siege stones from scrap metal and logs, for catapults and trebuchets. Needs power.
+- **[Forge](../buildings/forge.md).** Swords, shields, spears and bows, and slings for Folktails. Fuelled by logs.
+- **[Armory](../buildings/armory.md)** (Folktails). Battle axes for berserkers. Needs power.
+- **[Gunsmith](../buildings/gunsmith.md)** (Iron Teeth). Arquebuses and blasting charges. Needs power.
+- **[Stone Press](../buildings/stone-press.md).** Siege stones from scrap metal and logs, for catapults and trebuchets. Needs power.
 - **Herbalist** (Folktails). The game's own Herbalist also makes herbal kits for herbalist troops.
-- **Wagon Yard.** Supply carts for troops in the field (see [Supply](../military/combat.md#supply)).
+- **[Wagon Yard](../buildings/wagon-yard.md).** Supply carts for troops in the field (see [Supply](../military/combat.md#supply)).
 
 Costs and recipes are in the [Reference](../reference/index.md).

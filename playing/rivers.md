@@ -18,11 +18,10 @@ A wall built across a river, or used to flood an enemy, is a dam: too much water
 
 ## Water mines
 
-**Mine Workshop.** Makes water mines from explosives and metal blocks.
+Main articles: [Mine Workshop](../buildings/mine-workshop.md), [Mine Slipway](../buildings/mine-slipway.md), [Moored Mine](../buildings/moored-mine.md), [Mine Net](../buildings/mine-net.md) and [Net Winch](../buildings/net-winch.md)
+{: .hatnote}
 
-**Mine Slipway.** Launches a mine into the water each time you press its button or it gets an automation signal. Mines drift with the current, faster in faster water, arm after a short while, and go off when they hit something, or at the bottom of a waterfall. The slipway's boat also arms moored mines within 30 tiles.
-
-**Moored Mine.** Sits on open water, armed by a slipway's boat. It goes off when a boat or a drifting mine comes close, when another blast reaches it, or when its water drains.
+The Mine Workshop makes water mines, and the Mine Slipway launches them into the current. They drift, arm after a short while, and go off when they hit something, or at the bottom of a waterfall. Moored mines sit on open water and go off when a boat or a drifting mine comes close. Mine nets catch drifting mines, and a Net Winch hauls the catch in for you to use.
 
 **A blast** (1.6 tiles around):
 
@@ -33,8 +32,9 @@ A wall built across a river, or used to flood an enemy, is a dam: too much water
 
 Roads aren't hurt.
 
-**Mine Net and Net Winch.** A net catches drifting mines, two per net. A full net lets them drift on, or they blow up against it. A Net Winch hauls in the catch from every linked net once an hour, as water mines you can use yourself.
-
 ## Fireships
 
-The **Fireship Dock** launches a boat upstream, packed with explosives. It blows up on the first building or mine it hits, and sinks near a water source or at the map's edge.
+Main article: [Fireship Dock](../buildings/fireship-dock.md)
+{: .hatnote}
+
+The Fireship Dock launches a boat upstream, packed with explosives. It blows up on the first building or mine it hits, and sinks near a water source or at the map's edge.

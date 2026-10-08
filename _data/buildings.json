@@ -1,0 +1,2532 @@
+{
+ "palisade": {
+  "name": "Palisade",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A wall of sharpened logs that blocks the way for everyone.",
+  "flavor": "Good fences make good neighbours.",
+  "icon": "Palisade",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Palisade.Folktails",
+    "science": 150,
+    "cost": [
+     {
+      "amount": 6,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 310,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Palisade.Folktails.jpg"
+   }
+  }
+ },
+ "wall": {
+  "name": "Wall",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A solid wall of iron-banded planks that blocks the way for everyone.",
+  "flavor": "Fences are for neighbours. Walls are for everyone else.",
+  "icon": "IronWall",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Palisade.IronTeeth",
+    "science": 150,
+    "cost": [
+     {
+      "amount": 6,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 310,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Palisade.IronTeeth.jpg"
+   }
+  }
+ },
+ "gatehouse": {
+  "name": "Gatehouse",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A fortified gate with stairs up to the wall walk. Shuts when enemies or bandits come near.",
+  "flavor": "Grand enough to welcome guests, sturdy enough not to.",
+  "icon": "Gatehouse",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Gatehouse.Folktails",
+    "science": 450,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 8,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "3 × 1 × 2",
+    "workers": null,
+    "health": 780,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Gatehouse.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Gatehouse.IronTeeth",
+    "science": 450,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 8,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "3 × 1 × 2",
+    "workers": null,
+    "health": 780,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Gatehouse.IronTeeth.jpg"
+   }
+  }
+ },
+ "log-hoarding": {
+  "name": "Log Hoarding",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A gallery on the wall where warriors roll logs down at enemies, knocking over everyone in their path.",
+  "flavor": "\"Timber!\" is shouted out of courtesy, usually too late.",
+  "icon": "LogHoarding",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Hoarding.Folktails",
+    "science": 500,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Treated Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": null,
+    "speed": null,
+    "reload": "0.85 h",
+    "damage": "111",
+    "structure_damage": "18",
+    "ammo": "Log, holds 20",
+    "shot": "Hoarding.Folktails.jpg"
+   }
+  }
+ },
+ "oil-hoarding": {
+  "name": "Oil Hoarding",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A gallery on the wall where warriors pour boiling canola oil on enemies below.",
+  "flavor": "Hot off the press.",
+  "icon": "OilHoarding",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Hoarding.IronTeeth",
+    "science": 500,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 4,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": null,
+    "speed": null,
+    "reload": "0.45 h",
+    "damage": "164",
+    "structure_damage": "25",
+    "ammo": "Canola Oil, holds 8",
+    "shot": "Hoarding.IronTeeth.jpg"
+   }
+  }
+ },
+ "wall-tower": {
+  "name": "Wall Tower",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "Joins walls on any side and leads up to the wall walk. Sees far through the fog, further from high ground.",
+  "flavor": "The best view in the district, mostly of trouble.",
+  "icon": "WallTowerFolktails",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "WallTower.Folktails",
+    "science": 300,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 2",
+    "workers": null,
+    "health": 1220,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "WallTower.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "WallTower.IronTeeth",
+    "science": 300,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 2",
+    "workers": null,
+    "health": 1220,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "WallTower.IronTeeth.jpg"
+   }
+  }
+ },
+ "ballista-tower": {
+  "name": "Ballista Tower",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A wall tower with a ballista on its deck. With a crew aboard, it shoots the nearest enemy in reach on its own, with a little extra range from its height.",
+  "flavor": "Nobody climbs this wall twice.",
+  "icon": "WallTowerBallistaFolktails",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "WallTower.Ballista.Folktails",
+    "science": 1200,
+    "cost": [
+     {
+      "amount": 36,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 45,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 9,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 9,
+      "good": "Treated Plank",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 2",
+    "workers": null,
+    "health": 1320,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": "2 to 25 tiles",
+    "speed": null,
+    "reload": "1.4 h",
+    "damage": "62, 0.7 tiles around",
+    "structure_damage": "8",
+    "ammo": null,
+    "shot": "WallTower.Ballista.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "WallTower.Ballista.IronTeeth",
+    "science": 1200,
+    "cost": [
+     {
+      "amount": 36,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 45,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 9,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 9,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 2",
+    "workers": null,
+    "health": 1320,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": "2 to 25 tiles",
+    "speed": null,
+    "reload": "1.4 h",
+    "damage": "62, 0.7 tiles around",
+    "structure_damage": "8",
+    "ammo": null,
+    "shot": "WallTower.Ballista.IronTeeth.jpg"
+   }
+  }
+ },
+ "trebuchet-tower": {
+  "name": "Trebuchet Tower",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A wall tower with a small trebuchet on its deck. With a crew aboard, it lobs stones at the nearest enemy in reach on its own, far past the wall.",
+  "flavor": "They can see you coming. So can the rock.",
+  "icon": "WallTowerTrebuchetFolktails",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "WallTower.Trebuchet.Folktails",
+    "science": 1800,
+    "cost": [
+     {
+      "amount": 90,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 27,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 18,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 18,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 2",
+    "workers": null,
+    "health": 1320,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 3",
+    "range": "9 to 36 tiles",
+    "speed": null,
+    "reload": "1 h",
+    "damage": "45, 1.4 tiles around",
+    "structure_damage": "35",
+    "ammo": "Siege stone, holds 12",
+    "shot": "WallTower.Trebuchet.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "WallTower.Trebuchet.IronTeeth",
+    "science": 1800,
+    "cost": [
+     {
+      "amount": 90,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 27,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 18,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 18,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 2",
+    "workers": null,
+    "health": 1320,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 3",
+    "range": "9 to 36 tiles",
+    "speed": null,
+    "reload": "1 h",
+    "damage": "45, 1.4 tiles around",
+    "structure_damage": "35",
+    "ammo": "Siege stone, holds 12",
+    "shot": "WallTower.Trebuchet.IronTeeth.jpg"
+   }
+  }
+ },
+ "field-infirmary": {
+  "name": "Field Infirmary",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "A healing tub on wheels for after a battle. Once no enemy is in sight, wounded troops take turns lying in it and heal fast while its doses last. A dose is 1 extract and 2 berries. Its crew only moves it. Only warriors can build it.",
+  "flavor": "The tub's warm. Don't ask what's in it.",
+  "icon": "FieldInfirmary",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "FieldInfirmary.IronTeeth",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Extract",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 90,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 1",
+    "range": null,
+    "speed": "0.9 tiles/h",
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "FieldInfirmary.IronTeeth.jpg"
+   }
+  }
+ },
+ "field-ladder": {
+  "name": "Field Ladder",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "Lets your warriors and carters climb a one-level step. Only warriors can build it.",
+  "flavor": "\"Who needs stairs anyway?\" —Pina",
+  "icon": "SiegeLadder",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "SiegeLadder.Folktails",
+    "science": 300,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 4,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "SiegeLadder.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "SiegeLadder.IronTeeth",
+    "science": 300,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 4,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "SiegeLadder.IronTeeth.jpg"
+   }
+  }
+ },
+ "field-ramp": {
+  "name": "Field Ramp",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "A long timber ramp up a one-level step for warriors, carters and siege machines. Only warriors can build it.",
+  "flavor": "Ladders are for beavers. Battering rams need something gentler.",
+  "icon": "SiegeRamp",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "SiegeRamp.Folktails",
+    "science": 450,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 80,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "SiegeRamp.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "SiegeRamp.IronTeeth",
+    "science": 450,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 80,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "SiegeRamp.IronTeeth.jpg"
+   }
+  }
+ },
+ "battering-ram": {
+  "name": "Battering Ram",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "Batters the wall, gate or dam in front of it, faster with more warriors aboard. Only warriors can build it.",
+  "flavor": "\"Knock knock.\" \"Who's there?\" \"Not your gate anymore.\"",
+  "icon": "BatteringRam",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "BatteringRam.Folktails",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 235,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 4",
+    "range": null,
+    "speed": "6.5 tiles/h",
+    "reload": "0.35 h a swing",
+    "damage": null,
+    "structure_damage": "62",
+    "ammo": null,
+    "shot": "BatteringRam.Folktails.jpg"
+   }
+  }
+ },
+ "siege-tower": {
+  "name": "Siege Tower",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "Rolls up to a wall and lets the warriors aboard out onto its walk. Only warriors can build it.",
+  "flavor": "Stairs took beavers to the next level. Siege towers take them to someone else's.",
+  "icon": "SiegeTower",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "SiegeTower.IronTeeth",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 40,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 3",
+    "workers": null,
+    "health": 200,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 6",
+    "range": null,
+    "speed": "2 tiles/h",
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "SiegeTower.IronTeeth.jpg"
+   }
+  }
+ },
+ "catapult": {
+  "name": "Catapult",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "Hurls stones at a chosen target, hurting enemies and battering walls and siege engines. Its crew moves and aims it. Only warriors can build it.",
+  "flavor": "\"Took them long enough.\" —Ma' Ngonel",
+  "icon": "Catapult",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Catapult.Folktails",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 15,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Treated Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 200,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 3",
+    "range": "4 to 16 tiles",
+    "speed": "3 tiles/h",
+    "reload": "0.8 h",
+    "damage": "54, 1.4 tiles around",
+    "structure_damage": "298",
+    "ammo": "Siege stone, holds 8",
+    "shot": "Catapult.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Catapult.IronTeeth",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 15,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 200,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 3",
+    "range": "4 to 16 tiles",
+    "speed": "3 tiles/h",
+    "reload": "0.8 h",
+    "damage": "54, 1.4 tiles around",
+    "structure_damage": "298",
+    "ammo": "Siege stone, holds 8",
+    "shot": "Catapult.IronTeeth.jpg"
+   }
+  }
+ },
+ "ballista": {
+  "name": "Ballista",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "Shoots heavy bolts flat and far: deadly to enemies, weak against walls. Its crew moves and aims it. Only warriors can build it.",
+  "flavor": "One bolt, one problem solved.",
+  "icon": "Ballista",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Ballista.Folktails",
+    "science": 1000,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Treated Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 110,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": "3 to 22 tiles",
+    "speed": "1 tiles/h",
+    "reload": "0.8 h",
+    "damage": "70, 0.7 tiles around",
+    "structure_damage": "8",
+    "ammo": null,
+    "shot": "Ballista.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Ballista.IronTeeth",
+    "science": 1000,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 110,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": "3 to 22 tiles",
+    "speed": "1 tiles/h",
+    "reload": "0.8 h",
+    "damage": "70, 0.7 tiles around",
+    "structure_damage": "8",
+    "ammo": null,
+    "shot": "Ballista.IronTeeth.jpg"
+   }
+  }
+ },
+ "trebuchet": {
+  "name": "Trebuchet",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "Hurls siege stones at a chosen target, hurting enemies and battering walls, gates and siege engines. Needs warriors aboard to turn and throw.",
+  "flavor": "What goes up must come down. Preferably on them.",
+  "icon": "SiegeTrebuchet",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "SiegeTrebuchet.Folktails",
+    "science": 1500,
+    "cost": [
+     {
+      "amount": 60,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 4",
+    "workers": null,
+    "health": 150,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 3",
+    "range": "10 to 32 tiles",
+    "speed": null,
+    "reload": "0.55 h",
+    "damage": "45, 1.4 tiles around",
+    "structure_damage": "174",
+    "ammo": "Siege stone, holds 10",
+    "shot": "SiegeTrebuchet.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "SiegeTrebuchet.IronTeeth",
+    "science": 1500,
+    "cost": [
+     {
+      "amount": 60,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 4",
+    "workers": null,
+    "health": 150,
+    "makes": [],
+    "trains": null,
+    "crew": "2 to 3",
+    "range": "10 to 32 tiles",
+    "speed": null,
+    "reload": "0.55 h",
+    "damage": "45, 1.4 tiles around",
+    "structure_damage": "174",
+    "ammo": "Siege stone, holds 10",
+    "shot": "SiegeTrebuchet.IronTeeth.jpg"
+   }
+  }
+ },
+ "forge": {
+  "name": "Forge",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Makes the basic kit troops train and fight with: swords, spears, bows, slings and shields.",
+  "flavor": "Every beaver can chew. Only a few can temper steel.",
+  "icon": "Forge",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Forge.Folktails",
+    "science": 150,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 2,
+    "health": 240,
+    "makes": [
+     {
+      "good": "Sword",
+      "icon": "Sword"
+     },
+     {
+      "good": "Shield",
+      "icon": "Shield"
+     },
+     {
+      "good": "Spear",
+      "icon": "Spear"
+     },
+     {
+      "good": "Bow",
+      "icon": "Bow"
+     },
+     {
+      "good": "Sling",
+      "icon": "Sling"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Forge.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Forge.IronTeeth",
+    "science": 150,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 2,
+    "health": 240,
+    "makes": [
+     {
+      "good": "Sword",
+      "icon": "Sword"
+     },
+     {
+      "good": "Shield",
+      "icon": "Shield"
+     },
+     {
+      "good": "Spear",
+      "icon": "Spear"
+     },
+     {
+      "good": "Bow",
+      "icon": "Bow"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Forge.IronTeeth.jpg"
+   }
+  }
+ },
+ "armory": {
+  "name": "Armory",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Makes battle axes for berserkers.",
+  "flavor": "Sharpen twice, swing once.",
+  "icon": "Armory",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Armory.Folktails",
+    "science": 400,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 2",
+    "workers": 2,
+    "health": 160,
+    "makes": [
+     {
+      "good": "Battle axe",
+      "icon": "BattleAxe"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Armory.Folktails.jpg"
+   }
+  }
+ },
+ "gunsmith": {
+  "name": "Gunsmith",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Makes arquebuses and blasting charges.",
+  "flavor": "Measure the powder twice. Then step back.",
+  "icon": "Gunsmith",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Gunsmith.IronTeeth",
+    "science": 400,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 2",
+    "workers": 2,
+    "health": 240,
+    "makes": [
+     {
+      "good": "Arquebus",
+      "icon": "Arquebus"
+     },
+     {
+      "good": "Blasting Charge",
+      "icon": "BlastingCharge"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Gunsmith.IronTeeth.jpg"
+   }
+  }
+ },
+ "barracks": {
+  "name": "Barracks",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Trains its workers as troops: warriors, spearmen, or the faction's own kind.",
+  "flavor": "Beavers were made for chewing, not fighting. These ones chew angrily.",
+  "icon": "Barracks",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Barracks.Folktails",
+    "science": 250,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 2",
+    "workers": 6,
+    "health": 240,
+    "makes": [],
+    "trains": [
+     {
+      "name": "Spearman",
+      "slug": "spearman"
+     },
+     {
+      "name": "Warrior",
+      "slug": "warrior"
+     },
+     {
+      "name": "Herbalist",
+      "slug": "herbalist"
+     },
+     {
+      "name": "Berserker",
+      "slug": "berserker"
+     }
+    ],
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Barracks.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Barracks.IronTeeth",
+    "science": 250,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 6,
+    "health": 240,
+    "makes": [],
+    "trains": [
+     {
+      "name": "Spearman",
+      "slug": "spearman"
+     },
+     {
+      "name": "Warrior",
+      "slug": "warrior"
+     },
+     {
+      "name": "Sapper",
+      "slug": "sapper"
+     }
+    ],
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Barracks.IronTeeth.jpg"
+   }
+  }
+ },
+ "archery-range": {
+  "name": "Archery Range",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Trains its workers to shoot from a distance: archers, or the faction's own kind.",
+  "flavor": "A beaver with a bow is still a beaver. A beaver with a bow and a grudge is an archer.",
+  "icon": "ArcheryRange",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "ArcheryRange.Folktails",
+    "science": 450,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 6,
+    "health": 240,
+    "makes": [],
+    "trains": [
+     {
+      "name": "Archer",
+      "slug": "archer"
+     },
+     {
+      "name": "Slinger",
+      "slug": "slinger"
+     }
+    ],
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "ArcheryRange.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "ArcheryRange.IronTeeth",
+    "science": 450,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 6,
+    "health": 240,
+    "makes": [],
+    "trains": [
+     {
+      "name": "Archer",
+      "slug": "archer"
+     },
+     {
+      "name": "Arquebusier",
+      "slug": "arquebusier"
+     }
+    ],
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "ArcheryRange.IronTeeth.jpg"
+   }
+  }
+ },
+ "monastery": {
+  "name": "Monastery",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Trains monks. Instead of fighting, they convert enemy troops and siege machines to your side, then wait for their faith to return.",
+  "flavor": "Wololo.",
+  "icon": "Monastery",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Monastery.Folktails",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 40,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Paper",
+      "icon": null
+     }
+    ],
+    "size": "3 × 3 × 4",
+    "workers": 3,
+    "health": 360,
+    "makes": [],
+    "trains": [
+     {
+      "name": "Monk",
+      "slug": "monk"
+     }
+    ],
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Monastery.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Monastery.IronTeeth",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 40,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "3 × 3 × 4",
+    "workers": 3,
+    "health": 360,
+    "makes": [],
+    "trains": [
+     {
+      "name": "Monk",
+      "slug": "monk"
+     }
+    ],
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Monastery.IronTeeth.jpg"
+   }
+  }
+ },
+ "wagon-yard": {
+  "name": "Wagon Yard",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Sends supply carts to the front so warriors can eat, drink and build siege engines off the roads.",
+  "flavor": "An army marches on its stomach.",
+  "icon": "WagonYard",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "WagonYard.Folktails",
+    "science": 400,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 3,
+    "health": 240,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "WagonYard.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "WagonYard.IronTeeth",
+    "science": 400,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 3,
+    "health": 240,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "WagonYard.IronTeeth.jpg"
+   }
+  }
+ },
+ "stone-press": {
+  "name": "Stone Press",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Presses scrap metal and logs into siege stones for catapults and trebuchets.",
+  "flavor": "Mind the ram.",
+  "icon": "StonePress",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "StonePress.Folktails",
+    "science": 200,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 15,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 3",
+    "workers": 2,
+    "health": 160,
+    "makes": [
+     {
+      "good": "Siege stone",
+      "icon": "SiegeStone"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "StonePress.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "StonePress.IronTeeth",
+    "science": 200,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 15,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 3",
+    "workers": 2,
+    "health": 160,
+    "makes": [
+     {
+      "good": "Siege stone",
+      "icon": "SiegeStone"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "StonePress.IronTeeth.jpg"
+   }
+  }
+ },
+ "mine-workshop": {
+  "name": "Mine Workshop",
+  "category": "Water mines",
+  "category_slug": "water-mines",
+  "description": "Makes water mines from explosives and metal blocks.",
+  "flavor": "Workers here are paid extra and asked to sneeze outside.",
+  "icon": "MineWorkshop",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "MineWorkshop.Folktails",
+    "science": 700,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 2",
+    "workers": 2,
+    "health": 240,
+    "makes": [
+     {
+      "good": "Water mine",
+      "icon": "WaterMine"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineWorkshop.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "MineWorkshop.IronTeeth",
+    "science": 700,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 2",
+    "workers": 2,
+    "health": 240,
+    "makes": [
+     {
+      "good": "Water mine",
+      "icon": "WaterMine"
+     }
+    ],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineWorkshop.IronTeeth.jpg"
+   }
+  }
+ },
+ "mine-slipway": {
+  "name": "Mine Slipway",
+  "category": "Water mines",
+  "category_slug": "water-mines",
+  "description": "Releases floating mines that drift with the current and explode against the first building they hit.",
+  "flavor": "Rivers have always carried gifts downstream. Not always nice ones.",
+  "icon": "MineLauncher",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "MineLauncher.Folktails",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "4 × 3 × 3",
+    "workers": 1,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineLauncher.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "MineLauncher.IronTeeth",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "4 × 3 × 3",
+    "workers": 1,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineLauncher.IronTeeth.jpg"
+   }
+  }
+ },
+ "moored-mine": {
+  "name": "Moored Mine",
+  "category": "Water mines",
+  "category_slug": "water-mines",
+  "description": "A mine anchored in the water. Goes off when a boat or a drifting mine comes close.",
+  "flavor": "Out of sight, out of mind, out of boat.",
+  "icon": "MooredMine",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "MooredMine.Folktails",
+    "science": 400,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 1",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MooredMine.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "MooredMine.IronTeeth",
+    "science": 400,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 1",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MooredMine.IronTeeth.jpg"
+   }
+  }
+ },
+ "fireship-dock": {
+  "name": "Fireship Dock",
+  "category": "Water mines",
+  "category_slug": "water-mines",
+  "description": "Launches boats packed with explosives that sail up the river and blow up against the first building or mine they hit.",
+  "flavor": "\"Technically, it's still a boat.\" —Suli",
+  "icon": "BoatDock",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "BoatDock.Folktails",
+    "science": 1200,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 40,
+      "good": "Treated Plank",
+      "icon": null
+     }
+    ],
+    "size": "4 × 4 × 3",
+    "workers": 1,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "BoatDock.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "BoatDock.IronTeeth",
+    "science": 1200,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 40,
+      "good": "Treated Plank",
+      "icon": null
+     }
+    ],
+    "size": "4 × 4 × 3",
+    "workers": 1,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "BoatDock.IronTeeth.jpg"
+   }
+  }
+ },
+ "mine-net": {
+  "name": "Mine Net",
+  "category": "Water mines",
+  "category_slug": "water-mines",
+  "description": "Floats in the river and catches drifting mines. Lay several end to end to make a barrier.",
+  "flavor": "The catch of the day, handled very gently.",
+  "icon": "MineNet",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "MineNet.Folktails",
+    "science": 350,
+    "cost": [
+     {
+      "amount": 6,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 4,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 1",
+    "workers": null,
+    "health": 80,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineNet.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "MineNet.IronTeeth",
+    "science": 350,
+    "cost": [
+     {
+      "amount": 6,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 4,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 1",
+    "workers": null,
+    "health": 80,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineNet.IronTeeth.jpg"
+   }
+  }
+ },
+ "net-winch": {
+  "name": "Net Winch",
+  "category": "Water mines",
+  "category_slug": "water-mines",
+  "description": "Its worker rows out to the linked nets and brings back caught mines for reuse.",
+  "flavor": "Waste not, explode later.",
+  "icon": "MineNetWinch",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "MineNetWinch.Folktails",
+    "science": 500,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 15,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "3 × 4 × 3",
+    "workers": 1,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineNetWinch.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "MineNetWinch.IronTeeth",
+    "science": 500,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 15,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Gear",
+      "icon": null
+     }
+    ],
+    "size": "3 × 4 × 3",
+    "workers": 1,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "MineNetWinch.IronTeeth.jpg"
+   }
+  }
+ },
+ "watchtower": {
+  "name": "Watchtower",
+  "category": "Territory and trade",
+  "category_slug": "territory-and-trade",
+  "description": "Claims the land around it while its brazier burns, so other players can't build there. Reaches further from high ground. Sends an automation signal while enemy troops are on its land.",
+  "flavor": "From up here, it all looks like ours.",
+  "icon": "ClaimFlag",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "ClaimFlag.Folktails",
+    "science": 100,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 5",
+    "workers": null,
+    "health": 160,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "ClaimFlag.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "ClaimFlag.IronTeeth",
+    "science": 100,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 5",
+    "workers": null,
+    "health": 160,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "ClaimFlag.IronTeeth.jpg"
+   }
+  }
+ },
+ "power-exchange": {
+  "name": "Power Exchange",
+  "category": "Territory and trade",
+  "category_slug": "territory-and-trade",
+  "description": "Sells power from one district's network to the district across the border.",
+  "flavor": "Every gear has its price.",
+  "icon": "PowerExchange",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "PowerExchange.Folktails",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 1 × 2",
+    "workers": 10,
+    "health": 120,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "PowerExchange.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "PowerExchange.IronTeeth",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 1 × 2",
+    "workers": 10,
+    "health": 120,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "PowerExchange.IronTeeth.jpg"
+   }
+  }
+ },
+ "trading-post": {
+  "name": "Trading Post",
+  "category": "Territory and trade",
+  "category_slug": "territory-and-trade",
+  "description": "Trades goods with the district across the border at a fixed rate.",
+  "flavor": "A fair price is whatever both sides of the river agree on.",
+  "icon": "TradingPost",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "TradingPost.Folktails",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Paper",
+      "icon": null
+     }
+    ],
+    "size": "3 × 1 × 2",
+    "workers": 10,
+    "health": 120,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "TradingPost.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "TradingPost.IronTeeth",
+    "science": 600,
+    "cost": [
+     {
+      "amount": 30,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 10,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "3 × 1 × 2",
+    "workers": 10,
+    "health": 120,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "TradingPost.IronTeeth.jpg"
+   }
+  }
+ },
+ "toll-tube-station": {
+  "name": "Toll Tube Station",
+  "category": "Territory and trade",
+  "category_slug": "territory-and-trade",
+  "description": "Lets your beavers ride another district's tubeway for a toll.",
+  "flavor": "Claustrophobic beavers pay double.",
+  "icon": "TollTubeStation",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "TollTubeStation.IronTeeth",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 3",
+    "workers": 2,
+    "health": 240,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "TollTubeStation.IronTeeth.jpg"
+   }
+  }
+ },
+ "toll-station": {
+  "name": "Toll Station",
+  "category": "Territory and trade",
+  "category_slug": "territory-and-trade",
+  "description": "Lets your beavers ride another district's ziplines for a toll.",
+  "flavor": "Mind the gap, pay the beaver.",
+  "icon": "TollStation",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "TollStation.Folktails",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 40,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 20,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 2 × 5",
+    "workers": 2,
+    "health": 240,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "TollStation.Folktails.jpg"
+   }
+  }
+ },
+ "troops-counter": {
+  "name": "Troops Counter",
+  "category": "Territory and trade",
+  "category_slug": "territory-and-trade",
+  "description": "Counts your troops that are ready, in training, deployed, fighting or wounded. In district mode, it counts the troops of the district's barracks and ranges, wherever they are.",
+  "flavor": "",
+  "icon": "TroopsCounter",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "TroopsCounter.Folktails",
+    "science": 200,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 1,
+      "good": "Paper",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "TroopsCounter.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "TroopsCounter.IronTeeth",
+    "science": 200,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 1,
+      "good": "Metal Part",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 2",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "TroopsCounter.IronTeeth.jpg"
+   }
+  }
+ }
+}

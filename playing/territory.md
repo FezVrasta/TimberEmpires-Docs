@@ -10,7 +10,7 @@ nav_order: 1
 
 Every district has an owner. A District Center you place is yours. One already on the map belongs to nobody until a player takes it from its panel ("Owned by"). After that it can't change hands, except by being destroyed.
 
-A building belongs to the owner of its district. With [Border protection](../settings.md#border-protection) on, nobody can demolish, pause or change the settings of another player's buildings and beavers. You can only place buildings in your own districts or in ones nobody owns. Toll stations are the exception: you place them on other players' roads (see [Toll stations](economy.md#toll-stations)).
+A building belongs to the owner of its district. With [Border protection](../settings.md#border-protection) on, nobody can demolish, pause or change the settings of another player's buildings and beavers. You can only place buildings in your own districts or in ones nobody owns. Toll stations are the exception: you place them on other players' roads (see [Toll Station](../buildings/toll-station.md)).
 
 Other players' districts don't show up in your lists: the district list at the top, the batch control (its district dropdown and "All districts" view) and the population tab where you move beavers between districts. Districts nobody owns do.
 
@@ -24,7 +24,7 @@ Claimed land is land other players can't build on, allies aside. Placing on it s
 
 **District Centers** claim the land around them, more as the district grows: 8 tiles, plus the square root of twice its population, plus a quarter of its average wellbeing, up to 32.
 
-**Watchtowers** claim 18 tiles around them, more the higher they stand above the land around them (up to 9 extra tiles). They burn a log every 4 hours, and claim only while lit and connected to their district. Cut off, they go out and keep their logs. A Watchtower also sends an automation signal while enemy troops or bandits stand on its land.
+**[Watchtowers](../buildings/watchtower.md)** claim 18 tiles around them, more the higher they stand above the land around them (up to 9 extra tiles). They burn a log every 4 hours, and claim only while lit and connected to their district. Cut off, they go out and keep their logs. A Watchtower also sends an automation signal while enemy troops or bandits stand on its land.
 
 ## Fog of war
 

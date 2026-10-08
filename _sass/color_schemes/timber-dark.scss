@@ -1,0 +1,28 @@
+// The same wood and amber, by lamplight
+$color-scheme: dark;
+$body-background-color: #1a1410;
+$body-heading-color: $cream;
+$body-text-color: #e2d6bf;
+$link-color: $amber;
+$nav-child-link-color: #d8c9ab;
+$sidebar-color: $wood-900;
+$base-button-color: $wood-700;
+$btn-primary-color: $amber;
+$code-background-color: #261e17;
+$code-linenumber-color: #9d8b70;
+$feedback-color: $wood-800;
+$table-background-color: #211a14;
+$search-background-color: #211a14;
+$search-result-preview-color: #b5a48a;
+$border-color: #3d3025;
+
+$te-header-bg: #1a1410;
+$te-strong: #f0d9a8;
+$te-th-bg: $wood-700;
+$te-cell-border: #33281f;
+$te-row-alt: #251d16;
+$te-panel-bg: #211a14;
+$te-panel-head: $wood-700;
+$te-muted: #b5a48a;
+
+@import "./vendor/OneDarkJekyll/syntax";

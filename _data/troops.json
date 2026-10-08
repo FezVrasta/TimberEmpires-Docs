@@ -1,0 +1,399 @@
+{
+ "spearman": {
+  "name": "Spearman",
+  "kind": "Spearman",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "trained_at": {
+     "name": "Barracks",
+     "slug": "barracks"
+    },
+    "science": "Free",
+    "training": "5 h",
+    "damage": "86.9",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.63",
+    "reach": "2.1",
+    "pace": "0.81",
+    "shoots": false,
+    "strong": [
+     {
+      "name": "Warrior",
+      "slug": "warrior"
+     }
+    ],
+    "strong_factor": "2.65",
+    "upkeep": null,
+    "shot": "Troop.Spearman.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "trained_at": {
+     "name": "Barracks",
+     "slug": "barracks"
+    },
+    "science": "Free",
+    "training": "5 h",
+    "damage": "82",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.6",
+    "reach": "2.1",
+    "pace": "0.74",
+    "shoots": false,
+    "strong": [
+     {
+      "name": "Warrior",
+      "slug": "warrior"
+     }
+    ],
+    "strong_factor": "2.65",
+    "upkeep": null,
+    "shot": "Troop.Spearman.IronTeeth.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Spear",
+    "icon": "Spear"
+   }
+  ]
+ },
+ "warrior": {
+  "name": "Warrior",
+  "kind": "Warrior",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "trained_at": {
+     "name": "Barracks",
+     "slug": "barracks"
+    },
+    "science": "600",
+    "training": "4 h",
+    "damage": "174.9",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.6",
+    "reach": "1.5",
+    "pace": "0.94",
+    "shoots": false,
+    "strong": null,
+    "strong_factor": "1",
+    "upkeep": null,
+    "shot": "Troop.Warrior.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "trained_at": {
+     "name": "Barracks",
+     "slug": "barracks"
+    },
+    "science": "600",
+    "training": "4 h",
+    "damage": "165",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.57",
+    "reach": "1.5",
+    "pace": "0.85",
+    "shoots": false,
+    "strong": null,
+    "strong_factor": "1",
+    "upkeep": null,
+    "shot": "Troop.Warrior.IronTeeth.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Sword",
+    "icon": "Sword"
+   },
+   {
+    "name": "Shield",
+    "icon": "Shield"
+   }
+  ]
+ },
+ "archer": {
+  "name": "Archer",
+  "kind": "Archer",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "trained_at": {
+     "name": "Archery Range",
+     "slug": "archery-range"
+    },
+    "science": "Free",
+    "training": "6 h",
+    "damage": "74.2",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "1",
+    "reach": "5 (at least 0.6)",
+    "pace": "0.88",
+    "shoots": true,
+    "strong": [
+     {
+      "name": "Spearman",
+      "slug": "spearman"
+     }
+    ],
+    "strong_factor": "2.25",
+    "upkeep": null,
+    "shot": "Troop.Archer.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "trained_at": {
+     "name": "Archery Range",
+     "slug": "archery-range"
+    },
+    "science": "Free",
+    "training": "6 h",
+    "damage": "70",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.95",
+    "reach": "5 (at least 0.6)",
+    "pace": "0.8",
+    "shoots": true,
+    "strong": [
+     {
+      "name": "Spearman",
+      "slug": "spearman"
+     }
+    ],
+    "strong_factor": "2.25",
+    "upkeep": null,
+    "shot": "Troop.Archer.IronTeeth.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Bow",
+    "icon": "Bow"
+   }
+  ]
+ },
+ "herbalist": {
+  "name": "Herbalist",
+  "kind": "Herbalist",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "trained_at": {
+     "name": "Barracks",
+     "slug": "barracks"
+    },
+    "science": "600",
+    "training": "6 h",
+    "damage": null,
+    "heal": "40",
+    "structure_damage": null,
+    "taken": "0.9",
+    "reach": "2.5",
+    "pace": "0.99",
+    "shoots": false,
+    "strong": null,
+    "strong_factor": "1",
+    "upkeep": null,
+    "shot": "Troop.Herbalist.Folktails.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Herbal Kit",
+    "icon": "HerbalKit"
+   }
+  ]
+ },
+ "berserker": {
+  "name": "Berserker",
+  "kind": "Berserker",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "trained_at": {
+     "name": "Barracks",
+     "slug": "barracks"
+    },
+    "science": "1200",
+    "training": "7 h",
+    "damage": "180.2",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.5",
+    "reach": "1.6",
+    "pace": "0.95",
+    "shoots": false,
+    "strong": null,
+    "strong_factor": "1",
+    "upkeep": null,
+    "shot": "Troop.Berserker.Folktails.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Battle axe",
+    "icon": "BattleAxe"
+   }
+  ]
+ },
+ "slinger": {
+  "name": "Slinger",
+  "kind": "Slinger",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "trained_at": {
+     "name": "Archery Range",
+     "slug": "archery-range"
+    },
+    "science": "600",
+    "training": "4 h",
+    "damage": "77.4",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.89",
+    "reach": "6 (at least 1.1)",
+    "pace": "0.97",
+    "shoots": true,
+    "strong": [
+     {
+      "name": "Spearman",
+      "slug": "spearman"
+     }
+    ],
+    "strong_factor": "1.95",
+    "upkeep": null,
+    "shot": "Troop.Slinger.Folktails.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Sling",
+    "icon": "Sling"
+   }
+  ]
+ },
+ "sapper": {
+  "name": "Sapper",
+  "kind": "Sapper",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "trained_at": {
+     "name": "Barracks",
+     "slug": "barracks"
+    },
+    "science": "1200",
+    "training": "8 h",
+    "damage": "61",
+    "heal": null,
+    "structure_damage": "545",
+    "taken": "0.71",
+    "reach": "4 (at least 1.2)",
+    "pace": "0.8",
+    "shoots": false,
+    "strong": null,
+    "strong_factor": "1",
+    "upkeep": null,
+    "shot": "Troop.Sapper.IronTeeth.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Blasting Charge",
+    "icon": "BlastingCharge"
+   }
+  ]
+ },
+ "arquebusier": {
+  "name": "Arquebusier",
+  "kind": "Arquebusier",
+  "factions": {
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "trained_at": {
+     "name": "Archery Range",
+     "slug": "archery-range"
+    },
+    "science": "1200",
+    "training": "8 h",
+    "damage": "86",
+    "heal": null,
+    "structure_damage": null,
+    "taken": "0.7",
+    "reach": "7 (at least 2)",
+    "pace": "0.78",
+    "shoots": true,
+    "strong": [
+     {
+      "name": "Berserker",
+      "slug": "berserker"
+     }
+    ],
+    "strong_factor": "2",
+    "upkeep": null,
+    "shot": "Troop.Arquebusier.IronTeeth.jpg"
+   }
+  },
+  "gear": [
+   {
+    "name": "Arquebus",
+    "icon": "Arquebus"
+   }
+  ]
+ },
+ "monk": {
+  "name": "Monk",
+  "kind": "Monk",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "trained_at": {
+     "name": "Monastery",
+     "slug": "monastery"
+    },
+    "science": "40 per recruit",
+    "training": "12 h",
+    "damage": null,
+    "heal": null,
+    "structure_damage": null,
+    "taken": "1",
+    "reach": "5",
+    "pace": "0.8",
+    "shoots": false,
+    "strong": null,
+    "strong_factor": "1",
+    "upkeep": "Book",
+    "shot": "Troop.Monk.Folktails.jpg"
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "trained_at": {
+     "name": "Monastery",
+     "slug": "monastery"
+    },
+    "science": "40 per recruit",
+    "training": "12 h",
+    "damage": null,
+    "heal": null,
+    "structure_damage": null,
+    "taken": "1",
+    "reach": "5",
+    "pace": "0.8",
+    "shoots": false,
+    "strong": null,
+    "strong_factor": "1",
+    "upkeep": "Coffee",
+    "shot": "Troop.Monk.IronTeeth.jpg"
+   }
+  },
+  "gear": []
+ }
+}

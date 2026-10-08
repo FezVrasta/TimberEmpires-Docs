@@ -15,3 +15,13 @@ $mono-font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
 $root-font-size: 16px;
 $nav-width: 272px;
 $content-width: 960px;
+
+// The site's own colors, light by default; timber-dark sets them again
+$te-header-bg: $parchment !default;
+$te-strong: $wood-700 !default;
+$te-th-bg: $wood-800 !default;
+$te-cell-border: #ece3d0 !default;
+$te-row-alt: #fbf7ee !default;
+$te-panel-bg: #fffdf8 !default;
+$te-panel-head: $wood-800 !default;
+$te-muted: #6d5d49 !default;

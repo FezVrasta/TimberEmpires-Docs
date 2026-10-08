@@ -1,12 +1,14 @@
 ---
-title: Monks
-parent: Military
-nav_order: 5
+title: Monk
+parent: Troops
+nav_order: 9
 ---
 
-# Monks
+# Monk
 
-Monks are trained at a **Monastery**, by every faction. They don't fight or heal: they convert. Each recruit costs 40 science and trains for 12 hours.
+{% include infobox-troop.html id="monk" %}
+
+Monks don't fight or heal: they convert. They're trained at the [Monastery](../buildings/monastery.md) by every faction.
 
 ## Converting
 
@@ -20,8 +22,10 @@ Monks need books (Iron Teeth: coffee) to convert. They start with none, so suppl
 
 **A converted machine** changes owner and throws out its crew.
 
-Both sides get a notification.
+Both sides get a notification. Monks never convert an ally's troops.
 
 ## Looks
 
 Monks wear a robe, brown for Folktails and grey for Iron Teeth, trimmed in their owner's color. Select one to hear it.
+
+{% include navbox.html %}

@@ -30,7 +30,7 @@ Either ally can break it, but it doesn't end at once: it ends 12 in-game hours l
 
 - **No fighting.** Allies' troops, siege machines, hoardings, sappers and rams leave each other alone, and monks don't convert an ally's troops.
 - **Vision.** Allies see what each other's land, buildings, troops and paths see through the fog.
-- **Gates and ladders.** A gatehouse doesn't shut for an ally, and allies' troops climb each other's siege ladders.
+- **Gates and ladders.** A gatehouse doesn't shut for an ally, and allies' troops climb each other's field ladders.
 - **Healing and supply.** Herbalists and field infirmaries heal allied troops, and troops eat, drink and take spare gear from an ally's supply carts. Ammunition and building materials stay each player's own.
 - **Land.** Allies can build on each other's claimed land.
 - **Victory.** Allies win together (see [Victory](victory.md)).

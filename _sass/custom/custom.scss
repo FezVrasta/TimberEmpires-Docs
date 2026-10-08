@@ -13,7 +13,7 @@ h1, h2, h3, .site-title, .card-title {
 }
 .main-content h3 { font-size: 1.3rem !important; font-weight: 600; }
 .main-content { line-height: 1.65; }
-.main-content strong { color: $wood-700; }
+.main-content strong { color: $te-strong; }
 
 // The sidebar is a wooden panel
 .side-bar {
@@ -58,16 +58,16 @@ h1, h2, h3, .site-title, .card-title {
 .site-footer, .site-footer a { color: #9d8b70 !important; }
 
 // Header bar and search
-.main-header { background: $parchment; border-bottom: 1px solid $border-color; }
+.main-header { background: $te-header-bg; border-bottom: 1px solid $border-color; }
 .search-input { background: transparent; }
 .aux-nav .aux-nav-list-link { color: $amber-dark; font-weight: 600; }
 
 // Tables: a quiet ledger
 .table-wrapper { box-shadow: none; border: 1px solid $border-color; border-radius: 8px; }
 table { font-size: 0.9rem !important; }
-th { background: $wood-800 !important; color: $cream !important; font-weight: 600; border-bottom: none !important; white-space: nowrap; }
-th, td { padding: 0.45rem 0.75rem !important; border-color: #ece3d0 !important; }
-tbody tr:nth-child(even) td { background: #fbf7ee; }
+th { background: $te-th-bg !important; color: $cream !important; font-weight: 600; border-bottom: none !important; white-space: nowrap; }
+th, td { padding: 0.45rem 0.75rem !important; border-color: $te-cell-border !important; }
+tbody tr:nth-child(even) td { background: $te-row-alt; }
 td img.icon { width: 28px; height: 28px; vertical-align: middle; margin-right: 0.45rem; background: $wood-800; border-radius: 6px; padding: 2px; }
 
 // Code
@@ -130,3 +130,85 @@ td:first-child { white-space: nowrap; font-weight: 500; }
 // No highlight behind the logo on hover
 .site-title:hover, .site-title:focus { background-image: none !important; background-color: transparent !important; }
 .site-title:hover .site-logo { opacity: 0.88; }
+
+// Light and dark: the button in the header
+.theme-toggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 2.25rem; height: 2.25rem; margin: auto 0.5rem auto 0;
+  border: 1px solid $border-color; border-radius: 8px;
+  background: transparent; color: $link-color; cursor: pointer;
+}
+.theme-toggle:hover { border-color: $amber; color: $amber; }
+.theme-toggle svg { width: 1.1rem; height: 1.1rem; }
+.theme-toggle .moon { display: none; }
+@if $color-scheme == dark {
+  .theme-toggle .sun { display: none; }
+  .theme-toggle .moon { display: block; }
+  .aux-nav .aux-nav-list-link { color: $amber; }
+}
+
+// Wiki articles: the infobox on the right, the flavor quote, the navbox at the foot
+.infobox {
+  float: right;
+  width: 320px;
+  margin: 0 0 1.2rem 1.5rem;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  overflow: hidden;
+  background: $te-panel-bg;
+  font-size: 0.88rem;
+  @media (max-width: 49.99rem) { float: none; width: auto; margin: 0 0 1.5rem; }
+}
+.infobox-title {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 0.8rem;
+  background: $te-panel-head; color: $cream;
+  font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 1.35rem; font-weight: 700;
+}
+.infobox-title img { width: 30px; height: 30px; }
+.infobox-tabs { display: grid; grid-template-columns: repeat(var(--tabs, 2), 1fr); }
+.infobox-tabs input { position: absolute; opacity: 0; pointer-events: none; }
+.infobox-tabs label {
+  grid-row: 1; padding: 0.35rem 0.5rem; text-align: center; cursor: pointer;
+  font-weight: 600; color: $te-muted; border-bottom: 2px solid $border-color;
+}
+.infobox-tabs input:checked + label { color: $link-color; border-bottom-color: $amber; }
+.infobox-tabs input:focus-visible + label { outline: 2px solid $amber; outline-offset: -2px; }
+.infobox-panel { grid-row: 2; grid-column: 1 / -1; display: none; }
+.infobox-tabs input:checked + label + .infobox-panel { display: block; }
+.infobox-shot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.main-content .infobox table { margin: 0; width: 100%; border: none; font-size: 0.86rem !important; }
+.main-content .infobox th {
+  background: transparent !important; color: $te-muted !important; text-align: left;
+  width: 38%; vertical-align: top; white-space: normal; font-weight: 600;
+}
+.main-content .infobox td { white-space: normal !important; font-weight: 400 !important; }
+.main-content .infobox tr td, .main-content .infobox tr th { background: transparent !important; border-bottom: 1px solid $te-cell-border !important; }
+.infobox .table-wrapper { margin: 0; border: none; border-radius: 0; }
+
+.flavor {
+  margin: 0 0 1.4rem; padding: 0.2rem 0 0.2rem 1rem;
+  border-left: 3px solid $amber; color: $te-muted; font-style: italic;
+}
+.main-content h2, .main-content h3 { display: flow-root; }
+.navbox { clear: both; margin: 3rem 0 1rem; border: 1px solid $border-color; border-radius: 10px; overflow: hidden; font-size: 0.88rem; }
+.navbox-title { padding: 0.45rem 0.8rem; background: $te-panel-head; color: $cream; text-align: center; font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 1.15rem; font-weight: 700; }
+.navbox-row { display: flex; border-top: 1px solid $te-cell-border; }
+.navbox-group { flex: none; width: 10rem; padding: 0.45rem 0.7rem; background: $te-row-alt; font-weight: 600; }
+.navbox-list { padding: 0.45rem 0.7rem; line-height: 1.7; }
+.navbox-list a:not(:last-child)::after { content: " · "; color: $te-muted; }
+.navbox-list a.current { font-weight: 700; color: $body-text-color; }
+@media (max-width: 49.99rem) { .navbox-row { display: block; } .navbox-group { display: block; width: auto; } }
+
+// Category pages: a grid of pictures
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.9rem; margin: 1.2rem 0 2rem; }
+.gallery-item {
+  display: flex; flex-direction: column; border: 1px solid $border-color; border-radius: 10px; overflow: hidden;
+  background: $te-panel-bg; text-decoration: none !important; color: $body-text-color !important;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+a.gallery-item:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(31, 24, 18, 0.25); }
+.gallery-item img, .gallery-blank { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: $wood-800; }
+.gallery-name { padding: 0.5rem 0.7rem 0.1rem; font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 1.15rem; font-weight: 700; color: $link-color; }
+.gallery-text { padding: 0 0.7rem 0.7rem; font-size: 0.82rem; line-height: 1.4; color: $te-muted; }
+.hatnote { margin: -0.4rem 0 1rem; padding-left: 1.2rem; font-style: italic; color: $te-muted; }

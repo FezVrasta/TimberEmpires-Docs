@@ -27,8 +27,8 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 | Building | Faction | Science | Cost | Makes |
 |---|---|---|---|---|
 | <img class="icon" src="../assets/icons/FieldInfirmary.png" alt="">Field Infirmary | Iron Teeth | 800 | 30 Plank, 10 Gear, 2 Extract |  |
-| <img class="icon" src="../assets/icons/SiegeLadder.png" alt="">Siege Ladder | Both | 300 | 2 Log, 4 Plank |  |
-| <img class="icon" src="../assets/icons/SiegeRamp.png" alt="">Siege Ramp | Both | 450 | 10 Log, 10 Plank |  |
+| <img class="icon" src="../assets/icons/SiegeLadder.png" alt="">Field Ladder | Both | 300 | 2 Log, 4 Plank |  |
+| <img class="icon" src="../assets/icons/SiegeRamp.png" alt="">Field Ramp | Both | 450 | 10 Log, 10 Plank |  |
 | <img class="icon" src="../assets/icons/BatteringRam.png" alt="">Battering Ram | Folktails | 600 | 40 Log, 20 Plank, 10 Metal Block |  |
 | <img class="icon" src="../assets/icons/SiegeTower.png" alt="">Siege Tower | Iron Teeth | 600 | 40 Log, 40 Plank, 10 Metal Part |  |
 | <img class="icon" src="../assets/icons/Catapult.png" alt="">Catapult | Folktails | 800 | 30 Log, 15 Gear, 10 Treated Plank |  |

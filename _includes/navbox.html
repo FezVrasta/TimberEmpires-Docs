@@ -1,0 +1,13 @@
+<nav class="navbox" aria-label="Every building and troop">
+  <div class="navbox-title">Timber Empires</div>
+  {%- assign cats = "walls-and-towers:Walls and towers,siege:Siege machines,military:Military buildings,water-mines:Water mines,territory-and-trade:Territory and trade" | split: "," -%}
+  {%- for pair in cats -%}
+    {%- assign p = pair | split: ":" -%}
+    <div class="navbox-row"><a class="navbox-group" href="{{ '/buildings/' | append: p[0] | append: '.html' | relative_url }}">{{ p[1] }}</a><div class="navbox-list">
+      {%- for b in site.data.buildings -%}{%- if b[1].category_slug == p[0] -%}<a href="{{ '/buildings/' | append: b[0] | append: '.html' | relative_url }}"{% if page.url contains b[0] %} class="current"{% endif %}>{{ b[1].name }}</a>{%- endif -%}{%- endfor -%}
+    </div></div>
+  {%- endfor -%}
+  <div class="navbox-row"><a class="navbox-group" href="{{ '/troops/' | relative_url }}">Troops</a><div class="navbox-list">
+    {%- for t in site.data.troops -%}<a href="{{ '/troops/' | append: t[0] | append: '.html' | relative_url }}">{{ t[1].name }}</a>{%- endfor -%}
+  </div></div>
+</nav>
