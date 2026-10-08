@@ -28,6 +28,7 @@ Timber Empires has two kinds of settings.
 | [My faction](#my-faction) | Host's faction | Yours | |
 | [Show district owner colors](#show-district-owner-colors) | On | Yours | |
 | [Battle music](#battle-music) | On | Yours | |
+| [Mute war horns](#mute-war-horns) | Off | Yours | |
 
 BeaverBuddies adds one game setting of its own under Multiplayer: whether every player can use the dev tools.
 
@@ -94,6 +95,10 @@ Tints each player's District Centers, roofs, paths and banners in their color.
 ## Battle music
 
 Plays battle music while your troops or beavers fight, and goes back to the game's music 20 seconds after the last blow.
+
+## Mute war horns
+
+Silences the horn that sounds when something of yours comes under attack, and the one at the end of a game you lost.
 
 ## Licenses and credits
 
