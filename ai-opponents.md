@@ -17,7 +17,7 @@ A game alone with AI opponents plays as a PvP game nobody else joins, so it need
 
 ## Founding
 
-In a game with AI opponents everyone founds their own settlement, the way they do in a matched game: you place your first District Center anywhere, and it's built at once with 7 adults, 3 children, 100 berries and 100 water.
+In a game with AI opponents everyone founds their own settlement, the way they do in a matched game: you place your first District Center anywhere, and it's built at once, with the beavers, food and water the game's difficulty starts you with. Every player gets the same, AIs too.
 
 The AIs found once every person in the game has, one after the other, each as far as it can get from everyone else, on open ground by clean water with trees and berry bushes around. The [bandit camps](playing/bandits.md) go in after all of them.
 
