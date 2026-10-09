@@ -5,7 +5,7 @@ nav_order: 2.6
 
 # AI opponents
 
-AI opponents are players run by the game. You can play against them alone, or fill a [PvP](game-modes.md#pvp) game you host with them alongside the people who join.
+AI opponents are bots: players run by the game, the way computer players work in any strategy game. There's no language model or machine learning in them, just rules written for the game. You can play against them alone, or fill a [PvP](game-modes.md#pvp) game you host with them alongside the people who join.
 
 They play by your rules. Everything they do goes through the same actions a player's clicks send, they only see what their own [fog of war](playing/territory.md#fog-of-war) shows them, and they build with what their beavers gather.
 
