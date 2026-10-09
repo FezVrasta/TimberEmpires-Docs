@@ -13,7 +13,7 @@ Lifts walls over uneven ground. Palisades, walls, gatehouses, towers and hoardin
 
 Nothing else can be built on one but a [Field Ladder](field-ladder.md). Beavers walk the wall on top of it, not the foundation itself.
 
-It's part of the wall: when it falls, whatever stands on it comes down too. While something on it still stands, it can't be hit by troops, rams or shots, so attackers have to bring down the wall first.
+It's part of the wall: it can be attacked like one, and when it falls, the walls, towers, gatehouses and hoardings standing on it come down too.
 
 A [Siege Tower](siege-tower.md) can't put its crew onto a wall a foundation lifts above its top.
 
