@@ -7,25 +7,23 @@ nav_order: 2.6
 
 AI opponents are players run by the game. You can play against them alone, or fill a [PvP](game-modes.md#pvp) game you host with them alongside the people who join.
 
-They play by your rules. Everything they do goes through the same actions a player's clicks send, they only see what their own [fog of war](playing/territory.md#fog-of-war) shows them, and they build with what their beavers gather. A Hard AI doesn't cheat: it starts with what you start with and gets nothing extra, it just plays better.
+They play by your rules. Everything they do goes through the same actions a player's clicks send, they only see what their own [fog of war](playing/territory.md#fog-of-war) shows them, and they build with what their beavers gather.
 
 ## Adding them
 
 On the New Game screens' last page, click Customize: **AI opponents** is the last setting under Timber Empires. Set how many you want, up to six, and a difficulty for each. It shows when you play alone and in PvP games.
 
-A game alone with AI opponents plays as a PvP game nobody else joins, so it needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, and the [Victory](playing/victory.md) rules decide who wins. The AIs are players for victory like anyone else: an AI that's beaten is out.
+A game alone with AI opponents plays as a PvP game nobody else joins, so it needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, and the [Victory](playing/victory.md) rules decide who wins.
 
 ## Founding
 
-In a game with AI opponents everyone founds their own settlement, the way they do in a matched game: you place your first District Center anywhere, and it's built at once, with the beavers, food and water the game's difficulty starts you with. Every player gets the same, AIs too.
+In a game with AI opponents everyone founds their own settlement, the way they do in a matched game: you place your first District Center anywhere, and it's built at once, with the beavers, food and water the game's difficulty starts you with.
 
 The AIs found once every person in the game has, one after the other, each as far as it can get from everyone else, on open ground by clean water with trees and berry bushes around. The [bandit camps](playing/bandits.md) go in after all of them.
 
 **Factions.** AIs play Folktails or Iron Teeth. Without [Mixed factions](settings.md#mixed-factions) they play the host's faction, so a game whose faction comes from another mod gets no AIs. With it on, they take turns so both factions are in the game.
 
 ## Difficulty
-
-Each AI has its own level, set next to it in the game settings. It's separate from the game's difficulty, which sets what everyone starts with.
 
 | | Easy | Normal | Hard |
 |---|---|---|---|
@@ -53,4 +51,4 @@ Each AI also has leanings of its own for the game: how soon it arms, how big an 
 
 ## Saves and hosting
 
-The host's game runs the AIs, and everyone else sees them play like any other player. Who's an AI is in the save, so whoever hosts a saved game runs them from then on.
+The host's game runs the AIs. Who's an AI is in the save, so whoever hosts a saved game runs them from then on.
