@@ -35,5 +35,5 @@ With it off, Timber Empires' buildings and troops are still there, but there's n
 
 1. Put up a [Watchtower](playing/territory.md#land-claims) or two at the edge of what you want: claimed land is land nobody else can build on.
 2. Build a [Weaponsmith](buildings/weaponsmith.md) and a [Barracks](buildings/barracks.md). Spearmen and archers need no science.
-3. Scout the [bandit camps](playing/bandits.md) near you. From the third cycle they start raiding.
+3. Scout the [bandit camps](playing/bandits.md) near you. They start raiding in cycle 7, or the cycle set in [First raid](settings.md#first-raid).
 4. Pick a [district specialization](playing/economy.md#district-specializations) once you know what each district is for.

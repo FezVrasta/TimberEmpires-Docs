@@ -19,7 +19,7 @@ A game alone with AI opponents plays as a PvP game nobody else joins, so it need
 
 In a game with AI opponents everyone founds their own settlement, the way they do in a matched game: you place your first District Center anywhere, and it's built at once, with the beavers, food and water the game's difficulty starts you with.
 
-The AIs found once every person in the game has, one after the other, each as far as it can get from everyone else, on open ground by clean water with trees and berry bushes around. The [bandit camps](playing/bandits.md) go in after all of them.
+The AIs found when the host first unpauses the game, so place your District Center before that. They go one after the other, each as far as it can get from everyone else, on open ground by clean water with trees and berry bushes around. The [bandit camps](playing/bandits.md) go in after all of them.
 
 **Factions.** AIs play Folktails or Iron Teeth. Without [Mixed factions](settings.md#mixed-factions) they play the host's faction, so a game whose faction comes from another mod gets no AIs. With it on, they take turns so both factions are in the game.
 

@@ -23,6 +23,7 @@ Timber Empires has two kinds of settings.
 | [Victory](#victory) | Destroy the District Centers | Game | PvP |
 | [Bandit camps](#bandit-camps) | On | Game | PvE, PvP, alone |
 | [Bandit raids](#bandit-raids) | On | Game | PvE, PvP, alone |
+| [First raid](#first-raid) | Cycle 7 | Game | PvE, PvP, alone |
 | [Fog of war](#fog-of-war) | On | Game | PvE, PvP, alone |
 | [Private top bar](#private-top-bar) | On | Game | PvE, PvP |
 | [AI opponents](#ai-opponents) | None | Game | PvP, alone |
@@ -71,7 +72,11 @@ Places bandit camps when a new game starts on a map that has none (never in Co-o
 
 ## Bandit raids
 
-From the third cycle, camps raid the players near them.
+Camps raid the players near them, from the cycle set in First raid. See [Raids](playing/bandits.md#raids).
+
+## First raid
+
+The cycle bandit raids can start in: 3, 5, 7, 10 or 15.
 
 ## My faction
 
