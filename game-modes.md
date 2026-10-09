@@ -34,8 +34,7 @@ Everyone for themselves. Each player owns their districts and everything on the 
 - **Hosting a new game.** Multiplayer, Host new game, then the New Game screens as usual, picking the Multiplayer mode on the last page. In a map with one start, players take districts from the District Center's "Owned by" in its panel, or build their own. With [Mixed factions](settings.md#mixed-factions) on, each player plays their own faction, and a player whose faction isn't on the map yet places a free first District Center.
 - **Find a match.** Pairs you with another player over Steam who picked the same Multiplayer mode. Each of you picks a faction, the host's map is used, and both players place their own first District Center wherever they want: it's built at once, with the beavers, food and water the game's difficulty starts you with. Factions can always be mixed, and missing mods are downloaded from the Workshop before the match starts.
 - **Open matches.** The list shows each match's game mode, and joining one plays it in its host's mode.
-- **Players panel.** Under the date, each player's color and name, and whether they've placed their District Center. The host gets Invite Friends there too.
-- **Starting.** The game starts when the host first unpauses it: the AI opponents found and the bandit camps go down then, away from where everyone settled. If someone hasn't placed their District Center yet, the host is asked first.
+- **Starting.** The game starts when the host first unpauses it: that's when the AI opponents found and the bandit camps go down.
 
 ## Playing alone
 

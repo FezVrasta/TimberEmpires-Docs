@@ -14,15 +14,13 @@ A building belongs to the owner of its district. With [Border protection](../set
 
 Other players' districts don't show up in your lists: the district list at the top, the batch control (its district dropdown and "All districts" view) and the population tab where you move beavers between districts. Districts nobody owns do.
 
-In PvP the well-being panel counts only your beavers and lists only the needs they have, and the population graphs show your own line.
-
 **Sharing.** The Ownership tools in the toolbar make a building you placed shared, so other players can use and change it, or take a shared one back. You can never take someone else's.
 
-**Working hours and cutting areas.** Each player sets their own working hours, and each district follows its owner's. The trees you mark for cutting are yours: other players' lumberjacks leave them alone, and only you can unmark them. Other players can mark the same trees, and then each of your lumberjacks cuts them. They stay marked until the last of you unmarks them. Marking over someone else's area doesn't show you where they cut.
+**Working hours and cutting areas.** Each player sets their own working hours, and each district follows its owner's. The trees you mark for cutting are yours: other players' lumberjacks leave them alone, and only you can unmark them. Other players can mark the same trees, and then their lumberjacks cut them too.
 
 ## Land claims
 
-Claimed land is land other players can't build on, allies aside. Placing on it shows "This land is claimed by" and the owner's name. Where two sides' claims overlap, each tile goes to the claim whose center is nearer, so they split the contested land down the middle. Where your own claims overlap, the older one wins.
+Claimed land is land other players can't build on, allies aside. Placing on it shows "This land is claimed by" and the owner's name. Where two sides' claims overlap, the land between them is split down the middle.
 
 **District Centers** claim the land around them, more as the district grows: 8 tiles, plus the square root of twice its population, plus a quarter of its average wellbeing, up to 32.
 
@@ -32,7 +30,7 @@ Claimed land is land other players can't build on, allies aside. Placing on it s
 
 In a game with other players you only see what's near your land claims, your buildings, beavers and troops, and your paths, and the same around your [allies](alliances.md)'. Building sites and planned paths don't count until they're built. Troops see as far as they fight, more from higher ground. Wall towers see 8 tiles.
 
-Out of sight, other players' buildings, beavers, roads, fields, crops, cutting areas, what they marked for planting and cursors are hidden, and so are arrows, battle effects and demolition dust. Wild trees and bushes stay, dimmed like the rest of the land under the fog, so bare ground doesn't give away whose land it is. Fogged land lies under drifting mist, thicker in low ground. A building you've seen before stays where you saw it, as a frozen copy you can't click, until you see that spot again.
+Out of sight, other players' buildings, beavers, roads, fields, crops, cutting areas and cursors are hidden. Wild trees stay. A building you've seen before stays where you saw it, as a frozen copy you can't click, until you see that spot again.
 
 You can plan buildings in the fog. If another player plans the same spot without knowing, whoever sees it first gets it, and yours stays as a phantom until you can see the spot.
 

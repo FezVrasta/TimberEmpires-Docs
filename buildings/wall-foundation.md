@@ -9,12 +9,8 @@ nav_order: 2.5
 
 {% include infobox-building.html id="wall-foundation" %}
 
-Lifts walls over uneven ground. Palisades, walls, gatehouses, towers and hoardings stand on a foundation as on the ground, and foundations stack, so a run of wall can be brought level with a rise one or more levels up.
+Lifts walls, gatehouses, towers and hoardings over uneven ground, and stacks for a bigger rise. Nothing else goes on it. When it falls, everything standing on it comes down too.
 
-Nothing else can be built on one but a [Field Ladder](field-ladder.md). Beavers walk the wall on top of it, not the foundation itself.
-
-It's part of the wall: it can be attacked like one, and when it falls, the walls, towers, gatehouses and hoardings standing on it come down too.
-
-A [Siege Tower](siege-tower.md) can't put its crew onto a wall a foundation lifts above its top.
+A [Siege Tower](siege-tower.md) can't reach a wall lifted above its top.
 
 {% include navbox.html %}

@@ -11,6 +11,6 @@ redirect_from:
 
 {% include infobox-building.html id="bladesmith" %}
 
-The Folktails workshop for swords and battle axes, the weapons of the [Warrior](../troops/warrior.md) and the [Berserker](../troops/berserker.md). It needs power. It used to be called the Armory.
+The Folktails workshop for swords and battle axes. It needs power. It used to be called the Armory.
 
 {% include navbox.html %}

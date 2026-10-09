@@ -12,7 +12,7 @@ Siege machines, ladders and ramps are built by troops, not builders, except the 
 |---|---|---|
 | [Trebuchet](../buildings/trebuchet.md) | Both | Brings down walls and buildings from far away. Doesn't move. |
 | [Catapult](../buildings/catapult.md) | Both | Brings down walls and buildings. Rolls. |
-| [Ballista](../buildings/ballista.md) | Both | Shoots troops. Weak against walls. Rolls. Uses ballista bolts. |
+| [Ballista](../buildings/ballista.md) | Both | Shoots troops. Weak against walls. Rolls. |
 | [Battering Ram](../buildings/battering-ram.md) | Folktails | Breaks gates, walls and buildings, and weakens dams. |
 | [Siege Tower](../buildings/siege-tower.md) | Iron Teeth | Rolls up to a wall and puts its crew on top. |
 | [Field Infirmary](../buildings/field-infirmary.md) | Iron Teeth | Heals troops. |
@@ -37,12 +37,12 @@ Machines with wheels are pushed by their crew. They can't climb a level except u
 
 Every machine but the ram uses ammunition: siege stones for trebuchets and catapults (made at the [Stone Press](../buildings/stone-press.md)), ballista bolts for ballistas (made at the [Weaponsmith](../buildings/weaponsmith.md)), and logs or canola oil for hoardings.
 
-The crew fetch it themselves. One of them walks to the nearest store, warehouse, workshop or supply cart of yours with the good, within 12 tiles, carries back as much as a beaver can lift, and climbs back in. Tower crews go out and come back through the tower's door.
+The crew fetch it themselves. One of them walks to the nearest store, warehouse, workshop or supply cart of yours with the good, within 12 tiles, carries back as much as a beaver can lift, and climbs back in.
 
 - **Minimum crew.** They only go once it's empty, and the machine waits while they're away.
 - **Extra crew.** They go as soon as there's room for a full load, and the machine keeps firing. More crew keep a machine firing longer.
 
-Haulers bring ammunition too, while the machine is within 5 tiles of your roads, like any building in a district. Engines also take stones and bolts from a supply cart within 3.5 tiles. A [Small Armory](../buildings/small-armory.md) or [Medium Armory](../buildings/medium-armory.md) next to a tower or a line of engines keeps their ammunition close.
+Haulers bring ammunition too, while the machine is within 5 tiles of your roads, like any building in a district. Engines also take ammunition from a supply cart within 3.5 tiles.
 
 Out of ammunition, a machine shows a warning and stops.
 

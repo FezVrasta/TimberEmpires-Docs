@@ -27,7 +27,7 @@ Pending deals raise a "Trade deal to approve" alert, and the Trades tab of the s
 
 ## Military production
 
-- **[Weaponsmith](../buildings/weaponsmith.md).** Spears, bows, shields and ballista bolts, plus swords for Iron Teeth and slings for Folktails. Fuelled by logs.
+- **[Weaponsmith](../buildings/weaponsmith.md).** Spears, bows, shields and ballista bolts, plus swords (Iron Teeth) or slings (Folktails). Fuelled by logs.
 - **[Bladesmith](../buildings/bladesmith.md)** (Folktails). Swords and battle axes. Needs power.
 - **[Gunsmith](../buildings/gunsmith.md)** (Iron Teeth). Arquebuses and blasting charges. Needs power.
 - **[Stone Press](../buildings/stone-press.md).** Siege stones from scrap metal and logs, for catapults and trebuchets. Needs power.

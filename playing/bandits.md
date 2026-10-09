@@ -10,7 +10,7 @@ There are bandits in [PvE](../game-modes.md#pve), where clearing every camp wins
 
 ## Camps
 
-With [Bandit camps](../settings.md#bandit-camps) on, a new game on a map without camps gets some: 2 to 6 depending on how much land there is, at least 2 per player in a multiplayer game. They're placed away from the players' starts, out of the water. They go down when the host first unpauses the game, after the AI opponents have founded, away from everyone.
+With [Bandit camps](../settings.md#bandit-camps) on, a new game on a map without camps gets some: 2 to 6 depending on how much land there is, at least 2 per player in a multiplayer game. They're placed away from the players' starts, out of the water. They go down when the host first unpauses the game.
 
 The further a camp is from the starts, the stronger it is:
 
@@ -39,4 +39,4 @@ How it ends:
 - **Gave up.** They never made it to you.
 - **Left empty-handed.** They made it, but found nothing to take.
 
-You get a recap of every raid. In multiplayer it doesn't pause the game.
+You get a recap of every raid.

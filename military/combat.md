@@ -24,9 +24,7 @@ Shooters stopped by an enemy on the march hit half as hard.
 
 With no enemy in reach, troops go for enemy buildings that fight back: siege engines, towers armed with one, hoardings, manned towers and machines in the field. Any other building they only attack when you send them at it. Bandits and AI opponents break through whatever is in their way. Sappers go for buildings first.
 
-A troop needs a clear way to a building, as to an enemy troop: a straight one for a blow, past the walls on its arc for a shot. A spearman can't strike a building over a wall.
-
-Construction sites can be attacked too (see [Damage and repairs](walls.md#damage-and-repairs)). An unfinished engine or tower doesn't count as one that fights back, and monks can't convert an unfinished machine.
+Troops can't hit a building through a wall. Construction sites can be attacked too.
 
 Siege shots, logs and boiling oil ignore shields, ranks and wall cover.
 

@@ -9,10 +9,8 @@ nav_order: 8.2
 
 {% include infobox-building.html id="resin-puddle" %}
 
-Pine resin poured on the ground or on a road, to set alight under attackers. Beavers walk over it like the ground, and nothing can hit it.
+Pine resin poured on the ground or a road, to set alight under attackers. Nothing can hit it.
 
-**Lighting it.** Select archers and click the puddle with the attack cursor. Any puddle works, your own too. They close in until it's in reach and in sight, and shoot. Only archers on a wall within 2 pieces of a lit [Blazer](blazer.md) of your side shoot fire arrows: their first arrow lights it. Anyone else's arrows do nothing to it. The rest of the selection stays put.
-
-**Burning.** It catches a moment after it's lit and burns for 6 hours, taking 60 health an hour from every beaver and bot standing in it, friend or enemy. Then it's gone.
+To light it, send archers at it with the attack cursor: only archers on a wall within 2 pieces of a lit [Blazer](blazer.md) shoot fire arrows. It burns for 6 hours, hurting everyone standing in it, your own beavers too.
 
 {% include navbox.html %}
