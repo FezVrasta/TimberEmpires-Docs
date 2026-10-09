@@ -25,6 +25,7 @@ Timber Empires has two kinds of settings.
 | [Bandit raids](#bandit-raids) | On | Game | PvE, PvP, alone |
 | [Fog of war](#fog-of-war) | On | Game | PvE, PvP, alone |
 | [Private top bar](#private-top-bar) | On | Game | PvE, PvP |
+| [AI opponents](#ai-opponents) | None | Game | PvP, alone |
 | [My faction](#my-faction) | Host's faction | Yours | |
 | [Show district owner colors](#show-district-owner-colors) | On | Yours | |
 | [Battle music](#battle-music) | On | Yours | |
@@ -87,6 +88,10 @@ You only see around your land, buildings, beavers and troops. It only changes wh
 ## Private top bar
 
 With no district selected, the top bar counts only your districts' goods and beavers, not the whole map's.
+
+## AI opponents
+
+How many players the game runs, up to six, and the difficulty of each. See [AI opponents](ai-opponents.md).
 
 ## Show district owner colors
 

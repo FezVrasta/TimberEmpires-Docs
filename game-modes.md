@@ -39,4 +39,6 @@ Everyone for themselves. Each player owns their districts and everything on the 
 
 **As an empire.** With [Play as an empire](settings.md#play-as-an-empire) on (the default), your districts are yours: land claims, fog of war and owner colors all work, and the fog hides the bandit camps until you scout them. The bandits are your opponents, but there's no victory: it's a sandbox for the military side of the mod. It needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins.
 
+**Against AIs.** Add [AI opponents](ai-opponents.md) in the game settings and it's a PvP game against them, won by the [Victory](playing/victory.md) rules.
+
 **Classic.** With Play as an empire off, Timber Empires' buildings, troops, walls and siege machines are all there, and the bandits still camp and raid, but there's no ownership, no land claims and no fog of war.
