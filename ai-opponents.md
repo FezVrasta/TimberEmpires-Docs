@@ -7,7 +7,7 @@ nav_order: 2.6
 
 AI opponents are players run by the game. You can play against them alone, or fill a [PvP](game-modes.md#pvp) game you host with them alongside the people who join.
 
-They play by your rules. Everything they do goes through the same actions a player's clicks send, they only see what their own [fog of war](playing/territory.md#fog-of-war) shows them, and they build with what their beavers gather. No difficulty gets extra resources, faster beavers or a look through the fog.
+They play by your rules. Everything they do goes through the same actions a player's clicks send, they only see what their own [fog of war](playing/territory.md#fog-of-war) shows them, and they build with what their beavers gather. A Hard AI doesn't cheat: it starts with what you start with and gets nothing extra, it just plays better.
 
 ## Adding them
 
@@ -25,7 +25,7 @@ The AIs found once every person in the game has, one after the other, each as fa
 
 ## Difficulty
 
-The three levels differ in how they play, never in what they're given.
+Each AI has its own level, set next to it in the game settings. It's separate from the game's difficulty, which sets what everyone starts with.
 
 | | Easy | Normal | Hard |
 |---|---|---|---|
