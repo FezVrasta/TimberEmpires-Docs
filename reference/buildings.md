@@ -12,6 +12,7 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 
 | Building | Faction | Science | Cost | Makes |
 |---|---|---|---|---|
+| <img class="icon" src="../assets/icons/WallFoundation.png" alt="">Wall Foundation | Both | 150 | 10 Log, 2 Plank |  |
 | <img class="icon" src="../assets/icons/Palisade.png" alt="">Palisade | Folktails | 150 | 6 Log, 2 Plank |  |
 | <img class="icon" src="../assets/icons/IronWall.png" alt="">Wall | Iron Teeth | 150 | 6 Log, 2 Plank |  |
 | <img class="icon" src="../assets/icons/Gatehouse.png" alt="">Gatehouse | Both | 450 | 30 Log, 20 Plank, 8 Gear |  |
@@ -21,6 +22,8 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 | <img class="icon" src="../assets/icons/WallTowerBallistaFolktails.png" alt="">Ballista Tower | Folktails | 1200 | 36 Log, 45 Plank, 9 Gear, 9 Treated Plank |  |
 | <img class="icon" src="../assets/icons/WallTowerBallistaIronTeeth.png" alt="">Ballista Tower | Iron Teeth | 1200 | 36 Log, 45 Plank, 9 Gear, 9 Metal Part |  |
 | <img class="icon" src="../assets/icons/WallTowerTrebuchetFolktails.png" alt="">Trebuchet Tower | Both | 1800 | 90 Log, 27 Plank, 18 Gear, 18 Metal Block |  |
+| <img class="icon" src="../assets/icons/WallBrazier.png" alt="">Blazer | Both | 300 | 2 Log, 2 Plank |  |
+| <img class="icon" src="../assets/icons/ResinPuddle.png" alt="">Resin Puddle | Both | 250 | 8 Pine Resin |  |
 
 ## Siege
 
@@ -41,14 +44,17 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 
 | Building | Faction | Science | Cost | Makes |
 |---|---|---|---|---|
-| <img class="icon" src="../assets/icons/Forge.png" alt="">Forge | Both | 150 | 20 Log, 30 Plank | Sword, Shield, Spear, Bow, Sling |
-| <img class="icon" src="../assets/icons/Armory.png" alt="">Armory | Folktails | 400 | 40 Plank, 20 Gear, 10 Metal Block | Battle axe |
+| <img class="icon" src="../assets/icons/Forge.png" alt="">Weaponsmith | Folktails | 150 | 20 Log, 30 Plank | Spear, Bow, Sling, Shield, Ballista bolt |
+| <img class="icon" src="../assets/icons/Forge.png" alt="">Weaponsmith | Iron Teeth | 150 | 20 Log, 30 Plank | Spear, Bow, Sword, Shield, Ballista bolt |
+| <img class="icon" src="../assets/icons/Armory.png" alt="">Bladesmith | Folktails | 400 | 40 Plank, 20 Gear, 10 Metal Block | Sword, Battle axe |
 | <img class="icon" src="../assets/icons/Gunsmith.png" alt="">Gunsmith | Iron Teeth | 400 | 40 Plank, 20 Gear, 20 Metal Part | Arquebus, Blasting Charge |
 | <img class="icon" src="../assets/icons/Barracks.png" alt="">Barracks | Both | 250 | 40 Log, 30 Plank |  |
 | <img class="icon" src="../assets/icons/ArcheryRange.png" alt="">Archery Range | Both | 450 | 30 Log, 30 Plank |  |
 | <img class="icon" src="../assets/icons/Monastery.png" alt="">Monastery | Folktails | 600 | 40 Log, 40 Plank, 20 Paper |  |
 | <img class="icon" src="../assets/icons/Monastery.png" alt="">Monastery | Iron Teeth | 600 | 40 Log, 40 Plank, 10 Metal Part |  |
 | <img class="icon" src="../assets/icons/WagonYard.png" alt="">Wagon Yard | Both | 400 | 40 Log, 30 Plank, 10 Gear |  |
+| <img class="icon" src="../assets/icons/SmallArmory.png" alt="">Small Armory | Both | 0 | 4 Log, 2 Plank |  |
+| <img class="icon" src="../assets/icons/MediumArmory.png" alt="">Medium Armory | Both | 0 | 10 Log, 8 Plank |  |
 | <img class="icon" src="../assets/icons/StonePress.png" alt="">Stone Press | Both | 200 | 30 Log, 20 Plank, 15 Gear | Siege stone |
 
 ## Water mines

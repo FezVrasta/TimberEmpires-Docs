@@ -8,6 +8,6 @@ nav_order: 5
 
 {% include infobox-troop.html id="berserker" %}
 
-The toughest Folktails melee troop. Battle axes come from the [Armory](../buildings/armory.md). [Arquebusiers](arquebusier.md) beat them.
+The toughest Folktails melee troop. Battle axes come from the [Bladesmith](../buildings/bladesmith.md). [Arquebusiers](arquebusier.md) beat them.
 
 {% include navbox.html %}

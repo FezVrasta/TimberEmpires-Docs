@@ -28,8 +28,8 @@ Troops don't need roads: they walk anywhere, and climb steps with your [Field La
 
 Every troop needs its weapon, and a barracks keeps 6 in stock for its recruits. Your haulers bring them from where they're made:
 
-- [Forge](../buildings/forge.md). Swords, shields, spears and bows, and slings for Folktails.
-- [Armory](../buildings/armory.md) (Folktails). Battle axes.
+- [Weaponsmith](../buildings/weaponsmith.md). Spears, bows and shields, plus swords for Iron Teeth and slings for Folktails.
+- [Bladesmith](../buildings/bladesmith.md) (Folktails). Swords and battle axes.
 - [Gunsmith](../buildings/gunsmith.md) (Iron Teeth). Arquebuses and blasting charges.
 - Herbalist (Folktails, the game's own). Herbal kits.
 

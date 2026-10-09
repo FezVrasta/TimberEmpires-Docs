@@ -1,4 +1,74 @@
 {
+ "wall-foundation": {
+  "name": "Wall Foundation",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "Lifts walls, gatehouses, towers and hoardings over uneven ground, and stacks for a bigger rise. Nothing else goes on top. Can't be hit while something stands on it.",
+  "flavor": "Even a wall needs a leg up.",
+  "icon": "WallFoundation",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "WallFoundation.Folktails",
+    "science": 150,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 1",
+    "workers": null,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "WallFoundation.IronTeeth",
+    "science": 150,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 1",
+    "workers": null,
+    "health": 400,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   }
+  }
+ },
  "palisade": {
   "name": "Palisade",
   "category": "Walls and towers",
@@ -359,7 +429,7 @@
     "reload": "1.4 h",
     "damage": "62, 0.7 tiles around",
     "structure_damage": "8",
-    "ammo": null,
+    "ammo": "Ballista bolt, holds 12",
     "shot": "WallTower.Ballista.Folktails.jpg"
    },
    "IronTeeth": {
@@ -399,7 +469,7 @@
     "reload": "1.4 h",
     "damage": "62, 0.7 tiles around",
     "structure_damage": "8",
-    "ammo": null,
+    "ammo": "Ballista bolt, holds 12",
     "shot": "WallTower.Ballista.IronTeeth.jpg"
    }
   }
@@ -491,6 +561,136 @@
     "structure_damage": "35",
     "ammo": "Siege stone, holds 12",
     "shot": "WallTower.Trebuchet.IronTeeth.jpg"
+   }
+  }
+ },
+ "blazer": {
+  "name": "Blazer",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A fire basket on a wall, burning pine resin. Archers on the wall within two pieces of it shoot fire arrows at resin puddles. Now and then one gets burned.",
+  "flavor": "Keep your tail clear.",
+  "icon": "WallBrazier",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "WallBrazier.Folktails",
+    "science": 300,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 80,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "WallBrazier.IronTeeth",
+    "science": 300,
+    "cost": [
+     {
+      "amount": 2,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 80,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   }
+  }
+ },
+ "resin-puddle": {
+  "name": "Resin Puddle",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "Pine resin poured on the ground or a road. Archers by a lit Blazer set it alight with fire arrows. It burns for 6 hours and hurts everyone in it, your own too.",
+  "flavor": "Sticky now, worse later.",
+  "icon": "ResinPuddle",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "ResinPuddle.Folktails",
+    "science": 250,
+    "cost": [
+     {
+      "amount": 8,
+      "good": "Pine Resin",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 1",
+    "workers": null,
+    "health": 160,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "ResinPuddle.IronTeeth",
+    "science": 250,
+    "cost": [
+     {
+      "amount": 8,
+      "good": "Pine Resin",
+      "icon": null
+     }
+    ],
+    "size": "2 × 2 × 1",
+    "workers": null,
+    "health": 160,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
    }
   }
  },
@@ -889,7 +1089,7 @@
     "reload": "0.8 h",
     "damage": "70, 0.7 tiles around",
     "structure_damage": "8",
-    "ammo": null,
+    "ammo": "Ballista bolt, holds 10",
     "shot": "Ballista.Folktails.jpg"
    },
    "IronTeeth": {
@@ -924,7 +1124,7 @@
     "reload": "0.8 h",
     "damage": "70, 0.7 tiles around",
     "structure_damage": "8",
-    "ammo": null,
+    "ammo": "Ballista bolt, holds 10",
     "shot": "Ballista.IronTeeth.jpg"
    }
   }
@@ -1009,11 +1209,11 @@
    }
   }
  },
- "forge": {
-  "name": "Forge",
+ "weaponsmith": {
+  "name": "Weaponsmith",
   "category": "Military buildings",
   "category_slug": "military",
-  "description": "Makes the basic kit troops train and fight with: swords, spears, bows, slings and shields.",
+  "description": "Makes spears, bows, shields and ballista bolts, plus swords for the Iron Teeth and slings for the Folktails.",
   "flavor": "Every beaver can chew. Only a few can temper steel.",
   "icon": "Forge",
   "factions": {
@@ -1038,14 +1238,6 @@
     "health": 240,
     "makes": [
      {
-      "good": "Sword",
-      "icon": "Sword"
-     },
-     {
-      "good": "Shield",
-      "icon": "Shield"
-     },
-     {
       "good": "Spear",
       "icon": "Spear"
      },
@@ -1056,6 +1248,14 @@
      {
       "good": "Sling",
       "icon": "Sling"
+     },
+     {
+      "good": "Shield",
+      "icon": "Shield"
+     },
+     {
+      "good": "Ballista bolt",
+      "icon": "BallistaBolt"
      }
     ],
     "trains": null,
@@ -1089,6 +1289,14 @@
     "health": 240,
     "makes": [
      {
+      "good": "Spear",
+      "icon": "Spear"
+     },
+     {
+      "good": "Bow",
+      "icon": "Bow"
+     },
+     {
       "good": "Sword",
       "icon": "Sword"
      },
@@ -1097,12 +1305,8 @@
       "icon": "Shield"
      },
      {
-      "good": "Spear",
-      "icon": "Spear"
-     },
-     {
-      "good": "Bow",
-      "icon": "Bow"
+      "good": "Ballista bolt",
+      "icon": "BallistaBolt"
      }
     ],
     "trains": null,
@@ -1117,11 +1321,11 @@
    }
   }
  },
- "armory": {
-  "name": "Armory",
+ "bladesmith": {
+  "name": "Bladesmith",
   "category": "Military buildings",
   "category_slug": "military",
-  "description": "Makes battle axes for berserkers.",
+  "description": "Makes swords for warriors and battle axes for berserkers.",
   "flavor": "Sharpen twice, swing once.",
   "icon": "Armory",
   "factions": {
@@ -1150,6 +1354,10 @@
     "workers": 2,
     "health": 160,
     "makes": [
+     {
+      "good": "Sword",
+      "icon": "Sword"
+     },
      {
       "good": "Battle axe",
       "icon": "BattleAxe"
@@ -1576,6 +1784,146 @@
     "structure_damage": null,
     "ammo": null,
     "shot": "WagonYard.IronTeeth.jpg"
+   }
+  }
+ },
+ "small-armory": {
+  "name": "Small Armory",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Stores weapons and ammunition.",
+  "flavor": "Spears go point up. Someone learned that the hard way.",
+  "icon": "SmallArmory",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "SmallArmory.Folktails",
+    "science": 0,
+    "cost": [
+     {
+      "amount": 4,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 1",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "SmallArmory.IronTeeth",
+    "science": 0,
+    "cost": [
+     {
+      "amount": 4,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 2,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 1 × 1",
+    "workers": null,
+    "health": 60,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   }
+  }
+ },
+ "medium-armory": {
+  "name": "Medium Armory",
+  "category": "Military buildings",
+  "category_slug": "military",
+  "description": "Stores weapons and ammunition.",
+  "flavor": "Half of any war is knowing where the swords are.",
+  "icon": "MediumArmory",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "MediumArmory.Folktails",
+    "science": 0,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 8,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 3 × 1",
+    "workers": null,
+    "health": 120,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "MediumArmory.IronTeeth",
+    "science": 0,
+    "cost": [
+     {
+      "amount": 10,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 8,
+      "good": "Plank",
+      "icon": null
+     }
+    ],
+    "size": "1 × 3 × 1",
+    "workers": null,
+    "health": 120,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
    }
   }
  },
