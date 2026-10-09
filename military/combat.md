@@ -40,6 +40,6 @@ Troops get hungry and thirsty faster than other beavers, but tire much more slow
 
 Each troop carries a kit: three days of food and water, and two spares of each piece of its gear. They restock at home, or when it's almost empty, while out.
 
-**[Wagon Yard](../buildings/wagon-yard.md).** Sends supply carts into the field. Each cart is loaded with food, water, siege stones, gears and building materials (logs, planks, metal blocks). Troops within 20 tiles eat and drink from it and take spare gear (allies' troops too), and use its materials to build siege machines and ladders. A carter that gets tired or hungry parks the cart and goes home; the next carter picks it up.
+**[Wagon Yard](../buildings/wagon-yard.md).** Sends supply carts into the field. Each cart is loaded with food, water, siege stones, ballista bolts, gears and building materials (logs, planks, metal blocks). Troops within 20 tiles eat and drink from it and take spare gear (allies' troops too), and use its materials to build siege machines and ladders. A carter that gets tired or hungry parks the cart and goes home; the next carter picks it up.
 
 **Building in the field.** Troops build Timber Empires' military buildings within 30 tiles of them, carrying up to 8 materials at a time. Siege machines (all but the Trebuchet), ladders and ramps can only be built by troops.

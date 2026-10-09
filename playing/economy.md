@@ -33,5 +33,6 @@ Pending deals raise a "Trade deal to approve" alert, and the Trades tab of the s
 - **[Stone Press](../buildings/stone-press.md).** Siege stones from scrap metal and logs, for catapults and trebuchets. Needs power.
 - **Herbalist** (Folktails). The game's own Herbalist also makes herbal kits for herbalist troops.
 - **[Wagon Yard](../buildings/wagon-yard.md).** Supply carts for troops in the field (see [Supply](../military/combat.md#supply)).
+- **[Small Armory](../buildings/small-armory.md) and [Medium Armory](../buildings/medium-armory.md).** Warehouses for weapons and ammunition only.
 
 Costs and recipes are in the [Reference](../reference/index.md).

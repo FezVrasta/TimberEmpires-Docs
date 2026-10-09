@@ -14,6 +14,7 @@ The Iron Teeth wall: iron-banded planks that block everyone, friend or foe. It w
 ## See also
 
 - [Palisade](palisade.md), the Folktails version.
+- [Wall Foundation](wall-foundation.md), to lift it over uneven ground.
 - [Defenses](../military/walls.md): damage, repairs and ammunition.
 
 {% include navbox.html %}

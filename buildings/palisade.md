@@ -22,6 +22,7 @@ A palisade holds back water like a dam. With [Dam pressure](../settings.md#dam-p
 ## See also
 
 - [Wall](wall.md), the Iron Teeth version.
+- [Wall Foundation](wall-foundation.md), to lift it over uneven ground.
 - [Defenses](../military/walls.md): damage, repairs and ammunition.
 
 {% include navbox.html %}
