@@ -10,7 +10,7 @@ nav_order: 4
 |---|---|---|
 | [Palisade](../buildings/palisade.md) / [Wall](../buildings/wall.md) | Folktails / Iron Teeth | Blocks everyone. Troops line up on its walkway. |
 | [Wall Foundation](../buildings/wall-foundation.md) | Both | Lifts walls over uneven ground. |
-| [Gatehouse](../buildings/gatehouse.md) | Both | Lets your side through, shuts when enemies come near. |
+| [Gatehouse](../buildings/gatehouse.md) | Both | Lets your side through, shuts when enemies come near. Can be forced open or closed. |
 | [Wall Tower](../buildings/wall-tower.md) | Both | A strong point that sees 8 tiles around. |
 | [Ballista Tower](../buildings/ballista-tower.md) | Both | Shoots enemy troops on its own, 2 to 25 tiles. |
 | [Trebuchet Tower](../buildings/trebuchet-tower.md) | Both | Throws siege stones on its own, 9 to 36 tiles. |
@@ -27,4 +27,6 @@ Walls hold back water, so with [Dam pressure](../settings.md#dam-pressure) on, a
 
 Builders repair damaged buildings between jobs, starting an hour after the last hit. Construction priority decides which come first.
 
-While a building is under attack you get an alert and a war horn.
+**Construction sites.** A site has health from the moment it's placed: 15% of the finished building's, growing to 80% as it's built. A hit knocks its progress back first, and the materials that went into that progress are lost. Once the progress is gone, hits wear down the rest, and the site falls when that's gone too, leaving its other materials on the ground. Builders win the progress back by building, not repairing.
+
+**Under attack.** When something of yours is hit you hear a war horn, red rings pulse on the spot and a notification names what's under attack. Click it to go there.

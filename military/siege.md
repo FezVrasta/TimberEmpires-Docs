@@ -37,7 +37,7 @@ Machines with wheels are pushed by their crew. They can't climb a level except u
 
 Every machine but the ram uses ammunition: siege stones for trebuchets and catapults (made at the [Stone Press](../buildings/stone-press.md)), ballista bolts for ballistas (made at the [Weaponsmith](../buildings/weaponsmith.md)), and logs or canola oil for hoardings.
 
-The crew fetch it themselves. One of them walks to the nearest store, warehouse, workshop or supply cart of yours with the good, within 12 tiles, carries back as much as a beaver can lift, and climbs back in.
+The crew fetch it themselves. One of them walks to the nearest store, warehouse, workshop or supply cart of yours with the good, within 12 tiles, carries back as much as a beaver can lift, and climbs back in. Tower crews go out and come back through the tower's door.
 
 - **Minimum crew.** They only go once it's empty, and the machine waits while they're away.
 - **Extra crew.** They go as soon as there's room for a full load, and the machine keeps firing. More crew keep a machine firing longer.

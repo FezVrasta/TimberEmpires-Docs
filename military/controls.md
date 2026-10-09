@@ -24,7 +24,7 @@ With troops selected, click:
 | Click on | Does |
 |---|---|
 | Ground | Move there. Troops ignore enemies on the way, but stop and fight one that blocks their path. |
-| An enemy beaver or building | Attack it. Shooters stop at their range. |
+| An enemy beaver or building | Attack it. Shooters stop at their range. The attack cursor outlines what it's over in red. |
 | **Ctrl** + ground | Attack-move: fight whatever they meet on the way. |
 | **Shift** + ground | Add a waypoint. |
 | **Alt** + ground | Patrol between where they are and there, fighting on the way. |
@@ -32,7 +32,7 @@ With troops selected, click:
 | One of your machines | Board it as crew. |
 | One of your walls | Line up on its walkway around that spot and hold there. |
 
-Troops sent together with carts or machines march at the slowest one's pace.
+Troops sent together with carts or machines march at the slowest one's pace. On their own, they only attack the buildings that fight back (see [Attacking buildings](combat.md#attacking-buildings)).
 
 With a wheeled machine selected (catapult or ballista), clicking an enemy both aims at it and sends the machine rolling towards it. A machine doesn't fire while it moves.
 
