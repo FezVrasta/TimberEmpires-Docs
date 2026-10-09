@@ -28,7 +28,8 @@ The AIs found once every person in the game has, one after the other, each as fa
 | | Easy | Normal | Hard |
 |---|---|---|---|
 | How often it acts | Once an hour, one thing at a time | Every half hour, two things | Five times an hour, four things |
-| Food and water in store | About 3 days | About 5 days | About 7 days |
+| Food and water it stores for a drought or badtide | 80% of its length, plus 3 days | 110% of its length, plus 5 days | 140% of its length, plus 7 days |
+| Makes more food and water when stores drop below | About 3 days | About 5 days | About 7 days |
 | Plans ahead | No, it reacts to what's short | Yes | Yes |
 | Army from | Around day 16 | Around day 10 | Around day 7 |
 | Scouts | Never | From around day 8 | From around day 4 |
