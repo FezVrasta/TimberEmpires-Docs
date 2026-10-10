@@ -1,27 +1,59 @@
-// Timberborn's own UI: dark wood panels, cream text, amber highlights
-$wood-900: #1f1812;
-$wood-800: #2a2119;
-$wood-700: #3a2d21;
-$wood-600: #4d3c2c;
-$cream: #f3ead6;
-$parchment: #f8f3e7;
-$ink: #2b2219;
-$amber: #d9a441;
-$amber-dark: #9c6716;
-$moss: #6e8f4e;
+// Bark, gold and river: the colors of the loading screen art and the logo
+$wood-950: #0e0a07;
+$wood-900: #18120d;
+$wood-800: #221911;
+$wood-700: #2f2318;
+$wood-600: #463323;
+$wood-500: #6a4c31;
+$gold: #e3b25b;
+$gold-light: #f6d892;
+$gold-deep: #a8762a;
+$ember: #ec6a2a;
+$river: #4f9c99;
+$river-deep: #1d4547;
+$moss: #7e9a4c;
+$cream: #f1e6cf;
+$parchment: #f1e7d2;
+$ink: #2b2117;
+// Kept for the older names the includes still use
+$amber: $gold;
+$amber-dark: $gold-deep;
 
 $body-font-family: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
 $mono-font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
+$te-display: "Cinzel", "Trajan Pro", Georgia, serif;
+$te-condensed: "Barlow Condensed", "Barlow", sans-serif;
+$te-quote: "Cormorant Garamond", Georgia, serif;
 $root-font-size: 16px;
-$nav-width: 272px;
-$content-width: 960px;
+$nav-width: 290px;
+$content-width: 1060px;
+$te-topbar-h: 64px;
 
-// The site's own colors, light by default; timber-dark sets them again
-$te-header-bg: $parchment !default;
-$te-strong: $wood-700 !default;
-$te-th-bg: $wood-800 !default;
-$te-cell-border: #ece3d0 !default;
-$te-row-alt: #fbf7ee !default;
-$te-panel-bg: #fffdf8 !default;
-$te-panel-head: $wood-800 !default;
-$te-muted: #6d5d49 !default;
+// The page's own colors, parchment by default; timber-dark sets them again
+$te-bg: $parchment !default;
+$te-panel: #f9f3e5 !default;
+$te-text: $ink !default;
+$te-heading: #3a2412 !default;
+$te-muted: #6e5c45 !default;
+$te-link: #8f5f16 !default;
+$te-accent: $gold-deep !default;
+$te-border: #dccbaa !default;
+$te-row-alt: #f4ecdb !default;
+$te-strong: #3a2412 !default;
+
+// Inline SVG, so textures and ornaments need no extra requests
+@function te-replace($string, $search, $replace) {
+  $i: str-index($string, $search);
+  @while $i {
+    $string: str-slice($string, 1, $i - 1) + $replace + str-slice($string, $i + str-length($search));
+    $i: str-index($string, $search);
+  }
+  @return $string;
+}
+@function te-svg($svg) {
+  $svg: te-replace($svg, '"', "'");
+  $svg: te-replace($svg, "<", "%3C");
+  $svg: te-replace($svg, ">", "%3E");
+  $svg: te-replace($svg, "#", "%23");
+  @return url("data:image/svg+xml,#{$svg}");
+}

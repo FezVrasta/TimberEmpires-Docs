@@ -1,214 +1,822 @@
-// Headings in Timberborn's condensed capitals
-h1, h2, h3, .site-title, .card-title {
-  font-family: "Barlow Condensed", "Barlow", sans-serif;
-  letter-spacing: 0.01em;
-}
-.main-content h1 { font-size: 2.6rem !important; font-weight: 700; }
-.main-content h2 {
-  font-size: 1.7rem !important;
-  font-weight: 700;
-  margin-top: 2.2rem !important;
-  padding-bottom: 0.3rem;
-  border-bottom: 2px solid $border-color;
-}
-.main-content h3 { font-size: 1.3rem !important; font-weight: 600; }
-.main-content { line-height: 1.65; }
-.main-content strong { color: $te-strong; }
+// ---------------------------------------------------------------------------
+// Textures and ornaments
+// ---------------------------------------------------------------------------
 
-// The sidebar is a wooden panel
-.side-bar {
-  background: linear-gradient(180deg, $wood-800 0%, $wood-900 100%);
-  border-right: 1px solid #120d09;
+// The shield from the logo
+$te-shield: te-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24"><path d="M10 1 19 4v7c0 6-5 10-9 12-4-2-9-6-9-12V4z"/></svg>');
+$te-diamond: te-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M5 0 10 5 5 10 0 5z"/></svg>');
+$te-wave: te-svg('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="28" viewBox="0 0 160 28"><path d="M0 12C20 4 40 4 60 12s40 8 60 0 40-8 40 0V28H0z" fill="#fff"/></svg>');
+
+@mixin te-wood($dir: v, $from: $wood-800, $to: $wood-900) {
+  background: linear-gradient(180deg, $from, $to);
 }
-@media (min-width: 50rem) { .side-bar { background: linear-gradient(180deg, $wood-800 0%, $wood-900 100%); } }
-.site-header { border-bottom: 1px solid rgba(243, 234, 214, 0.08); }
-.site-title {
-  color: $cream !important;
-  font-size: 1.5rem !important;
-  font-weight: 700;
+@mixin te-ornament($shape, $size, $color) {
+  -webkit-mask: $shape center / contain no-repeat;
+  mask: $shape center / contain no-repeat;
+  background: $color;
+  width: $size;
+  height: $size;
+}
+@mixin te-label {
+  font-family: $te-condensed;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
 }
-.site-logo {
-  background-size: contain;
-  background-position: left center;
-  margin: 0;
-  width: 100%;
-  height: 34px;
-  min-height: 34px;
+
+// ---------------------------------------------------------------------------
+// Page frame
+// ---------------------------------------------------------------------------
+
+html { background: $wood-950; }
+body {
+  background: $te-bg;
+  color: $te-text;
+  padding-bottom: 0 !important;
 }
-.site-title { flex: 1; height: 100%; padding: 0 1rem !important; display: flex; align-items: center; }
-// The same height as the page's header bar beside it
-.site-header { height: $header-height; min-height: $header-height; }
-.site-header .site-button svg, .site-nav .nav-list-expander svg { color: $amber; }
-.nav-list .nav-list-item .nav-list-link {
-  color: #e9dcc2;
-  border-radius: 6px;
-  margin: 1px 0.5rem;
-  padding-left: 0.75rem;
-}
-.nav-list .nav-list-item .nav-list-link:hover,
-.nav-list .nav-list-item .nav-list-link.active {
-  background: rgba(217, 164, 65, 0.14);
-  background-image: none;
-  color: $amber;
-}
-.nav-list .nav-list-item .nav-list-expander:hover { background: rgba(217, 164, 65, 0.14); background-image: none; }
-.nav-list .nav-list-item .nav-list .nav-list-link { color: $nav-child-link-color; }
-.site-footer, .site-footer a { color: #9d8b70 !important; }
+::selection { background: rgba($gold, 0.35); }
 
-// Header bar and search
-.main-header { background: $te-header-bg; border-bottom: 1px solid $border-color; }
-.search-input { background: transparent; }
-.aux-nav .aux-nav-list-link { color: $amber-dark; font-weight: 600; }
-
-// Tables: a quiet ledger
-.table-wrapper { box-shadow: none; border: 1px solid $border-color; border-radius: 8px; }
-table { font-size: 0.9rem !important; }
-th { background: $te-th-bg !important; color: $cream !important; font-weight: 600; border-bottom: none !important; white-space: nowrap; }
-th, td { padding: 0.45rem 0.75rem !important; border-color: $te-cell-border !important; }
-tbody tr:nth-child(even) td { background: $te-row-alt; }
-td img.icon { width: 28px; height: 28px; vertical-align: middle; margin-right: 0.45rem; background: $wood-800; border-radius: 6px; padding: 2px; }
-
-// Code
-code { border-color: $border-color !important; }
-
-// Home
-.hero {
+// The top bar: a dark plank with a gold rule under it
+.te-topbar {
   position: relative;
-  margin: -1rem -1rem 2rem;
-  border-radius: 0 0 14px 0;
-  overflow: hidden;
-  background: $wood-900;
-  @media (min-width: 50rem) { margin: -2rem -2rem 2.5rem; }
+  z-index: 50;
+  @include te-wood(h, #2a1f15, #1a130d);
+  box-shadow:
+    0 1px 0 rgba($gold, 0.55),
+    0 2px 0 #000,
+    0 3px 0 rgba($gold, 0.18),
+    0 10px 30px rgba(0, 0, 0, 0.45);
+  @media (min-width: 50rem) {
+    position: sticky;
+    top: 0;
+    height: $te-topbar-h;
+  }
 }
-.hero img { display: block; width: 100%; max-height: 440px; object-fit: cover; object-position: center top; }
-.hero::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(31, 24, 18, 0) 45%, rgba(31, 24, 18, 0.92) 100%);
-}
-.hero-text { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 1.25rem 1.5rem; color: $cream; }
-.hero-text p { font-size: 1.15rem; margin: 0 0 0.9rem; max-width: 40rem; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
-.hero .btn { margin: 0 0.4rem 0.4rem 0; }
-.btn-primary { background: $amber !important; color: $wood-900 !important; font-weight: 600; border: none; }
-.btn-ghost { background: rgba(243, 234, 214, 0.12) !important; color: $cream !important; border: 1px solid rgba(243, 234, 214, 0.35) !important; box-shadow: none !important; }
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 0.9rem;
-  margin: 1.2rem 0 2rem;
-}
-.card {
+.te-topbar-inner {
   display: flex;
-  gap: 0.8rem;
-  align-items: flex-start;
-  padding: 0.9rem 1rem;
-  border-radius: 10px;
-  background: linear-gradient(160deg, $wood-700, $wood-800);
-  color: #e6d9bf;
-  text-decoration: none !important;
-  border: 1px solid #120d09;
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1.4rem;
+  height: 100%;
+  padding: 0.7rem 1rem;
+  @media (min-width: 50rem) { flex-wrap: nowrap; padding: 0 1.5rem; }
 }
-a.card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(31, 24, 18, 0.25); }
-.card img { width: 48px; height: 48px; flex: none; }
-.card-title { display: block; margin: 0 0 0.2rem; color: $amber; font-size: 1.2rem; font-weight: 700; }
-.card-text { display: block; font-size: 0.9rem; line-height: 1.45; }
-
-// Pages open with a row of the buildings they're about
-.page-icons { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.4rem 0 1.4rem; }
-.page-icons img { width: 44px; height: 44px; background: $wood-800; border-radius: 8px; padding: 4px; }
-td:first-child { white-space: nowrap; font-weight: 500; }
-// On a phone the tagline goes under the art, not over it
-@media (max-width: 49.99rem) {
-  .hero::after { display: none; }
-  .hero-text { position: static; padding: 1rem 1.1rem 1.1rem; }
-  .hero-text p { font-size: 1.05rem; text-shadow: none; }
+.te-brand { display: block; flex: none; }
+.te-brand img { display: block; height: 28px; width: auto; filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6)); }
+.te-brand:hover img { filter: drop-shadow(0 0 10px rgba($gold, 0.45)); }
+.te-quick { display: none; gap: 1.4rem; }
+@media (min-width: 66rem) { .te-quick { display: flex; } }
+.te-quick a {
+  @include te-label;
+  font-size: 0.98rem;
+  color: #e9dcc0;
+  text-decoration: none;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
 }
-// No highlight behind the logo on hover
-.site-title:hover, .site-title:focus { background-image: none !important; background-color: transparent !important; }
-.site-title:hover .site-logo { opacity: 0.88; }
+.te-quick a:hover { color: $gold-light; border-bottom-color: $gold; }
 
-// Light and dark: the button in the header
+// Search, sunk into the plank
+.te-topbar .search {
+  order: 5;
+  flex: 1 0 100%;
+  height: 40px !important;
+  padding: 0 !important;
+  @media (min-width: 50rem) { order: 0; flex: 0 1 300px; margin-left: auto; }
+}
+.te-topbar .search-input-wrap {
+  position: absolute !important;
+  inset: 0 0 auto auto;
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 6px !important;
+  background: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba($gold, 0.22);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5) !important;
+}
+.te-topbar .search-input {
+  background: transparent !important;
+  color: $cream !important;
+  font-size: 0.92rem !important;
+  padding-left: 2.5rem !important;
+}
+.te-topbar .search-input::placeholder { color: #a8977b; }
+.te-topbar .search-label { padding-left: 0.85rem !important; }
+.te-topbar .search-label .search-icon { color: $gold !important; }
+.search-active .te-topbar .search-input-wrap {
+  @media (min-width: 50rem) { width: Min(560px, 80vw) !important; }
+  border-color: rgba($gold, 0.6);
+  background: $wood-800;
+}
+.te-topbar .search-results {
+  left: auto !important;
+  right: 0;
+  top: 46px !important;
+  width: Min(560px, calc(100vw - 2rem)) !important;
+  max-height: calc(100vh - 120px) !important;
+  background: $wood-800;
+  border: 1px solid rgba($gold, 0.3);
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+.search-active .search { @media (max-width: 49.99rem) { z-index: 60; } }
+.search-active .te-topbar .search-input-wrap { @media (max-width: 49.99rem) { position: fixed !important; inset: 0.7rem 1rem auto 1rem; width: auto !important; } }
+.search-result { color: $cream !important; }
+.search-result:hover, .search-result.active { background: rgba($gold, 0.12) !important; }
+.search-result-doc-title, .search-result-title { color: $cream; }
+.search-result-section, .search-result-rel-url { color: #a8977b !important; }
+.search-result-highlight { color: $gold-light; font-weight: 600; }
+.search-no-result { color: #a8977b; }
+.search-overlay { z-index: 40; background: rgba(5, 3, 2, 0.6); }
+
+// Light or dark
 .theme-toggle {
   display: flex; align-items: center; justify-content: center;
-  width: 2.25rem; height: 2.25rem; margin: auto 0.5rem auto 0;
-  border: 1px solid $border-color; border-radius: 8px;
-  background: transparent; color: $link-color; cursor: pointer;
+  flex: none;
+  width: 2.4rem; height: 2.4rem;
+  border: 1px solid rgba($gold, 0.3);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  color: $gold;
+  cursor: pointer;
+  margin-left: auto;
+  @media (min-width: 50rem) { margin-left: 0; }
 }
-.theme-toggle:hover { border-color: $amber; color: $amber; }
-.theme-toggle svg { width: 1.1rem; height: 1.1rem; }
+.theme-toggle:hover { border-color: $gold; color: $gold-light; box-shadow: 0 0 12px rgba($gold, 0.25); }
+.theme-toggle svg { width: 1.15rem; height: 1.15rem; }
 .theme-toggle .moon { display: none; }
 @if $color-scheme == dark {
   .theme-toggle .sun { display: none; }
   .theme-toggle .moon { display: block; }
-  .aux-nav .aux-nav-list-link { color: $amber; }
+}
+.te-menu {
+  display: flex; align-items: center; justify-content: center;
+  width: 2.4rem; height: 2.4rem;
+  border: 1px solid rgba($gold, 0.3);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  .icon { color: $gold; }
+  &.nav-open { border-color: $gold; }
+  @media (min-width: 50rem) { display: none; }
 }
 
-// Wiki articles: the infobox on the right, the flavor quote, the navbox at the foot
-.infobox {
-  float: right;
-  width: 320px;
-  margin: 0 0 1.2rem 1.5rem;
-  border: 1px solid $border-color;
-  border-radius: 10px;
+// Sidebar and page side by side
+.te-shell {
+  @media (min-width: 50rem) {
+    display: grid;
+    grid-template-columns: $nav-width minmax(0, 1fr);
+  }
+}
+.te-sidebar {
+  @include te-wood(v, $wood-800, $wood-900);
+  border-right: 1px solid #000;
+  box-shadow: inset -1px 0 0 rgba($gold, 0.12), inset -12px 0 24px -12px rgba(0, 0, 0, 0.6);
+  @media (min-width: 50rem) {
+    position: sticky;
+    top: $te-topbar-h;
+    height: calc(100vh - #{$te-topbar-h});
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba($gold, 0.25) transparent;
+  }
+}
+.te-sidebar .site-nav {
+  width: auto;
+  padding: 1.4rem 0.6rem 2rem;
+  @media (max-width: 49.99rem) { padding: 0.6rem 0.4rem 1rem; }
+}
+.te-home .te-shell { display: block; }
+.te-home .te-sidebar { @media (min-width: 50rem) { display: none; } }
+
+// Navigation
+.nav-list .nav-list-item {
+  .nav-list-link {
+    color: #eadcc0;
+    border-radius: 4px;
+    padding-left: 0.85rem !important;
+    transition: background 0.15s, color 0.15s;
+    &:hover { background: rgba($gold, 0.1); background-image: none; color: $gold-light; }
+    &.active {
+      background: linear-gradient(90deg, rgba($gold, 0.22), rgba($gold, 0.04));
+      color: $gold-light;
+      box-shadow: inset 3px 0 0 $gold;
+    }
+  }
+  .nav-list-expander { color: rgba($gold, 0.8); border-radius: 4px; }
+  .nav-list-expander:hover { background: rgba($gold, 0.1); background-image: none; }
+}
+.site-nav > .nav-list > .nav-list-item > .nav-list-link {
+  @include te-label;
+  font-size: 0.95rem;
+  letter-spacing: 0.07em;
+}
+.nav-list .nav-list-item .nav-list .nav-list-link { color: #cdbd9f; font-size: 0.92rem; }
+.nav-list .nav-list-item .nav-list { margin-left: 0.6rem; border-left: 1px solid rgba($gold, 0.14); }
+.nav-list .nav-list-item.active > .nav-list-link:not(.active) { color: $gold; }
+
+// The page itself
+.te-main {
+  min-width: 0;
+  background-color: $te-bg;
+  background-image:
+    if($color-scheme == dark,
+      radial-gradient(ellipse 80% 40% at 50% 0, rgba($ember, 0.06), transparent 70%),
+      radial-gradient(ellipse 120% 80% at 50% 30%, transparent 55%, rgba(#8a6a3a, 0.12) 100%));
+}
+.te-content {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 1.5rem 1.1rem 7rem;
+  @media (min-width: 50rem) { padding: 2.2rem 3rem 8rem; }
+}
+.main-content { line-height: 1.7; }
+.main-content p, .main-content li { font-size: 1.02rem; }
+
+// Breadcrumbs
+.breadcrumb-nav { margin-bottom: 0.4rem; }
+.breadcrumb-nav-list-item {
+  @include te-label;
+  font-size: 0.82rem !important;
+  color: $te-muted;
+  &::before { color: $te-accent !important; }
+  a { color: $te-link; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+
+// ---------------------------------------------------------------------------
+// Type
+// ---------------------------------------------------------------------------
+
+.main-content h1, .main-content h2, .te-hero-title, .card-title, .gallery-name, .infobox-title, .navbox-title {
+  font-family: $te-display;
+}
+.main-content h1 {
+  font-size: clamp(2.1rem, 4vw, 2.9rem) !important;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: $te-heading;
+  margin: 0.2rem 0 1.6rem !important;
+  @if $color-scheme == dark { text-shadow: 0 2px 18px rgba($ember, 0.18); }
+}
+// A gold rule with a diamond under every page title
+.main-content h1::after {
+  content: "";
+  display: block;
+  width: Min(280px, 60%);
+  height: 12px;
+  margin-top: 0.7rem;
+  background:
+    linear-gradient($te-accent, $te-accent) 0 50% / 9px 9px no-repeat,
+    linear-gradient(90deg, $te-accent, rgba($te-accent, 0)) 16px 50% / calc(100% - 16px) 1px no-repeat;
+  -webkit-mask: $te-diamond 0 50% / 10px 10px no-repeat, linear-gradient(#000, #000) 14px 0 / 100% 100% no-repeat;
+  mask: $te-diamond 0 50% / 10px 10px no-repeat, linear-gradient(#000, #000) 14px 0 / 100% 100% no-repeat;
+}
+.main-content h2 {
+  position: relative;
+  font-size: 1.6rem !important;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: $te-heading;
+  margin-top: 2.8rem !important;
+  margin-bottom: 1rem !important;
+  padding: 0 0 0.45rem 1.85rem;
+  border-bottom: none;
+  display: flow-root;
+}
+.main-content h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.32em;
+  @include te-ornament($te-shield, 1.15rem, $te-accent);
+}
+.main-content h2::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba($te-accent, 0.8), rgba($te-accent, 0.15) 50%, transparent 85%);
+}
+.main-content h3 {
+  font-family: $te-condensed;
+  font-size: 1.3rem !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $te-heading;
+  margin-top: 2rem !important;
+  display: flow-root;
+}
+.main-content strong { color: $te-strong; font-weight: 600; }
+.main-content a:not(.btn):not(.card):not(.gallery-item):not(.anchor-heading) {
+  color: $te-link;
+  text-decoration: underline;
+  text-decoration-color: rgba($te-link, 0.35);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s, color 0.15s;
+  &:hover { text-decoration-color: $te-link; }
+}
+.anchor-heading svg { color: $te-accent; }
+.main-content ul > li::before { color: $te-accent !important; }
+hr { background: linear-gradient(90deg, transparent, rgba($te-accent, 0.6), transparent) !important; height: 1px !important; border: 0; margin: 2.5rem 0; }
+
+// The flavor line under each title, set like a chronicle
+.flavor {
+  margin: -0.4rem 0 1.6rem;
+  padding: 0.1rem 0 0.1rem 1.1rem;
+  border-left: 2px solid $te-accent;
+  font-family: $te-quote;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.32rem;
+  line-height: 1.4;
+  color: $te-muted;
+}
+.hatnote { margin: -0.4rem 0 1rem; padding-left: 1.2rem; font-style: italic; color: $te-muted; }
+
+code {
+  font-size: 0.86em;
+  border: 1px solid $te-border !important;
+  background: $code-background-color !important;
+  border-radius: 4px;
+}
+
+// ---------------------------------------------------------------------------
+// Buttons
+// ---------------------------------------------------------------------------
+
+.btn {
+  @include te-label;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.7rem 1.6rem;
+  border-radius: 4px;
+  transition: transform 0.12s, box-shadow 0.12s, filter 0.12s;
+}
+.btn-primary {
+  background: linear-gradient(180deg, $gold-light 0%, $gold 45%, $gold-deep 100%) !important;
+  color: #2a1906 !important;
+  border: 1px solid #5c3f12 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.55),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.15),
+    0 2px 0 #3a2709,
+    0 8px 22px rgba(0, 0, 0, 0.4) !important;
+  &:hover { filter: brightness(1.08); transform: translateY(-1px); }
+}
+.btn-ghost {
+  background: rgba(15, 10, 6, 0.45) !important;
+  color: $cream !important;
+  border: 1px solid rgba($cream, 0.4) !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  &:hover { border-color: $gold !important; color: $gold-light !important; }
+}
+
+// ---------------------------------------------------------------------------
+// Home
+// ---------------------------------------------------------------------------
+
+.te-hero {
+  position: relative;
+  isolation: isolate;
   overflow: hidden;
-  background: $te-panel-bg;
+  height: Min(90vh, 900px);
+  min-height: 560px;
+  background: $wood-950;
+  border-bottom: 1px solid rgba($gold, 0.5);
+  box-shadow: 0 1px 0 #000, 0 2px 0 rgba($gold, 0.15);
+  @media (max-width: 49.99rem) { height: auto; min-height: 0; aspect-ratio: auto; }
+}
+.te-hero-art { position: absolute; inset: 0; z-index: -2; }
+.te-hero-art img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+  transform-origin: 50% 65%;
+  animation: te-drift 50s ease-in-out infinite alternate;
+}
+@keyframes te-drift {
+  from { transform: scale(1.03); }
+  to { transform: scale(1.12) translate(-1%, -1.5%); }
+}
+.te-hero::after {
+  content: "";
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(10, 7, 4, 0.88) 0%, rgba(10, 7, 4, 0.6) 24%, rgba(10, 7, 4, 0.15) 40%, rgba(10, 7, 4, 0) 50%),
+    linear-gradient(180deg, rgba(10, 7, 4, 0) 60%, rgba(10, 7, 4, 0.75) 84%, $wood-950 100%),
+    radial-gradient(ellipse 90% 70% at 50% 55%, transparent 50%, rgba(10, 7, 4, 0.55) 100%);
+}
+.te-hero-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1.5rem, 5vh, 3.5rem) 1.25rem clamp(2rem, 7vh, 4.5rem);
+  text-align: center;
+  color: $cream;
+}
+.te-hero-logo { margin: 0; line-height: 0; }
+.te-hero-logo img {
+  width: Min(88vw, 780px);
+  filter: drop-shadow(0 6px 24px rgba(0, 0, 0, 0.7));
+  animation: te-rise 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.te-hero-title {
+  margin: 0.9rem 0 0;
+  font-size: clamp(1.15rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $gold-light;
+  text-shadow: 0 0 2px #000, 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 32px rgba(0, 0, 0, 0.85);
+  animation: te-rise 1.2s 0.15s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.te-hero-sub {
+  margin: 0 0 1.3rem;
+  font-family: $te-quote;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+  color: $cream;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9);
+  animation: te-rise 1.2s 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.te-hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; animation: te-rise 1.2s 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+@keyframes te-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+// Logo and title at the top, the call to arms at the bottom, the bridge between them left clear
+@media (max-width: 49.99rem) {
+  .te-hero { display: flex; flex-direction: column; }
+  .te-hero-art { position: relative; height: 64vw; }
+  .te-hero::after { bottom: auto; height: 64vw; background: linear-gradient(180deg, rgba(10, 7, 4, 0.75) 0%, rgba(10, 7, 4, 0) 45%, rgba(10, 7, 4, 0) 65%, $wood-950 100%); }
+  .te-hero-inner { position: static; height: auto; padding: 0; display: block; }
+  .te-hero-top { position: absolute; top: 0; left: 0; right: 0; padding: 1.1rem 1rem; }
+  .te-hero-title { font-size: 0.85rem; letter-spacing: 0.14em; margin-top: 0.5rem; }
+  .te-hero-bottom { padding: 1.2rem 1rem 1.8rem; background: $wood-950; }
+  .te-hero-sub { font-size: 1.5rem; margin-bottom: 1rem; }
+}
+
+// Embers drifting up from the burning village
+.te-embers { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.te-embers i {
+  position: absolute;
+  left: var(--x);
+  bottom: 44%;
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff3c4 0%, #ffb347 40%, rgba($ember, 0) 70%);
+  box-shadow: 0 0 6px 2px rgba($ember, 0.55);
+  opacity: 0;
+  animation: te-ember var(--d) linear infinite;
+  animation-delay: var(--dl);
+}
+@keyframes te-ember {
+  0% { transform: translate(0, 0) scale(1); opacity: 0; }
+  8% { opacity: 1; }
+  50% { transform: translate(calc(var(--dx) * 0.6), -24vh) scale(0.85); opacity: 0.85; }
+  100% { transform: translate(var(--dx), -52vh) scale(0.4); opacity: 0; }
+}
+@media (max-width: 49.99rem) { .te-embers { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .te-hero-art img, .te-embers i, .te-hero-logo img, .te-hero-title, .te-hero-sub, .te-hero-actions, .te-water span { animation: none !important; }
+  .te-embers { display: none; }
+}
+
+// The home page's own column: wider, and the intro set larger
+.te-home .te-content { max-width: 1180px; padding-top: 0.5rem; }
+.te-home .main-content > main > p:first-child,
+.te-home .main-content > main > p:first-child + p {
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.18rem;
+  color: $te-text;
+}
+.te-home .main-content h2 {
+  text-align: center;
+  padding: 0 0 0.7rem;
+  margin-top: 3.5rem !important;
+  font-size: 1.9rem !important;
+}
+.te-home .main-content h2::before {
+  left: 50%; top: auto; bottom: -0.55rem;
+  transform: translateX(-50%);
+  width: 0.95rem; height: 0.95rem;
+  z-index: 1;
+  box-shadow: 0 0 0 6px $te-bg;
+}
+.te-home .main-content h2::after {
+  left: 50%; right: auto;
+  width: Min(420px, 80%);
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba($te-accent, 0.8) 30%, rgba($te-accent, 0.8) 70%, transparent);
+}
+.te-home .main-content > main > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 0.2rem 2rem;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+// Feature tiles: carved wood with a gold edge
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 2.2rem 0 1rem;
+}
+.card {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1.15rem 1.2rem 1.2rem;
+  border-radius: 6px;
+  @include te-wood(h, #33261a, #1e160f);
+  color: #dccfb4;
+  text-decoration: none !important;
+  border: 1px solid #0c0806;
+  box-shadow:
+    inset 0 0 0 1px rgba($gold, 0.16),
+    inset 0 1px 0 rgba(255, 236, 200, 0.08),
+    0 6px 16px rgba(0, 0, 0, 0.28);
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+a.card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    inset 0 0 0 1px rgba($gold, 0.55),
+    inset 0 1px 0 rgba(255, 236, 200, 0.1),
+    0 0 26px rgba($gold, 0.16),
+    0 12px 26px rgba(0, 0, 0, 0.4);
+}
+// Icons sit in a round brass mount
+.card img {
+  flex: none;
+  width: 56px; height: 56px;
+  padding: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 35%, #3d2d1e, #160f0a);
+  box-shadow: 0 0 0 2px rgba($gold, 0.55), 0 0 0 4px #0c0806, 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card-title { display: block; margin: 0.15rem 0 0.3rem; color: $gold-light; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.03em; }
+.card-text { display: block; font-size: 0.92rem; line-height: 1.5; }
+
+// ---------------------------------------------------------------------------
+// Wiki articles
+// ---------------------------------------------------------------------------
+
+// Framed panels: a gold inner line and a brass rivet in each corner
+@mixin te-frame {
+  border: 1px solid #0c0806;
+  border-radius: 6px;
+  box-shadow:
+    inset 0 0 0 1px rgba($gold, if($color-scheme == dark, 0.18, 0.4)),
+    0 10px 28px rgba(0, 0, 0, if($color-scheme == dark, 0.4, 0.14));
+}
+@mixin te-rivets {
+  &::before {
+    content: "";
+    position: absolute; inset: 5px;
+    pointer-events: none;
+    z-index: 2;
+    $r: radial-gradient(circle at 50% 40%, $gold-light 0, $gold-deep 45%, #3a2709 75%, transparent 80%);
+    background: $r 0 0 / 7px 7px no-repeat, $r 100% 0 / 7px 7px no-repeat, $r 0 100% / 7px 7px no-repeat, $r 100% 100% / 7px 7px no-repeat;
+  }
+}
+
+.page-icons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 1.4rem; }
+.page-icons img {
+  width: 46px; height: 46px; padding: 5px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 35%, #3d2d1e, #160f0a);
+  box-shadow: 0 0 0 1px rgba($gold, 0.5), 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+// Infobox
+.infobox {
+  position: relative;
+  float: right;
+  width: 330px;
+  margin: 0.3rem 0 1.5rem 2rem;
+  overflow: hidden;
+  background: $te-panel;
   font-size: 0.88rem;
-  @media (max-width: 49.99rem) { float: none; width: auto; margin: 0 0 1.5rem; }
+  @include te-frame;
+  @include te-rivets;
+  @media (max-width: 62rem) { float: none; width: auto; margin: 0 0 1.6rem; }
 }
 .infobox-title {
-  display: flex; align-items: center; gap: 0.5rem;
-  padding: 0.55rem 0.8rem;
-  background: $te-panel-head; color: $cream;
-  font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 1.35rem; font-weight: 700;
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0.7rem 0.95rem;
+  @include te-wood(h, #33261a, #1e160f);
+  color: $gold-light;
+  font-size: 1.2rem; font-weight: 700; letter-spacing: 0.03em;
+  border-bottom: 1px solid #0c0806;
+  box-shadow: inset 0 -1px 0 rgba($gold, 0.35);
 }
-.infobox-title img { width: 30px; height: 30px; }
+.infobox-title img { width: 32px; height: 32px; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6)); }
 .infobox-tabs { display: grid; grid-template-columns: repeat(var(--tabs, 2), 1fr); }
 .infobox-tabs input { position: absolute; opacity: 0; pointer-events: none; }
 .infobox-tabs label {
-  grid-row: 1; padding: 0.35rem 0.5rem; text-align: center; cursor: pointer;
-  font-weight: 600; color: $te-muted; border-bottom: 2px solid $border-color;
+  grid-row: 1;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  @include te-label;
+  font-size: 0.9rem;
+  color: $te-muted;
+  border-bottom: 1px solid $te-border;
+  transition: color 0.15s;
 }
-.infobox-tabs input:checked + label { color: $link-color; border-bottom-color: $amber; }
-.infobox-tabs input:focus-visible + label { outline: 2px solid $amber; outline-offset: -2px; }
+.infobox-tabs label:hover { color: $te-link; }
+.infobox-tabs input:checked + label { color: $te-link; box-shadow: inset 0 -2px 0 $te-accent; }
+.infobox-tabs input:focus-visible + label { outline: 2px solid $gold; outline-offset: -2px; }
 .infobox-panel { grid-row: 2; grid-column: 1 / -1; display: none; }
 .infobox-tabs input:checked + label + .infobox-panel { display: block; }
-.infobox-shot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
-.main-content .infobox table { margin: 0; width: 100%; border: none; font-size: 0.86rem !important; }
+.infobox-shot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-bottom: 1px solid $te-border; }
+.main-content .infobox .table-wrapper { margin: 0; border: none; border-radius: 0; box-shadow: none; }
+.main-content .infobox table { margin: 0; width: 100%; border: none; font-size: 0.87rem !important; }
 .main-content .infobox th {
-  background: transparent !important; color: $te-muted !important; text-align: left;
-  width: 38%; vertical-align: top; white-space: normal; font-weight: 600;
+  background: transparent !important;
+  color: $te-muted !important;
+  text-align: left;
+  width: 38%;
+  vertical-align: top;
+  white-space: normal;
+  @include te-label;
+  font-size: 0.85rem;
 }
 .main-content .infobox td { white-space: normal !important; font-weight: 400 !important; }
-.main-content .infobox tr td, .main-content .infobox tr th { background: transparent !important; border-bottom: 1px solid $te-cell-border !important; }
-.infobox .table-wrapper { margin: 0; border: none; border-radius: 0; }
+.main-content .infobox tr td, .main-content .infobox tr th { background: transparent !important; border-bottom: 1px solid rgba($te-border, 0.8) !important; }
+.main-content .infobox tr:last-child td, .main-content .infobox tr:last-child th { border-bottom: none !important; }
 
-.flavor {
-  margin: 0 0 1.4rem; padding: 0.2rem 0 0.2rem 1rem;
-  border-left: 3px solid $amber; color: $te-muted; font-style: italic;
+// Tables: a quartermaster's ledger
+.main-content .table-wrapper {
+  border: 1px solid #0c0806;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba($gold, 0.2), 0 6px 18px rgba(0, 0, 0, if($color-scheme == dark, 0.3, 0.08));
+  margin: 1.2rem 0 1.8rem;
 }
-.main-content h2, .main-content h3 { display: flow-root; }
-.navbox { clear: both; margin: 3rem 0 1rem; border: 1px solid $border-color; border-radius: 10px; overflow: hidden; font-size: 0.88rem; }
-.navbox-title { padding: 0.45rem 0.8rem; background: $te-panel-head; color: $cream; text-align: center; font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 1.15rem; font-weight: 700; }
-.navbox-row { display: flex; border-top: 1px solid $te-cell-border; }
-.navbox-group { flex: none; width: 10rem; padding: 0.45rem 0.7rem; background: $te-row-alt; font-weight: 600; }
-.navbox-list { padding: 0.45rem 0.7rem; line-height: 1.7; }
-.navbox-list a:not(:last-child)::after { content: " · "; color: $te-muted; }
-.navbox-list a.current { font-weight: 700; color: $body-text-color; }
-@media (max-width: 49.99rem) { .navbox-row { display: block; } .navbox-group { display: block; width: auto; } }
+.main-content table { font-size: 0.9rem !important; background: $te-panel; }
+.main-content th {
+  @include te-wood(h, #33261a, #241a12);
+  color: $gold-light !important;
+  @include te-label;
+  font-size: 0.86rem;
+  border-bottom: 1px solid #0c0806 !important;
+  white-space: nowrap;
+}
+.main-content th, .main-content td { padding: 0.55rem 0.85rem !important; border-color: $te-border !important; }
+.main-content td { background: $te-panel; }
+.main-content tbody tr:nth-child(even) td { background: $te-row-alt; }
+.main-content tbody tr:hover td { background: rgba($gold, 0.08); }
+.main-content td:first-child { white-space: nowrap; font-weight: 500; }
+td img.icon {
+  width: 30px; height: 30px;
+  vertical-align: middle;
+  margin-right: 0.55rem;
+  padding: 3px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 35%, #3d2d1e, #160f0a);
+  box-shadow: 0 0 0 1px rgba($gold, 0.45);
+}
 
-// Category pages: a grid of pictures
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.9rem; margin: 1.2rem 0 2rem; }
+// Navbox at the foot of every building and troop
+.navbox {
+  position: relative;
+  clear: both;
+  margin: 3.5rem 0 1rem;
+  overflow: hidden;
+  font-size: 0.88rem;
+  background: $te-panel;
+  @include te-frame;
+  @include te-rivets;
+}
+.navbox-title {
+  padding: 0.6rem 0.8rem;
+  @include te-wood(h, #33261a, #1e160f);
+  color: $gold-light;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: inset 0 -1px 0 rgba($gold, 0.35);
+}
+.navbox-row { display: flex; border-top: 1px solid $te-border; }
+.navbox-row:first-of-type { border-top: none; }
+.navbox-group {
+  flex: none; width: 11rem;
+  padding: 0.55rem 0.85rem;
+  background: $te-row-alt;
+  @include te-label;
+  font-size: 0.86rem;
+  border-right: 1px solid $te-border;
+}
+.main-content .navbox-group { color: $te-heading !important; text-decoration: none !important; }
+.navbox-list { padding: 0.55rem 0.85rem; line-height: 1.8; }
+.main-content .navbox-list a { text-decoration: none !important; }
+.main-content .navbox-list a:hover { text-decoration: underline !important; }
+.navbox-list a:not(:last-child)::after { content: " · "; color: $te-accent; }
+.main-content .navbox-list a.current { font-weight: 700; color: $te-heading; }
+@media (max-width: 49.99rem) { .navbox-row { display: block; } .navbox-group { display: block; width: auto; border-right: none; border-bottom: 1px solid $te-border; } }
+
+// Category pages: a gallery of framed pictures
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1.1rem; margin: 1.4rem 0 2.2rem; }
 .gallery-item {
-  display: flex; flex-direction: column; border: 1px solid $border-color; border-radius: 10px; overflow: hidden;
-  background: $te-panel-bg; text-decoration: none !important; color: $body-text-color !important;
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  position: relative;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  background: $te-panel;
+  text-decoration: none !important;
+  color: $te-text !important;
+  @include te-frame;
+  transition: transform 0.18s, box-shadow 0.18s;
 }
-a.gallery-item:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(31, 24, 18, 0.25); }
-.gallery-item img, .gallery-blank { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: $wood-800; }
-.gallery-name { padding: 0.5rem 0.7rem 0.1rem; font-family: "Barlow Condensed", "Barlow", sans-serif; font-size: 1.15rem; font-weight: 700; color: $link-color; }
-.gallery-text { padding: 0 0.7rem 0.7rem; font-size: 0.82rem; line-height: 1.4; color: $te-muted; }
-.hatnote { margin: -0.4rem 0 1rem; padding-left: 1.2rem; font-style: italic; color: $te-muted; }
+a.gallery-item:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 0 0 0 1px rgba($gold, 0.6), 0 0 24px rgba($gold, 0.14), 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+.gallery-blank {
+  background: te-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24"><path d="M10 1 19 4v7c0 6-5 10-9 12-4-2-9-6-9-12V4z" fill="#{$gold}" fill-opacity=".35"/></svg>') center / 34px auto no-repeat, linear-gradient(180deg, $wood-700, $wood-900) !important;
+}
+.gallery-item img, .gallery-blank {
+  display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover;
+  background: $wood-800;
+  border-bottom: 1px solid #0c0806;
+  transition: transform 0.4s;
+}
+a.gallery-item:hover img { transform: scale(1.04); }
+.gallery-name { padding: 0.65rem 0.85rem 0.15rem; font-size: 1.05rem; font-weight: 700; color: $te-link; letter-spacing: 0.02em; }
+.gallery-text { padding: 0 0.85rem 0.85rem; font-size: 0.84rem; line-height: 1.45; color: $te-muted; }
+
+// ---------------------------------------------------------------------------
+// Footer: the river runs along its top edge
+// ---------------------------------------------------------------------------
+
+.te-footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  padding: 3.5rem 1.25rem 1.5rem;
+  background: linear-gradient(180deg, #15100c, $wood-950);
+  color: #b3a386;
+}
+.te-water { position: absolute; left: 0; right: 0; top: -18px; height: 52px; overflow: hidden; pointer-events: none; }
+.te-water span {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  // The wave tile, and solid water under it
+  -webkit-mask: $te-wave 0 0 / 160px 28px repeat-x, linear-gradient(#000, #000) 0 27px / 100% 100% no-repeat;
+  mask: $te-wave 0 0 / 160px 28px repeat-x, linear-gradient(#000, #000) 0 27px / 100% 100% no-repeat;
+  animation: te-flow 9s linear infinite;
+}
+.te-water span:first-child { top: 0; background: #2b6664; }
+.te-water span:last-child {
+  top: 7px;
+  background: linear-gradient(180deg, #4a9592 0, #2f6b69 22px, #15100c 45px);
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+@keyframes te-flow { from { -webkit-mask-position: 0 0, 0 27px; mask-position: 0 0, 0 27px; } to { -webkit-mask-position: 160px 0, 0 27px; mask-position: 160px 0, 0 27px; } }
+.te-footer-inner {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem 3rem;
+  @media (min-width: 50rem) { grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr); }
+}
+.te-footer-brand img { width: 230px; max-width: 100%; display: block; margin-bottom: 0.9rem; }
+.te-footer-brand p { margin: 0; max-width: 24rem; font-size: 0.95rem; line-height: 1.55; }
+.te-footer-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; }
+.te-footer-links h2 {
+  margin: 0 0 0.7rem;
+  @include te-label;
+  font-size: 0.9rem;
+  color: $gold;
+}
+.te-footer-links a { display: block; padding: 0.2rem 0; color: #d9cbad; text-decoration: none; font-size: 0.95rem; }
+.te-footer-links a:hover { color: $gold-light; }
+.te-footer-legal {
+  max-width: 1180px;
+  margin: 2.5rem auto 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba($gold, 0.14);
+  font-size: 0.8rem;
+  color: #8a7a60;
+  text-align: center;
+}
+
+// Children lists at the end of section pages
+.main-content main > hr + h2, .main-content .text-delta { @include te-label; color: $te-muted; }

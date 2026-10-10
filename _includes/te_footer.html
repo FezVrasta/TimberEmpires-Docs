@@ -1,0 +1,32 @@
+<footer class="te-footer">
+  <div class="te-water" aria-hidden="true"><span></span><span></span></div>
+  <div class="te-footer-inner">
+    <div class="te-footer-brand">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}">
+      <p>{{ site.description }}</p>
+    </div>
+    <nav class="te-footer-links" aria-label="Footer">
+      <div>
+        <h2>Play</h2>
+        <a href="{{ '/getting-started.html' | relative_url }}">Getting started</a>
+        <a href="{{ '/game-modes.html' | relative_url }}">Game modes</a>
+        <a href="{{ '/ai-opponents.html' | relative_url }}">AI opponents</a>
+        <a href="{{ '/settings.html' | relative_url }}">Settings</a>
+      </div>
+      <div>
+        <h2>Wiki</h2>
+        <a href="{{ '/buildings/' | relative_url }}">Buildings</a>
+        <a href="{{ '/troops/' | relative_url }}">Troops</a>
+        <a href="{{ '/military/' | relative_url }}">Military</a>
+        <a href="{{ '/reference/' | relative_url }}">Reference</a>
+      </div>
+      <div>
+        <h2>Community</h2>
+        {% for link in site.aux_links %}<a href="{{ link.last }}">{{ link.first }}</a>{% endfor %}
+        <a href="{{ '/modding.html' | relative_url }}">Modding</a>
+        <a href="{{ '/credits.html' | relative_url }}">Credits</a>
+      </div>
+    </nav>
+  </div>
+  <p class="te-footer-legal">{{ site.footer_content }}</p>
+</footer>

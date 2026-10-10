@@ -1,28 +1,30 @@
-// The same wood and amber, by lamplight
+// The same frame, by firelight
 $color-scheme: dark;
-$body-background-color: #1a1410;
-$body-heading-color: $cream;
-$body-text-color: #e2d6bf;
-$link-color: $amber;
-$nav-child-link-color: #d8c9ab;
-$sidebar-color: $wood-900;
+$te-bg: #140f0b;
+$te-panel: #1d1610;
+$te-text: #e4d8bf;
+$te-heading: #f4e2bb;
+$te-muted: #a8977b;
+$te-link: $gold;
+$te-accent: $gold;
+$te-border: #3a2c1f;
+$te-row-alt: #19130e;
+$te-strong: #f6dfae;
+
+$body-background-color: $te-bg;
+$body-heading-color: $te-heading;
+$body-text-color: $te-text;
+$link-color: $te-link;
+$nav-child-link-color: #d6c6a6;
+$sidebar-color: $wood-800;
 $base-button-color: $wood-700;
-$btn-primary-color: $amber;
-$code-background-color: #261e17;
+$btn-primary-color: $gold;
+$code-background-color: #231a12;
 $code-linenumber-color: #9d8b70;
 $feedback-color: $wood-800;
-$table-background-color: #211a14;
-$search-background-color: #211a14;
+$table-background-color: $te-panel;
+$search-background-color: $wood-800;
 $search-result-preview-color: #b5a48a;
-$border-color: #3d3025;
-
-$te-header-bg: #1a1410;
-$te-strong: #f0d9a8;
-$te-th-bg: $wood-700;
-$te-cell-border: #33281f;
-$te-row-alt: #251d16;
-$te-panel-bg: #211a14;
-$te-panel-head: $wood-700;
-$te-muted: #b5a48a;
+$border-color: $te-border;
 
 @import "./vendor/OneDarkJekyll/syntax";

@@ -1,0 +1,63 @@
+---
+layout: table_wrappers
+---
+
+<!DOCTYPE html>
+
+<html lang="{{ site.lang | default: 'en-US' }}">
+{% include head.html %}
+<body class="{% if page.hero %}te-home{% else %}te-page{% endif %}">
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  {% include icons/icons.html %}
+
+  <header id="main-header" class="te-topbar">
+    <div class="te-topbar-inner">
+      <a class="te-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}"></a>
+      <nav class="te-quick" aria-label="Sections">
+        <a href="{{ '/getting-started.html' | relative_url }}">Start</a>
+        <a href="{{ '/buildings/' | relative_url }}">Buildings</a>
+        <a href="{{ '/troops/' | relative_url }}">Troops</a>
+        <a href="{{ '/military/' | relative_url }}">War</a>
+        <a href="{{ '/reference/' | relative_url }}">Reference</a>
+      </nav>
+      {% if site.search_enabled != false %}{% include components/search_header.html %}{% endif %}
+      {% include header_custom.html %}
+      <button id="menu-button" class="te-menu btn-reset" aria-label="Toggle menu" aria-pressed="false">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  {% if page.hero %}{% include home_hero.html %}{% endif %}
+
+  <div class="te-shell">
+    <aside class="te-sidebar">
+      {% include_cached components/site_nav.html %}
+    </aside>
+    <div class="te-main" id="top">
+      <div class="te-content">
+        {% include components/breadcrumbs.html %}
+        <div id="main-content" class="main-content">
+          <main>
+            {% if site.heading_anchors != false %}
+              {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+            {% else %}
+              {{ content }}
+            {% endif %}
+
+            {% if page.has_toc != false %}
+              {% include components/children_nav.html %}
+            {% endif %}
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include te_footer.html %}
+
+  {% if site.search_enabled != false %}
+    {% include components/search_footer.html %}
+  {% endif %}
+</body>
+</html>

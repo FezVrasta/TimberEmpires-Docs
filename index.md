@@ -2,9 +2,8 @@
 title: Home
 nav_order: 1
 permalink: /
+hero: true
 ---
-
-{% include home_hero.html %}
 
 Timber Empires puts every player on the same map as rivals. Every player owns their districts, researches on their own, and can send troops, siege machines and fireships at everyone else.
 

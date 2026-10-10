@@ -1,15 +1,15 @@
-// Timberborn's own UI: dark wood panels, cream text, amber highlights
-$body-background-color: $parchment;
-$body-heading-color: $wood-800;
-$body-text-color: $ink;
-$link-color: $amber-dark;
-$nav-child-link-color: #d8c9ab;
+// Parchment pages inside a wooden frame
+$body-background-color: $te-bg;
+$body-heading-color: $te-heading;
+$body-text-color: $te-text;
+$link-color: $te-link;
+$nav-child-link-color: #d6c6a6;
 $sidebar-color: $wood-800;
-$base-button-color: #efe6d2;
-$btn-primary-color: $amber-dark;
-$code-background-color: #f0e8d6;
-$feedback-color: #efe6d2;
-$table-background-color: #fffdf8;
-$search-background-color: #fffdf8;
-$search-result-preview-color: #6d5d49;
-$border-color: #e2d6bd;
+$base-button-color: $te-panel;
+$btn-primary-color: $gold-deep;
+$code-background-color: #ebe0c9;
+$feedback-color: $te-panel;
+$table-background-color: $te-panel;
+$search-background-color: $wood-800;
+$search-result-preview-color: #b5a48a;
+$border-color: $te-border;
