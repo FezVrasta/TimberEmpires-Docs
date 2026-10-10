@@ -16,6 +16,7 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 | <img class="icon" src="../assets/icons/Palisade.png" alt="">Palisade | Folktails | 150 | 6 Log, 2 Plank |  |
 | <img class="icon" src="../assets/icons/IronWall.png" alt="">Wall | Iron Teeth | 150 | 6 Log, 2 Plank |  |
 | <img class="icon" src="../assets/icons/Gatehouse.png" alt="">Gatehouse | Both | 450 | 30 Log, 20 Plank, 8 Gear |  |
+| <img class="icon" src="../assets/icons/Gatehouse.png" alt="">Drawbridge Gatehouse | Both | 650 | 40 Log, 30 Plank, 12 Gear, 4 Metal Block |  |
 | <img class="icon" src="../assets/icons/LogHoarding.png" alt="">Log Hoarding | Folktails | 500 | 10 Log, 10 Treated Plank |  |
 | <img class="icon" src="../assets/icons/OilHoarding.png" alt="">Oil Hoarding | Iron Teeth | 500 | 10 Log, 10 Plank, 4 Metal Part |  |
 | <img class="icon" src="../assets/icons/WallTowerFolktails.png" alt="">Wall Tower | Both | 300 | 40 Log, 30 Plank |  |

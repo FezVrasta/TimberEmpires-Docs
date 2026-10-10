@@ -229,6 +229,96 @@
    }
   }
  },
+ "drawbridge-gatehouse": {
+  "name": "Drawbridge Gatehouse",
+  "category": "Walls and towers",
+  "category_slug": "walls-and-towers",
+  "description": "A gatehouse on a foundation, with a bridge two tiles out from its passage. The bridge raises when the gate shuts. Needs open space under the bridge.",
+  "flavor": "The welcome mat rolls up at night.",
+  "icon": "Gatehouse",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Gatehouse.Drawbridge.Folktails",
+    "science": 650,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 12,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 4,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 3 × 3",
+    "workers": null,
+    "health": 780,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Gatehouse.Drawbridge.IronTeeth",
+    "science": 650,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": null
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": null
+     },
+     {
+      "amount": 12,
+      "good": "Gear",
+      "icon": null
+     },
+     {
+      "amount": 4,
+      "good": "Metal Block",
+      "icon": null
+     }
+    ],
+    "size": "3 × 3 × 3",
+    "workers": null,
+    "health": 780,
+    "makes": [],
+    "trains": null,
+    "crew": null,
+    "range": null,
+    "speed": null,
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": null
+   }
+  }
+ },
  "log-hoarding": {
   "name": "Log Hoarding",
   "category": "Walls and towers",

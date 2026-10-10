@@ -17,4 +17,6 @@ A [Battering Ram](battering-ram.md) is the machine for breaking one.
 
 Besides the game's Closed and Automated, its panel has Auto open (the default, as above) and Force open, which lets everyone through, enemies too. Automated still shuts on enemies, so a [Watchtower](watchtower.md)'s signal can close it before anyone gets near.
 
+Over a ditch or a moat, the [Drawbridge Gatehouse](drawbridge-gatehouse.md) raises a bridge as it shuts.
+
 {% include navbox.html %}

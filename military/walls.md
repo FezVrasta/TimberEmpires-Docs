@@ -11,6 +11,7 @@ nav_order: 4
 | [Palisade](../buildings/palisade.md) / [Wall](../buildings/wall.md) | Folktails / Iron Teeth | Blocks everyone. Troops line up on its walkway. |
 | [Wall Foundation](../buildings/wall-foundation.md) | Both | Lifts walls over uneven ground. |
 | [Gatehouse](../buildings/gatehouse.md) | Both | Lets your side through, shuts when enemies come near. |
+| [Drawbridge Gatehouse](../buildings/drawbridge-gatehouse.md) | Both | A gatehouse whose bridge over a ditch goes up when it shuts. |
 | [Wall Tower](../buildings/wall-tower.md) | Both | A strong point that sees 8 tiles around. |
 | [Ballista Tower](../buildings/ballista-tower.md) | Both | Shoots enemy troops on its own, 2 to 25 tiles. |
 | [Trebuchet Tower](../buildings/trebuchet-tower.md) | Both | Throws siege stones on its own, 9 to 36 tiles. |
