@@ -52,7 +52,7 @@ All of these can be changed in the game's key bindings, under "Timber Empires tr
 | J | Aggressive stance |
 | K | Defensive stance |
 | H | Hold position |
-| N | Man the nearest wall (within 30 tiles) |
+| N | Man the nearest wall |
 | Backspace | Send home |
 | Ctrl + 1 to 9 | Save the selection as a control group |
 | Alt + 1 to 9 | Select a control group. Press twice to move the camera to it |

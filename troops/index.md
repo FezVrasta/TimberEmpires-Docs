@@ -16,7 +16,7 @@ has_children: true
 | [Archery Range](../buildings/archery-range.md) | [Archer](archer.md), [Slinger](slinger.md) | [Archer](archer.md), [Arquebusier](arquebusier.md) |
 | [Monastery](../buildings/monastery.md) | [Monk](monk.md) | [Monk](monk.md) |
 
-Folktails troops walk 10% faster and hit about 6% harder. Iron Teeth troops take 5% less damage. Factions from other mods train their base faction's troops, or the ones their mod picks.
+Folktails troops walk faster and hit harder. Iron Teeth troops take less damage. Factions from other mods train their base faction's troops, or the ones their mod picks.
 
 ## Training
 

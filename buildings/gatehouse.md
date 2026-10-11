@@ -9,7 +9,7 @@ nav_order: 3
 
 {% include infobox-building.html id="gatehouse" %}
 
-The way through a wall. It lets your side and your [allies](../playing/alliances.md) pass, and shuts when anyone else comes within 5 tiles: enemy troops and workers, and bandits. It opens again half an hour after the last of them is more than 7 tiles away.
+The way through a wall. It lets your side and your [allies](../playing/alliances.md) pass, and shuts when anyone else comes near: enemy troops and workers, and bandits. It opens again a while after the last of them has gone.
 
 Only the passage shuts. The stairs up to the wall walk stay open, so a gatehouse is also how your troops get onto the wall.
 

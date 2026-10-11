@@ -13,7 +13,7 @@ The Folktails wall. It blocks everyone, friend or foe: a [Gatehouse](gatehouse.m
 
 ## Manning the wall
 
-Click a wall with troops selected and they line up on its walkway around that spot and hold there. N sends the selected troops to the nearest wall within 30 tiles. Troops on a wall take 20% less from shots, and melee blows can't reach through it.
+Click a wall with troops selected and they line up on its walkway around that spot and hold there. N sends the selected troops to the nearest wall. Troops on a wall take less from shots, and melee blows can't reach through it.
 
 ## Holding water
 

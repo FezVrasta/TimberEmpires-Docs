@@ -12,12 +12,12 @@ nav_order: 4
 | [Wall Foundation](../buildings/wall-foundation.md) | Both | Lifts walls over uneven ground. |
 | [Gatehouse](../buildings/gatehouse.md) | Both | Lets your side through, shuts when enemies come near. |
 | [Drawbridge Gatehouse](../buildings/drawbridge-gatehouse.md) | Both | A gatehouse whose bridge over a ditch goes up when it shuts. |
-| [Wall Tower](../buildings/wall-tower.md) | Both | A strong point that sees 8 tiles around. |
-| [Ballista Tower](../buildings/ballista-tower.md) | Both | Shoots enemy troops on its own, 2 to 25 tiles. |
-| [Trebuchet Tower](../buildings/trebuchet-tower.md) | Both | Throws siege stones on its own, 9 to 36 tiles. |
+| [Wall Tower](../buildings/wall-tower.md) | Both | A strong point that sees around it. |
+| [Ballista Tower](../buildings/ballista-tower.md) | Both | Shoots enemy troops on its own. |
+| [Trebuchet Tower](../buildings/trebuchet-tower.md) | Both | Throws siege stones on its own. |
 | [Log Hoarding](../buildings/log-hoarding.md) / [Oil Hoarding](../buildings/oil-hoarding.md) | Folktails / Iron Teeth | Drops logs or boiling oil on attackers below. |
 | [Blazer](../buildings/blazer.md) | Both | Lets archers on the wall near it shoot fire arrows. |
-| [Resin Puddle](../buildings/resin-puddle.md) | Both | Burns everyone in it for 6 hours once a fire arrow lights it. |
+| [Resin Puddle](../buildings/resin-puddle.md) | Both | Burns everyone in it for hours once a fire arrow lights it. |
 | [Watchtower](../buildings/watchtower.md) | Both | Sends an automation signal while enemies stand on its land. |
 
 ## Damage and repairs

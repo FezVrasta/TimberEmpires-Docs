@@ -9,7 +9,7 @@ nav_order: 7
 
 {% include infobox-building.html id="ballista-tower" %}
 
-A [Wall Tower](wall-tower.md) with a ballista on its deck. With a crew aboard it shoots enemy troops on its own, or enemy machines when there are no troops in reach, from 2 to 25 tiles.
+A [Wall Tower](wall-tower.md) with a ballista on its deck. With a crew aboard it shoots enemy troops on its own, or enemy machines when there are no troops in reach.
 
 It needs one troop aboard and takes two. It shoots ballista bolts from the [Weaponsmith](weaponsmith.md).
 

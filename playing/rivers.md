@@ -23,9 +23,9 @@ Main articles: [Mine Workshop](../buildings/mine-workshop.md), [Mine Slipway](..
 
 The Mine Workshop makes water mines, and the Mine Slipway launches them into the current. They drift, arm after a short while, and go off when they hit something, or at the bottom of a waterfall. Moored mines sit on open water and go off when a boat or a drifting mine comes close. Mine nets catch drifting mines, and a Net Winch hauls the catch in for you to use.
 
-**A blast** (1.6 tiles around):
+**A blast**:
 
-- destroys small buildings (4 tiles or less) and damages bigger ones and walls;
+- destroys small buildings and damages bigger ones and walls;
 - weakens dams;
 - hurts beavers;
 - sets off armed moored mines nearby, which can chain.

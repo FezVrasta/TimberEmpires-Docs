@@ -22,13 +22,13 @@ Other players' districts don't show up in your lists: the district list at the t
 
 Claimed land is land other players can't build on, allies aside. Placing on it shows "This land is claimed by" and the owner's name. Where two sides' claims overlap, the land between them is split down the middle.
 
-**District Centers** claim the land around them, more as the district grows: 8 tiles, plus the square root of twice its population, plus a quarter of its average wellbeing, up to 32.
+**District Centers** claim the land around them, more as the district grows.
 
-**[Watchtowers](../buildings/watchtower.md)** claim 18 tiles around them, more the higher they stand above the land around them (up to 9 extra tiles). They burn a log every 4 hours, and claim only while lit and connected to their district. Cut off, they go out and keep their logs. A Watchtower also sends an automation signal while enemy troops or bandits stand on its land.
+**[Watchtowers](../buildings/watchtower.md)** claim the land around them, more the higher they stand. They burn logs, and claim only while lit and connected to their district. Cut off, they go out and keep their logs. A Watchtower also sends an automation signal while enemy troops or bandits stand on its land.
 
 ## Fog of war
 
-In a game with other players you only see what's near your land claims, your buildings, beavers and troops, and your paths, and the same around your [allies](alliances.md)'. Building sites and planned paths don't count until they're built. Troops see as far as they fight, more from higher ground. Wall towers see 8 tiles.
+In a game with other players you only see what's near your land claims, your buildings, beavers and troops, and your paths, and the same around your [allies](alliances.md)'. Building sites and planned paths don't count until they're built. Troops see as far as they fight, more from higher ground. Wall towers see further.
 
 Out of sight, other players' buildings, beavers, roads, fields, crops, cutting areas and cursors are hidden. Wild trees stay. A building you've seen before stays where you saw it, as a frozen copy you can't click, until you see that spot again.
 

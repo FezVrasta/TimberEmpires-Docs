@@ -12,7 +12,7 @@ With [Science per player](../settings.md#science-per-player) on, each player has
 
 ## District specializations
 
-Each district can pick a focus: Food, Wood, Water, Metal, Science or Power, the toolbar's tabs. Workplaces of that kind work 25% faster, and the district's other production workplaces 10% slower. Only the district's owner can pick it, and only once per cycle.
+Each district can pick a focus: Food, Wood, Water, Metal, Science or Power, the toolbar's tabs. Workplaces of that kind work faster, and the district's other production workplaces slower. Only the district's owner can pick it, and only once per cycle.
 
 ## Trading with other players
 

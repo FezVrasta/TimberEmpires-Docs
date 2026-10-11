@@ -9,7 +9,7 @@ nav_order: 2.5
 
 {% include infobox-building.html id="wall-foundation" %}
 
-Lifts walls, gatehouses, towers and hoardings over uneven ground, and stacks for a bigger rise. Nothing else goes on it. When it falls, everything standing on it comes down too.
+Lifts walls, gatehouses, towers and hoardings over uneven ground, and stacks for a bigger rise. When it falls, everything standing on it comes down too.
 
 A [Siege Tower](siege-tower.md) can't reach a wall lifted above its top.
 

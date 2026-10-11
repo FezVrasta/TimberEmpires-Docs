@@ -8,6 +8,6 @@ nav_order: 2
 
 {% include infobox-troop.html id="warrior" %}
 
-Hits hard up close. A warrior can carry a shield, which cuts the damage from shots by 30% until it's worn down. [Spearmen](spearman.md) beat them.
+Hits hard up close. A warrior can carry a shield, which cuts the damage from shots until it's worn down. [Spearmen](spearman.md) beat them.
 
 {% include navbox.html %}
