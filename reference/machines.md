@@ -15,10 +15,10 @@ Health is structure health. Speed is in tiles per hour when pushed by the minimu
 | <img class="icon" src="../assets/icons/OilHoarding.png" alt="">Oil Hoarding | 400 |  | 1 to 2 |  | 0.45 | 164 | 25 | Canola Oil, holds 8 |
 | <img class="icon" src="../assets/icons/Palisade.png" alt="">Palisade / Wall | 310 |  |  |  |  |  |  |  |
 | <img class="icon" src="../assets/icons/WallTowerFolktails.png" alt="">Wall Tower | 1220 |  |  |  |  |  |  |  |
-| <img class="icon" src="../assets/icons/WallTowerBallistaFolktails.png" alt="">Ballista Tower | 1320 |  | 1 to 2 | 2 to 25 | 1.4 | 62 (splash 0.7) | 8 | Ballista bolt, holds 12 |
-| <img class="icon" src="../assets/icons/WallTowerTrebuchetFolktails.png" alt="">Trebuchet Tower | 1320 |  | 2 to 3 | 9 to 36 | 1 | 45 (splash 1.4) | 35 | Siege stone, holds 12 |
+| <img class="icon" src="../assets/icons/WallTowerBallistaFolktails.png" alt="">Ballista Tower | 1320 |  | 1 to 2 | 2 to 25 | 1.4 | 62 (splash 0.7) | 32 | Ballista bolt, holds 12 |
+| <img class="icon" src="../assets/icons/WallTowerTrebuchetFolktails.png" alt="">Trebuchet Tower | 1320 |  | 2 to 3 | 9 to 36 | 1 | 45 (splash 1.4) | 62 | Siege stone, holds 12 |
 | <img class="icon" src="../assets/icons/SiegeTrebuchet.png" alt="">Trebuchet | 150 |  | 2 to 3 | 10 to 32 | 0.55 | 45 (splash 1.4) | 174 | Siege stone, holds 10 |
-| <img class="icon" src="../assets/icons/Ballista.png" alt="">Ballista | 110 | 1 | 1 to 2 | 3 to 22 | 0.8 | 70 (splash 0.7) | 8 | Ballista bolt, holds 10 |
+| <img class="icon" src="../assets/icons/Ballista.png" alt="">Ballista | 110 | 1 | 1 to 2 | 3 to 22 | 0.8 | 70 (splash 0.7) | 32 | Ballista bolt, holds 10 |
 | <img class="icon" src="../assets/icons/FieldInfirmary.png" alt="">Field Infirmary | 90 | 0.9 | 1 to 1 |  |  |  |  |  |
 | <img class="icon" src="../assets/icons/BatteringRam.png" alt="">Battering Ram | 235 | 6.5 | 2 to 4 |  | 0.35 (swing) |  | 62 |  |
 | <img class="icon" src="../assets/icons/Catapult.png" alt="">Catapult | 200 | 3 | 2 to 3 | 4 to 16 | 0.8 | 54 (splash 1.4) | 298 | Siege stone, holds 8 |

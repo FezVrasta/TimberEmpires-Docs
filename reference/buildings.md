@@ -54,9 +54,9 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 | <img class="icon" src="../assets/icons/Monastery.png" alt="">Monastery | Folktails | 600 | 40 Log, 40 Plank, 20 Paper |  |
 | <img class="icon" src="../assets/icons/Monastery.png" alt="">Monastery | Iron Teeth | 600 | 40 Log, 40 Plank, 10 Metal Part |  |
 | <img class="icon" src="../assets/icons/WagonYard.png" alt="">Wagon Yard | Both | 400 | 40 Log, 30 Plank, 10 Gear |  |
+| <img class="icon" src="../assets/icons/StonePress.png" alt="">Stone Press | Both | 200 | 30 Log, 20 Plank, 15 Gear | Siege stone |
 | <img class="icon" src="../assets/icons/SmallArmory.png" alt="">Small Armory | Both | 0 | 4 Log, 2 Plank |  |
 | <img class="icon" src="../assets/icons/MediumArmory.png" alt="">Medium Armory | Both | 0 | 10 Log, 8 Plank |  |
-| <img class="icon" src="../assets/icons/StonePress.png" alt="">Stone Press | Both | 200 | 30 Log, 20 Plank, 15 Gear | Siege stone |
 
 ## Water mines
 
