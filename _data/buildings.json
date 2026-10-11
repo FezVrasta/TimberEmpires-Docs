@@ -474,108 +474,53 @@
    }
   }
  },
- "ballista-tower": {
-  "name": "Ballista Tower",
+ "round-tower": {
+  "name": "Round Tower",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
-  "description": "A wall tower with a ballista on its deck. With a crew aboard, it shoots the nearest enemy in reach on its own, with a little extra range from its height.",
-  "flavor": "Nobody climbs this wall twice.",
-  "icon": "WallTowerBallistaFolktails",
+  "description": "Taller than a wall tower, with an open top for a catapult, ballista or trebuchet. With a crew aboard, the machine on it shoots the nearest enemy in reach on its own.",
+  "flavor": "No roof. Plenty of rocks.",
+  "icon": "RoundTowerFolktails",
   "factions": {
    "Folktails": {
     "faction": "Folktails",
-    "template": "WallTower.Ballista.Folktails",
-    "science": 1200,
+    "template": "WallTower.Round.Folktails",
+    "science": 800,
     "cost": [
      {
-      "amount": 36,
+      "amount": 90,
       "good": "Log",
       "icon": null
      },
      {
-      "amount": 45,
+      "amount": 70,
       "good": "Plank",
       "icon": null
      },
      {
-      "amount": 9,
-      "good": "Gear",
-      "icon": null
-     },
-     {
-      "amount": 9,
+      "amount": 20,
       "good": "Treated Plank",
       "icon": null
      }
     ],
-    "size": "2 × 2 × 2",
+    "size": "3 × 3 × 3",
     "workers": null,
-    "health": 1320,
+    "health": 1500,
     "makes": [],
     "trains": null,
-    "crew": "1 to 2",
-    "range": "2 to 25 tiles",
+    "crew": null,
+    "range": null,
     "speed": null,
-    "reload": "1.4 h",
-    "damage": "62, 0.7 tiles around",
-    "structure_damage": "32",
-    "ammo": "Ballista bolt, holds 12",
-    "shot": "WallTower.Ballista.Folktails.jpg"
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "WallTower.Round.Folktails.jpg"
    },
    "IronTeeth": {
     "faction": "Iron Teeth",
-    "template": "WallTower.Ballista.IronTeeth",
-    "science": 1200,
-    "cost": [
-     {
-      "amount": 36,
-      "good": "Log",
-      "icon": null
-     },
-     {
-      "amount": 45,
-      "good": "Plank",
-      "icon": null
-     },
-     {
-      "amount": 9,
-      "good": "Gear",
-      "icon": null
-     },
-     {
-      "amount": 9,
-      "good": "Metal Part",
-      "icon": null
-     }
-    ],
-    "size": "2 × 2 × 2",
-    "workers": null,
-    "health": 1320,
-    "makes": [],
-    "trains": null,
-    "crew": "1 to 2",
-    "range": "2 to 25 tiles",
-    "speed": null,
-    "reload": "1.4 h",
-    "damage": "62, 0.7 tiles around",
-    "structure_damage": "32",
-    "ammo": "Ballista bolt, holds 12",
-    "shot": "WallTower.Ballista.IronTeeth.jpg"
-   }
-  }
- },
- "trebuchet-tower": {
-  "name": "Trebuchet Tower",
-  "category": "Walls and towers",
-  "category_slug": "walls-and-towers",
-  "description": "A wall tower with a small trebuchet on its deck. With a crew aboard, it lobs stones at the nearest enemy in reach on its own, far past the wall.",
-  "flavor": "They can see you coming. So can the rock.",
-  "icon": "WallTowerTrebuchetFolktails",
-  "factions": {
-   "Folktails": {
-    "faction": "Folktails",
-    "template": "WallTower.Trebuchet.Folktails",
-    "science": 1800,
+    "template": "WallTower.Round.IronTeeth",
+    "science": 800,
     "cost": [
      {
       "amount": 90,
@@ -583,74 +528,29 @@
       "icon": null
      },
      {
-      "amount": 27,
+      "amount": 70,
       "good": "Plank",
       "icon": null
      },
      {
-      "amount": 18,
-      "good": "Gear",
-      "icon": null
-     },
-     {
-      "amount": 18,
-      "good": "Metal Block",
+      "amount": 20,
+      "good": "Treated Plank",
       "icon": null
      }
     ],
-    "size": "2 × 2 × 2",
+    "size": "3 × 3 × 3",
     "workers": null,
-    "health": 1320,
+    "health": 1500,
     "makes": [],
     "trains": null,
-    "crew": "2 to 3",
-    "range": "9 to 36 tiles",
+    "crew": null,
+    "range": null,
     "speed": null,
-    "reload": "1 h",
-    "damage": "45, 1.4 tiles around",
-    "structure_damage": "62",
-    "ammo": "Siege stone, holds 12",
-    "shot": "WallTower.Trebuchet.Folktails.jpg"
-   },
-   "IronTeeth": {
-    "faction": "Iron Teeth",
-    "template": "WallTower.Trebuchet.IronTeeth",
-    "science": 1800,
-    "cost": [
-     {
-      "amount": 90,
-      "good": "Log",
-      "icon": null
-     },
-     {
-      "amount": 27,
-      "good": "Plank",
-      "icon": null
-     },
-     {
-      "amount": 18,
-      "good": "Gear",
-      "icon": null
-     },
-     {
-      "amount": 18,
-      "good": "Metal Block",
-      "icon": null
-     }
-    ],
-    "size": "2 × 2 × 2",
-    "workers": null,
-    "health": 1320,
-    "makes": [],
-    "trains": null,
-    "crew": "2 to 3",
-    "range": "9 to 36 tiles",
-    "speed": null,
-    "reload": "1 h",
-    "damage": "45, 1.4 tiles around",
-    "structure_damage": "62",
-    "ammo": "Siege stone, holds 12",
-    "shot": "WallTower.Trebuchet.IronTeeth.jpg"
+    "reload": null,
+    "damage": null,
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "WallTower.Round.IronTeeth.jpg"
    }
   }
  },
@@ -788,7 +688,7 @@
   "name": "Field Infirmary",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "A healing tub on wheels for after a battle. Once no enemy is in sight, wounded troops take turns lying in it and heal fast while its doses last. A dose is 1 extract and 2 berries. Its crew only moves it. Only warriors can build it.",
+  "description": "A healing tub on wheels for after a battle. Once no enemy is in sight, wounded troops take turns lying in it and heal fast while its doses last. A dose is 1 extract and 2 berries. Its crew only moves it.",
   "flavor": "The tub's warm. Don't ask what's in it.",
   "icon": "FieldInfirmary",
   "factions": {
@@ -973,7 +873,7 @@
   "name": "Battering Ram",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "Batters the wall, gate or dam in front of it, faster with more warriors aboard. Only warriors can build it.",
+  "description": "Batters the wall, gate or dam in front of it, faster with more warriors aboard.",
   "flavor": "\"Knock knock.\" \"Who's there?\" \"Not your gate anymore.\"",
   "icon": "BatteringRam",
   "factions": {
@@ -1018,7 +918,7 @@
   "name": "Siege Tower",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "Rolls up to a wall and lets the warriors aboard out onto its walk. Only warriors can build it.",
+  "description": "Rolls up to a wall and lets the warriors aboard out onto its walk.",
   "flavor": "Stairs took beavers to the next level. Siege towers take them to someone else's.",
   "icon": "SiegeTower",
   "factions": {
@@ -1063,7 +963,7 @@
   "name": "Catapult",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "Hurls stones at a chosen target, hurting enemies and battering walls and siege engines. Its crew moves and aims it. Only warriors can build it.",
+  "description": "Hurls stones at a chosen target, hurting enemies and battering walls and siege engines. Its crew moves and aims it.",
   "flavor": "\"Took them long enough.\" —Ma' Ngonel",
   "icon": "Catapult",
   "factions": {
@@ -1143,7 +1043,7 @@
   "name": "Ballista",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "Shoots heavy bolts flat and far: deadly to enemies, weak against walls. Its crew moves and aims it. Only warriors can build it.",
+  "description": "Shoots heavy bolts flat and far: deadly to enemies, weak against walls. Its crew moves and aims it.",
   "flavor": "One bolt, one problem solved.",
   "icon": "Ballista",
   "factions": {
@@ -2048,7 +1948,7 @@
    "Folktails": {
     "faction": "Folktails",
     "template": "MediumArmory.Folktails",
-    "science": 0,
+    "science": 250,
     "cost": [
      {
       "amount": 10,
@@ -2078,7 +1978,7 @@
    "IronTeeth": {
     "faction": "Iron Teeth",
     "template": "MediumArmory.IronTeeth",
-    "science": 0,
+    "science": 250,
     "cost": [
      {
       "amount": 10,

@@ -6,7 +6,7 @@ nav_order: 3
 
 # Siege warfare
 
-Siege machines, ladders and ramps are built by troops, not builders, except the [Trebuchet](../buildings/trebuchet.md), which your builders put up. Their crew are your troops: send troops at a machine to board it, and use the Unload button in its panel to let them out. Aboard, troops are out of sight and out of the fight, and their needs and gear don't wear down.
+Siege machines are built by your builders or your troops; ladders and ramps only by troops. Their crew are your troops: send troops at a machine to board it, and use the Unload button in its panel to let them out. Aboard, troops are out of sight and out of the fight, and their needs and gear don't wear down.
 
 | Machine | Faction | What it's for |
 |---|---|---|

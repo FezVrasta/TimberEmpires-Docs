@@ -94,7 +94,7 @@ Each faction can have its own troop and building numbers. Ship them as another b
 | `TrainingHours`, `ScienceCost`, `TrainingScience` | Training time, the science to unlock it, and science paid per recruit (monks) |
 | `Weapon`, `Upkeep`, `Outfit` | The good it trains with, the good it uses up (monks), and its outfit's `Id` |
 
-**Building lines** (by `Name`) work the same for siege machines and walls: health, speed, crew, range, reload, damage, splash, and the hoardings' and infirmary's own fields. A line matches like the stats file does: `Catapult.Folktails` for one faction's catapult, `WallTower.Ballista` for a tower and its machine, `Catapult` for every catapult. A faction can only change buildings the stats file already has a line for.
+**Building lines** (by `Name`) work the same for siege machines and walls: health, speed, crew, range, reload, damage, splash, and the hoardings' and infirmary's own fields. A line matches like the stats file does: `Catapult.Folktails` for one faction's catapult, `WallTower.Round` for the round tower, `Catapult` for every catapult. A faction can only change buildings the stats file already has a line for.
 
 Numbers stack in order: the stats file's, then your base's, then yours. How Folktails and Iron Teeth differ is in Timber Empires' own `FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json` and `TimberEmpiresStats.IronTeeth.blueprint.json`: Folktails walk faster and hit a little harder, Iron Teeth take less damage and their monks use coffee.
 

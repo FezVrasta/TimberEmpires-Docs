@@ -11,7 +11,7 @@ nav_order: 9
 
 An Iron Teeth healing tub on wheels for after a battle. It treats one troop at a time, using extract and berries. Hurt troops nearby go to it when no enemy is close.
 
-Its crew only pushes it around. Only troops can build it.
+Its crew only pushes it around.
 
 ## See also
 

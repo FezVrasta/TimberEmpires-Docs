@@ -20,9 +20,7 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 | <img class="icon" src="../assets/icons/LogHoarding.png" alt="">Log Hoarding | Folktails | 500 | 10 Log, 10 Treated Plank |  |
 | <img class="icon" src="../assets/icons/OilHoarding.png" alt="">Oil Hoarding | Iron Teeth | 500 | 10 Log, 10 Plank, 4 Metal Part |  |
 | <img class="icon" src="../assets/icons/WallTowerFolktails.png" alt="">Wall Tower | Both | 300 | 40 Log, 30 Plank |  |
-| <img class="icon" src="../assets/icons/WallTowerBallistaFolktails.png" alt="">Ballista Tower | Folktails | 1200 | 36 Log, 45 Plank, 9 Gear, 9 Treated Plank |  |
-| <img class="icon" src="../assets/icons/WallTowerBallistaIronTeeth.png" alt="">Ballista Tower | Iron Teeth | 1200 | 36 Log, 45 Plank, 9 Gear, 9 Metal Part |  |
-| <img class="icon" src="../assets/icons/WallTowerTrebuchetFolktails.png" alt="">Trebuchet Tower | Both | 1800 | 90 Log, 27 Plank, 18 Gear, 18 Metal Block |  |
+| <img class="icon" src="../assets/icons/RoundTowerFolktails.png" alt="">Round Tower | Both | 800 | 90 Log, 70 Plank, 20 Treated Plank |  |
 | <img class="icon" src="../assets/icons/WallBrazier.png" alt="">Blazer | Both | 300 | 2 Log, 2 Plank |  |
 | <img class="icon" src="../assets/icons/ResinPuddle.png" alt="">Resin Puddle | Both | 250 | 8 Pine Resin |  |
 
@@ -56,7 +54,7 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 | <img class="icon" src="../assets/icons/WagonYard.png" alt="">Wagon Yard | Both | 400 | 40 Log, 30 Plank, 10 Gear |  |
 | <img class="icon" src="../assets/icons/StonePress.png" alt="">Stone Press | Both | 200 | 30 Log, 20 Plank, 15 Gear | Siege stone |
 | <img class="icon" src="../assets/icons/SmallArmory.png" alt="">Small Armory | Both | 0 | 4 Log, 2 Plank |  |
-| <img class="icon" src="../assets/icons/MediumArmory.png" alt="">Medium Armory | Both | 0 | 10 Log, 8 Plank |  |
+| <img class="icon" src="../assets/icons/MediumArmory.png" alt="">Medium Armory | Both | 250 | 10 Log, 8 Plank |  |
 
 ## Water mines
 

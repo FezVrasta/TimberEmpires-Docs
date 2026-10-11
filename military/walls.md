@@ -13,8 +13,7 @@ nav_order: 4
 | [Gatehouse](../buildings/gatehouse.md) | Both | Lets your side through, shuts when enemies come near. |
 | [Drawbridge Gatehouse](../buildings/drawbridge-gatehouse.md) | Both | A gatehouse whose bridge over a ditch goes up when it shuts. |
 | [Wall Tower](../buildings/wall-tower.md) | Both | A strong point that sees around it. |
-| [Ballista Tower](../buildings/ballista-tower.md) | Both | Shoots enemy troops on its own. |
-| [Trebuchet Tower](../buildings/trebuchet-tower.md) | Both | Throws siege stones on its own. |
+| [Round Tower](../buildings/round-tower.md) | Both | Carries a catapult, ballista or trebuchet that shoots on its own. |
 | [Log Hoarding](../buildings/log-hoarding.md) / [Oil Hoarding](../buildings/oil-hoarding.md) | Folktails / Iron Teeth | Drops logs or boiling oil on attackers below. |
 | [Blazer](../buildings/blazer.md) | Both | Lets archers on the wall near it shoot fire arrows. |
 | [Resin Puddle](../buildings/resin-puddle.md) | Both | Burns everyone in it for hours once a fire arrow lights it. |

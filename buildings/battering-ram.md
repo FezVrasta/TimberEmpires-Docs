@@ -9,7 +9,7 @@ nav_order: 12
 
 {% include infobox-building.html id="battering-ram" %}
 
-The Folktails machine for breaking gates, walls and buildings. Its crew pushes it up to the target and swings it, faster with more troops aboard. Only troops can build it.
+The Folktails machine for breaking gates, walls and buildings. Its crew pushes it up to the target and swings it, faster with more troops aboard.
 
 Its swings weaken dams too, taking a fifth off a dam's strength each time. It needs no ammunition.
 
