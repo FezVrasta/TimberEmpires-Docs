@@ -820,3 +820,12 @@ a.gallery-item:hover img { transform: scale(1.04); }
 
 // Children lists at the end of section pages
 .main-content main > hr + h2, .main-content .text-delta { @include te-label; color: $te-muted; }
+
+.te-trailer {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1920 / 804;
+  margin: 1.5rem 0;
+  background: #000;
+  border-radius: 6px;
+}

@@ -11,6 +11,10 @@ Timber Empires puts every player on the same map as rivals. Every player owns th
 
 It plays in multiplayer through [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327), and alone against the bandits and [AI opponents](ai-opponents.md).
 
+<video class="te-trailer" controls preload="metadata" playsinline poster="{{ '/assets/video/launch-trailer.jpg' | relative_url }}">
+  <source src="{{ '/assets/video/launch-trailer.mp4' | relative_url }}" type="video/mp4">
+</video>
+
 ## What's in it
 
 {% include home_cards.html %}
