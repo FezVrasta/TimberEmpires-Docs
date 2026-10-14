@@ -1,6 +1,7 @@
 {
  "wall-foundation": {
   "name": "Wall Foundation",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "Lifts walls, gatehouses, towers and hoardings over uneven ground, and stacks for a bigger rise. Can't be hit while something stands on it.",
@@ -71,6 +72,7 @@
  },
  "palisade": {
   "name": "Palisade",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "A wall of sharpened logs that blocks the way for everyone.",
@@ -111,6 +113,7 @@
  },
  "wall": {
   "name": "Wall",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "A solid wall of iron-banded planks that blocks the way for everyone.",
@@ -151,6 +154,7 @@
  },
  "gatehouse": {
   "name": "Gatehouse",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "A fortified gate with stairs up to the wall walk. Shuts when enemies or bandits come near.",
@@ -231,6 +235,7 @@
  },
  "drawbridge-gatehouse": {
   "name": "Drawbridge Gatehouse",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "A gatehouse on a foundation, with a bridge two tiles out from its passage. The bridge raises when the gate shuts. Needs open space under the bridge.",
@@ -321,6 +326,7 @@
  },
  "log-hoarding": {
   "name": "Log Hoarding",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "A gallery on the wall where warriors roll logs down at enemies, knocking over everyone in their path.",
@@ -361,6 +367,7 @@
  },
  "oil-hoarding": {
   "name": "Oil Hoarding",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "A gallery on the wall where warriors pour boiling canola oil on enemies below.",
@@ -406,6 +413,7 @@
  },
  "wall-tower": {
   "name": "Wall Tower",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "Joins walls on any side and leads up to the wall walk. Sees far through the fog, further from high ground.",
@@ -476,6 +484,7 @@
  },
  "round-tower": {
   "name": "Round Tower",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "Taller than a wall tower, with an open top for a catapult, ballista or trebuchet. With a crew aboard, the machine on it shoots the nearest enemy in reach on its own.",
@@ -556,6 +565,7 @@
  },
  "blazer": {
   "name": "Blazer",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "A fire basket on a wall, burning pine resin. Archers on the wall within two pieces of it shoot fire arrows at resin puddles. Now and then one gets burned.",
@@ -626,6 +636,7 @@
  },
  "resin-puddle": {
   "name": "Resin Puddle",
+  "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
   "description": "Pine resin poured on the ground or a road. Archers by a lit Blazer set it alight with fire arrows. It burns for 6 hours and hurts everyone in it, your own too.",
@@ -686,6 +697,7 @@
  },
  "field-infirmary": {
   "name": "Field Infirmary",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "A healing tub on wheels for after a battle. Once no enemy is in sight, wounded troops take turns lying in it and heal fast while its doses last. A dose is 1 extract and 2 berries. Its crew only moves it.",
@@ -731,6 +743,7 @@
  },
  "field-ladder": {
   "name": "Field Ladder",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "Lets your warriors and carters climb a one-level step. Only warriors can build it.",
@@ -801,6 +814,7 @@
  },
  "field-ramp": {
   "name": "Field Ramp",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "A long timber ramp up a one-level step for warriors, carters and siege machines. Only warriors can build it.",
@@ -871,6 +885,7 @@
  },
  "battering-ram": {
   "name": "Battering Ram",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "Batters the wall, gate or dam in front of it, faster with more warriors aboard.",
@@ -916,6 +931,7 @@
  },
  "siege-tower": {
   "name": "Siege Tower",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "Rolls up to a wall and lets the warriors aboard out onto its walk.",
@@ -961,6 +977,7 @@
  },
  "catapult": {
   "name": "Catapult",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "Hurls stones at a chosen target, hurting enemies and battering walls and siege engines. Its crew moves and aims it.",
@@ -1041,6 +1058,7 @@
  },
  "ballista": {
   "name": "Ballista",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "Shoots heavy bolts flat and far: deadly to enemies, weak against walls. Its crew moves and aims it.",
@@ -1121,6 +1139,7 @@
  },
  "trebuchet": {
   "name": "Trebuchet",
+  "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "Hurls siege stones at a chosen target, hurting enemies and battering walls, gates and siege engines. Needs warriors aboard to turn and throw.",
@@ -1201,6 +1220,7 @@
  },
  "weaponsmith": {
   "name": "Weaponsmith",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Makes spears, bows, shields and ballista bolts, plus swords for the Iron Teeth and slings for the Folktails.",
@@ -1313,6 +1333,7 @@
  },
  "bladesmith": {
   "name": "Bladesmith",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Makes swords for warriors and battle axes for berserkers.",
@@ -1367,6 +1388,7 @@
  },
  "gunsmith": {
   "name": "Gunsmith",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Makes arquebuses and blasting charges.",
@@ -1421,6 +1443,7 @@
  },
  "barracks": {
   "name": "Barracks",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Trains its workers as troops: warriors, spearmen, or the faction's own kind.",
@@ -1521,6 +1544,7 @@
  },
  "archery-range": {
   "name": "Archery Range",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Trains its workers to shoot from a distance: archers, or the faction's own kind.",
@@ -1609,6 +1633,7 @@
  },
  "monastery": {
   "name": "Monastery",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Trains monks. Instead of fighting, they convert enemy troops and siege machines to your side, then wait for their faith to return.",
@@ -1699,6 +1724,7 @@
  },
  "wagon-yard": {
   "name": "Wagon Yard",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Sends supply carts to the front so warriors can eat, drink and build siege engines off the roads.",
@@ -1779,6 +1805,7 @@
  },
  "stone-press": {
   "name": "Stone Press",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Presses scrap metal and logs into siege stones for catapults and trebuchets.",
@@ -1869,6 +1896,7 @@
  },
  "small-armory": {
   "name": "Small Armory",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Stores weapons and ammunition.",
@@ -1939,6 +1967,7 @@
  },
  "medium-armory": {
   "name": "Medium Armory",
+  "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
   "description": "Stores weapons and ammunition.",
@@ -2009,6 +2038,7 @@
  },
  "mine-workshop": {
   "name": "Mine Workshop",
+  "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
   "description": "Makes water mines from explosives and metal blocks.",
@@ -2099,6 +2129,7 @@
  },
  "mine-slipway": {
   "name": "Mine Slipway",
+  "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
   "description": "Releases floating mines that drift with the current and explode against the first building they hit.",
@@ -2179,6 +2210,7 @@
  },
  "moored-mine": {
   "name": "Moored Mine",
+  "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
   "description": "A mine anchored in the water. Goes off when a boat or a drifting mine comes close.",
@@ -2249,6 +2281,7 @@
  },
  "fireship-dock": {
   "name": "Fireship Dock",
+  "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
   "description": "Launches boats packed with explosives that sail up the river and blow up against the first building or mine they hit.",
@@ -2319,6 +2352,7 @@
  },
  "mine-net": {
   "name": "Mine Net",
+  "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
   "description": "Floats in the river and catches drifting mines. Lay several end to end to make a barrier.",
@@ -2389,6 +2423,7 @@
  },
  "net-winch": {
   "name": "Net Winch",
+  "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
   "description": "Its worker rows out to the linked nets and brings back caught mines for reuse.",
@@ -2469,6 +2504,7 @@
  },
  "watchtower": {
   "name": "Watchtower",
+  "mod": "te",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
   "description": "Claims the land around it while its brazier burns, so other players can't build there. Reaches further from high ground. Sends an automation signal while enemy troops are on its land.",
@@ -2539,6 +2575,7 @@
  },
  "power-exchange": {
   "name": "Power Exchange",
+  "mod": "bb",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
   "description": "Sells power from one district's network to the district across the border.",
@@ -2619,6 +2656,7 @@
  },
  "trading-post": {
   "name": "Trading Post",
+  "mod": "bb",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
   "description": "Trades goods with the district across the border at a fixed rate.",
@@ -2699,6 +2737,7 @@
  },
  "toll-tube-station": {
   "name": "Toll Tube Station",
+  "mod": "bb",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
   "description": "Lets your beavers ride another district's tubeway for a toll.",
@@ -2744,6 +2783,7 @@
  },
  "toll-station": {
   "name": "Toll Station",
+  "mod": "bb",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
   "description": "Lets your beavers ride another district's ziplines for a toll.",
@@ -2789,6 +2829,7 @@
  },
  "troops-counter": {
   "name": "Troops Counter",
+  "mod": "te",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
   "description": "Counts your troops that are ready, in training, deployed, fighting or wounded. In district mode, it counts the troops of the district's barracks and ranges, wherever they are.",

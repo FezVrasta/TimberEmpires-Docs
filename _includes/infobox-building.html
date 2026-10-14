@@ -14,6 +14,7 @@
     <div class="infobox-panel">
       {%- if f.shot -%}<img class="infobox-shot" src="{{ '/assets/shots/' | append: f.shot | relative_url }}" alt="{{ b.name }}, {{ f.faction }}">{%- endif -%}
       <table>
+        <tr><th>Mod</th><td>{% include mod-badge.html mod=b.mod label=true %}</td></tr>
         <tr><th>Category</th><td><a href="{{ '/buildings/' | append: b.category_slug | append: '.html' | relative_url }}">{{ b.category }}</a></td></tr>
         <tr><th>Science</th><td>{{ f.science }}</td></tr>
         <tr><th>Cost</th><td>{% for c in f.cost %}{{ c.amount }} {{ c.good }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</td></tr>

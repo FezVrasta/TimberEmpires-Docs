@@ -759,6 +759,22 @@ a.gallery-item:hover {
 }
 a.gallery-item:hover img { transform: scale(1.04); }
 .gallery-name { padding: 0.65rem 0.85rem 0.15rem; font-size: 1.05rem; font-weight: 700; color: $te-link; letter-spacing: 0.02em; }
+// Which mod a feature comes from: a small icon, its name beside it in infoboxes
+.mod-badge {
+  display: inline-flex; align-items: center; gap: 0.35em;
+  vertical-align: -0.12em;
+  font-family: inherit; font-size: 0.85rem; font-weight: 600; letter-spacing: 0;
+}
+.mod-badge-icon {
+  display: inline-block; width: 1.05em; height: 1.05em; flex: none;
+  background: currentColor;
+  -webkit-mask: var(--mod-icon) center / contain no-repeat; mask: var(--mod-icon) center / contain no-repeat;
+}
+.mod-badge--te { color: if($color-scheme == dark, $gold, darken($gold, 18%)); --mod-icon: url("/TimberEmpires-Docs/assets/images/mod-te.svg"); }
+.mod-badge--bb { color: if($color-scheme == dark, #7fb7d9, #2f6f9f); --mod-icon: url("/TimberEmpires-Docs/assets/images/mod-bb.svg"); }
+.gallery-name .mod-badge { margin-left: 0.45em; font-size: 1.15rem; vertical-align: -0.15em; }
+h1 .mod-badge, h2 .mod-badge { font-size: 0.5em; margin-left: 0.5em; }
+
 .gallery-text { padding: 0 0.85rem 0.85rem; font-size: 0.84rem; line-height: 1.45; color: $te-muted; }
 
 // ---------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+{%- comment -%}Which mod a feature comes from: {% include mod-badge.html mod="bb" %}, or mod="te". label=true writes the mod's name beside the icon{%- endcomment -%}
+{%- if include.mod == "bb" -%}{%- assign name = "BeaverBuddies Co-Op/PvP Edition" -%}{%- assign short = "BeaverBuddies" -%}{%- else -%}{%- assign name = "Timber Empires" -%}{%- assign short = "Timber Empires" -%}{%- endif -%}
+<span class="mod-badge mod-badge--{{ include.mod | default: 'te' }}" title="From {{ name }}" role="img" aria-label="From {{ name }}"><span class="mod-badge-icon"></span>{% if include.label %}<span class="mod-badge-name">{{ short }}</span>{% endif %}</span>

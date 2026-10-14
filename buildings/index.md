@@ -6,7 +6,9 @@ has_children: true
 
 # Buildings
 
-Every building Timber Empires adds, by what it's for. Most have a version for each faction: the infobox on each page has a tab for each. Costs for all of them side by side are in [Reference](../reference/buildings.md).
+Every building Timber Empires adds, by what it's for. Most have a version for each faction: the infobox on each page has a tab for each.
+
+The ones marked {% include mod-badge.html mod="bb" %} come with BeaverBuddies Co-Op/PvP Edition, so they're in co-op games without Timber Empires too. The rest, marked {% include mod-badge.html mod="te" %}, need Timber Empires. Costs for all of them side by side are in [Reference](../reference/buildings.md).
 
 ## [Walls and towers](walls-and-towers.md)
 

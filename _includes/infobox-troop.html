@@ -14,6 +14,7 @@
     <div class="infobox-panel">
       {%- if f.shot -%}<img class="infobox-shot" src="{{ '/assets/shots/' | append: f.shot | relative_url }}" alt="{{ t.name }}, {{ f.faction }}">{%- endif -%}
       <table>
+        <tr><th>Mod</th><td>{% include mod-badge.html mod="te" label=true %}</td></tr>
         <tr><th>Trained at</th><td><a href="{{ '/buildings/' | append: f.trained_at.slug | append: '.html' | relative_url }}">{{ f.trained_at.name }}</a></td></tr>
         <tr><th>Science</th><td>{{ f.science }}</td></tr>
         <tr><th>Training</th><td>{{ f.training }}</td></tr>
