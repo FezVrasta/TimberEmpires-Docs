@@ -770,8 +770,8 @@ a.gallery-item:hover img { transform: scale(1.04); }
   background: currentColor;
   -webkit-mask: var(--mod-icon) center / contain no-repeat; mask: var(--mod-icon) center / contain no-repeat;
 }
-.mod-badge--te { color: if($color-scheme == dark, $gold, darken($gold, 18%)); --mod-icon: url("/TimberEmpires-Docs/assets/images/mod-te.svg"); }
-.mod-badge--bb { color: if($color-scheme == dark, #7fb7d9, #2f6f9f); --mod-icon: url("/TimberEmpires-Docs/assets/images/mod-bb.svg"); }
+.mod-badge--te { color: if($color-scheme == dark, $gold, darken($gold, 18%)); --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-te.svg")'}; }
+.mod-badge--bb { color: if($color-scheme == dark, #7fb7d9, #2f6f9f); --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-bb.svg")'}; }
 .gallery-name .mod-badge { margin-left: 0.45em; font-size: 1.15rem; vertical-align: -0.15em; }
 h1 .mod-badge, h2 .mod-badge { font-size: 0.5em; margin-left: 0.5em; }
 
