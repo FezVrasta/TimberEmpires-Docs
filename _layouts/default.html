@@ -52,11 +52,11 @@ layout: table_wrappers
           {%- if page.parent %}
           <div class="te-crumbs">
             {%- if page.grand_parent -%}
-              {%- assign gp = site.pages | where_exp: "p", "p.title == page.grand_parent and p.parent == nil" | first -%}
-              {%- assign pp = site.pages | where_exp: "p", "p.title == page.parent and p.parent == page.grand_parent" | first -%}
+              {%- assign gp = site.pages | where_exp: "p", "p.title == page.grand_parent" | where_exp: "p", "p.parent == nil" | first -%}
+              {%- assign pp = site.pages | where_exp: "p", "p.title == page.parent" | where_exp: "p", "p.parent == page.grand_parent" | first -%}
               <a href="{{ gp.url | relative_url }}">{{ page.grand_parent }}</a> › <a href="{{ pp.url | relative_url }}">{{ page.parent }}</a>
             {%- else -%}
-              {%- assign pp = site.pages | where_exp: "p", "p.title == page.parent and p.parent == nil" | first -%}
+              {%- assign pp = site.pages | where_exp: "p", "p.title == page.parent" | where_exp: "p", "p.parent == nil" | first -%}
               <a href="{{ pp.url | relative_url }}">{{ page.parent }}</a>
             {%- endif -%}
           </div>
