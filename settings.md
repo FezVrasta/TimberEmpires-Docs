@@ -27,6 +27,11 @@ Timber Empires has two kinds of settings.
 | [Fog of war](#fog-of-war) | On | Game | PvE, PvP, alone |
 | [Private top bar](#private-top-bar) | On | Game | PvE, PvP |
 | [AI opponents](#ai-opponents) | None | Game | PvP, alone |
+| [Shared colony](#shared-colony) | Off | Game | Horde |
+| [First undead night](#first-undead-night) | Cycle 3 | Game | Horde |
+| [Nights per horde](#nights-per-horde) | 3 | Game | Horde |
+| [Horde size](#horde-size) | 100% | Game | Horde |
+| [Day and night length](#day-and-night-length) | 3× | Game | Horde |
 | [My faction](#my-faction) | Host's faction | Yours | |
 | [Show district owner colors](#show-district-owner-colors) | On | Yours | |
 | [Battle music](#battle-music) | On | Yours | |
@@ -77,6 +82,26 @@ Camps raid the players near them, from the cycle set in First raid. See [Raids](
 ## First raid
 
 The cycle bandit raids can start in: 3, 5, 7, 10 or 15.
+
+## Shared colony
+
+Everyone builds one colony together, with the same goods and science. Off, each player starts their own. See [Horde](playing/horde.md).
+
+## First undead night
+
+The cycle the undead raccoons first climb out of the ruins: 1 to 10. See [The nights](playing/horde.md#the-nights).
+
+## Nights per horde
+
+How many nights apart the hordes come, 1 to 7. The longer the wait, the more each sunrise brings. A badtide's first night always brings a super horde.
+
+## Horde size
+
+How many come out in each horde, and in the super hordes: 25% to 300%.
+
+## Day and night length
+
+Longer days to get ready, longer nights to hold out: 1× to 5×. Everything counted in game hours stays the same.
 
 ## My faction
 

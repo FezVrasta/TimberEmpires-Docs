@@ -333,8 +333,18 @@ a.te-pic:hover::before { border-color: #e6d3a3; }
 @media (max-width: 60rem) {
   .te-header { padding-left: $te-gutter-sm; padding-right: $te-gutter-sm; }
   .te-header-inner { flex-wrap: wrap; }
-  .te-nav { order: 3; flex: 1 0 100%; flex-wrap: wrap; gap: 0 22px; }
-  .te-nav a { padding: 6px 2px; }
+  .te-nav {
+    order: 3;
+    flex: 1 0 100%;
+    flex-wrap: nowrap;
+    gap: 0 22px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent);
+    mask-image: linear-gradient(90deg, #000 85%, transparent);
+  }
+  .te-nav::-webkit-scrollbar { display: none; }
+  .te-nav a { padding: 8px 2px; }
 }
 
 // Search: the theme's own search box, opened from the icon
@@ -816,6 +826,7 @@ a.gallery-item:hover .gallery-name { color: $te-link-hover; }
 .te-section { padding-top: 72px; padding-bottom: 24px; }
 .te-section .te-frame { padding: 0 32px 36px; @media (max-width: 40rem) { padding: 0 18px 28px; } }
 .te-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 36px 28px; }
+.te-tiles.five { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 36px 20px; }
 .te-tile { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; text-decoration: none; color: #e8dfca; }
 .te-tile-title { font-family: $te-display; font-size: 23px; font-weight: 700; line-height: 1.2; color: $te-heading; }
 .te-tile-title.big { font-size: 28px; font-weight: 800; }
@@ -893,3 +904,95 @@ a.gallery-item:hover .gallery-name { color: $te-link-hover; }
 
 // Skip link from the theme
 .skip-to-main { color: $te-heading; background: $te-slate; }
+
+// ---------------------------------------------------------------------------
+// Halloween home (site.halloween in _config.yml)
+// ---------------------------------------------------------------------------
+
+$te-lantern: #ffb15c;
+$te-wisp: #7fe6b6;
+
+.te-halloween { background: #0a0f16; }
+.te-halloween .te-btn:not(.ghost) { --top: #c8661f; --bot: #ad5418; }
+.te-halloween .te-btn:not(.ghost):hover { --top: #d8752a; --bot: #bd5f1f; }
+.te-halloween .te-gem::after { background: $te-wisp; box-shadow: 0 0 6px rgba($te-wisp, 0.8); }
+.te-halloween .te-hero-art { object-position: center 60%; }
+
+// Pale flames drifting up over the hero
+.te-wisps { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.te-wisps i {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--s);
+  height: var(--s);
+  border-radius: 50%;
+  background: #a6f5cf;
+  box-shadow: 0 0 10px 3px rgba($te-wisp, 0.65);
+  opacity: 0;
+  animation: te-drift var(--d) ease-in-out var(--dl) infinite;
+}
+@keyframes te-drift {
+  0% { opacity: 0; transform: translate(0, 0); }
+  20% { opacity: 0.9; }
+  80% { opacity: 0.7; }
+  100% { opacity: 0; transform: translate(var(--dx), -70px); }
+}
+@media (prefers-reduced-motion: reduce) { .te-wisps i { animation: none; opacity: 0.6; } }
+
+// The badge promoting Horde, top right of the hero
+.te-hbadge {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  z-index: 2;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 8px;
+  color: #efe6cf;
+  text-decoration: none;
+}
+.te-hbadge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(10, 18, 24, 0.86);
+  border: 1px solid rgba($te-beige, 0.7);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 18px rgba($te-wisp, 0.18);
+  filter: url(#te-rough-soft);
+}
+.te-hbadge img { width: 52px; height: 52px; flex: none; object-fit: cover; box-shadow: 0 0 0 1px rgba($te-beige, 0.7); }
+.te-hbadge-text { display: flex; flex-direction: column; gap: 1px; }
+.te-hbadge-tag { font-family: $te-display; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: $te-wisp; text-shadow: 0 0 10px rgba($te-wisp, 0.45); }
+.te-hbadge-title { font-family: $te-display; font-size: 18px; font-weight: 700; color: $te-heading; }
+.te-hbadge-sub { font-size: 13px; color: #b7ad94; }
+.te-hbadge:hover::before { border-color: #e6d3a3; }
+.te-hbadge:hover .te-hbadge-title { color: #ffc27a; }
+
+// The Horde section, with the Halloween trailer
+.te-horde { padding-top: 96px; }
+.te-horde .te-frame { padding: 0 40px 40px; @media (max-width: 40rem) { padding: 0 18px 28px; } }
+.te-horde-body { display: flex; flex-wrap: wrap; gap: 40px; align-items: center; }
+.te-horde .te-trailer { position: relative; flex: 1.3 1 480px; padding: 10px; @media (max-width: 40rem) { flex-basis: 100%; } }
+.te-horde .te-trailer-play { inset: 10px; }
+.te-horde-text { flex: 1 1 340px; display: flex; flex-direction: column; gap: 18px; }
+.te-horde-text p { margin: 0; }
+.te-horde-text .te-lead { font-size: 21px; line-height: 1.6; color: #efe6cf; }
+.te-horde-tag { font-family: $te-display; font-size: 16px; font-weight: 700; letter-spacing: 0.06em; color: $te-wisp; text-shadow: 0 0 10px rgba($te-wisp, 0.45); }
+.te-horde-line { font-family: $te-quote; font-style: italic; font-size: 19px; line-height: 1.55; color: $te-lantern; text-shadow: 0 0 12px rgba(255, 150, 60, 0.5); }
+.te-horde-actions { justify-content: flex-start; margin-top: 6px; }
+.te-flavor-text { font-family: $te-quote; font-style: italic; font-size: 17px; }
+
+// On a phone: the logo above the raccoons on the bridge, the badge small in the corner
+@media (max-width: 40rem) {
+  .te-halloween .te-hero { justify-content: flex-start; min-height: 760px; }
+  .te-halloween .te-hero-art { object-position: center 78%; }
+  .te-halloween .te-hero-top { margin: auto 0; padding: 0 20px 100px; gap: 12px; }
+  .te-hbadge { top: 118px; right: 12px; gap: 8px; padding: 5px 10px 5px 5px; max-width: calc(100% - 24px); }
+  .te-hbadge img { width: 36px; height: 36px; }
+  .te-hbadge-title { font-size: 14px; }
+  .te-hbadge-sub { display: none; }
+}

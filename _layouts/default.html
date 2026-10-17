@@ -10,7 +10,7 @@ layout: table_wrappers
 {%- assign b = nil -%}{%- assign t = nil -%}
 {%- if page.dir == "/buildings/" -%}{%- assign b = site.data.buildings[slug] -%}{%- endif -%}
 {%- if page.dir == "/troops/" -%}{%- assign t = site.data.troops[slug] -%}{%- endif -%}
-<body class="{% if page.hero %}te-home{% elsif b or t %}te-entity{% else %}te-doc{% endif %}">
+<body class="{% if page.hero %}te-home{% if site.halloween %} te-halloween{% endif %}{% elsif b or t %}te-entity{% else %}te-doc{% endif %}">
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
   {% include te_filters.html %}
@@ -36,11 +36,14 @@ layout: table_wrappers
   {%- elsif t -%}
     {%- assign tf = t.factions.Folktails | default: t.factions.IronTeeth -%}
     {%- assign icon = t.gear[0].icon | default: site.data.buildings[tf.trained_at.slug].icon -%}{%- assign flavor = nil -%}
+  {%- elsif page.icon -%}
+    {%- assign icon = page.icon -%}{%- assign flavor = nil -%}
   {%- else -%}
     {%- assign icon = nil -%}{%- assign flavor = nil -%}
   {%- endif %}
   <section class="te-strip">
-    <img class="te-strip-art" src="{{ '/assets/images/empires.webp' | relative_url }}" srcset="{{ '/assets/images/empires-1280.webp' | relative_url }} 1280w, {{ '/assets/images/empires.webp' | relative_url }} 2560w" sizes="100vw" alt="">
+    {%- assign art = page.art | default: "empires" %}
+    <img class="te-strip-art" src="{{ '/assets/images/' | append: art | append: '.webp' | relative_url }}" srcset="{{ '/assets/images/' | append: art | append: '-1280.webp' | relative_url }} 1280w, {{ '/assets/images/' | append: art | append: '.webp' | relative_url }} 1920w" sizes="100vw" alt=""{% if page.art_position %} style="object-position: {{ page.art_position }}"{% endif %}>
     {% include te_header.html %}
     <div class="te-strip-gap"></div>
     <div class="te-band te-title">

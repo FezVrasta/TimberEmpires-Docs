@@ -1093,7 +1093,7 @@
     "trains": null,
     "crew": "1 to 2",
     "range": "3 to 22 tiles",
-    "speed": "1 tiles/h",
+    "speed": "1 tile/h",
     "reload": "0.8 h",
     "damage": "70, 0.7 tiles around",
     "structure_damage": "32",
@@ -1128,7 +1128,7 @@
     "trains": null,
     "crew": "1 to 2",
     "range": "3 to 22 tiles",
-    "speed": "1 tiles/h",
+    "speed": "1 tile/h",
     "reload": "0.8 h",
     "damage": "70, 0.7 tiles around",
     "structure_damage": "32",
@@ -1215,6 +1215,87 @@
     "structure_damage": "174",
     "ammo": "Siege stone, holds 10",
     "shot": "SiegeTrebuchet.IronTeeth.jpg"
+   }
+  }
+ },
+ "flamethrower": {
+  "name": "Flamethrower",
+  "mod": "te",
+  "category": "Siege machines",
+  "category_slug": "siege",
+  "description": "Burns the horde in a cone in front of it, using up extract as it fires. Short range, deadly to zombies. Its crew moves and aims it, on the ground or on a tower.",
+  "flavor": "Extract in, ashes out.",
+  "icon": "Flamethrower",
+  "factions": {
+   "Folktails": {
+    "faction": "Folktails",
+    "template": "Flamethrower",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": "Plank"
+     },
+     {
+      "amount": 12,
+      "good": "Gear",
+      "icon": "Gear"
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": "MetalBlock"
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 170,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": "0.8 to 7 tiles (9 on a tower)",
+    "speed": "1 tile/h",
+    "reload": null,
+    "damage": "700 an hour, in a cone",
+    "structure_damage": null,
+    "ammo": "Extract, holds 30 (48 on a tower)",
+    "shot": null
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Flamethrower",
+    "science": 800,
+    "cost": [
+     {
+      "amount": 20,
+      "good": "Plank",
+      "icon": "Plank"
+     },
+     {
+      "amount": 12,
+      "good": "Gear",
+      "icon": "Gear"
+     },
+     {
+      "amount": 10,
+      "good": "Metal Block",
+      "icon": "MetalBlock"
+     }
+    ],
+    "size": "1 × 2 × 2",
+    "workers": null,
+    "health": 170,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 2",
+    "range": "0.8 to 7 tiles (9 on a tower)",
+    "speed": "1 tile/h",
+    "reload": null,
+    "damage": "700 an hour, in a cone",
+    "structure_damage": null,
+    "ammo": "Extract, holds 30 (48 on a tower)",
+    "shot": null
    }
   }
  },

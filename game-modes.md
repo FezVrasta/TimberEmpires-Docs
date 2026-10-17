@@ -5,13 +5,14 @@ nav_order: 2.5
 
 # Game modes
 
-A multiplayer game has a mode, picked when it's created: the **Multiplayer mode** column on the New Game screens' last page, between the difficulties and their details, when you host a new game or find a match. BeaverBuddies ships Co-op, and Timber Empires adds PvE and PvP. The mode is saved with the game, and players who join get the host's.
+A multiplayer game has a mode, picked when it's created: the **Multiplayer mode** column on the New Game screens' last page, between the difficulties and their details, when you host a new game or find a match. BeaverBuddies ships Co-op, and Timber Empires adds PvE, PvP and Horde. The mode is saved with the game, and players who join get the host's.
 
 | Mode | Players | Against | Goal |
 |---|---|---|---|
 | [Co-op](#co-op) | 2 or more, one settlement | Nobody | None, just build |
 | [PvE](#pve) | 2 or more, allied | The bandits | Clear every bandit camp |
 | [PvP](#pvp) | 2 or more | Each other and the bandits | The [Victory](playing/victory.md) setting |
+| [Horde](#horde) | 2 or more | Each other and the undead raccoons | Last one standing, or seal every ruin |
 
 Playing alone there's no mode to pick: see [Playing alone](#playing-alone).
 
@@ -28,6 +29,10 @@ The bandits camp around the map and raid each player from the [First raid](setti
 ## PvP
 
 Everyone for themselves. Each player owns their districts and everything on the [Territory](playing/territory.md) page applies. Players can make [alliances](playing/alliances.md) with each other, and the bandits raid everyone. How the game is won is the [Victory](playing/victory.md) game setting.
+
+## Horde
+
+A PvP match where the undead raccoons climb out of the ruins every few nights and come for everyone. Alliances are optional. After every horde you get rewards you can use right away: goods, buildings, siege machines. Win by being the last one standing, or by sealing every ruin together with your allies. With [Shared colony](settings.md#shared-colony) on, it's one colony built together. See [Horde](playing/horde.md).
 
 ## Hosting and matchmaking
 

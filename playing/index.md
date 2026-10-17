@@ -11,5 +11,6 @@ has_children: true
 - [Economy](economy.md): science per player, specializations and trading with other players.
 - [Rivers](rivers.md): dams under pressure, water mines and fireships.
 - [Bandits](bandits.md) and [Victory](victory.md).
+- [Horde](horde.md): the undead raccoons.
 
 The fighting is in [Military](../military/index.md).

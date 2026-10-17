@@ -13,6 +13,8 @@ logo: /assets/images/logo.png
 search_enabled: true
 heading_anchors: true
 color_scheme: te
+# The Halloween home page: its art, the Horde section and the Halloween goods. Turn it off after Halloween.
+halloween: true
 aux_links:
   "Report a bug":
     - "https://discord.com/channels/1556989523756322856/1556990538736074762"

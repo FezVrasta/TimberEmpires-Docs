@@ -1,6 +1,21 @@
 <section class="te-hero" aria-label="Timber Empires">
+  {%- if site.halloween %}
+  <img class="te-hero-art" src="{{ '/assets/images/halloween.webp' | relative_url }}" srcset="{{ '/assets/images/halloween-1280.webp' | relative_url }} 1280w, {{ '/assets/images/halloween.webp' | relative_url }} 1920w" sizes="100vw" alt="">
+  <div class="te-wisps" aria-hidden="true"><i style="--x: 22%; --y: 62%; --s: 5px; --d: 9s; --dl: -2s; --dx: 30px"></i><i style="--x: 31%; --y: 70%; --s: 4px; --d: 11s; --dl: -6s; --dx: -24px"></i><i style="--x: 70%; --y: 58%; --s: 6px; --d: 10s; --dl: -4s; --dx: 20px"></i><i style="--x: 78%; --y: 68%; --s: 4px; --d: 12s; --dl: -9s; --dx: -30px"></i><i style="--x: 63%; --y: 74%; --s: 3px; --d: 8s; --dl: -1s; --dx: 16px"></i><i style="--x: 15%; --y: 76%; --s: 4px; --d: 13s; --dl: -7s; --dx: 26px"></i><i style="--x: 86%; --y: 60%; --s: 5px; --d: 10s; --dl: -3s; --dx: -18px"></i><i style="--x: 40%; --y: 66%; --s: 3px; --d: 9s; --dl: -5s; --dx: 22px"></i></div>
+  {%- else %}
   <img class="te-hero-art" src="{{ '/assets/images/empires.webp' | relative_url }}" srcset="{{ '/assets/images/empires-1280.webp' | relative_url }} 1280w, {{ '/assets/images/empires.webp' | relative_url }} 2560w" sizes="100vw" alt="">
+  {%- endif %}
   {% include te_header.html %}
+  {%- if site.halloween %}
+  <a class="te-hbadge" href="{{ '/playing/horde.html' | relative_url }}">
+    <img src="{{ '/assets/images/raccoon.webp' | relative_url }}" alt="">
+    <span class="te-hbadge-text">
+      <span class="te-hbadge-tag">Halloween</span>
+      <span class="te-hbadge-title">Horde mode is out</span>
+      <span class="te-hbadge-sub">Play it now</span>
+    </span>
+  </a>
+  {%- endif %}
   <div class="te-hero-top">
     <h1 class="te-hero-logo"><img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Timber Empires"></h1>
     <div class="te-hero-slogan"><div class="te-plaque-rule"><i></i><p class="te-plaque">One river. Too many beavers.</p><i></i></div></div>
