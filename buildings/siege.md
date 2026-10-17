@@ -10,5 +10,3 @@ has_children: true
 Built in the field by your troops (all but the Trebuchet) and crewed by them.
 
 {% include gallery.html category="siege" %}
-
-{% include navbox.html %}

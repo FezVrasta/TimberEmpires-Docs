@@ -1,0 +1,9 @@
+{%- comment -%}The faction switch: one label per faction for the radio inputs at the top of the stats frame. current= is the panel's own faction{%- endcomment -%}
+<div class="te-ftoggle-row">
+  <div class="te-ftoggle">
+    {%- for k in include.keys -%}{%- if include.fs[k] %}
+    <label class="te-fbtn{% if k == include.current %} on{% endif %}" for="f-{{ include.id }}-{{ k }}" data-tip="{{ include.fs[k].faction }}"><img src="{{ '/assets/icons/' | append: k | append: 'Logo.png' | relative_url }}" alt="{{ include.fs[k].faction }}"></label>
+    {%- endif -%}{%- endfor %}
+  </div>
+  <span class="te-fname">{{ include.fs[include.current].faction }}</span>
+</div>

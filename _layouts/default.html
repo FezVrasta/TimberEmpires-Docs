@@ -6,58 +6,135 @@ layout: table_wrappers
 
 <html lang="{{ site.lang | default: 'en-US' }}">
 {% include head.html %}
-<body class="{% if page.hero %}te-home{% else %}te-page{% endif %}">
+{%- assign slug = page.name | remove: ".md" -%}
+{%- assign b = nil -%}{%- assign t = nil -%}
+{%- if page.dir == "/buildings/" -%}{%- assign b = site.data.buildings[slug] -%}{%- endif -%}
+{%- if page.dir == "/troops/" -%}{%- assign t = site.data.troops[slug] -%}{%- endif -%}
+<body class="{% if page.hero %}te-home{% elsif b or t %}te-entity{% else %}te-doc{% endif %}">
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
+  {% include te_filters.html %}
 
-  <header id="main-header" class="te-topbar">
-    <div class="te-topbar-inner">
-      <a class="te-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }}"></a>
-      <nav class="te-quick" aria-label="Sections">
-        <a href="{{ '/getting-started.html' | relative_url }}">Start</a>
-        <a href="{{ '/buildings/' | relative_url }}">Buildings</a>
-        <a href="{{ '/troops/' | relative_url }}">Troops</a>
-        <a href="{{ '/military/' | relative_url }}">War</a>
-        <a href="{{ '/reference/' | relative_url }}">Reference</a>
-      </nav>
-      {% if site.search_enabled != false %}{% include components/search_header.html %}{% endif %}
-      {% include header_custom.html %}
-      <button id="menu-button" class="te-menu btn-reset" aria-label="Toggle menu" aria-pressed="false">
-        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
-      </button>
-    </div>
-  </header>
-
-  {% if page.hero %}{% include home_hero.html %}{% endif %}
-
-  <div class="te-shell">
-    <aside class="te-sidebar">
-      {% include_cached components/site_nav.html %}
-    </aside>
-    <div class="te-main" id="top">
-      <div class="te-content">
-        {% include components/breadcrumbs.html %}
-        <div id="main-content" class="main-content">
-          <main>
-            {% if site.heading_anchors != false %}
-              {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
-            {% else %}
-              {{ content }}
-            {% endif %}
-
-            {% if page.has_toc != false %}
-              {% include components/children_nav.html %}
-            {% endif %}
-          </main>
+{%- if page.hero %}
+  {% include home_hero.html %}
+  <main id="main-content" class="te-home-main">
+    {{ content }}
+  </main>
+{%- else -%}
+  {%- comment -%}The page's own H1 goes in the title band, the rest below it{%- endcomment -%}
+  {%- assign title = page.title -%}
+  {%- assign body = content -%}
+  {%- assign h1split = content | split: "</h1>" -%}
+  {%- if h1split.size > 1 -%}
+    {%- assign h1open = h1split.first | split: "<h1" -%}
+    {%- assign title = h1open.last | split: ">" | last | strip -%}
+    {%- assign h1full = "<h1" | append: h1open.last | append: "</h1>" -%}
+    {%- assign body = content | remove_first: h1full -%}
+  {%- endif -%}
+  {%- if b -%}
+    {%- assign icon = b.icon -%}{%- assign flavor = b.flavor -%}
+  {%- elsif t -%}
+    {%- assign tf = t.factions.Folktails | default: t.factions.IronTeeth -%}
+    {%- assign icon = t.gear[0].icon | default: site.data.buildings[tf.trained_at.slug].icon -%}{%- assign flavor = nil -%}
+  {%- else -%}
+    {%- assign icon = nil -%}{%- assign flavor = nil -%}
+  {%- endif %}
+  <section class="te-strip">
+    <img class="te-strip-art" src="{{ '/assets/images/empires.webp' | relative_url }}" srcset="{{ '/assets/images/empires-1280.webp' | relative_url }} 1280w, {{ '/assets/images/empires.webp' | relative_url }} 2560w" sizes="100vw" alt="">
+    {% include te_header.html %}
+    <div class="te-strip-gap"></div>
+    <div class="te-band te-title">
+      <div class="te-title-inner{% if page.intro %} has-intro{% endif %}">
+        {%- if icon %}
+        <span class="te-medal"><img src="{{ '/assets/icons/' | append: icon | append: '.png' | relative_url }}" alt=""></span>
+        {%- endif %}
+        <div class="te-title-text">
+          {%- if page.parent %}
+          <div class="te-crumbs">
+            {%- if page.grand_parent -%}
+              {%- assign gp = site.pages | where_exp: "p", "p.title == page.grand_parent and p.parent == nil" | first -%}
+              {%- assign pp = site.pages | where_exp: "p", "p.title == page.parent and p.parent == page.grand_parent" | first -%}
+              <a href="{{ gp.url | relative_url }}">{{ page.grand_parent }}</a> › <a href="{{ pp.url | relative_url }}">{{ page.parent }}</a>
+            {%- else -%}
+              {%- assign pp = site.pages | where_exp: "p", "p.title == page.parent and p.parent == nil" | first -%}
+              <a href="{{ pp.url | relative_url }}">{{ page.parent }}</a>
+            {%- endif -%}
+          </div>
+          {%- endif %}
+          <h1>{{ title }}</h1>
         </div>
+        {%- if page.intro %}
+        <p class="te-intro">{{ page.intro }}</p>
+        {%- elsif flavor and flavor != "" %}
+        <p class="te-flavor">{{ flavor }}</p>
+        {%- endif %}
       </div>
     </div>
+  </section>
+
+  {%- capture rendered %}
+    {%- if site.heading_anchors != false -%}
+      {% include vendor/anchor_headings.html html=body beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" anchorAttrs="aria-labelledby=\"%html_id%\"" %}
+    {%- else -%}
+      {{ body }}
+    {%- endif -%}
+  {%- endcapture %}
+
+  {%- if page.wide %}
+  <main id="main-content" class="te-wide">
+    {{ rendered }}
+  </main>
+  {%- else %}
+  <div class="te-page">
+    {% include te_sidenav.html %}
+    <main id="main-content" class="te-main">
+      {%- if b or t %}
+      <article class="te-prose">
+        {{ rendered }}
+        {%- if page.works_with %}
+        <section class="te-works">
+          <div class="te-plaque-rule"><h2 class="te-plaque small">Works with</h2><i></i></div>
+          <div class="te-works-list">
+            {%- for w in page.works_with -%}
+              {%- assign wb = site.data.buildings[w.id] %}
+            <a class="te-work" href="{{ '/buildings/' | append: w.id | append: '.html' | relative_url }}"><span class="te-medal xs"><img src="{{ '/assets/icons/' | append: wb.icon | append: '.png' | relative_url }}" alt=""></span><span class="te-work-text"><span class="te-work-name">{{ wb.name }}</span><span class="te-work-role">{{ w.role }}</span></span></a>
+            {%- endfor %}
+          </div>
+        </section>
+        {%- endif %}
+      </article>
+      {%- if b %}{% include te_building_stats.html b=b id=slug %}{% else %}{% include te_troop_stats.html t=t id=slug %}{% endif %}
+      {%- else %}
+      <div class="te-prose">
+        {{ rendered }}
+        {%- if page.has_toc != false %}
+          {% include components/children_nav.html %}
+        {%- endif %}
+      </div>
+      {%- endif %}
+    </main>
   </div>
+  {%- endif %}
+{%- endif %}
 
   {% include te_footer.html %}
 
-  {% if site.search_enabled != false %}
-    {% include components/search_footer.html %}
-  {% endif %}
+  {%- if site.search_enabled != false %}
+  {% include components/search_footer.html %}
+  <script>
+    /* The search icon opens the theme's own search box */
+    (function () {
+      var root = document.documentElement;
+      var btn = document.querySelector('.te-search-btn');
+      var input = document.getElementById('search-input');
+      if (!btn || !input) return;
+      function open() { root.classList.add('te-search-open'); btn.setAttribute('aria-expanded', 'true'); input.focus(); }
+      function close() { root.classList.remove('te-search-open', 'search-active'); btn.setAttribute('aria-expanded', 'false'); input.value = ''; }
+      btn.addEventListener('click', function () { root.classList.contains('te-search-open') ? close() : open(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && root.classList.contains('te-search-open')) { close(); btn.focus(); } });
+      document.querySelector('.search-overlay').addEventListener('click', close);
+    })();
+  </script>
+  {%- endif %}
 </body>
 </html>

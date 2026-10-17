@@ -1,0 +1,36 @@
+{%- assign b = include.b -%}
+{%- assign fs = b.factions -%}
+{%- assign keys = "Folktails,IronTeeth" | split: "," -%}
+<aside class="te-frame te-stats" aria-label="{{ b.name }} stats">
+  {%- for k in keys -%}{%- if fs[k] %}
+  <input type="radio" class="te-fpick te-fpick-{{ k }}" name="f-{{ include.id }}" id="f-{{ include.id }}-{{ k }}" aria-label="{{ fs[k].faction }}"{% if k == "Folktails" or fs.Folktails == nil %} checked{% endif %}>
+  {%- endif -%}{%- endfor -%}
+  {%- for k in keys -%}
+    {%- assign f = fs[k] -%}
+    {%- if f %}
+  <div class="te-fpanel te-fpanel-{{ k }}">
+    {%- if f.shot %}
+    <div class="te-pic te-portrait"><img src="{{ '/assets/shots/' | append: f.shot | relative_url }}" alt="{{ b.name }}, {{ f.faction }}"></div>
+    {%- endif %}
+    {% include te_faction_toggle.html keys=keys fs=fs current=k id=include.id %}
+    <div class="te-rows">
+      <div class="te-stat"><span>Mod</span><span class="val">{% include mod-badge.html mod=b.mod label=true %}</span></div>
+      <div class="te-stat"><span>Science</span><span class="val">{{ f.science }}</span></div>
+      <div class="te-stat"><span>Cost</span><span class="val te-res-list">{% for c in f.cost %}{% include te_res.html good=c.good amount=c.amount %}{% endfor %}</span></div>
+      {%- if f.size %}<div class="te-stat"><span>Size</span><span class="val">{{ f.size }}</span></div>{% endif %}
+      {%- if f.workers %}<div class="te-stat"><span>Workers</span><span class="val">{{ f.workers }}</span></div>{% endif %}
+      <div class="te-stat"><span>Health</span><span class="val">{{ f.health }}</span></div>
+      {%- if f.trains %}<div class="te-stat"><span>Trains</span><span class="val">{% for tr in f.trains %}<a href="{{ '/troops/' | append: tr.slug | append: '.html' | relative_url }}">{{ tr.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</span></div>{% endif %}
+      {%- if f.makes.size > 0 %}<div class="te-stat"><span>Makes</span><span class="val te-res-list">{% for m in f.makes %}{% include te_res.html good=m.good icon=m.icon %}{% endfor %}</span></div>{% endif %}
+      {%- if f.crew %}<div class="te-stat"><span>Crew</span><span class="val">{{ f.crew }}</span></div>{% endif %}
+      {%- if f.speed %}<div class="te-stat"><span>Speed</span><span class="val">{{ f.speed }}</span></div>{% endif %}
+      {%- if f.range %}<div class="te-stat"><span>Range</span><span class="val">{{ f.range }}</span></div>{% endif %}
+      {%- if f.reload %}<div class="te-stat"><span>Reload</span><span class="val">{{ f.reload }}</span></div>{% endif %}
+      {%- if f.damage %}<div class="te-stat"><span>Damage</span><span class="val">{{ f.damage }}</span></div>{% endif %}
+      {%- if f.structure_damage %}<div class="te-stat"><span>Damage to buildings</span><span class="val">{{ f.structure_damage }}</span></div>{% endif %}
+      {%- if f.ammo %}{%- assign ammo = f.ammo | split: ", holds " -%}<div class="te-stat"><span>Ammunition</span><span class="val te-res-list">{% include te_res.html good=ammo.first amount=ammo.last tip=f.ammo %}</span></div>{% endif %}
+    </div>
+  </div>
+    {%- endif -%}
+  {%- endfor %}
+</aside>

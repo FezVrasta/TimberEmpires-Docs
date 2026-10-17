@@ -10,5 +10,3 @@ has_children: true
 Walls, gates and the towers and galleries that defend them.
 
 {% include gallery.html category="walls-and-towers" %}
-
-{% include navbox.html %}

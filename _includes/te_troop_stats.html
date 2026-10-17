@@ -1,0 +1,35 @@
+{%- assign t = include.t -%}
+{%- assign fs = t.factions -%}
+{%- assign keys = "Folktails,IronTeeth" | split: "," -%}
+<aside class="te-frame te-stats" aria-label="{{ t.name }} stats">
+  {%- for k in keys -%}{%- if fs[k] %}
+  <input type="radio" class="te-fpick te-fpick-{{ k }}" name="f-{{ include.id }}" id="f-{{ include.id }}-{{ k }}" aria-label="{{ fs[k].faction }}"{% if k == "Folktails" or fs.Folktails == nil %} checked{% endif %}>
+  {%- endif -%}{%- endfor -%}
+  {%- for k in keys -%}
+    {%- assign f = fs[k] -%}
+    {%- if f %}
+  <div class="te-fpanel te-fpanel-{{ k }}">
+    {%- if f.shot %}
+    <div class="te-pic te-portrait"><img src="{{ '/assets/shots/' | append: f.shot | relative_url }}" alt="{{ t.name }}, {{ f.faction }}"></div>
+    {%- endif %}
+    {% include te_faction_toggle.html keys=keys fs=fs current=k id=include.id %}
+    <div class="te-rows">
+      <div class="te-stat"><span>Mod</span><span class="val">{% include mod-badge.html mod="te" label=true %}</span></div>
+      <div class="te-stat"><span>Trained at</span><span class="val"><a href="{{ '/buildings/' | append: f.trained_at.slug | append: '.html' | relative_url }}">{{ f.trained_at.name }}</a></span></div>
+      <div class="te-stat"><span>Science</span><span class="val">{{ f.science }}</span></div>
+      <div class="te-stat"><span>Training</span><span class="val">{{ f.training }}</span></div>
+      {%- if t.gear.size > 0 %}<div class="te-stat"><span>Gear</span><span class="val te-res-list">{% for g in t.gear %}{% include te_res.html good=g.name icon=g.icon %}{% endfor %}</span></div>{% endif %}
+      {%- if f.upkeep %}<div class="te-stat"><span>Upkeep</span><span class="val">{{ f.upkeep }}</span></div>{% endif %}
+      <div class="te-stat"><span>Health</span><span class="val">100</span></div>
+      {%- if f.damage %}<div class="te-stat"><span>Damage</span><span class="val">{{ f.damage }} an hour</span></div>{% endif %}
+      {%- if f.heal %}<div class="te-stat"><span>Heals</span><span class="val">{{ f.heal }} an hour</span></div>{% endif %}
+      {%- if f.structure_damage %}<div class="te-stat"><span>Damage to buildings</span><span class="val">{{ f.structure_damage }} an hour</span></div>{% endif %}
+      <div class="te-stat"><span>Damage taken</span><span class="val">×{{ f.taken }}</span></div>
+      <div class="te-stat"><span>Reach</span><span class="val">{{ f.reach }} tiles</span></div>
+      <div class="te-stat"><span>Walk speed</span><span class="val">×{{ f.pace }}</span></div>
+      {%- if f.strong %}<div class="te-stat"><span>Strong against</span><span class="val">{% for s in f.strong %}<a href="{{ '/troops/' | append: s.slug | append: '.html' | relative_url }}">{{ s.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %} (×{{ f.strong_factor }})</span></div>{% endif %}
+    </div>
+  </div>
+    {%- endif -%}
+  {%- endfor %}
+</aside>

@@ -10,5 +10,3 @@ has_children: true
 Where troops are trained, and where their gear and supplies come from.
 
 {% include gallery.html category="military" %}
-
-{% include navbox.html %}

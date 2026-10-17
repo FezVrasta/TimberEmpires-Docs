@@ -1,0 +1,6 @@
+{%- comment -%}A resource icon with its amount and a tooltip: good="Metal Block" amount=20, or icon= when the file name isn't the good's name{%- endcomment -%}
+{%- if include.icon -%}{%- assign ricon = include.icon -%}{%- else -%}
+{%- assign rwords = include.good | split: " " -%}{%- capture ricon -%}{%- for w in rwords -%}{{ w | capitalize }}{%- endfor -%}{%- endcapture -%}
+{%- endif -%}
+{%- assign rtip = include.tip | default: include.good -%}
+<span class="te-res" tabindex="0" data-tip="{{ rtip }}" aria-label="{% if include.amount and include.tip == nil %}{{ include.amount }} {% endif %}{{ rtip }}"><img src="{{ '/assets/icons/' | append: ricon | append: '.png' | relative_url }}" alt="">{{ include.amount }}</span>

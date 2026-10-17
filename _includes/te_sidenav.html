@@ -1,0 +1,37 @@
+{%- comment -%}
+  The side nav for the section the page is in. Sections whose children have
+  children of their own (Buildings) get a heading for each child, the rest one
+  heading for the section. Top-level pages list each other.
+{%- endcomment -%}
+{%- assign sec = page.grand_parent | default: page.parent -%}
+{%- if sec == nil and page.has_children -%}{%- assign sec = page.title -%}{%- endif -%}
+<nav class="te-side" aria-label="{{ sec | default: 'Pages' }}">
+{%- if sec -%}
+  {%- assign kids = site.pages | where_exp: "p", "p.parent == sec and p.grand_parent == nil" | sort: "nav_order", "last" -%}
+  {%- assign nested = kids | where: "has_children", true -%}
+  {%- if nested.size > 0 -%}
+    {%- comment -%}The page's own group first{%- endcomment -%}
+    {%- assign mine = kids | where_exp: "k", "k.title == page.parent or k.url == page.url" -%}
+    {%- assign rest = kids | where_exp: "k", "k.title != page.parent and k.url != page.url" -%}
+    {%- assign kids = mine | concat: rest -%}
+    {%- for k in kids -%}
+      {%- assign subs = site.pages | where_exp: "p", "p.parent == k.title and p.grand_parent == sec" | sort: "nav_order", "last" %}
+  <h3><a href="{{ k.url | relative_url }}"{% if k.url == page.url %} aria-current="page"{% endif %}>{{ k.title }}</a></h3>
+      {%- for s in subs %}
+  {% include te_sidelink.html p=s %}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign top = site.pages | where_exp: "p", "p.title == sec and p.parent == nil" | first %}
+  <h3><a href="{{ top.url | relative_url }}"{% if top.url == page.url %} aria-current="page"{% endif %}>{{ sec }}</a></h3>
+    {%- for s in kids %}
+  {% include te_sidelink.html p=s %}
+    {%- endfor -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign tops = site.pages | where_exp: "p", "p.title and p.parent == nil and p.has_children != true and p.nav_exclude != true and p.url != '/'" | sort: "nav_order", "last" -%}
+  {%- for s in tops %}
+  {% include te_sidelink.html p=s %}
+  {%- endfor -%}
+{%- endif %}
+</nav>

@@ -1,59 +1,34 @@
-// Bark, gold and river: the colors of the loading screen art and the logo
-$wood-950: #0e0a07;
-$wood-900: #18120d;
-$wood-800: #221911;
-$wood-700: #2f2318;
-$wood-600: #463323;
-$wood-500: #6a4c31;
-$gold: #e3b25b;
-$gold-light: #f6d892;
-$gold-deep: #a8762a;
-$ember: #ec6a2a;
-$river: #4f9c99;
-$river-deep: #1d4547;
-$moss: #7e9a4c;
-$cream: #f1e6cf;
-$parchment: #f1e7d2;
-$ink: #2b2117;
-// Kept for the older names the includes still use
-$amber: $gold;
-$amber-dark: $gold-deep;
+// Tokens from the redesign's UI kit
+$te-page: #0f1419;
+$te-band: rgba(14, 26, 30, 0.82);
+$te-panel: rgba(20, 30, 36, 0.94);
+$te-mat: #0c1a1b;
+$te-medal: #16222a;
+$te-brass: #b8913f;
+$te-brass-soft: rgba(184, 145, 63, 0.5);
+$te-hairline: rgba(184, 145, 63, 0.28);
+$te-plaque: #cdb88a;
+$te-plaque-edge: #7d6638;
+$te-plaque-ink: #2a2414;
+$te-beige: #cbb68a;
+$te-action: #a5342c;
+$te-action-low: #932c25;
+$te-slate: #1d2a31;
+$te-slate-low: #17222a;
+$te-gem: #d9584b;
+$te-heading: #f6eacb;
+$te-text: #d3c9b0;
+$te-strong: #f3e6c4;
+$te-muted: #b7ad94;
+$te-faint: #a59d8a;
+$te-label: #c9a453;
+$te-link: #e0b860;
+$te-link-hover: #f6dc9c;
+$te-slogan: #f2e4bf;
 
-$body-font-family: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
-$mono-font-family: "JetBrains Mono", "SFMono-Regular", Menlo, monospace;
-$te-display: "Cinzel", "Trajan Pro", Georgia, serif;
-$te-condensed: "Barlow Condensed", "Barlow", sans-serif;
-$te-quote: "Cormorant Garamond", Georgia, serif;
+$te-display: "Alegreya SC", Georgia, serif;
+$te-quote: "Alegreya", Georgia, serif;
+$body-font-family: "Alegreya Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+$mono-font-family: "SFMono-Regular", Menlo, Consolas, monospace;
 $root-font-size: 16px;
-$nav-width: 290px;
-$content-width: 1060px;
-$te-topbar-h: 64px;
-
-// The page's own colors, parchment by default; timber-dark sets them again
-$te-bg: $parchment !default;
-$te-panel: #f9f3e5 !default;
-$te-text: $ink !default;
-$te-heading: #3a2412 !default;
-$te-muted: #6e5c45 !default;
-$te-link: #8f5f16 !default;
-$te-accent: $gold-deep !default;
-$te-border: #dccbaa !default;
-$te-row-alt: #f4ecdb !default;
-$te-strong: #3a2412 !default;
-
-// Inline SVG, so textures and ornaments need no extra requests
-@function te-replace($string, $search, $replace) {
-  $i: str-index($string, $search);
-  @while $i {
-    $string: str-slice($string, 1, $i - 1) + $replace + str-slice($string, $i + str-length($search));
-    $i: str-index($string, $search);
-  }
-  @return $string;
-}
-@function te-svg($svg) {
-  $svg: te-replace($svg, '"', "'");
-  $svg: te-replace($svg, "<", "%3C");
-  $svg: te-replace($svg, ">", "%3E");
-  $svg: te-replace($svg, "#", "%23");
-  @return url("data:image/svg+xml,#{$svg}");
-}
+$te-content: 1240px;
