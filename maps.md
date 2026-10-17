@@ -21,3 +21,18 @@ intro: Maps built for Timber Empires. Subscribe on the Steam Workshop and they s
     </div>
   </div>
 </article>
+
+<!-- TODO: add The Pumpkin's Curse's Workshop link and button once it's published. -->
+<article class="te-frame te-map">
+  <div class="te-frame-head"><h2 class="te-plaque">The Pumpkin's Curse</h2></div>
+  <div class="te-map-body">
+    <span class="te-pic has-gem"><span class="te-pic-gem" aria-hidden="true"></span><img src="{{ '/assets/maps/the-pumpkins-curse.jpg' | relative_url }}" alt="The Pumpkin's Curse map"></span>
+    <div class="te-map-text">
+      <div class="te-rows">
+        <div class="te-stat"><span>Size</span><span class="val">256 × 256</span></div>
+        <div class="te-stat"><span>Players</span><span class="val">2</span></div>
+        <div class="te-stat"><span>Mode</span><span class="val"><a href="{{ '/playing/horde.html' | relative_url }}">Horde</a></span></div>
+      </div>
+    </div>
+  </div>
+</article>
