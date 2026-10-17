@@ -9,8 +9,4 @@ redirect_from:
 
 # Bladesmith
 
-{% include infobox-building.html id="bladesmith" %}
-
 The Folktails workshop for swords and battle axes. It needs power. It used to be called the Armory.
-
-{% include navbox.html %}

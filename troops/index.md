@@ -36,5 +36,3 @@ Every troop needs its weapon, and a barracks keeps 6 in stock for its recruits. 
 Monks need no weapon: each one costs 40 science to train, and books (Iron Teeth: coffee) to keep working.
 
 Gear wears out in two days of use, and troops swap in a spare from their kit (see [Supply](../military/combat.md#supply)).
-
-{% include navbox.html %}

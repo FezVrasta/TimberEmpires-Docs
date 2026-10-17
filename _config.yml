@@ -12,7 +12,7 @@ baseurl: /TimberEmpires-Docs
 logo: /assets/images/logo.png
 search_enabled: true
 heading_anchors: true
-color_scheme: timber
+color_scheme: te
 aux_links:
   "Report a bug":
     - "https://discord.com/channels/1556989523756322856/1556990538736074762"

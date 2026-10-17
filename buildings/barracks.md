@@ -7,8 +7,6 @@ nav_order: 20
 
 # Barracks
 
-{% include infobox-building.html id="barracks" %}
-
 Trains troops. It's a workplace, and its workers are your troops: pick which kind it trains in its panel. Spearmen are free; the other kinds are unlocked from the panel with science. Changing the kind lets the current troops go, and new recruits come in to train as the new kind.
 
 ## Training
@@ -23,5 +21,3 @@ The barracks keeps 6 weapons in stock, brought by your haulers from the [Weapons
 
 - [Archery Range](archery-range.md) for shooters, [Monastery](monastery.md) for monks.
 - [Troops](../troops/index.md)
-
-{% include navbox.html %}

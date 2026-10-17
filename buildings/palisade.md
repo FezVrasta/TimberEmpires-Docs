@@ -7,8 +7,6 @@ nav_order: 1
 
 # Palisade
 
-{% include infobox-building.html id="palisade" %}
-
 The Folktails wall. It blocks everyone, friend or foe: a [Gatehouse](gatehouse.md) lets your side through.
 
 ## Manning the wall
@@ -24,5 +22,3 @@ A palisade holds back water like a dam. With [Dam pressure](../settings.md#dam-p
 - [Wall](wall.md), the Iron Teeth version.
 - [Wall Foundation](wall-foundation.md), to lift it over uneven ground.
 - [Defenses](../military/walls.md): damage, repairs and ammunition.
-
-{% include navbox.html %}

@@ -1,0 +1,19 @@
+// Dark only: the page, bands and panels from the UI kit
+$color-scheme: dark;
+$body-background-color: $te-page;
+$body-heading-color: $te-heading;
+$body-text-color: $te-text;
+$link-color: $te-link;
+$nav-child-link-color: $te-muted;
+$sidebar-color: $te-page;
+$base-button-color: $te-slate;
+$btn-primary-color: $te-action;
+$code-background-color: #16222a;
+$code-linenumber-color: $te-faint;
+$feedback-color: $te-slate;
+$table-background-color: transparent;
+$search-background-color: #0e1a1e;
+$search-result-preview-color: $te-muted;
+$border-color: $te-hairline;
+
+@import "./vendor/OneDarkJekyll/syntax";

@@ -6,8 +6,6 @@ nav_order: 9
 
 # Monk
 
-{% include infobox-troop.html id="monk" %}
-
 Monks don't fight or heal: they convert. They're trained at the [Monastery](../buildings/monastery.md) by every faction.
 
 ## Converting
@@ -27,5 +25,3 @@ Both sides get a notification. Monks never convert an ally's troops.
 ## Looks
 
 Monks wear a robe, brown for Folktails and grey for Iron Teeth, trimmed in their owner's color. Select one to hear it.
-
-{% include navbox.html %}

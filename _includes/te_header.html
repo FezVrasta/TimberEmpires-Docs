@@ -1,0 +1,22 @@
+{%- comment -%}The header band: wordmark, the main sections and search{%- endcomment -%}
+{%- assign here = page.grand_parent | default: page.parent | default: page.title -%}
+<header id="main-header" class="te-band te-header">
+  <div class="te-header-inner">
+    <a class="te-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}"></a>
+    <nav class="te-nav" aria-label="Main">
+      {%- assign links = "Getting started|/getting-started.html,Game modes|/game-modes.html,Buildings|/buildings/,Troops|/troops/,Maps|/maps.html,Modding|/modding.html" | split: "," -%}
+      {%- for l in links -%}
+        {%- assign p = l | split: "|" %}
+      <a href="{{ p[1] | relative_url }}"{% if here == p[0] %} class="on" aria-current="{% if page.title == p[0] %}page{% else %}true{% endif %}"{% endif %}>{{ p[0] }}</a>
+      {%- endfor %}
+    </nav>
+    {%- if site.search_enabled != false %}
+    <button type="button" class="te-search-btn" aria-label="Search the docs" aria-expanded="false" aria-controls="te-search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+    </button>
+    <div id="te-search" class="te-search">
+      {% include components/search_header.html %}
+    </div>
+    {%- endif %}
+  </div>
+</header>

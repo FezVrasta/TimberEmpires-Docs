@@ -1,0 +1,5 @@
+{%- if include.p.url == page.url -%}
+<a class="on" href="{{ include.p.url | relative_url }}" aria-current="page"><span class="te-gem" aria-hidden="true"></span>{{ include.p.title }}</a>
+{%- else -%}
+<a href="{{ include.p.url | relative_url }}">{{ include.p.title }}</a>
+{%- endif -%}

@@ -7,8 +7,6 @@ nav_order: 9
 
 # Field Infirmary
 
-{% include infobox-building.html id="field-infirmary" %}
-
 An Iron Teeth healing tub on wheels for after a battle. It treats one troop at a time, using extract and berries. Hurt troops nearby go to it when no enemy is close.
 
 Its crew only pushes it around.
@@ -17,5 +15,3 @@ Its crew only pushes it around.
 
 - [Healing](../military/combat.md#healing)
 - [Herbalist](../troops/herbalist.md), the Folktails healer.
-
-{% include navbox.html %}

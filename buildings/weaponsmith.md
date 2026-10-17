@@ -9,8 +9,4 @@ redirect_from:
 
 # Weaponsmith
 
-{% include infobox-building.html id="weaponsmith" %}
-
 Makes most of the gear troops train with, and the bolts ballistas shoot. It burns logs. It used to be called the Forge.
-
-{% include navbox.html %}

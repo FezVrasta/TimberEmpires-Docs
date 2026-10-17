@@ -1,382 +1,740 @@
 // ---------------------------------------------------------------------------
-// Textures and ornaments
+// Base
 // ---------------------------------------------------------------------------
 
-// The shield from the logo
-$te-shield: te-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24"><path d="M10 1 19 4v7c0 6-5 10-9 12-4-2-9-6-9-12V4z"/></svg>');
-$te-diamond: te-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><path d="M5 0 10 5 5 10 0 5z"/></svg>');
-$te-wave: te-svg('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="28" viewBox="0 0 160 28"><path d="M0 12C20 4 40 4 60 12s40 8 60 0 40-8 40 0V28H0z" fill="#fff"/></svg>');
-
-@mixin te-wood($dir: v, $from: $wood-800, $to: $wood-900) {
-  background: linear-gradient(180deg, $from, $to);
-}
-@mixin te-ornament($shape, $size, $color) {
-  -webkit-mask: $shape center / contain no-repeat;
-  mask: $shape center / contain no-repeat;
-  background: $color;
-  width: $size;
-  height: $size;
-}
-@mixin te-label {
-  font-family: $te-condensed;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-// ---------------------------------------------------------------------------
-// Page frame
-// ---------------------------------------------------------------------------
-
-html { background: $wood-950; }
+html { background: $te-page; }
 body {
-  background: $te-bg;
+  background: $te-page;
   color: $te-text;
+  font-family: $body-font-family;
   padding-bottom: 0 !important;
+  overflow-x: hidden;
 }
-::selection { background: rgba($gold, 0.35); }
+::selection { background: rgba($te-brass, 0.35); }
+a { color: $te-link; }
+a:hover { color: $te-link-hover; }
+img { max-width: 100%; }
 
-// The top bar: a dark plank with a gold rule under it
-.te-topbar {
-  position: relative;
-  z-index: 50;
-  @include te-wood(h, #2a1f15, #1a130d);
-  box-shadow:
-    0 1px 0 rgba($gold, 0.55),
-    0 2px 0 #000,
-    0 3px 0 rgba($gold, 0.18),
-    0 10px 30px rgba(0, 0, 0, 0.45);
-  @media (min-width: 50rem) {
-    position: sticky;
-    top: 0;
-    height: $te-topbar-h;
-  }
-}
-.te-topbar-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 1.4rem;
-  height: 100%;
-  padding: 0.7rem 1rem;
-  @media (min-width: 50rem) { flex-wrap: nowrap; padding: 0 1.5rem; }
-}
-.te-brand { display: block; flex: none; }
-.te-brand img { display: block; height: 38px; width: auto; margin: -5px 0; }
-.te-brand:hover img { filter: drop-shadow(0 0 10px rgba($gold, 0.45)); }
-.te-quick { display: none; gap: 1.4rem; }
-@media (min-width: 66rem) { .te-quick { display: flex; } }
-.te-quick a {
-  @include te-label;
-  font-size: 0.98rem;
-  color: #e9dcc0;
-  text-decoration: none;
-  padding: 0.3rem 0;
-  border-bottom: 2px solid transparent;
-  transition: color 0.15s, border-color 0.15s;
-}
-.te-quick a:hover { color: $gold-light; border-bottom-color: $gold; }
-
-// Search, sunk into the plank
-.te-topbar .search {
-  order: 5;
-  flex: 1 0 100%;
-  height: 40px !important;
-  padding: 0 !important;
-  @media (min-width: 50rem) { order: 0; flex: 0 1 300px; margin-left: auto; }
-}
-.te-topbar .search-input-wrap {
-  position: absolute !important;
-  inset: 0 0 auto auto;
-  width: 100% !important;
-  height: 40px !important;
-  border-radius: 6px !important;
-  background: rgba(0, 0, 0, 0.38);
-  border: 1px solid rgba($gold, 0.22);
-  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5) !important;
-}
-.te-topbar .search-input {
-  background: transparent !important;
-  color: $cream !important;
-  font-size: 0.92rem !important;
-  padding-left: 2.5rem !important;
-}
-.te-topbar .search-input::placeholder { color: #a8977b; }
-.te-topbar .search-label { padding-left: 0.85rem !important; }
-.te-topbar .search-label .search-icon { color: $gold !important; }
-.search-active .te-topbar .search-input-wrap {
-  @media (min-width: 50rem) { width: Min(560px, 80vw) !important; }
-  border-color: rgba($gold, 0.6);
-  background: $wood-800;
-}
-.te-topbar .search-results {
-  left: auto !important;
-  right: 0;
-  top: 46px !important;
-  width: Min(560px, calc(100vw - 2rem)) !important;
-  max-height: calc(100vh - 120px) !important;
-  background: $wood-800;
-  border: 1px solid rgba($gold, 0.3);
-  border-radius: 8px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-}
-.search-active .search { @media (max-width: 49.99rem) { z-index: 60; } }
-.search-active .te-topbar .search-input-wrap { @media (max-width: 49.99rem) { position: fixed !important; inset: 0.7rem 1rem auto 1rem; width: auto !important; } }
-.search-result { color: $cream !important; }
-.search-result:hover, .search-result.active { background: rgba($gold, 0.12) !important; }
-.search-result-doc-title, .search-result-title { color: $cream; }
-.search-result-section, .search-result-rel-url { color: #a8977b !important; }
-.search-result-highlight { color: $gold-light; font-weight: 600; }
-.search-no-result { color: #a8977b; }
-.search-overlay { z-index: 40; background: rgba(5, 3, 2, 0.6); }
-
-// Light or dark
-.theme-toggle {
-  display: flex; align-items: center; justify-content: center;
-  flex: none;
-  width: 2.4rem; height: 2.4rem;
-  border: 1px solid rgba($gold, 0.3);
-  border-radius: 6px;
-  background: rgba(0, 0, 0, 0.25);
-  color: $gold;
-  cursor: pointer;
-  margin-left: auto;
-  @media (min-width: 50rem) { margin-left: 0; }
-}
-.theme-toggle:hover { border-color: $gold; color: $gold-light; box-shadow: 0 0 12px rgba($gold, 0.25); }
-.theme-toggle svg { width: 1.15rem; height: 1.15rem; }
-.theme-toggle .moon { display: none; }
-@if $color-scheme == dark {
-  .theme-toggle .sun { display: none; }
-  .theme-toggle .moon { display: block; }
-}
-.te-menu {
-  display: flex; align-items: center; justify-content: center;
-  width: 2.4rem; height: 2.4rem;
-  border: 1px solid rgba($gold, 0.3);
-  border-radius: 6px;
-  background: rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  .icon { color: $gold; }
-  &.nav-open { border-color: $gold; }
-  @media (min-width: 50rem) { display: none; }
-}
-
-// Sidebar and page side by side
-.te-shell {
-  @media (min-width: 50rem) {
-    display: grid;
-    grid-template-columns: $nav-width minmax(0, 1fr);
-  }
-}
-.te-sidebar {
-  @include te-wood(v, $wood-800, $wood-900);
-  border-right: 1px solid #000;
-  box-shadow: inset -1px 0 0 rgba($gold, 0.12), inset -12px 0 24px -12px rgba(0, 0, 0, 0.6);
-  @media (min-width: 50rem) {
-    position: sticky;
-    top: $te-topbar-h;
-    height: calc(100vh - #{$te-topbar-h});
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: rgba($gold, 0.25) transparent;
-  }
-}
-.te-sidebar .site-nav {
-  width: auto;
-  padding: 1.4rem 0.6rem 2rem;
-  @media (max-width: 49.99rem) { padding: 0.6rem 0.4rem 1rem; }
-}
-.te-home .te-shell { display: block; }
-.te-home .te-sidebar { @media (min-width: 50rem) { display: none; } }
-
-// Navigation
-.nav-list .nav-list-item {
-  .nav-list-link {
-    color: #eadcc0;
-    border-radius: 4px;
-    padding-left: 0.85rem !important;
-    transition: background 0.15s, color 0.15s;
-    &:hover { background: rgba($gold, 0.1); background-image: none; color: $gold-light; }
-    &.active {
-      background: linear-gradient(90deg, rgba($gold, 0.22), rgba($gold, 0.04));
-      color: $gold-light;
-      box-shadow: inset 3px 0 0 $gold;
-    }
-  }
-  .nav-list-expander { color: rgba($gold, 0.8); border-radius: 4px; }
-  .nav-list-expander:hover { background: rgba($gold, 0.1); background-image: none; }
-}
-.site-nav > .nav-list > .nav-list-item > .nav-list-link {
-  @include te-label;
-  font-size: 0.95rem;
-  letter-spacing: 0.07em;
-}
-.nav-list .nav-list-item .nav-list .nav-list-link { color: #cdbd9f; font-size: 0.92rem; }
-.nav-list .nav-list-item .nav-list { margin-left: 0.6rem; border-left: 1px solid rgba($gold, 0.14); }
-.nav-list .nav-list-item.active > .nav-list-link:not(.active) { color: $gold; }
-
-// The page itself
-.te-main {
-  min-width: 0;
-  background-color: $te-bg;
-  background-image:
-    if($color-scheme == dark,
-      radial-gradient(ellipse 80% 40% at 50% 0, rgba($ember, 0.06), transparent 70%),
-      radial-gradient(ellipse 120% 80% at 50% 30%, transparent 55%, rgba(#8a6a3a, 0.12) 100%));
-}
-.te-content {
-  max-width: $content-width;
+$te-gutter: 24px;
+$te-gutter-sm: 16px;
+@mixin te-container {
+  max-width: $te-content;
   margin: 0 auto;
-  padding: 1.5rem 1.1rem 7rem;
-  @media (min-width: 50rem) { padding: 2.2rem 3rem 8rem; }
 }
-.main-content { line-height: 1.7; }
-.main-content p, .main-content li { font-size: 1.02rem; }
-
-// Breadcrumbs
-.breadcrumb-nav { margin-bottom: 0.4rem; }
-.breadcrumb-nav-list-item {
-  @include te-label;
-  font-size: 0.82rem !important;
-  color: $te-muted;
-  &::before { color: $te-accent !important; }
-  a { color: $te-link; text-decoration: none; }
-  a:hover { text-decoration: underline; }
+// The boards size containers without their padding
+@mixin te-padded($w: $te-content) {
+  max-width: $w + 2 * $te-gutter;
+  margin: 0 auto;
+}
+@mixin te-gutters {
+  padding-left: $te-gutter;
+  padding-right: $te-gutter;
+  @media (max-width: 40rem) { padding-left: $te-gutter-sm; padding-right: $te-gutter-sm; }
 }
 
 // ---------------------------------------------------------------------------
-// Type
+// Components from the UI kit
 // ---------------------------------------------------------------------------
 
-.main-content h1, .main-content h2, .te-hero-title, .card-title, .gallery-name, .infobox-title, .navbox-title {
-  font-family: $te-display;
-}
-.main-content h1 {
-  font-size: clamp(2.1rem, 4vw, 2.9rem) !important;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-  color: $te-heading;
-  margin: 0.2rem 0 1.6rem !important;
-  @if $color-scheme == dark { text-shadow: 0 2px 18px rgba($ember, 0.18); }
-}
-// A gold rule with a diamond under every page title
-.main-content h1::after {
-  content: "";
-  display: block;
-  width: Min(280px, 60%);
-  height: 12px;
-  margin-top: 0.7rem;
-  background:
-    linear-gradient($te-accent, $te-accent) 0 50% / 9px 9px no-repeat,
-    linear-gradient(90deg, $te-accent, rgba($te-accent, 0)) 16px 50% / calc(100% - 16px) 1px no-repeat;
-  -webkit-mask: $te-diamond 0 50% / 10px 10px no-repeat, linear-gradient(#000, #000) 14px 0 / 100% 100% no-repeat;
-  mask: $te-diamond 0 50% / 10px 10px no-repeat, linear-gradient(#000, #000) 14px 0 / 100% 100% no-repeat;
-}
-.main-content h2 {
-  position: relative;
-  font-size: 1.6rem !important;
-  font-weight: 700;
-  letter-spacing: 0.025em;
-  color: $te-heading;
-  margin-top: 2.8rem !important;
-  margin-bottom: 1rem !important;
-  padding: 0 0 0.45rem 1.85rem;
-  border-bottom: none;
-  display: flow-root;
-}
-.main-content h2::before {
+// Band: a translucent strip with a brass double rule top and bottom
+.te-band { position: relative; background: $te-band; }
+.te-band::before, .te-band::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.32em;
-  @include te-ornament($te-shield, 1.15rem, $te-accent);
+  right: 0;
+  height: 5px;
+  border-top: 2px solid $te-brass;
+  border-bottom: 1px solid rgba($te-brass, 0.45);
+  filter: url(#te-rough-line);
+  pointer-events: none;
 }
-.main-content h2::after {
+.te-band::before { top: 0; }
+.te-band::after { bottom: 0; transform: scaleY(-1); }
+
+// Plaque: the tan label that names a section, and the rule it can sit on
+.te-plaque {
+  display: inline-block;
+  margin: 0;
+  padding: 6px 34px;
+  background: $te-plaque;
+  color: $te-plaque-ink;
+  font-family: $te-display;
+  font-weight: 700;
+  font-size: 17px !important;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  border: 2px solid $te-plaque-edge;
+  box-shadow: inset 0 0 0 2px $te-plaque, inset 0 0 0 3px rgba(90, 70, 30, 0.5);
+  filter: url(#te-rough-soft);
+  white-space: nowrap;
+  @media (max-width: 30rem) { padding: 6px 18px; font-size: 15px !important; white-space: normal; text-align: center; }
+}
+.te-plaque.small { font-size: 14px !important; padding: 3px 20px; }
+.te-plaque-rule { display: flex; align-items: center; width: 100%; }
+.te-plaque-rule i { flex: 1; min-width: 12px; height: 2px; background: $te-brass; filter: url(#te-rough-line); }
+
+// Frame: a panel with a heavy brass edge and corner brackets on its inner line
+.te-frame {
+  position: relative;
+  isolation: isolate;
+}
+.te-frame::before {
   content: "";
   position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 1px;
-  background: linear-gradient(90deg, rgba($te-accent, 0.8), rgba($te-accent, 0.15) 50%, transparent 85%);
+  inset: 0;
+  z-index: -1;
+  background: $te-panel;
+  border: 3px solid $te-brass;
+  border-radius: 3px;
+  filter: url(#te-rough) drop-shadow(0 14px 24px rgba(0, 0, 0, 0.45));
 }
-.main-content h3 {
-  font-family: $te-condensed;
-  font-size: 1.3rem !important;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: $te-heading;
-  margin-top: 2rem !important;
-  display: flow-root;
+.te-frame::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 2px;
+  filter: url(#te-rough-soft);
+  background:
+    linear-gradient($te-brass-soft, $te-brass-soft) 18px 0 / calc(100% - 36px) 1px no-repeat,
+    linear-gradient($te-brass-soft, $te-brass-soft) 18px 100% / calc(100% - 36px) 1px no-repeat,
+    linear-gradient($te-brass-soft, $te-brass-soft) 0 18px / 1px calc(100% - 36px) no-repeat,
+    linear-gradient($te-brass-soft, $te-brass-soft) 100% 18px / 1px calc(100% - 36px) no-repeat,
+    linear-gradient($te-brass, $te-brass) 0 0 / 12px 2px no-repeat,
+    linear-gradient($te-brass, $te-brass) 0 0 / 2px 12px no-repeat,
+    linear-gradient($te-brass, $te-brass) 100% 0 / 12px 2px no-repeat,
+    linear-gradient($te-brass, $te-brass) 100% 0 / 2px 12px no-repeat,
+    linear-gradient($te-brass, $te-brass) 0 100% / 12px 2px no-repeat,
+    linear-gradient($te-brass, $te-brass) 0 100% / 2px 12px no-repeat,
+    linear-gradient($te-brass, $te-brass) 100% 100% / 12px 2px no-repeat,
+    linear-gradient($te-brass, $te-brass) 100% 100% / 2px 12px no-repeat;
 }
-.main-content strong { color: $te-strong; font-weight: 600; }
-.main-content a:not(.btn):not(.card):not(.gallery-item):not(.anchor-heading) {
-  color: $te-link;
-  text-decoration: underline;
-  text-decoration-color: rgba($te-link, 0.35);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  transition: text-decoration-color 0.15s, color 0.15s;
-  &:hover { text-decoration-color: $te-link; }
-}
-.anchor-heading svg { color: $te-accent; }
-.main-content ul > li::before { color: $te-accent !important; }
-hr { background: linear-gradient(90deg, transparent, rgba($te-accent, 0.6), transparent) !important; height: 1px !important; border: 0; margin: 2.5rem 0; }
+// A plaque sitting on the frame's top edge
+.te-frame-head { display: flex; justify-content: center; transform: translateY(-50%); }
 
-// The flavor line under each title, set like a chronicle
-.flavor {
-  margin: -0.4rem 0 1.6rem;
-  padding: 0.1rem 0 0.1rem 1.1rem;
-  border-left: 2px solid $te-accent;
-  font-family: $te-quote;
-  font-style: italic;
-  font-weight: 500;
-  font-size: 1.32rem;
-  line-height: 1.4;
+// Buttons: beige border, flat two-tone fill. Crimson for the main action, slate for the rest
+.te-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 36px;
+  color: #fbf1dc;
+  font-family: $body-font-family;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+  --top: #{$te-action};
+  --bot: #{$te-action-low};
+  @media (max-width: 30rem) { padding: 8px 24px; }
+}
+.te-btn:hover { --top: #b73c33; --bot: #a3322a; color: #fff; }
+.te-btn.ghost { --top: #{$te-slate}; --bot: #{$te-slate-low}; color: #efe3c4; }
+.te-btn.ghost:hover { --top: #26353d; --bot: #1f2c33; color: #fff; }
+.te-btn::before, .te-btn::after { content: ""; position: absolute; z-index: -1; filter: url(#te-rough-soft); }
+.te-btn::before {
+  inset: 0;
+  border-radius: 1px;
+  background: $te-beige;
+  box-shadow: 0 0 0 1px rgba(10, 8, 4, 0.7), 0 2px 3px rgba(0, 0, 0, 0.45);
+}
+.te-btn::after {
+  inset: 2px;
+  background: linear-gradient(180deg, var(--top) 0, var(--top) 50%, var(--bot) 50%, var(--bot) 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+.te-btn:focus-visible { outline: 2px solid $te-link-hover; outline-offset: 3px; }
+
+// Medal: game icons sit in a diamond, never touching its edges
+.te-medal {
+  position: relative;
+  isolation: isolate;
+  flex: none;
+  width: 116px;
+  height: 116px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.te-medal::before {
+  content: "";
+  position: absolute;
+  inset: 11px;
+  z-index: -1;
+  transform: rotate(45deg);
+  background: $te-medal;
+  border: 2px solid $te-brass;
+  box-shadow: inset 0 0 0 4px $te-medal, inset 0 0 0 5px $te-brass-soft;
+  filter: url(#te-rough-soft);
+}
+.te-medal img { width: 50px; height: 50px; object-fit: contain; }
+.te-medal.xs { width: 60px; height: 60px; }
+.te-medal.xs::before { inset: 8px; box-shadow: inset 0 0 0 3px $te-medal, inset 0 0 0 4px $te-brass-soft; }
+.te-medal.xs img { width: 26px; height: 26px; }
+
+// Gem: marks list items and the current page
+.te-gem { position: relative; display: inline-block; flex: none; width: 22px; height: 22px; }
+.te-gem::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  transform: rotate(45deg);
+  background: $te-medal;
+  border: 2px solid #c9a95e;
+  filter: url(#te-rough-soft);
+}
+.te-gem::after { content: ""; position: absolute; inset: 8px; transform: rotate(45deg); background: $te-gem; }
+
+// Picture frame: dark mat, beige border, L brackets at the corners, an optional gem on top
+.te-pic { position: relative; isolation: isolate; display: block; padding: 10px; }
+.te-pic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: $te-mat;
+  border: 2px solid $te-beige;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7), inset 0 0 0 1px rgba(0, 0, 0, 0.7), 0 10px 24px rgba(0, 0, 0, 0.45);
+  filter: url(#te-rough-soft);
+}
+.te-pic::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  pointer-events: none;
+  filter: url(#te-rough-soft);
+  $b: #d8c08e;
+  background:
+    linear-gradient($b, $b) 0 0 / 26px 3px no-repeat,
+    linear-gradient($b, $b) 0 0 / 3px 26px no-repeat,
+    linear-gradient($b, $b) 100% 0 / 26px 3px no-repeat,
+    linear-gradient($b, $b) 100% 0 / 3px 26px no-repeat,
+    linear-gradient($b, $b) 0 100% / 26px 3px no-repeat,
+    linear-gradient($b, $b) 0 100% / 3px 26px no-repeat,
+    linear-gradient($b, $b) 100% 100% / 26px 3px no-repeat,
+    linear-gradient($b, $b) 100% 100% / 3px 26px no-repeat;
+}
+.te-pic img { display: block; width: 100%; object-fit: cover; box-shadow: 0 0 0 1px rgba($te-beige, 0.45); }
+a.te-pic:hover::before { border-color: #e6d3a3; }
+.te-pic-gem { position: absolute; top: -12px; left: 50%; width: 24px; height: 24px; margin-left: -12px; z-index: 1; }
+.te-pic-gem::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  transform: rotate(45deg);
+  background: $te-mat;
+  border: 2px solid $te-beige;
+  filter: url(#te-rough-soft);
+}
+.te-pic-gem::after { content: ""; position: absolute; inset: 8px; transform: rotate(45deg); background: $te-gem; }
+
+// Stat rows split by hairlines
+.te-stat {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 2px;
+  font-size: 15px;
   color: $te-muted;
 }
-.hatnote { margin: -0.4rem 0 1rem; padding-left: 1.2rem; font-style: italic; color: $te-muted; }
-
-code {
-  font-size: 0.86em;
-  border: 1px solid $te-border !important;
-  background: $code-background-color !important;
-  border-radius: 4px;
+.te-stat + .te-stat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: $te-hairline;
+  filter: url(#te-rough-line);
 }
+.te-stat .val { color: $te-strong; font-weight: 700; text-align: right; }
+.te-stat .val a { color: $te-link; }
 
-// ---------------------------------------------------------------------------
-// Buttons
-// ---------------------------------------------------------------------------
-
-.btn {
-  @include te-label;
-  font-size: 1rem;
+// Resource icons with their amount, and a tooltip with the good's name
+.te-res-list { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 14px; }
+.te-res { position: relative; display: inline-flex; align-items: center; gap: 4px; cursor: default; outline: none; }
+.te-res img { width: 26px; height: 26px; }
+.te-res:focus-visible img { outline: 1px solid $te-beige; outline-offset: 2px; }
+@mixin te-tip {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 5px 10px;
+  background: #0e1a1e;
+  border: 1px solid $te-beige;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7), 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: $te-strong;
+  font-family: $body-font-family;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  padding: 0.7rem 1.6rem;
+  line-height: 1.3;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s;
+}
+.te-res::after { @include te-tip; }
+.te-res:hover::after, .te-res:focus-visible::after { opacity: 1; }
+
+// ---------------------------------------------------------------------------
+// Header
+// ---------------------------------------------------------------------------
+
+.te-header { position: relative; z-index: 20; padding: 10px $te-gutter 12px; }
+.te-header-inner {
+  @include te-container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 32px;
+}
+.te-brand { display: flex; align-items: center; flex: none; }
+.te-brand img { display: block; height: 34px; width: auto; }
+.te-nav { display: flex; gap: 4px 26px; }
+.te-nav a {
+  padding: 8px 2px;
+  color: #d6cbae;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.te-nav a:hover { color: $te-link-hover; }
+.te-nav a.on { color: $te-link-hover; box-shadow: inset 0 -2px 0 $te-gem; }
+.te-search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: #d8b064;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.te-search-btn:hover { color: $te-link-hover; }
+
+// On narrow screens the nav gets its own rows under the wordmark
+@media (max-width: 60rem) {
+  .te-header { padding-left: $te-gutter-sm; padding-right: $te-gutter-sm; }
+  .te-header-inner { flex-wrap: wrap; }
+  .te-nav { order: 3; flex: 1 0 100%; flex-wrap: wrap; gap: 0 22px; }
+  .te-nav a { padding: 6px 2px; }
+}
+
+// Search: the theme's own search box, opened from the icon
+.te-search { display: none; }
+.te-search-open .te-search { display: block; }
+.te-search .search {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  width: auto !important;
+  height: auto !important;
+  padding: 12px $te-gutter !important;
+  background: #0e1a1e;
+  box-shadow: 0 2px 0 $te-brass, 0 3px 0 rgba(0, 0, 0, 0.8), 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.te-search .search-input-wrap {
+  position: relative !important;
+  max-width: 760px;
+  width: 100% !important;
+  height: 44px !important;
+  margin: 0 auto;
+  border: 1px solid rgba($te-beige, 0.55);
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.te-search .search-input {
+  padding-left: 44px !important;
+  font-family: $body-font-family;
+  font-size: 17px !important;
+  color: $te-strong;
+  background: $te-mat !important;
+}
+.te-search .search-input::placeholder { color: $te-faint; }
+.te-search .search-label { padding-left: 14px !important; }
+.te-search .search-label .search-icon { color: #d8b064 !important; }
+.te-search .search-results {
+  position: static !important;
+  display: none;
+  max-width: 760px;
+  width: 100% !important;
+  max-height: 70vh !important;
+  margin: 8px auto 0;
+  background: #0e1a1e;
+  border: 1px solid rgba($te-beige, 0.4);
+  border-radius: 2px;
+}
+.search-active .te-search .search-results { display: block; }
+.search-result { color: $te-text !important; }
+.search-result:hover, .search-result.active { background: rgba($te-brass, 0.12) !important; }
+.search-result-doc-title, .search-result-title { color: $te-heading; font-family: $te-display; }
+.search-result-section, .search-result-rel-url { color: $te-faint !important; }
+.search-result-highlight { color: $te-link-hover; font-weight: 700; }
+.search-no-result { color: $te-faint; }
+.te-search .search-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  width: auto !important;
+  height: auto !important;
+  opacity: 1 !important;
+  background: rgba(5, 8, 10, 0.6);
+}
+
+// ---------------------------------------------------------------------------
+// Art strip and title band, on every page but home
+// ---------------------------------------------------------------------------
+
+.te-strip { position: relative; isolation: isolate; }
+.te-strip-art, .te-hero-art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center 62%;
+}
+.te-strip-gap { height: 120px; @media (max-width: 40rem) { height: 72px; } }
+.te-title { padding: 20px $te-gutter 22px; @media (max-width: 40rem) { padding: 16px $te-gutter-sm 18px; } }
+.te-title-inner {
+  @include te-container;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+}
+.te-title-inner.has-intro { align-items: baseline; column-gap: 32px; }
+.te-title-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.te-title h1 {
+  margin: 0;
+  font-family: $te-display;
+  font-size: 46px !important;
+  line-height: 1.05;
+  font-weight: 800;
+  color: $te-heading;
+  overflow-wrap: anywhere;
+  @media (max-width: 40rem) { font-size: 36px !important; }
+}
+.te-crumbs { font-size: 14px; color: $te-muted; }
+.te-crumbs a { color: $te-muted !important; }
+.te-crumbs a:hover { color: $te-link-hover; }
+.te-flavor {
+  margin: 0 0 0 auto;
+  font-family: $te-quote;
+  font-style: italic;
+  font-size: 20px;
+  color: $te-slogan;
+  @media (max-width: 60rem) { flex: 1 0 100%; margin: 0; font-size: 18px; }
+}
+.te-intro { margin: 0; font-size: 18px; color: #e3d8bd; }
+.te-title .te-medal { @media (max-width: 40rem) { width: 84px; height: 84px; } }
+.te-title .te-medal::before { @media (max-width: 40rem) { inset: 9px; } }
+.te-title .te-medal img { @media (max-width: 40rem) { width: 36px; height: 36px; } }
+
+// ---------------------------------------------------------------------------
+// Page body: side nav and content
+// ---------------------------------------------------------------------------
+
+.te-page {
+  @include te-padded;
+  @include te-gutters;
+  padding-top: 48px;
+  padding-bottom: 96px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  @media (max-width: 50rem) { flex-direction: column; gap: 56px; padding-top: 32px; padding-bottom: 64px; }
+}
+.te-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: flex-start;
+  @media (max-width: 50rem) { width: 100%; }
+}
+.te-wide {
+  @include te-padded;
+  @include te-gutters;
+  padding-top: 72px;
+  padding-bottom: 96px;
+}
+
+// The side nav: section headings, and a gem on the current page
+.te-side {
+  flex: 0 0 220px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 50rem) { order: 2; flex: none; width: 100%; }
+}
+.te-side h3 {
+  margin: 22px 0 6px;
+  padding: 0 6px;
+  font-family: $te-display;
+  font-size: 16px !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  text-transform: none;
+}
+.te-side h3:first-child { margin-top: 0; }
+.te-side h3 a { color: $te-label; text-decoration: none; }
+.te-side h3 a:hover { color: $te-link-hover; }
+.te-side h3 a[aria-current] { color: $te-heading; }
+.te-side > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 6px;
+  color: #c9bfa5;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.te-side > a:hover { color: $te-link-hover; }
+.te-side > a.on { color: $te-heading; font-weight: 700; padding-left: 0; }
+
+// Body text
+.te-prose {
+  flex: 1 1 360px;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: $te-text;
+}
+.te-doc .te-prose { max-width: 860px; }
+.te-prose > :first-child { margin-top: 0; }
+.te-prose p, .te-prose li { font-size: 18px; }
+.te-prose p { margin: 0 0 20px; }
+.te-prose strong { color: $te-strong; }
+.te-prose a, .te-crumbs a { color: $te-link; text-decoration: underline; text-decoration-color: currentColor; text-underline-offset: 2px; }
+.te-prose .te-work, .te-prose .gallery-item { text-decoration: none; }
+.te-prose a:hover { color: $te-link-hover; }
+.te-prose h2, .te-prose h3, .te-prose h4 {
+  position: relative;
+  font-family: $te-display;
+  color: $te-heading;
+  line-height: 1.2;
+}
+.te-prose h2 { margin: 48px 0 16px; font-size: 30px !important; font-weight: 800; }
+.te-prose h2 a, .te-prose h3 a { color: inherit; text-decoration: none; }
+.te-prose h3 { margin: 32px 0 10px; font-size: 22px !important; font-weight: 700; color: $te-label; }
+.te-prose h4 { margin: 24px 0 8px; font-size: 18px !important; font-weight: 700; }
+.te-prose ul, .te-prose ol { margin: 0 0 20px; padding-left: 1.4em; }
+.te-prose ul > li::before { color: $te-brass !important; }
+.te-prose li + li { margin-top: 4px; }
+.te-prose img { height: auto; }
+.te-prose hr { height: 1px; margin: 32px 0; background: $te-hairline; border: 0; }
+.te-prose blockquote {
+  margin: 0 0 20px;
+  padding: 2px 0 2px 18px;
+  border-left: 2px solid $te-brass;
+  color: $te-muted;
+}
+.te-prose code {
+  font-size: 0.86em;
+  padding: 0.1em 0.35em;
+  color: $te-strong;
+  background: #16222a;
+  border: 1px solid $te-hairline;
+  border-radius: 3px;
+}
+.te-prose pre, .te-prose div.highlighter-rouge {
+  background: #16222a !important;
+  border: 1px solid $te-hairline;
+  border-radius: 3px;
+}
+.te-prose pre code { border: 0; padding: 0; background: none; }
+.te-prose .hatnote { margin-top: -8px; font-style: italic; color: $te-muted; }
+// Heading anchors, shown on hover in the left margin
+.te-prose .anchor-heading {
+  position: absolute;
+  top: 0;
+  left: -28px;
+  width: 22px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  @media (max-width: 50rem) { left: auto; right: 0; }
+}
+.te-prose .anchor-heading svg { width: 16px; height: 16px; color: $te-brass; visibility: hidden; }
+.te-prose h2:hover > .anchor-heading svg, .te-prose h3:hover > .anchor-heading svg, .te-prose h4:hover > .anchor-heading svg,
+.te-prose .anchor-heading:focus svg { visibility: visible; }
+
+// Tables: rows split by hairlines, headers in small caps
+.te-prose .table-wrapper {
+  margin: 20px 0 32px;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-overflow-scrolling: touch;
+}
+.te-prose table { min-width: 100%; border-collapse: collapse; background: transparent; }
+.te-prose th, .te-prose td {
+  min-width: 0;
+  padding: 10px 14px 10px 0 !important;
+  font-size: 16px !important;
+  line-height: 1.45;
+  text-align: left;
+  vertical-align: middle;
+  background: transparent !important;
+  border: 0 !important;
+  border-bottom: 1px solid $te-hairline !important;
+}
+.te-prose th {
+  font-family: $te-display;
+  font-weight: 700;
+  font-size: 15px !important;
+  letter-spacing: 0.04em;
+  color: $te-label;
+  white-space: nowrap;
+  border-bottom: 2px solid $te-brass !important;
+}
+.te-prose td:first-child { color: $te-strong; font-weight: 500; white-space: nowrap; }
+.te-prose tbody tr:last-child td { border-bottom: 0 !important; }
+.te-prose tbody tr:hover td { background: rgba($te-brass, 0.06) !important; }
+.te-prose td img.icon { width: 28px; height: 28px; margin-right: 10px; vertical-align: middle; }
+
+// Child page lists the theme adds to section pages
+.te-prose hr + h2.text-delta, .te-prose h2.text-delta {
+  margin-top: 40px;
+  font-family: $te-display;
+  font-size: 15px !important;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: $te-label;
+}
+
+// Mod badge
+.mod-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  vertical-align: -0.12em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.mod-badge-icon {
+  display: inline-block;
+  flex: none;
+  width: 1.05em;
+  height: 1.05em;
+  background: currentColor;
+  -webkit-mask: var(--mod-icon) center / contain no-repeat;
+  mask: var(--mod-icon) center / contain no-repeat;
+}
+.mod-badge--te { color: $te-link; --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-te.svg")'}; }
+.mod-badge--bb { color: #7fb7d9; --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-bb.svg")'}; }
+.te-stat .mod-badge { font-size: 15px; }
+
+// Category galleries: framed pictures with the building's name
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 32px 28px; margin: 24px 0 40px; }
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: $te-text !important;
+  text-decoration: none !important;
+}
+.gallery-item img, .gallery-blank {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin-bottom: 10px;
+  padding: 6px;
+  background: $te-mat;
+  border: 2px solid $te-beige;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7), 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+a.gallery-item:hover img { border-color: #e6d3a3; }
+.gallery-name { font-family: $te-display; font-size: 19px; font-weight: 700; line-height: 1.25; color: $te-heading; }
+a.gallery-item:hover .gallery-name { color: $te-link-hover; }
+.gallery-name .mod-badge { margin-left: 0.45em; font-size: 16px; }
+.gallery-text { font-size: 15px; line-height: 1.5; color: $te-muted; }
+
+// ---------------------------------------------------------------------------
+// Building and troop pages
+// ---------------------------------------------------------------------------
+
+.te-entity .te-prose p:last-of-type { margin-bottom: 0; }
+.te-works { display: flex; flex-direction: column; gap: 18px; margin-top: 38px; }
+.te-prose .te-works .te-plaque { margin: 0; font-size: 14px !important; font-weight: 700; line-height: 1.5; }
+.te-works-list { display: flex; flex-wrap: wrap; gap: 14px 40px; }
+.te-work { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.te-work-text { display: flex; flex-direction: column; line-height: 1.35; }
+.te-work-name { font-family: $te-display; font-size: 18px; font-weight: 700; color: $te-heading; }
+.te-work:hover .te-work-name { color: $te-link-hover; }
+.te-work-role { font-size: 14px; color: $te-muted; }
+
+// The stats frame
+.te-stats {
+  flex: 0 1 412px;
+  min-width: 0;
+  padding: 22px 26px 18px;
+  @media (max-width: 30rem) { flex-basis: 100%; padding: 20px 18px 14px; }
+}
+.te-portrait img { aspect-ratio: 4 / 3; }
+
+// The faction switch is plain radio inputs: each panel shows when its input is checked
+.te-fpick { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none; }
+.te-fpanel { display: none; }
+.te-fpick-Folktails:checked ~ .te-fpanel-Folktails,
+.te-fpick-IronTeeth:checked ~ .te-fpanel-IronTeeth { display: block; }
+.te-fpick:focus-visible ~ .te-fpanel .te-fbtn.on { outline: 2px solid $te-link-hover; outline-offset: 2px; }
+.te-ftoggle-row { display: flex; align-items: center; gap: 12px; margin: 14px 0 8px; }
+.te-ftoggle {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: $te-mat;
+  border: 1px solid rgba($te-beige, 0.55);
   border-radius: 4px;
-  transition: transform 0.12s, box-shadow 0.12s, filter 0.12s;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
 }
-.btn-primary {
-  background: linear-gradient(180deg, $gold-light 0%, $gold 45%, $gold-deep 100%) !important;
-  color: #2a1906 !important;
-  border: 1px solid #5c3f12 !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.55),
-    inset 0 -2px 0 rgba(0, 0, 0, 0.15),
-    0 2px 0 #3a2709,
-    0 8px 22px rgba(0, 0, 0, 0.4) !important;
-  &:hover { filter: brightness(1.08); transform: translateY(-1px); }
+.te-fbtn {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.btn-ghost {
-  background: rgba(15, 10, 6, 0.45) !important;
-  color: $cream !important;
-  border: 1px solid rgba($cream, 0.4) !important;
-  box-shadow: none !important;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  &:hover { border-color: $gold !important; color: $gold-light !important; }
-}
+.te-fbtn img { width: 22px; height: 22px; filter: grayscale(1) sepia(1) saturate(0.55) brightness(1.05); opacity: 0.65; }
+.te-fbtn:hover img { opacity: 0.85; }
+.te-fbtn.on { background: #10302a; border-color: $te-beige; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6); cursor: default; }
+.te-fbtn.on img { opacity: 1; }
+.te-fbtn::after { @include te-tip; }
+.te-fbtn:hover::after { opacity: 1; }
+.te-fname { font-family: $te-display; font-size: 18px; font-weight: 700; color: $te-heading; }
 
 // ---------------------------------------------------------------------------
 // Home
@@ -385,463 +743,158 @@ code {
 .te-hero {
   position: relative;
   isolation: isolate;
-  overflow: hidden;
-  height: Min(90vh, 900px);
-  min-height: 560px;
-  background: $wood-950;
-  border-bottom: 1px solid rgba($gold, 0.5);
-  box-shadow: 0 1px 0 #000, 0 2px 0 rgba($gold, 0.15);
-  @media (max-width: 49.99rem) { height: auto; min-height: 0; aspect-ratio: auto; }
+  min-height: 820px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 40rem) { min-height: 640px; }
 }
-.te-hero-art { position: absolute; inset: 0; z-index: -2; }
-.te-hero-art img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center 45%;
-  transform-origin: 50% 65%;
-  animation: te-drift 50s ease-in-out infinite alternate;
-}
-@keyframes te-drift {
-  from { transform: scale(1.03); }
-  to { transform: scale(1.12) translate(-1%, -1.5%); }
-}
-.te-hero::after {
-  content: "";
-  position: absolute; inset: 0; z-index: -1;
-  background:
-    linear-gradient(180deg, rgba(10, 7, 4, 0.88) 0%, rgba(10, 7, 4, 0.6) 24%, rgba(10, 7, 4, 0.15) 40%, rgba(10, 7, 4, 0) 50%),
-    linear-gradient(180deg, rgba(10, 7, 4, 0) 60%, rgba(10, 7, 4, 0.75) 84%, $wood-950 100%),
-    radial-gradient(ellipse 90% 70% at 50% 55%, transparent 50%, rgba(10, 7, 4, 0.55) 100%);
-}
-.te-hero-inner {
-  position: relative;
-  height: 100%;
+.te-hero-art { object-position: center 40%; }
+.te-hero-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: clamp(1.5rem, 5vh, 3.5rem) 1.25rem clamp(2rem, 7vh, 4.5rem);
+  gap: 18px;
+  padding: 56px $te-gutter 0;
   text-align: center;
-  color: $cream;
+  @media (max-width: 40rem) { padding: 40px $te-gutter-sm 0; }
 }
 .te-hero-logo { margin: 0; line-height: 0; }
-.te-hero-logo img {
-  width: Min(92vw, 860px);
-  filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.5));
-  animation: te-rise 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+.te-hero-logo img { width: 760px; max-width: 88vw; height: auto; filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.7)); }
+.te-hero-slogan { width: 680px; max-width: 100%; }
+.te-hero-bottom { padding: 22px $te-gutter; @media (max-width: 40rem) { padding: 22px $te-gutter-sm; } }
+.te-hero-bottom-inner {
+  @include te-container;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 40px;
 }
-.te-hero-title {
-  margin: 0.9rem 0 0;
-  font-size: clamp(1.15rem, 2.4vw, 1.9rem);
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: $gold-light;
-  text-shadow: 0 0 2px #000, 0 2px 6px rgba(0, 0, 0, 0.9), 0 0 32px rgba(0, 0, 0, 0.85);
-  animation: te-rise 1.2s 0.15s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-.te-hero-sub {
-  margin: 0 0 1.3rem;
-  font-family: $te-quote;
-  font-style: italic;
-  font-weight: 600;
-  font-size: clamp(1.4rem, 2.6vw, 2.1rem);
-  color: $cream;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.9);
-  animation: te-rise 1.2s 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-.te-hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; animation: te-rise 1.2s 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
-@keyframes te-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-// Logo and title at the top, the call to arms at the bottom, the bridge between them left clear
-@media (max-width: 49.99rem) {
-  .te-hero { display: flex; flex-direction: column; }
-  .te-hero-art { position: relative; height: 64vw; }
-  .te-hero::after { bottom: auto; height: 64vw; background: linear-gradient(180deg, rgba(10, 7, 4, 0.75) 0%, rgba(10, 7, 4, 0) 45%, rgba(10, 7, 4, 0) 65%, $wood-950 100%); }
-  .te-hero-inner { position: static; height: auto; padding: 0; display: block; }
-  .te-hero-top { position: absolute; top: 0; left: 0; right: 0; padding: 1.1rem 1rem; }
-  .te-hero-title { font-size: 0.85rem; letter-spacing: 0.14em; margin-top: 0.5rem; }
-  .te-hero-bottom { padding: 1.2rem 1rem 1.8rem; background: $wood-950; }
-  .te-hero-sub { font-size: 1.5rem; margin-bottom: 1rem; }
-}
+.te-slogan { margin: 0; font-family: $te-quote; font-style: italic; font-size: 21px; color: $te-slogan; text-align: center; }
+.te-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
 
-// Embers drifting up from the burning village
-.te-embers { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
-.te-embers i {
+.te-home-main { display: block; }
+.te-home-main > section { @include te-padded(1180px); @include te-gutters; }
+.te-intro-row {
+  padding-top: 96px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: center;
+  @media (max-width: 40rem) { padding-top: 56px; gap: 36px; }
+}
+.te-intro-text { flex: 1 1 340px; display: flex; flex-direction: column; gap: 18px; }
+.te-intro-text p { margin: 0; font-size: 18px; line-height: 1.65; color: $te-text; }
+.te-intro-text p.te-lead { font-size: 20px; line-height: 1.6; color: #e8dfca; }
+.te-trailer { flex: 1.4 1 520px; min-width: 0; padding: 14px; @media (max-width: 40rem) { flex-basis: 100%; padding: 10px; } }
+.te-trailer video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
+.te-trailer-play {
   position: absolute;
-  left: var(--x);
-  bottom: 44%;
-  width: var(--s);
-  height: var(--s);
-  border-radius: 50%;
-  background: radial-gradient(circle, #fff3c4 0%, #ffb347 40%, rgba($ember, 0) 70%);
-  box-shadow: 0 0 6px 2px rgba($ember, 0.55);
-  opacity: 0;
-  animation: te-ember var(--d) linear infinite;
-  animation-delay: var(--dl);
+  inset: 14px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  @media (max-width: 40rem) { inset: 10px; }
 }
-@keyframes te-ember {
-  0% { transform: translate(0, 0) scale(1); opacity: 0; }
-  8% { opacity: 1; }
-  50% { transform: translate(calc(var(--dx) * 0.6), -24vh) scale(0.85); opacity: 0.85; }
-  100% { transform: translate(var(--dx), -52vh) scale(0.4); opacity: 0; }
+.te-trailer-play[hidden] { display: none; }
+.te-trailer-label {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px 8px 10px;
+  background: rgba(14, 26, 30, 0.88);
+  border: 1px solid rgba($te-beige, 0.7);
+  color: $te-slogan;
+  font-family: $body-font-family;
+  font-weight: 700;
+  font-size: 15px;
 }
-@media (max-width: 49.99rem) { .te-embers { display: none; } }
-@media (prefers-reduced-motion: reduce) {
-  .te-hero-art img, .te-embers i, .te-hero-logo img, .te-hero-title, .te-hero-sub, .te-hero-actions, .te-water span { animation: none !important; }
-  .te-embers { display: none; }
-}
+.te-trailer-play:hover .te-trailer-label { border-color: #e6d3a3; color: #fff; }
+.te-trailer-play:focus-visible { outline: 2px solid $te-link-hover; outline-offset: 2px; }
 
-// The home page's own column: wider, and the intro set larger
-.te-home .te-content { max-width: 1180px; padding-top: 0.5rem; }
-.te-home .main-content > main > p:first-child,
-.te-home .main-content > main > p:first-child + p {
-  max-width: 46rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 1.18rem;
-  color: $te-text;
+.te-section { padding-top: 72px; padding-bottom: 24px; }
+.te-section .te-frame { padding: 0 32px 36px; @media (max-width: 40rem) { padding: 0 18px 28px; } }
+.te-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 36px 28px; }
+.te-tile { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; text-decoration: none; color: #e8dfca; }
+.te-tile-title { font-family: $te-display; font-size: 23px; font-weight: 700; line-height: 1.2; color: $te-heading; }
+.te-tile-title.big { font-size: 28px; font-weight: 800; }
+.te-tile:hover .te-tile-title { color: $te-link-hover; }
+.te-tile-against { font-family: $te-display; font-size: 14px; font-weight: 700; letter-spacing: 0.06em; color: $te-gem; }
+.te-tile-text { max-width: 240px; font-size: 16px; line-height: 1.55; color: #c9bfa5; }
+@media (max-width: 40rem) {
+  .te-tiles, .te-features .te-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; }
+  .te-tile { gap: 6px; }
+  .te-tile .te-medal { width: 84px; height: 84px; }
+  .te-tile .te-medal::before { inset: 9px; }
+  .te-tile .te-medal img { width: 36px; height: 36px; }
+  .te-tile-title, .te-tile-title.big { font-size: 21px; }
+  .te-tile-against { font-size: 13px; }
+  .te-tile-text { font-size: 15px; }
 }
-.te-home .main-content h2 {
-  text-align: center;
-  padding: 0 0 0.7rem;
-  margin-top: 3.5rem !important;
-  font-size: 1.9rem !important;
-}
-.te-home .main-content h2::before {
-  left: 50%; top: auto; bottom: -0.55rem;
-  transform: translateX(-50%);
-  width: 0.95rem; height: 0.95rem;
-  z-index: 1;
-  box-shadow: 0 0 0 6px $te-bg;
-}
-.te-home .main-content h2::after {
-  left: 50%; right: auto;
-  width: Min(420px, 80%);
-  transform: translateX(-50%);
-  background: linear-gradient(90deg, transparent, rgba($te-accent, 0.8) 30%, rgba($te-accent, 0.8) 70%, transparent);
-}
-.te-home .main-content > main > ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 0.2rem 2rem;
-  padding-left: 0;
-  margin-top: 2rem;
-}
-
-// Feature tiles: carved wood with a gold edge
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1rem;
-  margin: 2.2rem 0 1rem;
-}
-.card {
+.te-features { display: flex; flex-direction: column; gap: 48px; padding-bottom: 40px; }
+.te-features .te-tiles { gap: 40px 32px; }
+.te-center { display: flex; justify-content: center; margin-top: 32px; }
+.te-features .te-center { margin-top: 0; }
+.te-findway { padding-bottom: 96px; }
+.te-findway .te-frame { padding: 0 40px 28px; @media (max-width: 40rem) { padding: 0 18px 20px; } }
+.te-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); column-gap: 40px; }
+.te-link {
   position: relative;
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  padding: 1.15rem 1.2rem 1.2rem;
-  border-radius: 6px;
-  @include te-wood(h, #33261a, #1e160f);
-  color: #dccfb4;
-  text-decoration: none !important;
-  border: 1px solid #0c0806;
-  box-shadow:
-    inset 0 0 0 1px rgba($gold, 0.16),
-    inset 0 1px 0 rgba(255, 236, 200, 0.08),
-    0 6px 16px rgba(0, 0, 0, 0.28);
-  transition: transform 0.18s, box-shadow 0.18s;
-}
-a.card:hover {
-  transform: translateY(-3px);
-  box-shadow:
-    inset 0 0 0 1px rgba($gold, 0.55),
-    inset 0 1px 0 rgba(255, 236, 200, 0.1),
-    0 0 26px rgba($gold, 0.16),
-    0 12px 26px rgba(0, 0, 0, 0.4);
-}
-// Icons sit in a round brass mount
-.card img {
-  flex: none;
-  width: 56px; height: 56px;
-  padding: 8px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 35%, #3d2d1e, #160f0a);
-  box-shadow: 0 0 0 2px rgba($gold, 0.55), 0 0 0 4px #0c0806, 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-.card-title { display: block; margin: 0.15rem 0 0.3rem; color: $gold-light; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.03em; }
-.card-text { display: block; font-size: 0.92rem; line-height: 1.5; }
-
-// ---------------------------------------------------------------------------
-// Wiki articles
-// ---------------------------------------------------------------------------
-
-// Framed panels: a gold inner line and a brass rivet in each corner
-@mixin te-frame {
-  border: 1px solid #0c0806;
-  border-radius: 6px;
-  box-shadow:
-    inset 0 0 0 1px rgba($gold, if($color-scheme == dark, 0.18, 0.4)),
-    0 10px 28px rgba(0, 0, 0, if($color-scheme == dark, 0.4, 0.14));
-}
-@mixin te-rivets {
-  &::before {
-    content: "";
-    position: absolute; inset: 5px;
-    pointer-events: none;
-    z-index: 2;
-    $r: radial-gradient(circle at 50% 40%, $gold-light 0, $gold-deep 45%, #3a2709 75%, transparent 80%);
-    background: $r 0 0 / 7px 7px no-repeat, $r 100% 0 / 7px 7px no-repeat, $r 0 100% / 7px 7px no-repeat, $r 100% 100% / 7px 7px no-repeat;
-  }
-}
-
-.page-icons { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 1.4rem; }
-.page-icons img {
-  width: 46px; height: 46px; padding: 5px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 35%, #3d2d1e, #160f0a);
-  box-shadow: 0 0 0 1px rgba($gold, 0.5), 0 3px 8px rgba(0, 0, 0, 0.35);
-}
-
-// Infobox
-.infobox {
-  position: relative;
-  float: right;
-  width: 330px;
-  margin: 0.3rem 0 1.5rem 2rem;
-  overflow: hidden;
-  background: $te-panel;
-  font-size: 0.88rem;
-  @include te-frame;
-  @include te-rivets;
-  @media (max-width: 62rem) { float: none; width: auto; margin: 0 0 1.6rem; }
-}
-.infobox-title {
-  display: flex; align-items: center; gap: 0.6rem;
-  padding: 0.7rem 0.95rem;
-  @include te-wood(h, #33261a, #1e160f);
-  color: $gold-light;
-  font-size: 1.2rem; font-weight: 700; letter-spacing: 0.03em;
-  border-bottom: 1px solid #0c0806;
-  box-shadow: inset 0 -1px 0 rgba($gold, 0.35);
-}
-.infobox-title img { width: 32px; height: 32px; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.6)); }
-.infobox-tabs { display: grid; grid-template-columns: repeat(var(--tabs, 2), 1fr); }
-.infobox-tabs input { position: absolute; opacity: 0; pointer-events: none; }
-.infobox-tabs label {
-  grid-row: 1;
-  padding: 0.5rem;
-  text-align: center;
-  cursor: pointer;
-  @include te-label;
-  font-size: 0.9rem;
-  color: $te-muted;
-  border-bottom: 1px solid $te-border;
-  transition: color 0.15s;
-}
-.infobox-tabs label:hover { color: $te-link; }
-.infobox-tabs input:checked + label { color: $te-link; box-shadow: inset 0 -2px 0 $te-accent; }
-.infobox-tabs input:focus-visible + label { outline: 2px solid $gold; outline-offset: -2px; }
-.infobox-panel { grid-row: 2; grid-column: 1 / -1; display: none; }
-.infobox-tabs input:checked + label + .infobox-panel { display: block; }
-.infobox-shot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-bottom: 1px solid $te-border; }
-.main-content .infobox .table-wrapper { margin: 0; border: none; border-radius: 0; box-shadow: none; }
-.main-content .infobox table { margin: 0; width: 100%; border: none; font-size: 0.87rem !important; }
-.main-content .infobox th {
-  background: transparent !important;
-  color: $te-muted !important;
-  text-align: left;
-  width: 38%;
-  vertical-align: top;
-  white-space: normal;
-  @include te-label;
-  font-size: 0.85rem;
-}
-.main-content .infobox td { white-space: normal !important; font-weight: 400 !important; }
-.main-content .infobox tr td, .main-content .infobox tr th { background: transparent !important; border-bottom: 1px solid rgba($te-border, 0.8) !important; }
-.main-content .infobox tr:last-child td, .main-content .infobox tr:last-child th { border-bottom: none !important; }
-
-// Tables: a quartermaster's ledger
-.main-content .table-wrapper {
-  border: 1px solid #0c0806;
-  border-radius: 6px;
-  box-shadow: inset 0 0 0 1px rgba($gold, 0.2), 0 6px 18px rgba(0, 0, 0, if($color-scheme == dark, 0.3, 0.08));
-  margin: 1.2rem 0 1.8rem;
-}
-.main-content table { font-size: 0.9rem !important; background: $te-panel; }
-.main-content th {
-  @include te-wood(h, #33261a, #241a12);
-  color: $gold-light !important;
-  @include te-label;
-  font-size: 0.86rem;
-  border-bottom: 1px solid #0c0806 !important;
-  white-space: nowrap;
-}
-.main-content th, .main-content td { padding: 0.55rem 0.85rem !important; border-color: $te-border !important; }
-.main-content td { background: $te-panel; }
-.main-content tbody tr:nth-child(even) td { background: $te-row-alt; }
-.main-content tbody tr:hover td { background: rgba($gold, 0.08); }
-.main-content td:first-child { white-space: nowrap; font-weight: 500; }
-td img.icon {
-  width: 30px; height: 30px;
-  vertical-align: middle;
-  margin-right: 0.55rem;
-  padding: 3px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 35%, #3d2d1e, #160f0a);
-  box-shadow: 0 0 0 1px rgba($gold, 0.45);
-}
-
-// Navbox at the foot of every building and troop
-.navbox {
-  position: relative;
-  clear: both;
-  margin: 3.5rem 0 1rem;
-  overflow: hidden;
-  font-size: 0.88rem;
-  background: $te-panel;
-  @include te-frame;
-  @include te-rivets;
-}
-.navbox-title {
-  padding: 0.6rem 0.8rem;
-  @include te-wood(h, #33261a, #1e160f);
-  color: $gold-light;
-  text-align: center;
-  font-size: 1.1rem;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 4px;
+  font-family: $te-display;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  box-shadow: inset 0 -1px 0 rgba($gold, 0.35);
+  font-size: 19px;
+  color: $te-heading;
+  text-decoration: none;
 }
-.navbox-row { display: flex; border-top: 1px solid $te-border; }
-.navbox-row:first-of-type { border-top: none; }
-.navbox-group {
-  flex: none; width: 11rem;
-  padding: 0.55rem 0.85rem;
-  background: $te-row-alt;
-  @include te-label;
-  font-size: 0.86rem;
-  border-right: 1px solid $te-border;
+.te-link:hover { color: $te-link-hover; }
+.te-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: $te-hairline;
+  filter: url(#te-rough-line);
 }
-.main-content .navbox-group { color: $te-heading !important; text-decoration: none !important; }
-.navbox-list { padding: 0.55rem 0.85rem; line-height: 1.8; }
-.main-content .navbox-list a { text-decoration: none !important; }
-.main-content .navbox-list a:hover { text-decoration: underline !important; }
-.navbox-list a:not(:last-child)::after { content: " · "; color: $te-accent; }
-.main-content .navbox-list a.current { font-weight: 700; color: $te-heading; }
-@media (max-width: 49.99rem) { .navbox-row { display: block; } .navbox-group { display: block; width: auto; border-right: none; border-bottom: 1px solid $te-border; } }
-
-// Category pages: a gallery of framed pictures
-.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 1.1rem; margin: 1.4rem 0 2.2rem; }
-.gallery-item {
-  position: relative;
-  display: flex; flex-direction: column;
-  overflow: hidden;
-  background: $te-panel;
-  text-decoration: none !important;
-  color: $te-text !important;
-  @include te-frame;
-  transition: transform 0.18s, box-shadow 0.18s;
-}
-a.gallery-item:hover {
-  transform: translateY(-3px);
-  box-shadow: inset 0 0 0 1px rgba($gold, 0.6), 0 0 24px rgba($gold, 0.14), 0 14px 28px rgba(0, 0, 0, 0.3);
-}
-.gallery-blank {
-  background: te-svg('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24"><path d="M10 1 19 4v7c0 6-5 10-9 12-4-2-9-6-9-12V4z" fill="#{$gold}" fill-opacity=".35"/></svg>') center / 34px auto no-repeat, linear-gradient(180deg, $wood-700, $wood-900) !important;
-}
-.gallery-item img, .gallery-blank {
-  display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover;
-  background: $wood-800;
-  border-bottom: 1px solid #0c0806;
-  transition: transform 0.4s;
-}
-a.gallery-item:hover img { transform: scale(1.04); }
-.gallery-name { padding: 0.65rem 0.85rem 0.15rem; font-size: 1.05rem; font-weight: 700; color: $te-link; letter-spacing: 0.02em; }
-// Which mod a feature comes from: a small icon, its name beside it in infoboxes
-.mod-badge {
-  display: inline-flex; align-items: center; gap: 0.35em;
-  vertical-align: -0.12em;
-  font-family: inherit; font-size: 0.85rem; font-weight: 600; letter-spacing: 0;
-}
-.mod-badge-icon {
-  display: inline-block; width: 1.05em; height: 1.05em; flex: none;
-  background: currentColor;
-  -webkit-mask: var(--mod-icon) center / contain no-repeat; mask: var(--mod-icon) center / contain no-repeat;
-}
-.mod-badge--te { color: if($color-scheme == dark, $gold, darken($gold, 18%)); --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-te.svg")'}; }
-.mod-badge--bb { color: if($color-scheme == dark, #7fb7d9, #2f6f9f); --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-bb.svg")'}; }
-.gallery-name .mod-badge { margin-left: 0.45em; font-size: 1.15rem; vertical-align: -0.15em; }
-h1 .mod-badge, h2 .mod-badge { font-size: 0.5em; margin-left: 0.5em; }
-
-.gallery-text { padding: 0 0.85rem 0.85rem; font-size: 0.84rem; line-height: 1.45; color: $te-muted; }
 
 // ---------------------------------------------------------------------------
-// Footer: the river runs along its top edge
+// Maps
 // ---------------------------------------------------------------------------
 
-.te-footer {
-  position: relative;
-  z-index: 1;
-  margin-top: 0;
-  padding: 3.5rem 1.25rem 1.5rem;
-  background: linear-gradient(180deg, #15100c, $wood-950);
-  color: #b3a386;
-}
-.te-water { position: absolute; left: 0; right: 0; top: -18px; height: 52px; overflow: hidden; pointer-events: none; }
-.te-water span {
-  position: absolute; left: 0; right: 0; bottom: 0;
-  // The wave tile, and solid water under it
-  -webkit-mask: $te-wave 0 0 / 160px 28px repeat-x, linear-gradient(#000, #000) 0 27px / 100% 100% no-repeat;
-  mask: $te-wave 0 0 / 160px 28px repeat-x, linear-gradient(#000, #000) 0 27px / 100% 100% no-repeat;
-  animation: te-flow 9s linear infinite;
-}
-.te-water span:first-child { top: 0; background: #2b6664; }
-.te-water span:last-child {
-  top: 7px;
-  background: linear-gradient(180deg, #4a9592 0, #2f6b69 22px, #15100c 45px);
-  animation-duration: 6s;
-  animation-direction: reverse;
-}
-@keyframes te-flow { from { -webkit-mask-position: 0 0, 0 27px; mask-position: 0 0, 0 27px; } to { -webkit-mask-position: 160px 0, 0 27px; mask-position: 160px 0, 0 27px; } }
+.te-map { padding: 0 32px 32px; @media (max-width: 40rem) { padding: 0 18px 24px; } }
+.te-map-body { display: flex; flex-wrap: wrap; gap: 36px; align-items: center; }
+.te-map-body .te-pic { flex: 1.6 1 520px; min-width: 0; @media (max-width: 40rem) { flex-basis: 100%; } }
+.te-map-body .te-pic img { aspect-ratio: 16 / 9; }
+.te-map-text { flex: 1 1 300px; display: flex; flex-direction: column; gap: 22px; }
+.te-map-text p { margin: 0; font-size: 18px; line-height: 1.65; color: $te-text; }
+.te-map-text .te-stat { font-size: 16px; }
+
+// ---------------------------------------------------------------------------
+// Footer
+// ---------------------------------------------------------------------------
+
+.te-footer { padding: 26px $te-gutter; @media (max-width: 40rem) { padding: 26px $te-gutter-sm; } }
 .te-footer-inner {
-  position: relative;
-  max-width: 1180px;
-  margin: 0 auto;
-  display: grid;
-  gap: 2rem 3rem;
-  @media (min-width: 50rem) { grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr); }
-}
-.te-footer-brand img { width: 260px; margin-left: -12px; max-width: 100%; display: block; margin-bottom: 0.9rem; }
-.te-footer-brand p { margin: 0; max-width: 24rem; font-size: 0.95rem; line-height: 1.55; }
-.te-footer-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; }
-.te-footer-links h2 {
-  margin: 0 0 0.7rem;
-  @include te-label;
-  font-size: 0.9rem;
-  color: $gold;
-}
-.te-footer-links a { display: block; padding: 0.2rem 0; color: #d9cbad; text-decoration: none; font-size: 0.95rem; }
-.te-footer-links a:hover { color: $gold-light; }
-.te-footer-legal {
-  max-width: 1180px;
-  margin: 2.5rem auto 0;
-  padding-top: 1.2rem;
-  border-top: 1px solid rgba($gold, 0.14);
-  font-size: 0.8rem;
-  color: #8a7a60;
-  text-align: center;
+  @include te-container;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  color: $te-faint;
 }
 
-// Children lists at the end of section pages
-.main-content main > hr + h2, .main-content .text-delta { @include te-label; color: $te-muted; }
-
-.te-trailer {
-  display: block;
-  width: 100%;
-  aspect-ratio: 1920 / 804;
-  margin: 1.5rem 0;
-  background: #000;
-  border-radius: 6px;
-}
+// Skip link from the theme
+.skip-to-main { color: $te-heading; background: $te-slate; }

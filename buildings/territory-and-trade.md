@@ -10,5 +10,3 @@ has_children: true
 Claiming land, and trading goods, power and rides with other players.
 
 {% include gallery.html category="territory-and-trade" %}
-
-{% include navbox.html %}
