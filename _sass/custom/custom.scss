@@ -662,10 +662,9 @@ a.te-pic:hover::before { border-color: #e6d3a3; }
   text-decoration: none !important;
 }
 // The picture frame without its corner brackets, which get busy in a grid
-.gallery-item .te-pic { margin-bottom: 12px; padding: 9px; }
+.gallery-item .te-pic { margin-bottom: 12px; padding: 8px; }
 .gallery-item .te-pic::after { display: none; }
-.gallery-item .te-pic::before { filter: url(#te-rough-pic) drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4)); }
-.gallery-item .te-pic img { filter: url(#te-rough-soft); }
+.gallery-item .te-pic::before { filter: url(#te-rough); }
 .gallery-item .te-pic img, .gallery-blank { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 .gallery-blank { background: $te-medal; }
 a.gallery-item:hover .te-pic::before { border-color: #e6d3a3; }
