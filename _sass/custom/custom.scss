@@ -854,7 +854,6 @@ a.gallery-item:hover .gallery-name { color: $te-link-hover; }
 .te-section { padding-top: 72px; padding-bottom: 24px; }
 .te-section .te-frame { padding: 0 32px 36px; @media (max-width: 40rem) { padding: 0 18px 28px; } }
 .te-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 36px 28px; }
-.te-tiles.five { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 36px 20px; }
 .te-tile { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; text-decoration: none; color: #e8dfca; }
 .te-tile-title { font-family: $te-display; font-size: 23px; font-weight: 700; line-height: 1.2; color: $te-heading; }
 .te-tile-title.big { font-size: 28px; font-weight: 800; }
@@ -1002,4 +1001,78 @@ $te-wisp: #7fe6b6;
   .te-hbadge img { width: 36px; height: 36px; }
   .te-hbadge-title { font-size: 14px; }
   .te-hbadge-sub { display: none; }
+}
+
+// ---------------------------------------------------------------------------
+// Game modes on the home page: a card each, Horde wider with its art behind it
+// ---------------------------------------------------------------------------
+
+.te-modes { display: flex; flex-direction: column; gap: 40px; }
+.te-modes .te-center { margin-top: 0; }
+.te-mode-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.te-mode {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 150px;
+  padding: 18px 22px 18px 10px;
+  color: #e8dfca;
+  text-decoration: none;
+}
+.te-mode::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: $te-panel;
+  border: 2px solid rgba($te-brass, 0.75);
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 5px $te-panel, inset 0 0 0 6px rgba($te-brass, 0.25), 0 10px 22px rgba(0, 0, 0, 0.4);
+  filter: url(#te-rough);
+}
+.te-mode:hover::before { border-color: #e6d3a3; }
+.te-mode .te-medal { width: 96px; height: 96px; }
+.te-mode .te-medal::before { inset: 10px; }
+.te-mode .te-medal img { width: 40px; height: 40px; }
+.te-mode-text { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.te-mode-title { font-family: $te-display; font-size: 26px; font-weight: 800; line-height: 1.1; color: $te-heading; }
+.te-mode:hover .te-mode-title { color: $te-link-hover; }
+.te-mode-against { font-family: $te-display; font-size: 14px; font-weight: 700; letter-spacing: 0.05em; color: $te-gem; }
+.te-mode-desc { margin-top: 4px; font-size: 15px; line-height: 1.5; color: #c9bfa5; }
+
+// Horde: two columns wide, its art fading in from the right
+.te-mode.featured { grid-column: span 2; padding-right: 40%; }
+.te-mode-art {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 45%);
+  mask-image: linear-gradient(90deg, transparent, #000 45%);
+  opacity: 0.85;
+}
+.te-mode.featured::before { border-color: $te-brass; }
+.te-mode.featured .te-mode-desc { color: #e3d8bd; }
+.te-halloween .te-mode.featured .te-mode-against { color: #ffb15c; }
+
+@media (max-width: 60rem) {
+  .te-mode-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .te-mode.featured { grid-column: 1 / -1; }
+}
+@media (max-width: 40rem) {
+  .te-mode-grid { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .te-mode { min-height: 0; padding: 12px 16px 12px 6px; gap: 10px; }
+  .te-mode .te-medal { width: 76px; height: 76px; }
+  .te-mode .te-medal::before { inset: 8px; }
+  .te-mode .te-medal img { width: 32px; height: 32px; }
+  .te-mode-title { font-size: 22px; }
+  .te-mode.featured { padding-right: 16px; padding-top: 118px; align-items: flex-start; }
+  .te-mode-art { width: 100%; height: 130px; -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent); mask-image: linear-gradient(180deg, #000 55%, transparent); }
 }

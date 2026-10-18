@@ -53,18 +53,16 @@ hero: true
 </section>
 {% endif %}
 
-<section class="te-section">
-  <div class="te-frame">
-    <div class="te-frame-head"><h2 class="te-plaque">Game modes</h2></div>
-    <div class="te-tiles five">
-      <a class="te-tile" href="{{ '/game-modes.html#co-op' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/TradingPost.png' | relative_url }}" alt=""></span><span class="te-tile-title big">Co-op</span><span class="te-tile-against">Against nobody</span><span class="te-tile-text">Everyone builds one settlement together. No bandits, no winner.</span></a>
-      <a class="te-tile" href="{{ '/game-modes.html#pve' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/BanditCamp.png' | relative_url }}" alt=""></span><span class="te-tile-title big">PvE</span><span class="te-tile-against">Against the bandits</span><span class="te-tile-text">Everyone is allied. Clear every bandit camp and you all win.</span></a>
-      <a class="te-tile" href="{{ '/game-modes.html#pvp' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Barracks.png' | relative_url }}" alt=""></span><span class="te-tile-title big">PvP</span><span class="te-tile-against">Against each other</span><span class="te-tile-text">Everyone for themselves, and the bandits raid everyone.</span></a>
-      <a class="te-tile" href="{{ '/playing/horde.html' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/HordeJaws.svg' | relative_url }}" alt=""></span><span class="te-tile-title big">Horde</span><span class="te-tile-against">Against each other and the undead</span><span class="te-tile-text">Fight your rivals and the horde at the same time, or team up against it.</span></a>
-      <a class="te-tile" href="{{ '/game-modes.html#playing-alone' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Gatehouse.png' | relative_url }}" alt=""></span><span class="te-tile-title big">Alone</span><span class="te-tile-against">Against bandits or AIs</span><span class="te-tile-text">Play as an empire against the bandits, or add AI opponents.</span></a>
-    </div>
-    <div class="te-center"><a class="te-btn ghost" href="{{ '/game-modes.html' | relative_url }}">How the modes work</a></div>
+<section class="te-section te-modes">
+  <div class="te-plaque-rule"><i></i><h2 class="te-plaque">Game modes</h2><i></i></div>
+  <div class="te-mode-grid">
+    <a class="te-mode" href="{{ '/game-modes.html#co-op' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/TradingPost.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">Co-op</span><span class="te-mode-against">Against nobody</span><span class="te-mode-desc">Everyone builds one settlement together. No bandits, no winner.</span></span></a>
+    <a class="te-mode" href="{{ '/game-modes.html#pve' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/BanditCamp.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">PvE</span><span class="te-mode-against">Against the bandits</span><span class="te-mode-desc">Everyone is allied. Clear every bandit camp and you all win.</span></span></a>
+    <a class="te-mode" href="{{ '/game-modes.html#pvp' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Barracks.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">PvP</span><span class="te-mode-against">Against each other</span><span class="te-mode-desc">Everyone for themselves, and the bandits raid everyone.</span></span></a>
+    <a class="te-mode featured" href="{{ '/playing/horde.html' | relative_url }}"><img class="te-mode-art" src="{{ '/assets/images/horde-1280.webp' | relative_url }}" alt=""><span class="te-medal"><img src="{{ '/assets/icons/HordeJaws.svg' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">Horde</span><span class="te-mode-against">Against each other and the undead</span><span class="te-mode-desc">Fight your rivals and the horde at the same time, or team up against it.</span></span></a>
+    <a class="te-mode" href="{{ '/game-modes.html#playing-alone' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Gatehouse.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">Alone</span><span class="te-mode-against">Against bandits or AIs</span><span class="te-mode-desc">Play as an empire against the bandits, or add AI opponents.</span></span></a>
   </div>
+  <div class="te-center"><a class="te-btn ghost" href="{{ '/game-modes.html' | relative_url }}">How the modes work</a></div>
 </section>
 
 <section class="te-section te-features">
