@@ -924,6 +924,7 @@ a.gallery-item:hover .gallery-name { color: $te-link-hover; }
 // ---------------------------------------------------------------------------
 
 .te-map { padding: 0 32px 32px; @media (max-width: 40rem) { padding: 0 18px 24px; } }
+.te-map + .te-map { margin-top: 72px; @media (max-width: 40rem) { margin-top: 56px; } }
 .te-map-body { display: flex; flex-wrap: wrap; gap: 36px; align-items: center; }
 .te-map-body .te-pic { flex: 1.6 1 520px; min-width: 0; @media (max-width: 40rem) { flex-basis: 100%; } }
 .te-map-body .te-pic img { aspect-ratio: 16 / 9; }
