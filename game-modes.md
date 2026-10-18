@@ -12,9 +12,9 @@ A multiplayer game has a mode, picked when it's created: the **Multiplayer mode*
 | [Co-op](#co-op) | 2 or more, one settlement | Nobody | None, just build |
 | [PvE](#pve) | 2 or more, allied | The bandits | Clear every bandit camp |
 | [PvP](#pvp) | 2 or more | Each other and the bandits | The [Victory](playing/victory.md) setting |
-| [Horde](#horde) | 2 or more | Each other and the undead raccoons | Last one standing, or seal every ruin |
+| [Horde](#horde) | 1 or more | Each other and the undead raccoons | Last one standing, or seal every ruin |
 
-Playing alone there's no mode to pick: see [Playing alone](#playing-alone).
+Playing alone there's no mode to pick, except [Horde](#horde): see [Playing alone](#playing-alone).
 
 ## Co-op
 
@@ -46,5 +46,7 @@ A PvP match where the undead raccoons climb out of the ruins every few nights an
 **As an empire.** With [Play as an empire](settings.md#play-as-an-empire) on (the default), your districts are yours: land claims, fog of war and owner colors all work, and the fog hides the bandit camps until you scout them. The bandits are your opponents, but there's no victory: it's a sandbox for the military side of the mod. It needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins.
 
 **Against AIs.** Add [AI opponents](ai-opponents.md) in the game settings and it's a PvP game against them, won by the [Victory](playing/victory.md) rules.
+
+**Horde.** Host a [Horde](playing/horde.md) game and start it without waiting for anyone: the undead raccoons come every few nights, with AI opponents as rivals if you add them.
 
 **Classic.** With Play as an empire off, Timber Empires' buildings, troops, walls and siege machines are all there, and the bandits still camp and raid, but there's no ownership, no land claims and no fog of war.

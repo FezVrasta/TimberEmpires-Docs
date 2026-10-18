@@ -15,6 +15,8 @@ Horde is a [Multiplayer mode](../game-modes.md#horde). Pick it on the New Game s
 
 Fight your rivals and the horde at the same time, or [team up](alliances.md) against it. Everyone owns their districts. After every horde you get goods, buildings and siege machines you can put to use right away. AI opponents can join too.
 
+**Playing alone.** Host a Horde game and start it without waiting for anyone. Add [AI opponents](../ai-opponents.md) for rivals, or face just the horde and seal every ruin to win.
+
 With [Shared colony](../settings.md#shared-colony) on, everyone builds one colony together, with the same goods and science. Off (the default), each player starts their own.
 
 ## The nights
