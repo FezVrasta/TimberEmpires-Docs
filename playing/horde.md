@@ -11,11 +11,9 @@ icon: HordeJaws
 
 Every few nights the undead raccoons crawl out of the ruins, and each horde is bigger than the last. When the badtide comes, a super horde pours out all at once. Hold the walls until sunrise, then seal the ruins for good.
 
-Horde is a [Multiplayer mode](../game-modes.md#horde). Pick it on the New Game screens' last page, like the others.
+Play it with friends or alone: pick [Horde](../game-modes.md#horde) on the New Game screens' last page and start without waiting for anyone if you're on your own.
 
-Fight your rivals and the horde at the same time, or [team up](alliances.md) against it. Everyone owns their districts. After every horde you get goods, buildings and siege machines you can put to use right away. AI opponents can join too.
-
-**Playing alone.** Host a Horde game and start it without waiting for anyone. Add [AI opponents](../ai-opponents.md) for rivals, or face just the horde and seal every ruin to win.
+Fight your rivals and the horde at the same time, or [team up](alliances.md) against it. Everyone owns their districts. After every horde you get goods, buildings and siege machines you can put to use right away. [AI opponents](../ai-opponents.md) can join as rivals, or you can face just the horde and seal every ruin to win.
 
 With [Shared colony](../settings.md#shared-colony) on, everyone builds one colony together, with the same goods and science. Off (the default), each player starts their own.
 
