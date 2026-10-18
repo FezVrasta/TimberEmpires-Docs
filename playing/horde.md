@@ -66,7 +66,7 @@ Pick later puts the choice away. The Rewards button shows a red mark while one i
 
 ## Winning
 
-There are two ways to win. Be the last one standing, with your allies: a player who loses every beaver is out. Or seal every ruin while everyone still in is allied, and you all win together: "The last ruin is sealed. The nights are quiet again."
+Seal every ruin to win: "The last ruin is sealed. The nights are quiet again." With rivals in the game, you also have to outlast them: a player who loses every beaver is out, and only allies win together.
 
 - **Underground ruins.** Build a Mine in or on top of it.
 - **Ruin columns** on the surface. Scavenge them away.

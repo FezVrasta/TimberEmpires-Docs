@@ -12,7 +12,7 @@ A multiplayer game has a mode, picked when it's created: the **Multiplayer mode*
 | [Co-op](#co-op) | 2 or more, one settlement | Nobody | None, just build |
 | [PvE](#pve) | 1 or more, allied | The bandits | Clear every bandit camp |
 | [PvP](#pvp) | 2 or more | Each other and the bandits | The [Victory](playing/victory.md) setting |
-| [Horde](#horde) | 1 or more | Each other and the undead raccoons | Last one standing, or seal every ruin |
+| [Horde](#horde) | 1 or more | Each other and the undead raccoons | Seal every ruin, and outlast your rivals |
 
 Playing alone, only [PvE](#pve) and [Horde](#horde) have a mode to pick: see [Playing alone](#playing-alone).
 
@@ -32,7 +32,7 @@ Everyone for themselves. Each player owns their districts and everything on the 
 
 ## Horde
 
-A PvP match where the undead raccoons climb out of the ruins every few nights and come for everyone. After every horde you get rewards you can use right away: goods, buildings, siege machines. Win by being the last one standing, or by sealing every ruin together with your allies. With [Shared colony](settings.md#shared-colony) on, it's one colony built together. See [Horde](playing/horde.md).
+A PvP match where the undead raccoons climb out of the ruins every few nights and come for everyone. After every horde you get rewards you can use right away: goods, buildings, siege machines. Seal every ruin to win. With rivals in the game, you also have to outlast them. With [Shared colony](settings.md#shared-colony) on, it's one colony built together. See [Horde](playing/horde.md).
 
 ## Hosting and matchmaking
 
