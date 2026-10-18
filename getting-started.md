@@ -8,10 +8,10 @@ nav_order: 2
 ## What you need
 
 - Timberborn 1.1 or newer.
-- [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327). Not the original BeaverBuddies: they share a mod ID, but only this edition has what Timber Empires hooks into, and with the original a multiplayer game goes out of sync. Timber Empires tells you on the main menu when it finds the original.
+- [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) (also on [mod.io](https://mod.io/g/timberborn/m/beaverbuddies-co-oppvp-edition)). Not the original BeaverBuddies: they share a mod ID, but only this edition has what Timber Empires hooks into, and with the original a multiplayer game goes out of sync. Timber Empires tells you on the main menu when it finds the original.
 - Harmony and Mod Settings (1.1 or newer).
 
-[Subscribe to Timber Empires on the Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3814012422). That pulls in the mods it needs. Every player needs the same mods, in the same versions.
+[Subscribe to Timber Empires on the Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3814012422) (also on [mod.io](https://mod.io/g/timberborn/m/timber-empires)). That pulls in the mods it needs. Every player needs the same mods, in the same versions.
 
 ## Playing with others
 

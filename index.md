@@ -21,7 +21,7 @@ hero: true
         <p class="te-lead">Every few nights the undead raccoons crawl out of the ruins, and each horde is bigger than the last. When the badtide comes, a super horde pours out all at once. Hold the walls until sunrise, then seal the ruins for good.</p>
         <p class="te-horde-line">Fight your rivals and the horde at the same time, or team up against it. Every sunrise brings goods, buildings and siege machines you can put to use right away.</p>
         <div class="te-actions te-horde-actions">
-          <a class="te-btn" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3814012422">Get it on the Steam Workshop</a>
+          {% include te_get.html %}
           <a class="te-btn ghost" href="{{ '/playing/horde.html' | relative_url }}">How Horde works</a>
         </div>
       </div>

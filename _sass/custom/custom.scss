@@ -1152,3 +1152,30 @@ $te-wisp: #7fe6b6;
 
 // Room for the search bar's close button
 .te-search .search { padding-right: calc(#{$te-gutter} + 52px) !important; @media (max-width: 40rem) { padding-right: 52px !important; } }
+
+// mod.io as a quiet alternative under the Steam Workshop button
+.te-get { position: relative; display: inline-flex; }
+.te-get-alt {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -4px);
+  white-space: nowrap;
+  padding: 5px 10px;
+  background: #0e1a1e;
+  border: 1px solid $te-beige;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.7), 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: $te-strong !important;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s, transform 0.12s;
+}
+// Keeps the hover alive across the gap between the button and the tooltip
+.te-get-alt::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 12px; }
+.te-get-alt:hover { color: $te-link-hover !important; }
+.te-get:hover .te-get-alt, .te-get:focus-within .te-get-alt { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
