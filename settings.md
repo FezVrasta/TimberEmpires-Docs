@@ -73,7 +73,7 @@ How a PvP game is won: kill all the beavers, destroy the District Centers, or bu
 
 ## Bandit camps
 
-Places bandit camps when a new game starts on a map that has none (never in Co-op). See [Bandits](playing/bandits.md).
+Places bandit camps when a new game starts on a map that has none. See [Bandits](playing/bandits.md).
 
 ## Bandit raids
 
@@ -109,11 +109,11 @@ The faction you build with in a mixed-factions game: the host's, or any faction 
 
 ## Play as an empire
 
-Your districts are yours, and land claims and fog of war work as they would against other players. A game started from the multiplayer page always has it on, since it's a game with others even before anyone joins. See [Playing alone](getting-started.md#playing-alone).
+Your districts are yours, and land claims and fog of war work as they would against other players. See [Playing alone](getting-started.md#playing-alone).
 
 ## Fog of war
 
-You only see around your land, buildings, beavers and troops. It only changes what players see, but it's a game setting, so nobody can lift it for themselves. See [Fog of war](playing/territory.md#fog-of-war).
+You only see around your land, buildings, beavers and troops. See [Fog of war](playing/territory.md#fog-of-war).
 
 ## Private top bar
 

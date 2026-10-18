@@ -34,11 +34,9 @@ Out of sight, other players' buildings, beavers, roads, fields, crops, cutting a
 
 You can plan buildings in the fog. If another player plans the same spot without knowing, whoever sees it first gets it, and yours stays as a phantom until you can see the spot.
 
-The fog only hides things from you. It doesn't change what happens in the game.
-
 ## Roads and new districts
 
-With [Costly expansion](../settings.md#costly-expansion) on, builders lay your roads (quickly, and for free), and every District Center after your first costs 100 logs, 120 planks, 60 gears, 30 metal blocks and 800 science, and is built like any other building.
+With [Costly expansion](../settings.md#costly-expansion) on, builders lay your roads (quickly, and for free), and every District Center after your first costs 100 logs, 120 planks, 60 gears, 30 metal blocks and 800 science.
 
 ## Colors
 

@@ -10,7 +10,7 @@ Monks don't fight or heal: they convert. They're trained at the [Monastery](../b
 
 ## Converting
 
-A monk converts another player's troops and carters out in the open (not inside a building or aboard a machine), and their siege machines. Bandits can't be converted.
+A monk converts another player's troops and carters out in the open, and their siege machines. Bandits can't be converted.
 
 Send a monk at an enemy and it starts chanting once close enough. A conversion can't happen in the first few minutes of chanting, gets likelier the longer it goes on, and is certain after about half an hour. Moving out of reach starts it over. After a conversion, the monk's faith has to refill before it can convert again. Its panel shows "Faith".
 
@@ -20,7 +20,7 @@ Monks need books (Iron Teeth: coffee) to convert. They start with none, so suppl
 
 **A converted machine** changes owner and throws out its crew.
 
-Both sides get a notification. Monks never convert an ally's troops.
+Both sides get a notification.
 
 ## Looks
 

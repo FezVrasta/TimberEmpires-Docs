@@ -13,6 +13,6 @@ The slipway's boat also arms [Moored Mines](moored-mine.md) nearby.
 
 ## A blast
 
-a blast destroys small buildings, damages bigger ones and walls, weakens dams, hurts beavers and sets off armed moored mines nearby, which can chain. Roads aren't hurt.
+a blast destroys small buildings, damages bigger ones and walls, weakens dams, hurts beavers and sets off armed moored mines nearby, which can chain.
 
 Mines don't know friend from foe: they hit whatever they meet, yours and your allies' too.

@@ -11,7 +11,7 @@ Trains troops. It's a workplace, and its workers are your troops: pick which kin
 
 ## Training
 
-A recruit picks up a weapon from the barracks, then trains inside for a few hours. Recruits can't be ordered around and don't fight. A troop that's let go gives its weapon back. Barracks never take beavers sick with badwater, and a troop that catches it goes home and leaves.
+A recruit picks up a weapon from the barracks, then trains inside for a few hours. Recruits can't be ordered around and don't fight. A troop that's let go gives its weapon back. A troop that catches badwater sickness goes home and leaves.
 
 The barracks keeps 6 weapons in stock, brought by your haulers from the [Weaponsmith](weaponsmith.md), [Bladesmith](bladesmith.md) or [Gunsmith](gunsmith.md). It shows "No weapons" or "No haulers for weapons" when its recruits have been waiting an hour.
 

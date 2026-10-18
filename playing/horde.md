@@ -27,7 +27,7 @@ Each horde is bigger than the last, and grows a little with every day of the cyc
 
 ## What they go for
 
-They hunt beavers outside first, then the ground around buildings with beavers in them. They never go inside buildings and leave paths alone, but a big enough crowd picks at a building and drives everyone inside out into the swarm. Nobody can go into a swarmed building.
+They hunt beavers outside first, then the ground around buildings with beavers in them. A big enough crowd picks at a building and drives everyone inside out into the swarm. Nobody can go into a swarmed building.
 
 Dams, levees and floodgates hold them back like walls: the horde piles up against them and spills over once the pile is higher. They'd rather walk around a cliff than climb it.
 
@@ -41,7 +41,7 @@ A beaver caught in the swarm gets bitten, and the more raccoons around it, the f
 
 Before sunrise they head back to the ruins and caves, and the ones that make it hide until the next horde night. The ones left out in the sun stop where they are and burn. Under rock they don't burn.
 
-By day they don't bite or gnaw anything, but your troops can still kill them.
+By day they don't bite or gnaw anything, and your troops can pick them off.
 
 ## Fighting them
 

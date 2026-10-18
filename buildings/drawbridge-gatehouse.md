@@ -7,6 +7,6 @@ nav_order: 3.5
 
 # Drawbridge Gatehouse
 
-A [Gatehouse](gatehouse.md) with a bridge across a ditch or a moat. The bridge reaches across the gap and goes up whenever the gate shuts, so it opens and shuts on the same rules and panel modes.
+A [Gatehouse](gatehouse.md) with a bridge across a ditch or a moat. The bridge reaches across the gap and goes up whenever the gate shuts.
 
 The two tiles under the bridge must be empty, and stay that way.

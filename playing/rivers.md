@@ -30,8 +30,6 @@ The Mine Workshop makes water mines, and the Mine Slipway launches them into the
 - hurts beavers;
 - sets off armed moored mines nearby, which can chain.
 
-Roads aren't hurt.
-
 ## Fireships
 
 Main article: [Fireship Dock](../buildings/fireship-dock.md)

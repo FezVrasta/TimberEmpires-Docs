@@ -46,7 +46,7 @@ Each AI also has leanings of its own for the game: how soon it arms, how big an 
 
 **Defense.** [Watchtowers](buildings/watchtower.md) out toward trouble, to see it coming and claim the land around them, and on Normal and Hard a [Palisade](buildings/palisade.md) around the core of its town with [Gatehouses](buildings/gatehouse.md) where its roads go out. Cliffs and water do the rest. Its troops come out against whatever comes into sight.
 
-**Attack.** It trains troops at a [Barracks](buildings/barracks.md) and an [Archery Range](buildings/archery-range.md), scouts for the other players, and marches on a District Center it knows of once its army is big enough and, where it can see the defenders, strong enough. It plans its way around the walls it has seen, not the ones it hasn't. Where the ground steps up, its troops put up [Field Ladders](buildings/field-ladder.md), paid for and built like yours.
+**Attack.** It trains troops at a [Barracks](buildings/barracks.md) and an [Archery Range](buildings/archery-range.md), scouts for the other players, and marches on a District Center it knows of once its army is big enough and, where it can see the defenders, strong enough. It plans its way around the walls it has seen, not the ones it hasn't. Where the ground steps up, its troops put up [Field Ladders](buildings/field-ladder.md).
 
 **Not yet.** AIs stay in one district, and don't use district specializations, siege machines or monks. They don't make alliances or trade: a proposal to an AI goes unanswered.
 
