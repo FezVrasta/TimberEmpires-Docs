@@ -136,6 +136,17 @@ layout: table_wrappers
       btn.addEventListener('click', function () { root.classList.contains('te-search-open') ? close() : open(); });
       document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && root.classList.contains('te-search-open')) { close(); btn.focus(); } });
       document.querySelector('.search-overlay').addEventListener('click', close);
+      var bar = input.closest('.search');
+      var x = document.createElement('button');
+      x.type = 'button';
+      x.className = 'te-search-close';
+      x.setAttribute('aria-label', 'Close search');
+      x.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>';
+      x.addEventListener('click', function () { close(); btn.focus(); });
+      bar.appendChild(x);
+      document.addEventListener('click', function (e) {
+        if (root.classList.contains('te-search-open') && !bar.contains(e.target) && !btn.contains(e.target)) close();
+      });
     })();
   </script>
   {%- endif %}

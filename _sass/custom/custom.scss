@@ -350,6 +350,24 @@ a.te-pic:hover::before { border-color: #e6d3a3; }
 // Search: the theme's own search box, opened from the icon
 .te-search { display: none; }
 .te-search-open .te-search { display: block; }
+.te-search-open .te-search::before { content: ""; position: fixed; inset: 0; z-index: 59; background: rgba(5, 8, 12, 0.6); }
+.te-search-close {
+  position: absolute;
+  top: 12px;
+  right: $te-gutter;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: #d8b064;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  @media (max-width: 40rem) { right: 4px; }
+}
+.te-search-close:hover { color: $te-link-hover; }
 .te-search .search {
   position: fixed !important;
   top: 0;
@@ -1127,3 +1145,6 @@ $te-wisp: #7fe6b6;
   .te-mode, .te-mode::before, .te-mode .te-medal img, .te-mode-art { transition: none; }
   .te-mode:hover, .te-mode:focus-visible { transform: none; }
 }
+
+// Room for the search bar's close button
+.te-search .search { padding-right: calc(#{$te-gutter} + 52px) !important; @media (max-width: 40rem) { padding-right: 52px !important; } }
