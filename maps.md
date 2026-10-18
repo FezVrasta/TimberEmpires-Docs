@@ -27,6 +27,7 @@ intro: Maps built for Timber Empires. Subscribe on the Steam Workshop and they s
   <div class="te-map-body">
     <a class="te-pic has-gem" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3821758523"><span class="te-pic-gem" aria-hidden="true"></span><img src="{{ '/assets/maps/the-pumpkins-curse.jpg' | relative_url }}" alt="The Pumpkin's Curse map"></a>
     <div class="te-map-text">
+      <p>The curse has buried the valley in darkness. Each player starts in a cave under it, and the hordes climb out of the ruins along the badwater river. Seal every ruin to lift the curse.</p>
       <div class="te-rows">
         <div class="te-stat"><span>Size</span><span class="val">256 × 256</span></div>
         <div class="te-stat"><span>Players</span><span class="val">2</span></div>
