@@ -1076,3 +1076,54 @@ $te-wisp: #7fe6b6;
   .te-mode.featured { padding-right: 16px; padding-top: 118px; align-items: flex-start; }
   .te-mode-art { width: 100%; height: 130px; -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent); mask-image: linear-gradient(180deg, #000 55%, transparent); }
 }
+
+// Feature tiles light up on hover: a glow behind the diamond, a brighter edge and icon, a small lift
+.te-features .te-tile { --te-glow: 232, 190, 110; transition: transform 0.2s ease; }
+.te-halloween .te-features .te-tile { --te-glow: 255, 160, 70; }
+.te-features .te-tile .te-medal::after {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  z-index: -2;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--te-glow), 0.38) 0%, rgba(var(--te-glow), 0.12) 45%, rgba(var(--te-glow), 0) 70%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.te-features .te-tile .te-medal::before { transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+.te-features .te-tile .te-medal img { transition: filter 0.2s ease; }
+.te-features .te-tile:hover,
+.te-features .te-tile:focus-visible { transform: translateY(-4px); }
+.te-features .te-tile:hover .te-medal::after,
+.te-features .te-tile:focus-visible .te-medal::after { opacity: 1; }
+.te-features .te-tile:hover .te-medal::before,
+.te-features .te-tile:focus-visible .te-medal::before {
+  border-color: #f1d79a;
+  box-shadow: inset 0 0 0 4px $te-medal, inset 0 0 0 5px rgba(241, 215, 154, 0.7), 0 0 14px rgba(var(--te-glow), 0.45);
+}
+.te-features .te-tile:hover .te-medal img,
+.te-features .te-tile:focus-visible .te-medal img { filter: brightness(1.25) drop-shadow(0 0 6px rgba(var(--te-glow), 0.6)); }
+.te-features .te-tile:focus-visible { outline: none; }
+@media (prefers-reduced-motion: reduce) {
+  .te-features .te-tile, .te-features .te-tile .te-medal::after, .te-features .te-tile .te-medal::before, .te-features .te-tile .te-medal img { transition: none; }
+  .te-features .te-tile:hover, .te-features .te-tile:focus-visible { transform: none; }
+}
+
+// Game mode cards light up the same way, the Horde art brightening behind its text
+.te-mode { --te-glow: 232, 190, 110; transition: transform 0.2s ease; }
+.te-halloween .te-mode { --te-glow: 255, 160, 70; }
+.te-mode::before { transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+.te-mode .te-medal img, .te-mode-art { transition: filter 0.25s ease, opacity 0.25s ease; }
+.te-mode:hover, .te-mode:focus-visible { transform: translateY(-3px); outline: none; }
+.te-mode:hover::before, .te-mode:focus-visible::before,
+.te-mode.featured:hover::before, .te-mode.featured:focus-visible::before {
+  border-color: #f1d79a;
+  box-shadow: inset 0 0 0 5px $te-panel, inset 0 0 0 6px rgba(241, 215, 154, 0.45), 0 10px 22px rgba(0, 0, 0, 0.4), 0 0 18px rgba(var(--te-glow), 0.35);
+}
+.te-mode:hover .te-medal::before, .te-mode:focus-visible .te-medal::before { border-color: #f1d79a; }
+.te-mode:hover .te-medal img, .te-mode:focus-visible .te-medal img { filter: brightness(1.25) drop-shadow(0 0 6px rgba(var(--te-glow), 0.6)); }
+.te-mode.featured:hover .te-mode-art, .te-mode.featured:focus-visible .te-mode-art { opacity: 1; filter: brightness(1.15); }
+@media (prefers-reduced-motion: reduce) {
+  .te-mode, .te-mode::before, .te-mode .te-medal img, .te-mode-art { transition: none; }
+  .te-mode:hover, .te-mode:focus-visible { transform: none; }
+}
