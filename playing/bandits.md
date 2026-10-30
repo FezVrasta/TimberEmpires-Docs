@@ -25,6 +25,10 @@ Bandits attack any beaver that comes near their camp. Each camp guards a stash o
 
 A camp left alone gains a bandit every cycle, up to twice its starting crew.
 
+## Pirates
+
+On [Archipelago](../archipelago.md) maps every camp has black-sailed boats with crews and cannons, and the fleet grows back. They raid the coast and shell the building nearest the sea, and sometimes land a party. A camp is cleared when its bandits and its boats are gone.
+
 ## Raids
 
 With [Bandit raids](../settings.md#bandit-raids) on, camps raid the players from the [First raid](../settings.md#first-raid) cycle, 7 by default. That cycle you might be raided, and the odds climb every cycle after. Later on there can be two raids in a cycle.

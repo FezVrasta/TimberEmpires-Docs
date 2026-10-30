@@ -677,6 +677,7 @@ a.te-pic:hover::before { border-color: #e6d3a3; }
   mask: var(--mod-icon) center / contain no-repeat;
 }
 .mod-badge--te { color: $te-link; --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-te.svg")'}; }
+.mod-badge--archipelago { color: #6fcfc3; --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-archipelago.svg")'}; }
 .mod-badge--bb { color: #7fb7d9; --mod-icon: #{'url("/TimberEmpires-Docs/assets/images/mod-bb.svg")'}; }
 .te-stat .mod-badge { font-size: 15px; }
 
@@ -1179,3 +1180,13 @@ $te-wisp: #7fe6b6;
 .te-get-alt::before { content: ""; position: absolute; left: 0; right: 0; bottom: 100%; height: 12px; }
 .te-get-alt:hover { color: $te-link-hover !important; }
 .te-get:hover .te-get-alt, .te-get:focus-within .te-get-alt { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
+
+.te-modder { margin-top: 38px; border: 1px solid rgba(128, 128, 128, 0.4); border-radius: 6px; }
+.te-modder > summary { cursor: pointer; padding: 10px 16px; font-weight: 700; }
+.te-modder-body { padding: 4px 16px 16px; }
+.te-modder-title { font-size: 16px; margin: 22px 0 6px; }
+.te-modder .te-spec h4 { font-size: 14px; margin: 14px 0 4px; }
+.te-modder .te-spec p { margin: 0 0 6px; }
+.te-modder pre { max-height: 360px; overflow: auto; margin: 6px 0 0; }
+.te-spec-fields { display: grid; grid-template-columns: max-content 1fr; gap: 2px 14px; margin: 6px 0; font-size: 14px; }
+.te-spec-fields dd { margin: 0; }

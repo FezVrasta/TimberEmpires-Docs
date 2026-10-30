@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jekyll",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": [".claude/serve.sh"],
+      "port": 4000,
+      "url": "http://localhost:4000"
+    }
+  ]
+}

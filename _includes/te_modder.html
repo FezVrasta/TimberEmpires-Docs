@@ -1,0 +1,46 @@
+{%- comment -%}The collapsed "For modders" section of a building or troop page: its blueprint, by faction. e is the entry from _data{%- endcomment -%}
+{%- assign e = include.e -%}
+{%- assign keys = "Folktails,IronTeeth" | split: "," -%}
+<details class="te-modder">
+  <summary>For modders</summary>
+  <div class="te-modder-body">
+    {%- if include.troop %}
+    <p>A troop's numbers are lines in the stats file, and a faction can override any field of them. <a href="{{ '/modding.html#your-own-numbers' | relative_url }}">Your own numbers</a> lists the fields.</p>
+    {%- else %}
+    <p>Every number on this page comes from the building's blueprint. <a href="{{ '/modding.html#blueprint-specs' | relative_url }}">Blueprint specs</a> says what each component does.</p>
+    {%- endif %}
+    {%- for k in keys -%}{%- assign f = e.factions[k] -%}{%- if f and f.modder %}
+    <section class="te-modder-faction">
+      <h3 class="te-modder-title">{{ f.faction }}{% if f.modder.file %} <code>{{ f.modder.file }}</code>{% endif %}</h3>
+      {%- for c in f.modder.components %}
+      {%- assign info = site.data.specs[c.name] %}
+      <div class="te-spec">
+        <h4><code>{{ c.name }}</code></h4>
+        {%- if info %}<p>{{ info.summary | escape }}</p>{% endif %}
+        {%- if info.fields %}
+        <dl class="te-spec-fields">{% for fld in info.fields %}<dt><code>{{ fld[0] }}</code></dt><dd>{{ fld[1] | escape }}</dd>{% endfor %}</dl>
+        {%- endif %}
+        <pre><code>{{ c.json | escape }}</code></pre>
+      </div>
+      {%- endfor %}
+      {%- for patch in f.modder.patches %}
+      <h4 class="te-modder-patch">Added by <code>{{ patch.file }}</code></h4>
+      {%- for c in patch.components %}
+      {%- assign info = site.data.specs[c.name] %}
+      <div class="te-spec">
+        <h4><code>{{ c.name }}</code></h4>
+        {%- if info %}<p>{{ info.summary | escape }}</p>{% endif %}
+        <pre><code>{{ c.json | escape }}</code></pre>
+      </div>
+      {%- endfor %}
+      {%- endfor %}
+      {%- for line in f.modder.stats %}
+      <div class="te-spec">
+        <h4>Stats line in <code>{{ line.from }}</code></h4>
+        <pre><code>{{ line.json | escape }}</code></pre>
+      </div>
+      {%- endfor %}
+    </section>
+    {%- endif -%}{%- endfor %}
+  </div>
+</details>

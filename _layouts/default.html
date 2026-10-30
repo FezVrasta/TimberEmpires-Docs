@@ -105,6 +105,7 @@ layout: table_wrappers
           </div>
         </section>
         {%- endif %}
+        {%- if b %}{% include te_modder.html e=b %}{% elsif t %}{% include te_modder.html e=t troop=true %}{% endif %}
       </article>
       {%- if b %}{% include te_building_stats.html b=b id=slug %}{% else %}{% include te_troop_stats.html t=t id=slug %}{% endif %}
       {%- else %}

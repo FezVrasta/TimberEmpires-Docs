@@ -28,6 +28,10 @@ Troops can't hit a building through a wall. Construction sites can be attacked t
 
 Siege shots, logs and boiling oil ignore shields, ranks and wall cover.
 
+## Building in a fight
+
+Nobody builds or demolishes in the middle of a fight. You can't place a building within 12 tiles of an enemy's building or fighter, or demolish one of your own with an enemy fighter that close. [Field Ladders](../buildings/field-ladder.md) and [Field Ramps](../buildings/field-ramp.md) are the exceptions: troops can put them up right next to the enemy.
+
 ## Ranks
 
 Troops earn points for every enemy they bring down, more for a dangerous enemy and less the higher their own rank. Troops climb from Veteran to Elite to Hero, and each rank adds damage and takes some off the damage they take. A gold bar under the health bar shows it, and it's kept when a troop goes home or is converted.

@@ -1,0 +1,298 @@
+{
+  "ArmoryStoreSpec": {
+    "summary": "Makes a storage building keep arms only (troop weapons and gear, siege and ship ammunition) and turns away everything else.",
+    "fields": {}
+  },
+  "BanditCampSpec": {
+    "summary": "Makes the building a bandit camp: it spawns its bandits when a game starts, its loot can't be taken and its fire burns until they're all dead.",
+    "fields": {
+      "BanditCount": "How many bandits the camp starts with. Stronger camps are better armed."
+    }
+  },
+  "BanditLadderSpec": {
+    "summary": "Marks a ladder as one bandits put up on a raid: it's climbed from its own tile and taken down afterwards. Use it together with SiegeLadderSpec.",
+    "fields": {}
+  },
+  "BarracksSpec": {
+    "summary": "Makes the building train troops. With no field set it trains swordsmen, spearmen and the like.",
+    "fields": {
+      "Ranged": "Trains archers and other shooters instead (an archery range). Default false.",
+      "Monastery": "Trains monks instead. Default false.",
+      "Muster": "Trains militia and scouts from plain logs and berries. Default false."
+    }
+  },
+  "BatteringRamSpec": {
+    "summary": "Makes the building a battering ram that a crew swings at walls, gates, towers, siege engines and dams. Its damage and speed come from the troop stats file.",
+    "fields": {
+      "CrewRange": "No longer used. Accepted so older blueprints still load."
+    }
+  },
+  "BoatEngineSpec": {
+    "summary": "Gives a ship a steam engine that burns logs and water from its hold while it sails, for a faster crossing.",
+    "fields": {
+      "LogsPerHour": "Logs burnt per hour while the ship is under way. Default 0.03.",
+      "WaterPerHour": "Water used per hour while under way. Default 0.1.",
+      "SpeedBoost": "How many times as fast the ship sails with the engine running. Default 1.5. Without logs or water it falls back to its crew's rowing."
+    }
+  },
+  "BoatSpec": {
+    "summary": "Makes the template a ship: it sails, carries a crew and can only be placed on a Naval Workshop slip.",
+    "fields": {
+      "TilesPerHour": "Speed with no wind, in tiles per hour. Default 50.",
+      "WindTilesPerHour": "Speed in the strongest wind, in tiles per hour. Weaker wind falls in between. Left out or 0, wind makes no difference.",
+      "TurnDegreesPerHour": "Turning speed with no wind, in degrees per hour. Left out or 0, the ship turns on the spot.",
+      "WindTurnDegreesPerHour": "Turning speed in the strongest wind, in degrees per hour. Left out or 0, wind makes no difference to turning.",
+      "Draft": "How deep the hull sits in the water at sea, in tiles. Default 0.6."
+    }
+  },
+  "CastleUpgradeSpec": {
+    "summary": "Lets a District Center be upgraded in place to a castle, paid in science and goods and built by its builders.",
+    "fields": {
+      "ScienceCost": "Science its owner pays when the upgrade starts.",
+      "Cost": "Goods builders bring in, as a list of {\"Id\", \"Amount\"}.",
+      "WorkHours": "Hours of building work the upgrade takes.",
+      "Model": "The castle model shown in place of the District Center.",
+      "Scaffold": "The scaffold model shown over it while it's built."
+    }
+  },
+  "CombatLockSpec": {
+    "summary": "Controls whether the building can be placed or demolished beside enemy fighters.",
+    "fields": {
+      "AllowNearEnemies": "Lets the building go up with enemies close by. Without it, it can't. Default false."
+    }
+  },
+  "FieldInfirmarySpec": {
+    "summary": "Makes the building a field infirmary: a wheeled healing tub where badly hurt troops lie out of the fight and heal much faster than with a herbalist. Healing uses up extract and berries. Its numbers are in the troop stats file.",
+    "fields": {}
+  },
+  "HordeOnlySpec": {
+    "summary": "Puts the building in the toolbar of Horde games only.",
+    "fields": {}
+  },
+  "LandClaimSpec": {
+    "summary": "Claims the land in a circle around the building for its owner, so other players can't build there. Where enemy claims overlap, each tile goes to the nearer one.",
+    "fields": {
+      "Radius": "Radius of the claim, in tiles."
+    }
+  },
+  "LookoutSpec": {
+    "summary": "Makes the building see further through the fog of war, further still from high ground.",
+    "fields": {
+      "Sight": "How far it sees, in tiles."
+    }
+  },
+  "MineLauncherSpec": {
+    "summary": "Makes the building release water mines, or explosive boats, from its panel button or its automation input. Each release takes a worker and water to launch into.",
+    "fields": {
+      "LaunchCoordinates": "Where the mine or boat enters the water, in the building's own tiles ({X, Y, Z}).",
+      "LaunchHours": "Hours each release takes.",
+      "Boats": "Sends out explosive boats instead of mines. Default false.",
+      "LaunchCost": "Goods each mine or boat uses up, as a list of {\"Id\", \"Amount\"}.",
+      "StoredLaunches": "How many launches' worth of goods it keeps in store."
+    }
+  },
+  "MineNetSpec": {
+    "summary": "Makes the building a floating boom with a net that catches drifting mines until it's full. Chain several in a line to make a wall.",
+    "fields": {
+      "Capacity": "Mines one segment holds before it's full."
+    }
+  },
+  "MineNetWinchSpec": {
+    "summary": "Makes the building a winch on the bank that, while it has a worker, hauls in the catch of the nets chained to it and takes the mines apart into explosives.",
+    "fields": {
+      "WinchHours": "Hours between hauls."
+    }
+  },
+  "MoltenMetalSpec": {
+    "summary": "Makes the building's glowing metal and fire parts flow and glow orange. Looks only.",
+    "fields": {}
+  },
+  "MooredMineSpec": {
+    "summary": "Marks a spot in the water where a mine slipway anchors a mine. It sits still and goes off when a boat or a drifting mine comes close, or in another blast.",
+    "fields": {}
+  },
+  "NavalWorkshopSpec": {
+    "summary": "Makes the building a shipyard: it stands on the shore with a slip running out into the shallows, and ships can only be placed on that slip. The slip's first row along (SlipY - 1) is the shed, which a ship's bow sits against.",
+    "fields": {
+      "SlipX": "Where the slip starts across the building, in the building's own tiles.",
+      "SlipY": "Where the slip starts along the building, in tiles.",
+      "SlipWidth": "Slip width, in tiles.",
+      "SlipLength": "Slip length, in tiles."
+    }
+  },
+  "NeedsSandSpec": {
+    "summary": "Makes the building work only when standing on sand. Anywhere else its beavers don't come and a status says so.",
+    "fields": {}
+  },
+  "PalisadeGateSpec": {
+    "summary": "Makes the building a gate with open, closed and automated modes. Auto open lets its own side through and shuts when enemies come near.",
+    "fields": {
+      "Passage": "Where the way through is, in the building's own tiles ({X, Y, Z}), for gates bigger than their passage.",
+      "Bridge": "A drawbridge's tiles out from the passage, as a list of {X, Y, Z}. They're walkable only while the gate is open."
+    }
+  },
+  "PirateBoatSpec": {
+    "summary": "Marks a boat as a bandit camp's: it belongs to the bandits and the camp it came from, and sails under black sails.",
+    "fields": {}
+  },
+  "ResinIgniterSpec": {
+    "summary": "Makes the building a detonator for resin: built on a resin puddle, it sets the puddle alight when its input turns on, and takes another pulse for the next puddle laid there.",
+    "fields": {}
+  },
+  "ResinPuddleSpec": {
+    "summary": "Makes the building a puddle of resin that burns when lit, hurts everyone standing in it and spreads to touching puddles.",
+    "fields": {
+      "BurnHours": "How long it burns once lit, in hours.",
+      "DamagePerHour": "Damage per hour to everyone standing in it.",
+      "ZombieFactor": "How many times as many of the Horde's zombies it burns, on each of its tiles, as its damage alone would kill.",
+      "CatchHours": "Hours from the fire arrow landing to the flames taking hold.",
+      "SpreadHours": "Hours after it starts burning before touching puddles catch.",
+      "Flames": "Names of the flame effects shown over it while it burns."
+    }
+  },
+  "RoundTowerSpec": {
+    "summary": "Makes the building a round tower: open on top, with room for one catapult, ballista or trebuchet, which stands guard there on its own. A wall joins it at the middle of a side.",
+    "fields": {}
+  },
+  "ShipArmamentSpec": {
+    "summary": "Gives a ship gun ports where cannons can be mounted.",
+    "fields": {
+      "Ports": "The gun ports, as a list of {\"Side\", \"Position\"}. Side is -1 for the side towards X = 0 and 1 for the other. Position is the port's middle in the model's frame.",
+      "PortArc": "How far round the ports let a gun turn, as a share of the gun's own arc. Default 1. Round ports in an iron hull hold it close, so use less; guns on an open deck swing freely.",
+      "Hull": "Where the hull lies in its footprint, as {X, Y, Width, Length}, in tiles with Y counted from the bow. The panel uses it to place the ports over the deck drawing.",
+      "DeckSprite": "The deck drawing the panel puts the ports over, bow to the left. Left out, it's Sprites/TimberEmpires/Ships/TemplateNameDeck."
+    }
+  },
+  "ShipCrewModeSpec": {
+    "summary": "Lets a ship's crew be civil (workers sail it) or military (troops aboard sail it and fire its guns). It can only be switched while the ship is ashore.",
+    "fields": {
+      "Military": "Starts the ship with a military crew. Default false."
+    }
+  },
+  "ShipHoldSpec": {
+    "summary": "Gives a ship a hold that haulers load and unload like a warehouse, and that slows the ship as it fills.",
+    "fields": {
+      "Slots": "How many kinds of goods it can be set to load at once. Default 5.",
+      "Capacity": "The most it holds, all goods together. Default 100.",
+      "LoadedSpeed": "The share of its speed it keeps with the hold full, less loaded in between. Default 0.6.",
+      "LoadedTurn": "The share of its turning it keeps with the hold full. Default 0.4."
+    }
+  },
+  "SiegeEngineSpec": {
+    "summary": "Makes the building a siege engine that fires at enemies in reach. Its range, reload and damage come from the troop stats file; the blueprint sets how it moves and looks.",
+    "fields": {
+      "FacingOffset": "Which way the model faces when placed unturned, in degrees from the game's +y. 0 for a trebuchet, 180 for wheeled engines.",
+      "ArmPivot": "Where the throwing arm pivots, in the building's own space ({X, Y, Z}).",
+      "ArmLength": "Arm length above the pivot, in tiles. 0 means no arm, as on a ballista.",
+      "CockedAngle": "The arm's angle when cocked, in degrees.",
+      "ThrownAngle": "The arm's angle after the throw, in degrees.",
+      "RestAngle": "The arm's angle at rest, in degrees.",
+      "SlingLength": "Length of the sling hanging from the arm's tip, in tiles. 0 for none.",
+      "FlatShot": "Shoots flat like a ballista bolt instead of lobbing. Default false.",
+      "Stream": "Makes it a flamethrower: no shots, a stream of fire kept up while it has a target and fuel. Default false.",
+      "Muzzle": "For a flamethrower, where the middle of its nozzle pair is, in the building's own space ({X, Y, Z}).",
+      "MuzzleSpread": "For a flamethrower, how far apart the nozzles are, in tiles."
+    }
+  },
+  "SiegeLadderSpec": {
+    "summary": "Makes the building a ladder that warriors and carters climb on their own. It adds nothing to the navmesh and isn't a road.",
+    "fields": {
+      "Rise": "How many levels it climbs: 1 for a ladder up a step, 2 for a siege tower up onto a wall's walkway."
+    }
+  },
+  "SiegeMoverSpec": {
+    "summary": "Lets a siege engine be built at home and pushed to where it's needed by its crew, a tile at a time. It goes round obstacles but never up or down a level. Its speed comes from the troop stats file.",
+    "fields": {
+      "CrewRange": "No longer used. Accepted so older blueprints still load."
+    }
+  },
+  "SiegeRampSpec": {
+    "summary": "Makes the building a ramp two tiles deep up a one level step: the way up and down for siege machines, and a road like stairs for everyone on foot.",
+    "fields": {}
+  },
+  "StartingGoodsSpec": {
+    "summary": "Lets a map give a starting location goods of its own, picked in the map editor, which the settlement there gets in its District Center besides the game's starting goods.",
+    "fields": {
+      "Slots": "How many kinds of goods it can hold. Default 8.",
+      "Capacity": "How much it holds, all goods together. Default 1000."
+    }
+  },
+  "StructureHealthSpec": {
+    "summary": "Gives the building health that attacks wear down. Walls, gates, towers and siege engines get theirs from the troop stats file, other buildings by size.",
+    "fields": {
+      "Machine": "Marks it as a machine troops ride (a boat) rather than something built to keep them out. Default false."
+    }
+  },
+  "TradePostSpec": {
+    "summary": "Makes the building a trade post on the shore with a pier out into the water. Ships beached by the pier trade there at the values its owner sets.",
+    "fields": {
+      "LandRows": "How many of its rows, counted from the back, stand on land. The rest is the pier out over the water. Default 2.",
+      "Reach": "How far from the pier's end a beached ship can be and still trade there, in tiles. Default 10."
+    }
+  },
+  "TripWireSpec": {
+    "summary": "Makes the building one end of a trip wire: a zipline tower that takes a single wire to the other end of the pair, and sends an automation signal when someone crosses it. The player picks who trips it (enemies, allies, the owner's own, anybody).",
+    "fields": {}
+  },
+  "TroopsCounterSpec": {
+    "summary": "Makes the building an automation sensor that counts troops. The player picks what it counts (total, ready, in training, at home, deployed, fighting or wounded).",
+    "fields": {}
+  },
+  "WagonYardSpec": {
+    "summary": "Makes the building a wagon yard that builds supply carts for food, water and building materials.",
+    "fields": {
+      "CartCapacity": "How many goods a cart holds."
+    }
+  },
+  "WallBrazierSpec": {
+    "summary": "Makes the building a fire bowl hung off a palisade piece that burns resin brought by haulers. Archers on the wall nearby light their arrows at it.",
+    "fields": {
+      "Reach": "How many wall pieces either way of the one it stands on an archer can stand and still light arrows at it.",
+      "InjuryChance": "Chance each fire arrow burns the archer loosing it, from 0 to 1.",
+      "InjuryDamage": "How much that burn hurts."
+    }
+  },
+  "WallDecorationSpec": {
+    "summary": "Makes the building a banner, totem or shield rack on a wall that makes the troops near it hit harder and take less damage. The area it helps is its RangedEffectBuildingSpec radius.",
+    "fields": {
+      "Kind": "Banner, Totem or ShieldRack. Only the strongest of each kind helps a troop at a time.",
+      "Damage": "How much harder the troops it helps hit, as a fraction (0.06 is 6%).",
+      "Taken": "How much less damage they take, as a fraction.",
+      "Mounted": "Hangs it on the wall's outer face instead of standing it on the walk. Default false."
+    }
+  },
+  "WallDropSpec": {
+    "summary": "Makes the building a hoarding that drops its supply on enemies at the foot of the wall, one at a time.",
+    "fields": {
+      "Good": "The good it drops.",
+      "Mode": "Roll rolls a log straight out from the wall, hitting everyone in its way. Pour splashes boiling oil at the foot of the wall."
+    }
+  },
+  "WallSpec": {
+    "summary": "Makes the building a piece of a town wall.",
+    "fields": {
+      "Kind": "Palisade, Gatehouse, WallTower, Hoarding or WallFoundation."
+    }
+  },
+  "WarBoatSpec": {
+    "summary": "Makes a ship a war boat that goes on a Shipyard's slip, takes troops aboard and fights. Its speed, crew, health and gun reach come from the troop stats file.",
+    "fields": {}
+  },
+  "WarriorCrewSpec": {
+    "summary": "Lets troops ride inside the building and work it. A siege engine or boat needs its crew aboard.",
+    "fields": {
+      "CrewAnimation": "The animation the crew plays at their posts, one every beaver has.",
+      "BoardsOverBow": "Troops board from the shore it's against, bow first, instead of from behind. For a boat on a beach. Default false."
+    }
+  },
+  "WatchtowerAlarmSpec": {
+    "summary": "Makes a watchtower an automation transmitter that is on while enemy troops or bandits stand on the land it watches. Only a lit tower keeps watch.",
+    "fields": {}
+  },
+  "WreckedHullSpec": {
+    "summary": "Swaps the texture of a wreck's hull.",
+    "fields": {
+      "Atlas": "The atlas the model's Pine material is swapped for, a path in the mod. Default MapEditor/WreckedHull/WreckedHullAtlas."
+    }
+  }
+}
