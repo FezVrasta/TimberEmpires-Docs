@@ -93,7 +93,7 @@ Only what changes while the game runs: who sails a ship, whether it's sunk, who 
 
 ## The bridge
 
-`ArchipelagoBridge.cs`, the file to copy. It has what most mods need. `ModBridge` has more (islands, trade, storms, a boat's position and heading): bind one the same way, a `Bind<T>("Name")` line with the delegate type of its signature.
+`ArchipelagoBridge.cs`, the file to copy. It binds all of `ModBridge`.
 
 ```csharp
 using System;
@@ -112,44 +112,26 @@ namespace YourMod.Bridge
      * each method to a delegate. Every type crossing over is .NET, Unity or Timberborn's. Without Archipelago
      * every call returns a default and every hook does nothing.
      *
-     * This is the part most mods need. ModBridge has more (islands, orders, trade, storms); bind one the same
-     * way: a Bind<T>("Name") line with the delegate type of its signature.
+     * This is all of ModBridge: what most mods need. A mod that needs more can ask for it.
      *
      * This file stands alone: copy it as is. Add Archipelago to the mod's OptionalMods in its manifest so it
      * loads first.
      */
     public static class ArchipelagoBridge
     {
-        private const string BridgeType = "Archipelago.Modding.ModBridge";
+        private static Type Find(string name) => AppDomain.CurrentDomain.GetAssemblies().Select(a => a.GetType(name, false)).FirstOrDefault(t => t != null);
 
-        private static Type _type;
-        private static bool _looked;
+        private static readonly Type Bridge = Find("Archipelago.Modding.ModBridge");
 
-        private static Type Type
-        {
-            get
-            {
-                if (_looked) return _type;
-                _looked = true;
-                _type = AppDomain.CurrentDomain.GetAssemblies()
-                    .Select(a => a.GetType(BridgeType, false))
-                    .FirstOrDefault(t => t != null);
-                return _type;
-            }
-        }
-
-        // Whether Archipelago is installed
-        public static bool Available => Type != null;
+        // Whether the mod is installed
+        public static bool Available => Bridge != null;
 
         private static readonly Dictionary<string, Delegate> Bound = new();
 
         private static T Bind<T>(string name) where T : Delegate
         {
-            if (Bound.TryGetValue(name, out Delegate bound)) return (T)bound;
-            MethodInfo method = Type?.GetMethod(name, BindingFlags.Public | BindingFlags.Static);
-            T result = method == null ? null : (T)Delegate.CreateDelegate(typeof(T), method, false);
-            Bound[name] = result;
-            return result;
+            if (!Bound.TryGetValue(name, out Delegate bound)) Bound[name] = bound = Bridge?.GetMethod(name) is { } method ? Delegate.CreateDelegate(typeof(T), method, false) : null;
+            return (T)bound;
         }
 
         public static int Version => Bind<Func<int>>("GetVersion")?.Invoke() ?? 0;
