@@ -1,3 +1,28 @@
+{%- if site.archipelago %}
+<section class="te-hero" aria-label="Archipelago">
+  <img class="te-hero-art" src="{{ '/assets/images/archipelago.webp' | relative_url }}" srcset="{{ '/assets/images/archipelago-1280.webp' | relative_url }} 1280w, {{ '/assets/images/archipelago.webp' | relative_url }} 2000w" sizes="100vw" alt="">
+  {% include te_header.html %}
+  <a class="te-hbadge" href="{{ '/archipelago.html' | relative_url }}">
+    <span class="te-hbadge-text">
+      <span class="te-hbadge-tag">Naval expansion</span>
+      <span class="te-hbadge-title">Archipelago is out</span>
+      <span class="te-hbadge-sub">Set sail</span>
+    </span>
+  </a>
+  <div class="te-hero-top">
+    <h1 class="te-hero-logo"><img src="{{ '/assets/images/archipelago-logo.svg' | relative_url }}" alt="Archipelago, naval expansion"></h1>
+  </div>
+  <div class="te-band te-hero-bottom">
+    <div class="te-hero-bottom-inner">
+      <p class="te-slogan">Past the last shore, there's another island.</p>
+      <div class="te-actions">
+        <a class="te-btn ghost" href="{{ '/archipelago.html' | relative_url }}">How it works</a>
+        {% include archipelago_get.html %}
+      </div>
+    </div>
+  </div>
+</section>
+{%- else %}
 <section class="te-hero" aria-label="Timber Empires">
   {%- if site.halloween %}
   <img class="te-hero-art" src="{{ '/assets/images/halloween.webp' | relative_url }}" srcset="{{ '/assets/images/halloween-1280.webp' | relative_url }} 1280w, {{ '/assets/images/halloween.webp' | relative_url }} 1920w" sizes="100vw" alt="">
@@ -30,3 +55,4 @@
     </div>
   </div>
 </section>
+{%- endif %}

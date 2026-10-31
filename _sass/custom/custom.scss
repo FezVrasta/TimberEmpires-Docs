@@ -1027,6 +1027,29 @@ $te-wisp: #7fe6b6;
 }
 
 // ---------------------------------------------------------------------------
+// Archipelago home (site.archipelago in _config.yml)
+// ---------------------------------------------------------------------------
+
+$te-sea: #6fcfc3;
+
+.te-archipelago { background: #0a1519; }
+.te-archipelago .te-btn:not(.ghost) { --top: #2a8a86; --bot: #1f716e; }
+.te-archipelago .te-btn:not(.ghost):hover { --top: #339a95; --bot: #267c78; }
+.te-archipelago .te-gem::after { background: $te-sea; box-shadow: 0 0 6px rgba($te-sea, 0.8); }
+.te-archipelago .te-hero-art { object-position: center 55%; }
+.te-archipelago .te-hero-logo img { width: 640px; max-width: 88vw; }
+.te-archipelago .te-hero-top { padding-top: 40px; }
+.te-archipelago .te-hbadge::before { box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 18px rgba($te-sea, 0.2); }
+.te-archipelago .te-hbadge-tag, .te-archipelago .te-horde-tag { color: $te-sea; text-shadow: 0 0 10px rgba($te-sea, 0.45); }
+.te-archipelago .te-hbadge:hover .te-hbadge-title { color: #a6ebe2; }
+.te-archipelago .te-horde-line { color: #a6ebe2; text-shadow: 0 0 12px rgba($te-sea, 0.4); }
+.te-archipelago .te-trailer-play { cursor: default; }
+@media (max-width: 40rem) {
+  .te-archipelago .te-hero { justify-content: flex-start; }
+  .te-archipelago .te-hero-top { margin: auto 0; padding: 0 20px 100px; }
+}
+
+// ---------------------------------------------------------------------------
 // Game modes on the home page: a card each, Horde wider with its art behind it
 // ---------------------------------------------------------------------------
 

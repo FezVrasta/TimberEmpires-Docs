@@ -5,6 +5,62 @@ permalink: /
 hero: true
 ---
 
+{% if site.archipelago %}
+<section class="te-section te-horde te-voyage-trailer">
+  <div class="te-frame">
+    <div class="te-frame-head"><h2 class="te-plaque">Archipelago</h2></div>
+    <div class="te-horde-body">
+      <div class="te-pic te-trailer">
+        <video id="te-trailer" preload="metadata" playsinline poster="{{ '/assets/video/archipelago-trailer.jpg' | relative_url }}"></video>
+        <!-- Placeholder: give the video a source and the click handler of the other trailers -->
+        <button type="button" class="te-trailer-play"><span class="te-trailer-label"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z" fill="#6fcfc3"></path></svg>Launch trailer</span></button>
+      </div>
+      <div class="te-horde-text">
+        <span class="te-horde-tag">Naval expansion</span>
+        <p class="te-lead">Your map is now islands on an open sea. Build a Shipyard, launch a boat and find the next shore.</p>
+        <p class="te-horde-line">Archipelago is a mod of its own. With Timber Empires, the sea fills up with pirates and warships.</p>
+        <div class="te-actions te-horde-actions">
+          {% include archipelago_get.html %}
+          <a class="te-btn ghost" href="{{ '/archipelago.html' | relative_url }}">How it works</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="te-section te-features">
+  <div class="te-plaque-rule"><i></i><h2 class="te-plaque">The voyage</h2><i></i></div>
+  <div class="te-tiles">
+    <a class="te-tile" href="{{ '/archipelago.html#the-sea' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Sea.png' | relative_url }}" alt=""></span><span class="te-tile-title">The sea</span><span class="te-tile-text">Islands drawn far apart, with open water between them.</span></a>
+    <a class="te-tile" href="{{ '/archipelago.html#ships' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Shipyard.png' | relative_url }}" alt=""></span><span class="te-tile-title">Ships</span><span class="te-tile-text">The Shipyard builds every boat and mends the ones that come back battered.</span></a>
+    <a class="te-tile" href="{{ '/archipelago.html#trade' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/TradePost.png' | relative_url }}" alt=""></span><span class="te-tile-title">Trade</span><span class="te-tile-text">A boat can follow a route of posts for as long as you let it.</span></a>
+    <a class="te-tile" href="{{ '/archipelago.html#storms' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Storm.png' | relative_url }}" alt=""></span><span class="te-tile-title">Storms</span><span class="te-tile-text">The sea turns dark, and boats roll and slow down.</span></a>
+  </div>
+</section>
+
+<section class="te-section te-features">
+  <div class="te-plaque-rule"><i></i><h2 class="te-plaque">With Timber Empires</h2><i></i></div>
+  <div class="te-tiles">
+    <a class="te-tile" href="{{ '/buildings/cog.html' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Cog.png' | relative_url }}" alt=""></span><span class="te-tile-title">Cog</span><span class="te-tile-text">Fast, with six gun ports.</span></a>
+    <a class="te-tile" href="{{ '/archipelago.html#ships' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Barracks.png' | relative_url }}" alt=""></span><span class="te-tile-title">Troop ships</span><span class="te-tile-text">War Catamaran and Paddle Frigate carry an army to another island, with guns of their own.</span></a>
+    <a class="te-tile" href="{{ '/playing/bandits.html#pirates' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/BanditCamp.png' | relative_url }}" alt=""></span><span class="te-tile-title">Pirates</span><span class="te-tile-text">Bandit camps on the sea have boats, and they don't ask what you're carrying.</span></a>
+  </div>
+</section>
+
+<section class="te-section te-findway">
+  <div class="te-frame">
+    <div class="te-frame-head"><h2 class="te-plaque">Find your way</h2></div>
+    <div class="te-links">
+      <a class="te-link" href="{{ '/archipelago.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Archipelago</a>
+      <a class="te-link" href="{{ '/getting-started.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Getting started</a>
+      <a class="te-link" href="{{ '/maps.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Maps</a>
+      <a class="te-link" href="{{ '/buildings/' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Buildings</a>
+      <a class="te-link" href="{{ '/game-modes.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Game modes</a>
+      <a class="te-link" href="{{ '/modding.html#archipelago-for-other-mods' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Modding</a>
+    </div>
+  </div>
+</section>
+{% else %}
 {% if site.halloween %}
 <section class="te-section te-horde">
   <div class="te-frame">
@@ -19,7 +75,7 @@ hero: true
       <div class="te-horde-text">
         <span class="te-horde-tag">New game mode</span>
         <p class="te-lead">Every few nights the undead raccoons crawl out of the ruins, and each horde is bigger than the last. When the badtide comes, a super horde pours out all at once. Hold the walls until sunrise, then seal the ruins for good.</p>
-        <p class="te-horde-line">Fight your rivals and the horde at the same time, or team up against it. Every sunrise brings goods, buildings and siege machines you can put to use right away.</p>
+        <p class="te-horde-line">Fight your rivals and the horde at the same time, or team up against it. Every horde you survive pays out goods, buildings and siege machines you can use right away.</p>
         <div class="te-actions te-horde-actions">
           {% include te_get.html %}
           <a class="te-btn ghost" href="{{ '/playing/horde.html' | relative_url }}">How Horde works</a>
@@ -60,7 +116,7 @@ hero: true
     <a class="te-mode" href="{{ '/game-modes.html#pve' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/BanditCamp.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">PvE</span><span class="te-mode-against">Against the bandits</span><span class="te-mode-desc">Everyone is allied. Clear every bandit camp and you all win.</span></span></a>
     <a class="te-mode" href="{{ '/game-modes.html#pvp' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Barracks.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">PvP</span><span class="te-mode-against">Against each other</span><span class="te-mode-desc">Everyone for themselves, and the bandits raid everyone.</span></span></a>
     <a class="te-mode featured" href="{{ '/playing/horde.html' | relative_url }}"><img class="te-mode-art" src="{{ '/assets/images/horde-1280.webp' | relative_url }}" alt=""><span class="te-medal"><img src="{{ '/assets/icons/HordeJaws.svg' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">Horde</span><span class="te-mode-against">Against each other and the undead</span><span class="te-mode-desc">Fight your rivals and the horde at the same time, or team up against it.</span></span></a>
-    <a class="te-mode" href="{{ '/game-modes.html#playing-alone' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Gatehouse.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">Alone</span><span class="te-mode-against">Against bandits or AIs</span><span class="te-mode-desc">Play as an empire against the bandits, or add AI opponents.</span></span></a>
+    <a class="te-mode" href="{{ '/game-modes.html#playing-alone' | relative_url }}"><span class="te-medal"><img src="{{ '/assets/icons/Gatehouse.png' | relative_url }}" alt=""></span><span class="te-mode-text"><span class="te-mode-title">Alone</span><span class="te-mode-against">Against bandits or AIs</span><span class="te-mode-desc">Play any mode on your own, with AI opponents if you want them.</span></span></a>
   </div>
   <div class="te-center"><a class="te-btn ghost" href="{{ '/game-modes.html' | relative_url }}">How the modes work</a></div>
 </section>
@@ -90,3 +146,4 @@ hero: true
     </div>
   </div>
 </section>
+{% endif %}

@@ -10,7 +10,7 @@ layout: table_wrappers
 {%- assign b = nil -%}{%- assign t = nil -%}
 {%- if page.dir == "/buildings/" -%}{%- assign b = site.data.buildings[slug] -%}{%- endif -%}
 {%- if page.dir == "/troops/" -%}{%- assign t = site.data.troops[slug] -%}{%- endif -%}
-<body class="{% if page.hero %}te-home{% if site.halloween %} te-halloween{% endif %}{% elsif b or t %}te-entity{% else %}te-doc{% endif %}">
+<body class="{% if page.hero %}te-home{% if site.archipelago %} te-archipelago{% elsif site.halloween %} te-halloween{% endif %}{% elsif b or t %}te-entity{% else %}te-doc{% endif %}">
   <a class="skip-to-main" href="#main-content">Skip to main content</a>
   {% include icons/icons.html %}
   {% include te_filters.html %}
