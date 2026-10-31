@@ -5,9 +5,9 @@
   <summary>For modders</summary>
   <div class="te-modder-body">
     {%- if include.troop %}
-    <p>A troop's numbers are lines in the stats file, and a faction can override any field of them. <a href="{{ '/modding.html#your-own-numbers' | relative_url }}">Your own numbers</a> lists the fields.</p>
+    <p>A troop's numbers are lines in the stats file, and a faction can override any field of them. <a href="{{ '/modding/timber-empires.html#your-own-numbers' | relative_url }}">Your own numbers</a> lists the fields.</p>
     {%- else %}
-    <p>Every number on this page comes from the building's blueprint. <a href="{{ '/modding.html#blueprint-specs' | relative_url }}">Blueprint specs</a> says what each component does.</p>
+    <p>Every number on this page comes from the building's blueprint. <a href="{{ '/modding/timber-empires.html#blueprint-specs' | relative_url }}">Blueprint specs</a> says what each component does.</p>
     {%- endif %}
     {%- for k in keys -%}{%- assign f = e.factions[k] -%}{%- if f and f.modder %}
     <section class="te-modder-faction">

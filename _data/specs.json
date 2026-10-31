@@ -275,7 +275,7 @@
     }
   },
   "WarBoatSpec": {
-    "summary": "Makes a ship a war boat that goes on a Shipyard's slip, takes troops aboard and fights. Its speed, crew, health and gun reach come from the troop stats file.",
+    "summary": "Makes a ship (a template with a BoatSpec) a war boat that takes troops aboard and fights. Its speed, crew, health and gun reach come from the troop stats file.",
     "fields": {}
   },
   "WarriorCrewSpec": {

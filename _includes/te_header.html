@@ -4,7 +4,7 @@
   <div class="te-header-inner">
     <a class="te-brand" href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}"></a>
     <nav class="te-nav" aria-label="Main">
-      {%- assign links = "Getting started|/getting-started.html,Game modes|/game-modes.html,Buildings|/buildings/,Troops|/troops/,Maps|/maps.html,Modding|/modding.html" | split: "," -%}
+      {%- assign links = "Getting started|/getting-started.html,Game modes|/game-modes.html,Buildings|/buildings/,Troops|/troops/,Maps|/maps.html,Modding|/modding/" | split: "," -%}
       {%- for l in links -%}
         {%- assign p = l | split: "|" %}
       <a href="{{ p[1] | relative_url }}"{% if here == p[0] %} class="on" aria-current="{% if page.title == p[0] %}page{% else %}true{% endif %}"{% endif %}>{{ p[0] }}</a>

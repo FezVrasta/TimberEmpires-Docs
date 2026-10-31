@@ -56,7 +56,7 @@ hero: true
       <a class="te-link" href="{{ '/maps.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Maps</a>
       <a class="te-link" href="{{ '/buildings/' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Buildings</a>
       <a class="te-link" href="{{ '/game-modes.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Game modes</a>
-      <a class="te-link" href="{{ '/modding.html#archipelago-for-other-mods' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Modding</a>
+      <a class="te-link" href="{{ '/modding/archipelago.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Modding</a>
     </div>
   </div>
 </section>
@@ -142,7 +142,7 @@ hero: true
       <a class="te-link" href="{{ '/settings.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Settings</a>
       <a class="te-link" href="{{ '/buildings/' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Buildings</a>
       <a class="te-link" href="{{ '/troops/' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Troops</a>
-      <a class="te-link" href="{{ '/modding.html' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Modding</a>
+      <a class="te-link" href="{{ '/modding/' | relative_url }}"><span class="te-gem" aria-hidden="true"></span>Modding</a>
     </div>
   </div>
 </section>

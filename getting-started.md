@@ -23,7 +23,7 @@ Timber Empires runs on top of BeaverBuddies, so hosting and joining work the way
 
 **Hosting a game.** In a game you host yourself, the map's starting District Center belongs to nobody until someone takes it in its panel ("Owned by"). Once a district has an owner, it stays theirs. With [Mixed factions](settings.md#mixed-factions) on, each player plays their own faction (set "My faction" before joining) and a player whose faction isn't on the map yet gets the same free first District Center.
 
-**Factions.** Folktails and Iron Teeth each have their own troops and a few buildings of their own. Factions from other mods work too: they're built on one of the two and get its buildings and troops (see [Modding](modding.md)).
+**Factions.** Folktails and Iron Teeth each have their own troops and a few buildings of their own. Factions from other mods work too: they're built on one of the two and get its buildings and troops (see [Modding](modding/index.md)).
 
 ## Playing alone
 

@@ -42,4 +42,4 @@ With Timber Empires, bandit camps on the sea have [pirate boats](playing/bandits
 
 ## Modding
 
-Other mods add ships with a blueprint, and hook into the sea through a small API. See [Modding](modding.md#archipelago-for-other-mods).
+Other mods add ships with a blueprint, and hook into the sea through a small API. See [Modding with Archipelago](modding/archipelago.md).
