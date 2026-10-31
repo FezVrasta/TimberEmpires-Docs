@@ -7,4 +7,4 @@ nav_order: 4
 
 # Sun Lounger
 
-One beaver at a time stretches out in the sun. It works only on a beach.
+Gives beavers fun: one stretches out in the sun at a time. It only works on a beach.

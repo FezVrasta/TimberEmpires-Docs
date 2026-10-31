@@ -6,7 +6,7 @@ nav_order: 4
 
 # Herbalist
 
-The Folktails healer. Never fights: heals the most hurt troop near it, yours or an ally's, and walks to hurt troops close by. Herbal kits come from the game's own Herbalist workshop.
+The Folktails healer. It doesn't fight. It heals the most hurt troop near it, yours or an ally's, and walks to hurt troops close by. Herbal kits come from the game's Herbalist workshop.
 
 ## See also
 

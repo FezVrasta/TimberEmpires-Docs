@@ -1,12 +1,12 @@
 ---
 title: Victory
 parent: Playing
-nav_order: 6
+nav_order: 7
 ---
 
 # Victory
 
-How a game is won depends on its [game mode](../game-modes.md). Once a game is won, everyone is told and everyone can keep playing.
+How a game is won depends on its [game mode](../game-modes.md). Once a game is won, everyone is told and can keep playing.
 
 ## PvP
 
@@ -22,8 +22,12 @@ Only players who have owned a district count, and it takes at least two of them.
 
 ## PvE
 
-Clear every bandit camp on the map (every bandit in it dead) and every player wins together.
+Clear every bandit camp on the map (every bandit dead, and on [Archipelago](../archipelago.md) maps every pirate boat sunk) and every player wins together.
+
+## Horde
+
+Seal every ruin to win (see [Winning](horde.md#winning)). A player with no beavers left is out, and only allies win together.
 
 ## Co-op
 
-There's no victory: it's a game to build together.
+There's no victory.

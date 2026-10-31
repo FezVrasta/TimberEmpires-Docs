@@ -6,4 +6,4 @@ nav_order: 6
 
 # Slinger
 
-The Folktails' own shooter: quick, cheap, and longer range than an archer. Strong against [spearmen](spearman.md).
+The Folktails shooter, with a longer range than the archer. Strong against [spearmen](spearman.md). Slings come from the [Weaponsmith](../buildings/weaponsmith.md).

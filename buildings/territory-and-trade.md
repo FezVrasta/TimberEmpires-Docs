@@ -7,6 +7,6 @@ has_children: true
 
 # Territory and trade
 
-Claiming land, and trading goods, power and rides with other players.
+Trading goods, power and rides with other players, and the smaller defensive and military extras.
 
 {% include gallery.html category="territory-and-trade" %}

@@ -15,7 +15,7 @@ Troops and siege machines are commanded like in a real-time strategy game.
 - **Shift-click** to add a unit to the selection, or take it out.
 - **Double-click** a unit to select every unit of that kind on screen (or every machine of that type).
 - **Period** (`.`) selects your whole army: every trained troop and every machine.
-- **Escape** clears the selection.
+- **Escape** or **right-click** clears the selection.
 
 ## Orders
 
@@ -38,9 +38,9 @@ With a wheeled machine selected (catapult or ballista), clicking an enemy both a
 
 ## Getting around
 
-Troops and supply carts don't need roads: they walk wherever the ground lets them, across open land and far from your districts. Cut off from their district, they still belong to it and keep their place at their barracks or wagon yard.
+Troops and supply carts don't need roads. They walk across open land, far from your districts, and keep their place at their barracks or wagon yard.
 
-They can't climb a step in the ground on their own. That's what **[Field Ladders](../buildings/field-ladder.md)** are for: build one against a one-level step and your troops and carters use it by themselves, up or down, picking the ladder that leaves them closest to where they're going. Only your side's troops and carters climb your ladders. The **[Siege Tower](../buildings/siege-tower.md)** (Iron Teeth) climbs two levels, onto a wall's walkway. Machines can't climb ladders: they need a **[Field Ramp](../buildings/field-ramp.md)**.
+A step in the ground stops them. Build a **[Field Ladder](../buildings/field-ladder.md)** against a one-level step and your troops and carters (and your allies') use it by themselves, up or down. The **[Siege Tower](../buildings/siege-tower.md)** (Iron Teeth) climbs two levels, onto a wall's walkway. Machines can't use ladders: they need a **[Field Ramp](../buildings/field-ramp.md)**.
 
 ## Keys
 
@@ -54,6 +54,7 @@ All of these can be changed in the game's key bindings, under "Timber Empires tr
 | H | Hold position |
 | N | Man the nearest wall |
 | Backspace | Send home |
+| I | Stop: troops halt where they stand, machines stop rolling and firing |
 | Ctrl + 1 to 9 | Save the selection as a control group |
 | Alt + 1 to 9 | Select a control group. Press twice to move the camera to it |
 
@@ -61,7 +62,7 @@ All of these can be changed in the game's key bindings, under "Timber Empires tr
 
 - **Aggressive** (default). Chases any enemy that comes close.
 - **Defensive.** Only fights enemies within 4 tiles of its post.
-- **Hold.** Only hits what it can reach from where it stands. Holding troops don't step aside or walk off to be healed.
+- **Hold.** Only hits what it can reach from where it stands, and doesn't walk off to be healed.
 
 ## Formations
 
@@ -69,4 +70,4 @@ Block (default), Line, Column, Wedge and Loose. Melee troops go in front, herbal
 
 ## The troop panel
 
-While troops are selected, the bottom bar becomes the troop panel: the army button (with a count, and buttons to keep only one kind or machine type in the selection), the three stances, the five formations and "Go home".
+While troops are selected, the bottom bar becomes the troop panel: the army button (with a count, and buttons to keep only one kind or machine type in the selection), the stances, the formations, Raid (click an enemy building with goods in it to carry them off) and "Go home".

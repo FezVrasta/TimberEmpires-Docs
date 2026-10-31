@@ -7,4 +7,4 @@ nav_order: 22
 
 # Monastery
 
-Trains [monks](../troops/monk.md), for every faction. Each recruit costs science and takes time to train. Monks need no weapon, but they need books (Iron Teeth: coffee) to convert.
+Trains [monks](../troops/monk.md), for every faction. Each recruit costs science and takes time to train. Monks need books (Iron Teeth: coffee) to convert.

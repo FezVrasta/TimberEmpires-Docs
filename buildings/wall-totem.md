@@ -7,4 +7,4 @@ nav_order: 43
 
 # Wall Totem
 
-The carved totem for the outside of a wall or tower.
+Troops near it hit harder and take less damage. It hangs on the outside of a wall or tower. The [Carved Totem](carved-totem.md) is the version that stands on the walk.

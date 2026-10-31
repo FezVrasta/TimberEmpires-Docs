@@ -18,7 +18,7 @@ Every troop has 100 health. Damage is per hour of fighting, before the multiplie
 | Berserker | 238.5 | 0.44 | 1.6 | 0.95 | 7 | 1200 | <img class="icon" src="../assets/icons/BattleAxe.png" alt="">Battle axe |  |
 | Archer | 74.2 | 1 | 5 (min 0.6) | 0.88 | 6 | free | <img class="icon" src="../assets/icons/Bow.png" alt="">Bow | Spearman (×2.25) |
 | Slinger | 72.1 | 0.89 | 6 (min 1.1) | 0.97 | 6 | 600 | <img class="icon" src="../assets/icons/Sling.png" alt="">Sling | Spearman (×1.95) |
-| Musketeer | 90 | 0.95 | 6 (min 1.5) | 0.9 | 4 | 500 | Musket |  |
+| Musketeer | 100 | 0.95 | 6 (min 1.5) | 0.9 | 4 | 500 | Musket |  |
 | Monk | converts | 1 | 5 | 0.8 | 12 | 40 per recruit | upkeep: Book |  |
 | Militia | 74.2 | 0.9 | 1.4 | 0.94 | 2 | free |  |  |
 | Scout | 0 | 1.2 | 1 | 1.38 | 2 | free |  |  |
@@ -32,7 +32,7 @@ Every troop has 100 health. Damage is per hour of fighting, before the multiplie
 | Sapper | 61, 545 to buildings | 0.71 | 4 (min 1.2) | 0.8 | 8 | 1200 | <img class="icon" src="../assets/icons/BlastingCharge.png" alt="">Blasting Charge |  |
 | Archer | 70 | 0.95 | 5 (min 0.6) | 0.8 | 6 | free | <img class="icon" src="../assets/icons/Bow.png" alt="">Bow | Spearman (×2.25) |
 | Arquebusier | 115 | 0.7 | 7 (min 2) | 0.78 | 3 | 1000 | <img class="icon" src="../assets/icons/Arquebus.png" alt="">Arquebus | Berserker (×2) |
-| Musketeer | 90 | 0.9 | 6 (min 1.5) | 0.82 | 4 | 500 | Musket |  |
+| Musketeer | 100 | 0.9 | 6 (min 1.5) | 0.82 | 4 | 500 | Musket |  |
 | Monk | converts | 1 | 5 | 0.8 | 12 | 40 per recruit | upkeep: Coffee |  |
 | Militia | 70 | 0.85 | 1.4 | 0.85 | 2 | free |  |  |
 | Scout | 0 | 1.14 | 1 | 1.25 | 2 | free |  |  |

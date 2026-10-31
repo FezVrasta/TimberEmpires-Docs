@@ -7,7 +7,7 @@ nav_order: 7
 
 # Round Tower
 
-A tall tower to put a [Catapult](catapult.md), [Ballista](ballista.md) or [Trebuchet](trebuchet.md) on. One machine fits on its top and stays there. With a crew aboard it shoots the nearest enemy in reach on its own; select it and click anywhere in its range to aim it yourself.
+A tall tower to put a [Catapult](catapult.md), [Ballista](ballista.md) or [Trebuchet](trebuchet.md) on. It holds one machine. With a crew aboard the machine shoots the nearest enemy in reach on its own; select it and click anywhere in its range to aim it yourself.
 
 Walls join it only at the middle of a side.
 

@@ -6,11 +6,11 @@ nav_order: 2
 
 # Alliances
 
-In a [PvP](../game-modes.md#pvp) game, players can ally. Alliances are between two players at a time: you can be allied with two players who are still enemies of each other. In [PvE](../game-modes.md#pve) every player is already everyone's ally, and in [Co-op](../game-modes.md#co-op) there are no sides, so there's nothing to ally.
+Players can ally in [PvP](../game-modes.md#pvp) and [Horde](../game-modes.md#horde) games (not in a Horde shared colony). Alliances are between two players at a time: you can be allied with two players who are still enemies of each other. In [PvE](../game-modes.md#pve) everyone is already allied, and [Co-op](../game-modes.md#co-op) has no sides.
 
 ## The Alliances tab
 
-The settlement panel has an **Alliances** tab, next to Trades. It lists every other player and where you stand with them:
+The settlement panel has an **Alliances** tab. It lists every other player and where you stand with them:
 
 | They're | You can |
 |---|---|
@@ -20,11 +20,11 @@ The settlement panel has an **Alliances** tab, next to Trades. It lists every ot
 | Allied | **Break alliance** |
 | Allied, but it's ending | Nothing: it ends when its time is up |
 
-Below, **All alliances** lists every alliance in the game, other players' too, and how long any broken one has left. Each change is announced to the player it concerns.
+Below, **All alliances** lists every alliance in the game, other players' too, and how long any broken one has left.
 
 ## Breaking an alliance
 
-Either ally can break it, but it doesn't end at once: it ends 12 in-game hours later, and until then you're still allies. The other player is told the moment it's broken, so nobody is stabbed in the back on the spot.
+Either ally can break it. It ends 12 in-game hours later, and you stay allies until then. The other player is told right away.
 
 ## What allies share
 
@@ -37,4 +37,4 @@ Either ally can break it, but it doesn't end at once: it ends 12 in-game hours l
 
 What stays each player's own: districts, buildings and troops (an ally can't command or change them), science, and everything [border protection](territory.md#districts-and-owners) covers.
 
-Water mines and fireships don't know friend from foe: they hit whatever they meet, yours and your allies' too.
+Water mines and fireships hit whatever they meet, allies' included.

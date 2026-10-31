@@ -12,7 +12,7 @@ Every district has an owner. A District Center you place is yours. One already o
 
 A building belongs to the owner of its district. With [Border protection](../settings.md#border-protection) on, nobody can demolish, pause or change the settings of another player's buildings and beavers. You can only place buildings in your own districts or in ones nobody owns. Toll stations are the exception: you place them on other players' roads (see [Toll Station](../buildings/toll-station.md)).
 
-Other players' districts don't show up in your lists: the district list at the top, the batch control (its district dropdown and "All districts" view) and the population tab where you move beavers between districts. Districts nobody owns do.
+Other players' districts don't show in your district list, the batch control or the population tab. Districts nobody owns do.
 
 **Sharing.** The Ownership tools in the toolbar make a building you placed shared, so other players can use and change it, or take a shared one back. You can never take someone else's.
 
@@ -28,15 +28,15 @@ Claimed land is land other players can't build on, allies aside. Placing on it s
 
 ## Fog of war
 
-In a game with other players you only see what's near your land claims, your buildings, beavers and troops, and your paths, and the same around your [allies](alliances.md)'. Building sites and planned paths don't count until they're built. Troops see as far as they fight, more from higher ground. Wall towers see further.
+You only see what's near your land claims, buildings, beavers, troops and paths, and the same around your [allies](alliances.md)'. Building sites and planned paths don't count until they're built. Troops see as far as they fight, more from higher ground. Wall towers see further. With the [Fog of war](../settings.md#fog-of-war) setting on Black fog, land you haven't explored is black too.
 
-Out of sight, other players' buildings, beavers, roads, fields, crops, cutting areas and cursors are hidden. Wild trees stay. A building you've seen before stays where you saw it, as a frozen copy you can't click, until you see that spot again.
+Out of sight, other players' buildings, beavers, roads, fields, crops, cutting areas and cursors are hidden. A building you've seen before stays where you saw it, as a frozen copy you can't click, until you see that spot again.
 
 You can plan buildings in the fog. If another player plans the same spot without knowing, whoever sees it first gets it, and yours stays as a phantom until you can see the spot.
 
 ## Roads and new districts
 
-With [Costly expansion](../settings.md#costly-expansion) on, builders lay your roads (quickly, and for free), and every District Center after your first costs 100 logs, 120 planks, 60 gears, 30 metal blocks and 800 science.
+With [Costly expansion](../settings.md#costly-expansion) on, builders lay your roads at no material cost, and every District Center after your first costs 100 logs, 120 planks, 60 gears, 30 metal blocks and 800 science.
 
 ## Colors
 

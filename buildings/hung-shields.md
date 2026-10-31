@@ -7,4 +7,4 @@ nav_order: 45
 
 # Hung Shields
 
-The shield rack for the outside of a wall or tower.
+The [Shield Rack](shield-rack.md) for the outside of a wall or tower.

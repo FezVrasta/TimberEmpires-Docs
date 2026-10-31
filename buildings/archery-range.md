@@ -7,4 +7,4 @@ nav_order: 21
 
 # Archery Range
 
-Trains shooters. It works like the [Barracks](barracks.md): its workers are your troops, and you pick the kind in its panel. Archers are free; the faction's own kind is unlocked with science.
+Trains shooters, the way the [Barracks](barracks.md) trains melee troops. Archers are free. The other kinds (slingers for Folktails, arquebusiers for Iron Teeth, musketeers on Archipelago maps) are unlocked with science.

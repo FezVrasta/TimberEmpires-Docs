@@ -13,7 +13,7 @@ Each drop rolls 5 logs out from the wall, each hitting everyone in its lane. A l
 
 It needs a troop aboard, and a second one reloads faster. The crew fetch the logs themselves (see [Ammunition](../military/siege.md#ammunition)).
 
-It only reaches enemies at about the level of the wall's foot.
+It reaches enemies at about the level of the wall's foot.
 
 ## See also
 

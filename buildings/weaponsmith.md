@@ -9,4 +9,4 @@ redirect_from:
 
 # Weaponsmith
 
-Makes most of the gear troops train with, and the bolts ballistas shoot. It burns logs. It used to be called the Forge.
+Makes spears, bows, slings or swords, shields, ballista bolts, and the guns and cannonballs for ships. It burns logs as fuel. It used to be called the Forge.

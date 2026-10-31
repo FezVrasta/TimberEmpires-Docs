@@ -7,6 +7,6 @@ has_children: true
 
 # Siege machines
 
-Built in the field by your troops (all but the Trebuchet) and crewed by them.
+Machines your troops build in the field and crew.
 
 {% include gallery.html category="siege" %}

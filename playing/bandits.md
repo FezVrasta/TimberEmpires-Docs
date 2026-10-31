@@ -6,11 +6,11 @@ nav_order: 5
 
 # Bandits
 
-There are bandits in [PvE](../game-modes.md#pve), where clearing every camp wins the game, and in [PvP](../game-modes.md#pvp). [Co-op](../game-modes.md#co-op) has none.
+[PvE](../game-modes.md#pve) and [PvP](../game-modes.md#pvp) have bandits. In PvE, clearing every camp wins the game. [Co-op](../game-modes.md#co-op) and [Horde](../game-modes.md#horde) have none.
 
 ## Camps
 
-With [Bandit camps](../settings.md#bandit-camps) on, a new game on a map without camps gets some, more on bigger maps and at least a couple per player in multiplayer. They're placed away from the players' starts, out of the water. They go down when the host first unpauses the game.
+With [Bandit camps](../settings.md#bandit-camps) on, a new game on a map without camps gets some: more on bigger maps, and at least two per player in multiplayer. They go down away from the players' starts, once the host first unpauses.
 
 The further a camp is from the starts, the stronger it is:
 
@@ -21,19 +21,19 @@ The further a camp is from the starts, the stronger it is:
 | Bandit stronghold | 7 |
 | Warlord's camp | 9 |
 
-Bandits attack any beaver that comes near their camp. Each camp guards a stash of one good, richer in stronger camps. You can't connect a road to the camp, or take the stash, until every bandit there is dead.
+Bandits attack any beaver that comes near their camp. Each camp guards a stash of one good, richer in stronger camps. You can't connect a road to the camp or take the stash until every bandit there is dead.
 
-A camp left alone gains a bandit every cycle, up to twice its starting crew.
+With raids on, a camp left alone gains a bandit every cycle, up to twice its starting crew.
 
 ## Pirates
 
-On [Archipelago](../archipelago.md) maps every camp has black-sailed boats with crews and cannons, and the fleet grows back. They raid the coast and shell the building nearest the sea, and sometimes land a party. A camp is cleared when its bandits and its boats are gone.
+On [Archipelago](../archipelago.md) maps every camp has boats with crews and cannons, and a camp that loses one builds another. The boats raid the coast, shell the nearest building the sea reaches, and sometimes land a party. A camp is cleared when its bandits and its boats are gone.
 
 ## Raids
 
-With [Bandit raids](../settings.md#bandit-raids) on, camps raid the players from the [First raid](../settings.md#first-raid) cycle, 7 by default. That cycle you might be raided, and the odds climb every cycle after. Later on there can be two raids in a cycle.
+With [Bandit raids](../settings.md#bandit-raids) on, camps raid players from the [First raid](../settings.md#first-raid) cycle (7 by default; all the way left, no raids). From then on you might be raided in any cycle, and the odds climb every cycle. Later there can be two raids in one.
 
-A day before, you're warned: "Bandits are gathering." The raid comes from one of the camps closest to your District Centers, on a day after the first of the cycle, between 8:00 and 18:00. All its bandits come but one or two guards. They put up ladders to climb steps and walls, break through walls when there's no way around, and take the ladders down when they leave.
+A day before, you're warned: "Bandits are gathering." The raid comes from one of the camps closest to your District Centers, between 8:00 and 18:00 on any day but the cycle's first. All its bandits come except one or two guards. They put up ladders over cliffs, break through walls when there's no way around, and take the ladders down when they leave.
 
 How it ends:
 

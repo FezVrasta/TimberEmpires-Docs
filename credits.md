@@ -5,10 +5,11 @@ nav_order: 10
 
 # Credits and licenses
 
-Timber Empires is made by Federico Zivolo. It isn't open source: the mod and its files can't be copied, changed or shared without permission. This documentation is public so players and modders can use it.
+I make Timber Empires. It isn't open source: the mod and its files can't be copied, changed or shared without permission. This documentation is public so players and modders can use it.
 
 ## Mods it needs
 
+- Game Modes, by Federico Zivolo.
 - [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327), multiplayer for Timberborn, Federico Zivolo's edition of [BeaverBuddies](https://github.com/thomaswp/BeaverBuddies) by thomaswp and contributors.
 - [Harmony](https://github.com/pardeike/Harmony), by Andreas Pardeike.
 - Mod Settings, by eMka.
@@ -19,7 +20,7 @@ Timberborn and its art, models, textures, sounds and music belong to Mechanistry
 
 ## Sounds
 
-These sounds are cut from recordings on freesound.org released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/). No attribution is required, but here's who made them:
+Every sound but the monk's voice and three cannon shots is cut from a recording on freesound.org or opengameart.org released under [CC0](https://creativecommons.org/publicdomain/zero/1.0/). No attribution is required, but here's who made them:
 
 - [Sword Unsheathe](https://freesound.org/people/SecureSubset/sounds/788532/), by SecureSubset
 - [SFX2 - rocking chair creak](https://freesound.org/people/JK129645/sounds/547466/), by JK129645
@@ -34,6 +35,14 @@ These sounds are cut from recordings on freesound.org released under [CC0](https
 - [Blacksmith Hammer](https://freesound.org/people/Kastenfrosch/sounds/521972/), by Kastenfrosch
 - [Knocking once on wood, single footstep](https://freesound.org/people/CuboRodante/sounds/812363/), by CuboRodante
 - [Deep voice_01.mp3](https://freesound.org/people/untamed12/sounds/533203/), by untamed12
+- [cannon_fire, from Battle at sea](https://opengameart.org/content/battle-at-sea), by Thimras
+- [Canvas Dropcloth Snap 2](https://freesound.org/people/zembacraftworks/sounds/428336/), by zembacraftworks
+
+Three of the ship guns' cannon shots are cut from [Pirate Pack Vol 1](https://opengameart.org/content/jc-sounds-pirate-pack-vol-1) by JC Sounds, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). They were cut, mixed to mono and levelled.
+
+## Models
+
+The zombie raccoon is based on ["Raccoon"](https://sketchfab.com/3d-models/raccoon-0c7274543ea3466389f99b96c61eee0f) by [kenchoo](https://sketchfab.com/kenchoo), licensed under [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/). It was smoothed, repainted, decimated, rigged, posed through a walk and a claw, and recoloured.
 
 ## Age of Empires
 

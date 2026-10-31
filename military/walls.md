@@ -21,12 +21,12 @@ nav_order: 4
 
 ## Damage and repairs
 
-Every building can be damaged and brought down. Walls, towers and machines have their own health (see [Walls and machines](../reference/machines.md)). Other buildings have 40 health per tile, between 60 and 400, and a District Center has 2300.
+Every building can be brought down. Walls, towers and machines have their own health (see [Walls and machines](../reference/machines.md)). Other buildings have 40 health per tile, between 60 and 400, and a District Center has 2300.
 
-Walls hold back water, so with [Dam pressure](../settings.md#dam-pressure) on, a wall with too much water behind it takes damage and can give way like a dam (see [Rivers](../playing/rivers.md#dam-pressure)).
+With [Dam pressure](../settings.md#dam-pressure) on, a wall with too much water behind it takes damage and can give way like a dam (see [Rivers](../playing/rivers.md#dam-pressure)).
 
 Builders repair damaged buildings between jobs, starting an hour after the last hit. Construction priority decides which come first.
 
-**Construction sites.** They can be attacked too. Hits knock their progress back, and the materials that went into it are lost.
+**Construction sites.** Hits knock their progress back, and the materials that went into it are lost.
 
-**Under attack.** When something of yours is hit, a war horn sounds and a notification names it. Click it to go there.
+**Under attack.** A war horn sounds and a notification names what was hit. Click it to go there.

@@ -7,7 +7,7 @@ nav_order: 2
 
 # Wall
 
-The Iron Teeth wall: iron-banded planks that block everyone, friend or foe. It works exactly like the Folktails [Palisade](palisade.md): troops line up on its walkway, and it holds back water like a dam.
+The Iron Teeth wall: iron-banded planks that block everyone, friend or foe. It plays like the Folktails [Palisade](palisade.md): troops line up on its walkway, and it holds back water like a dam.
 
 ## See also
 

@@ -6,8 +6,8 @@
    "Folktails": {
     "faction": "Folktails",
     "trained_at": {
-     "name": "Barracks",
-     "slug": "barracks"
+     "name": "Muster Post",
+     "slug": "muster-post"
     },
     "science": "Free",
     "training": "2 h",
@@ -21,12 +21,12 @@
     "strong": null,
     "strong_factor": "1",
     "upkeep": null,
-    "shot": null,
+    "shot": "Troop.Militia.Folktails.jpg",
     "modder": {
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Militia\",\n  \"Reach\": 1.4,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 70,\n  \"Taken\": 0.9,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 3,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Log\",\n  \"RecruitAmount\": 5,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Militia\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMilitia\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Militia\",\n  \"Order\": 100,\n  \"Trainer\": \"Muster\",\n  \"Reach\": 1.4,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 70,\n  \"Taken\": 0.9,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 3,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Log\",\n  \"RecruitAmount\": 5,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Militia\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMilitia\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -38,8 +38,8 @@
    "IronTeeth": {
     "faction": "Iron Teeth",
     "trained_at": {
-     "name": "Barracks",
-     "slug": "barracks"
+     "name": "Muster Post",
+     "slug": "muster-post"
     },
     "science": "Free",
     "training": "2 h",
@@ -53,12 +53,12 @@
     "strong": null,
     "strong_factor": "1",
     "upkeep": null,
-    "shot": null,
+    "shot": "Troop.Militia.IronTeeth.jpg",
     "modder": {
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Militia\",\n  \"Reach\": 1.4,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 70,\n  \"Taken\": 0.9,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 3,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Log\",\n  \"RecruitAmount\": 5,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Militia\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMilitia\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Militia\",\n  \"Order\": 100,\n  \"Trainer\": \"Muster\",\n  \"Reach\": 1.4,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 70,\n  \"Taken\": 0.9,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 3,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Log\",\n  \"RecruitAmount\": 5,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Militia\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMilitia\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -77,8 +77,8 @@
    "Folktails": {
     "faction": "Folktails",
     "trained_at": {
-     "name": "Barracks",
-     "slug": "barracks"
+     "name": "Muster Post",
+     "slug": "muster-post"
     },
     "science": "Free",
     "training": "2 h",
@@ -92,12 +92,12 @@
     "strong": null,
     "strong_factor": "1",
     "upkeep": null,
-    "shot": null,
+    "shot": "Troop.Scout.Folktails.jpg",
     "modder": {
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Scout\",\n  \"Reach\": 1,\n  \"MinRange\": 0,\n  \"Aggro\": 0,\n  \"Damage\": 0,\n  \"Taken\": 1.2,\n  \"Pace\": 1.25,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 2,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Berries\",\n  \"RecruitAmount\": 5,\n  \"Sight\": 14,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Scout\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyScouts\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Scout\",\n  \"Order\": 110,\n  \"Trainer\": \"Muster\",\n  \"Reach\": 1,\n  \"MinRange\": 0,\n  \"Aggro\": 0,\n  \"Damage\": 0,\n  \"Taken\": 1.2,\n  \"Pace\": 1.25,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 2,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Berries\",\n  \"RecruitAmount\": 5,\n  \"Sight\": 14,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Scout\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyScouts\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -109,8 +109,8 @@
    "IronTeeth": {
     "faction": "Iron Teeth",
     "trained_at": {
-     "name": "Barracks",
-     "slug": "barracks"
+     "name": "Muster Post",
+     "slug": "muster-post"
     },
     "science": "Free",
     "training": "2 h",
@@ -124,12 +124,12 @@
     "strong": null,
     "strong_factor": "1",
     "upkeep": null,
-    "shot": null,
+    "shot": "Troop.Scout.IronTeeth.jpg",
     "modder": {
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Scout\",\n  \"Reach\": 1,\n  \"MinRange\": 0,\n  \"Aggro\": 0,\n  \"Damage\": 0,\n  \"Taken\": 1.2,\n  \"Pace\": 1.25,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 2,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Berries\",\n  \"RecruitAmount\": 5,\n  \"Sight\": 14,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Scout\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyScouts\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Scout\",\n  \"Order\": 110,\n  \"Trainer\": \"Muster\",\n  \"Reach\": 1,\n  \"MinRange\": 0,\n  \"Aggro\": 0,\n  \"Damage\": 0,\n  \"Taken\": 1.2,\n  \"Pace\": 1.25,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 2,\n  \"TrainingHours\": 2,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"\",\n  \"Recruit\": \"Berries\",\n  \"RecruitAmount\": 5,\n  \"Sight\": 14,\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Scout\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyScouts\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -153,7 +153,7 @@
     },
     "science": "500",
     "training": "4 h",
-    "damage": "90",
+    "damage": "100",
     "heal": null,
     "structure_damage": null,
     "taken": "0.95",
@@ -163,12 +163,12 @@
     "strong": null,
     "strong_factor": "1",
     "upkeep": null,
-    "shot": null,
+    "shot": "Troop.Musketeer.Folktails.jpg",
     "modder": {
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Musketeer\",\n  \"Reach\": 6,\n  \"MinRange\": 1.5,\n  \"Aggro\": 8,\n  \"Damage\": 90,\n  \"Taken\": 0.95,\n  \"Pace\": 0.82,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 500,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Musket\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Musketeer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMusketeers\",\n  \"Animation\": \"Gun\",\n  \"Pose\": \"Gun\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Ball\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0.05,\n    \"Z\": 0.56\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Musketeer\",\n  \"Order\": 120,\n  \"ShipGunner\": true,\n  \"Reach\": 6,\n  \"MinRange\": 1.5,\n  \"Aggro\": 8,\n  \"Damage\": 100,\n  \"Taken\": 0.95,\n  \"Pace\": 0.82,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 500,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Musket\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Musketeer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMusketeers\",\n  \"Animation\": \"Gun\",\n  \"Pose\": \"Gun\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Ball\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0.05,\n    \"Z\": 0.56\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -185,7 +185,7 @@
     },
     "science": "500",
     "training": "4 h",
-    "damage": "90",
+    "damage": "100",
     "heal": null,
     "structure_damage": null,
     "taken": "0.9",
@@ -195,12 +195,12 @@
     "strong": null,
     "strong_factor": "1",
     "upkeep": null,
-    "shot": null,
+    "shot": "Troop.Musketeer.IronTeeth.jpg",
     "modder": {
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Musketeer\",\n  \"Reach\": 6,\n  \"MinRange\": 1.5,\n  \"Aggro\": 8,\n  \"Damage\": 90,\n  \"Taken\": 0.95,\n  \"Pace\": 0.82,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 500,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Musket\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Musketeer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMusketeers\",\n  \"Animation\": \"Gun\",\n  \"Pose\": \"Gun\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Ball\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0.05,\n    \"Z\": 0.56\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Musketeer\",\n  \"Order\": 120,\n  \"ShipGunner\": true,\n  \"Reach\": 6,\n  \"MinRange\": 1.5,\n  \"Aggro\": 8,\n  \"Damage\": 100,\n  \"Taken\": 0.95,\n  \"Pace\": 0.82,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 500,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Musket\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Musketeer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMusketeers\",\n  \"Animation\": \"Gun\",\n  \"Pose\": \"Gun\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Ball\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0.05,\n    \"Z\": 0.56\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -249,7 +249,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Spearman\",\n  \"Reach\": 2.1,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 82,\n  \"Taken\": 0.63,\n  \"Pace\": 0.74,\n  \"MachineDamage\": 103,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 5,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Spear\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Spearman\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySpearmen\",\n  \"Animation\": \"Spear\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [\n    \"SpearmanSpear.Beaver\"\n  ],\n  \"BanditHaul\": 10,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"Warrior\",\n  \"StrongFactor\": 2.65,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Spearman\",\n  \"Order\": 20,\n  \"Reach\": 2.1,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 82,\n  \"Taken\": 0.63,\n  \"Pace\": 0.74,\n  \"MachineDamage\": 103,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 5,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Spear\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Spearman\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySpearmen\",\n  \"Animation\": \"Spear\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [\n    \"SpearmanSpear.Beaver\"\n  ],\n  \"BanditHaul\": 10,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"Warrior\",\n  \"StrongFactor\": 2.65,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -286,7 +286,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Spearman\",\n  \"Reach\": 2.1,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 82,\n  \"Taken\": 0.63,\n  \"Pace\": 0.74,\n  \"MachineDamage\": 103,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 5,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Spear\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Spearman\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySpearmen\",\n  \"Animation\": \"Spear\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [\n    \"SpearmanSpear.Beaver\"\n  ],\n  \"BanditHaul\": 10,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"Warrior\",\n  \"StrongFactor\": 2.65,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Spearman\",\n  \"Order\": 20,\n  \"Reach\": 2.1,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 82,\n  \"Taken\": 0.63,\n  \"Pace\": 0.74,\n  \"MachineDamage\": 103,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 5,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Spear\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Spearman\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySpearmen\",\n  \"Animation\": \"Spear\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [\n    \"SpearmanSpear.Beaver\"\n  ],\n  \"BanditHaul\": 10,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"Warrior\",\n  \"StrongFactor\": 2.65,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -330,7 +330,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Warrior\",\n  \"Reach\": 1.5,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 165,\n  \"Taken\": 0.6,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Sword\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Warrior\",\n  \"OptionalGear\": [\n    \"Shield\"\n  ],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyWarriors\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Warrior\",\n  \"Order\": 0,\n  \"Reach\": 1.5,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 165,\n  \"Taken\": 0.6,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Sword\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Warrior\",\n  \"OptionalGear\": [\n    \"Shield\"\n  ],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyWarriors\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -362,7 +362,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Warrior\",\n  \"Reach\": 1.5,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 165,\n  \"Taken\": 0.6,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Sword\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Warrior\",\n  \"OptionalGear\": [\n    \"Shield\"\n  ],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyWarriors\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Warrior\",\n  \"Order\": 0,\n  \"Reach\": 1.5,\n  \"MinRange\": 0,\n  \"Aggro\": 6,\n  \"Damage\": 165,\n  \"Taken\": 0.6,\n  \"Pace\": 0.85,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 4,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Sword\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Warrior\",\n  \"OptionalGear\": [\n    \"Shield\"\n  ],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyWarriors\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -415,7 +415,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Archer\",\n  \"Reach\": 5,\n  \"MinRange\": 0.6,\n  \"Aggro\": 7.5,\n  \"Damage\": 70,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Bow\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Archer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyArchers\",\n  \"Animation\": \"Bow\",\n  \"Pose\": \"Bow\",\n  \"BanditGear\": [\n    \"ArcherBow.Beaver\",\n    \"ArcherQuiver.Beaver\"\n  ],\n  \"BanditHaul\": 6,\n  \"Projectile\": \"Arrow\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Spearman\",\n  \"StrongFactor\": 2.25,\n  \"ZombieFactor\": 0.8\n}"
+       "json": "{\n  \"Kind\": \"Archer\",\n  \"Order\": 10,\n  \"Ability\": \"Archer\",\n  \"Reach\": 5,\n  \"MinRange\": 0.6,\n  \"Aggro\": 7.5,\n  \"Damage\": 70,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Bow\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Archer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyArchers\",\n  \"Animation\": \"Bow\",\n  \"Pose\": \"Bow\",\n  \"BanditGear\": [\n    \"ArcherBow.Beaver\",\n    \"ArcherQuiver.Beaver\"\n  ],\n  \"BanditHaul\": 6,\n  \"Projectile\": \"Arrow\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Spearman\",\n  \"StrongFactor\": 2.25,\n  \"ZombieFactor\": 0.8\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -452,7 +452,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Archer\",\n  \"Reach\": 5,\n  \"MinRange\": 0.6,\n  \"Aggro\": 7.5,\n  \"Damage\": 70,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Bow\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Archer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyArchers\",\n  \"Animation\": \"Bow\",\n  \"Pose\": \"Bow\",\n  \"BanditGear\": [\n    \"ArcherBow.Beaver\",\n    \"ArcherQuiver.Beaver\"\n  ],\n  \"BanditHaul\": 6,\n  \"Projectile\": \"Arrow\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Spearman\",\n  \"StrongFactor\": 2.25,\n  \"ZombieFactor\": 0.8\n}"
+       "json": "{\n  \"Kind\": \"Archer\",\n  \"Order\": 10,\n  \"Ability\": \"Archer\",\n  \"Reach\": 5,\n  \"MinRange\": 0.6,\n  \"Aggro\": 7.5,\n  \"Damage\": 70,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 8,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Bow\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Archer\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyArchers\",\n  \"Animation\": \"Bow\",\n  \"Pose\": \"Bow\",\n  \"BanditGear\": [\n    \"ArcherBow.Beaver\",\n    \"ArcherQuiver.Beaver\"\n  ],\n  \"BanditHaul\": 6,\n  \"Projectile\": \"Arrow\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Spearman\",\n  \"StrongFactor\": 2.25,\n  \"ZombieFactor\": 0.8\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -496,7 +496,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Herbalist\",\n  \"Reach\": 2.5,\n  \"MinRange\": 0,\n  \"Aggro\": 7,\n  \"Damage\": 0,\n  \"Taken\": 0.9,\n  \"Pace\": 0.9,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 40,\n  \"Worth\": 6,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"HerbalKit\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Herbalist\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyHerbalists\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Herbalist\",\n  \"Order\": 30,\n  \"Ability\": \"Heal\",\n  \"Reach\": 2.5,\n  \"MinRange\": 0,\n  \"Aggro\": 7,\n  \"Damage\": 0,\n  \"Taken\": 0.9,\n  \"Pace\": 0.9,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 40,\n  \"Worth\": 6,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"HerbalKit\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Herbalist\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyHerbalists\",\n  \"Animation\": \"Sword\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -540,7 +540,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Berserker\",\n  \"Reach\": 1.6,\n  \"MinRange\": 0,\n  \"Aggro\": 7,\n  \"Damage\": 225,\n  \"Taken\": 0.44,\n  \"Pace\": 0.86,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 14,\n  \"TrainingHours\": 7,\n  \"ScienceCost\": 1200,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"BattleAxe\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Berserker\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyBerserkers\",\n  \"Animation\": \"Axe\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [\n    \"BerserkerAxe.Beaver\"\n  ],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1.2\n}"
+       "json": "{\n  \"Kind\": \"Berserker\",\n  \"Order\": 70,\n  \"Reach\": 1.6,\n  \"MinRange\": 0,\n  \"Aggro\": 7,\n  \"Damage\": 225,\n  \"Taken\": 0.44,\n  \"Pace\": 0.86,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 14,\n  \"TrainingHours\": 7,\n  \"ScienceCost\": 1200,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"BattleAxe\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Berserker\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyBerserkers\",\n  \"Animation\": \"Axe\",\n  \"Pose\": \"Blade\",\n  \"BanditGear\": [\n    \"BerserkerAxe.Beaver\"\n  ],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1.2\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -589,7 +589,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Slinger\",\n  \"Reach\": 6,\n  \"MinRange\": 1.1,\n  \"Aggro\": 8,\n  \"Damage\": 68,\n  \"Taken\": 0.89,\n  \"Pace\": 0.88,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 7,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Sling\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Slinger\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySlingers\",\n  \"Animation\": \"Sling\",\n  \"Pose\": \"Small\",\n  \"BanditGear\": [\n    \"SlingerSling.Beaver\",\n    \"SlingerPouch.Beaver\"\n  ],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Stone\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": -0.3,\n    \"Z\": 0.04\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Spearman\",\n  \"StrongFactor\": 1.95,\n  \"ZombieFactor\": 0.7\n}"
+       "json": "{\n  \"Kind\": \"Slinger\",\n  \"Order\": 60,\n  \"Reach\": 6,\n  \"MinRange\": 1.1,\n  \"Aggro\": 8,\n  \"Damage\": 68,\n  \"Taken\": 0.89,\n  \"Pace\": 0.88,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 7,\n  \"TrainingHours\": 6,\n  \"ScienceCost\": 600,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Sling\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Slinger\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySlingers\",\n  \"Animation\": \"Sling\",\n  \"Pose\": \"Small\",\n  \"BanditGear\": [\n    \"SlingerSling.Beaver\",\n    \"SlingerPouch.Beaver\"\n  ],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Stone\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": -0.3,\n    \"Z\": 0.04\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Spearman\",\n  \"StrongFactor\": 1.95,\n  \"ZombieFactor\": 0.7\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.Folktails.blueprint.json",
@@ -633,7 +633,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Sapper\",\n  \"Reach\": 4,\n  \"MinRange\": 1.2,\n  \"Aggro\": 7,\n  \"Damage\": 61,\n  \"Taken\": 0.75,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 545,\n  \"Heal\": 0,\n  \"Worth\": 12,\n  \"TrainingHours\": 8,\n  \"ScienceCost\": 1200,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"BlastingCharge\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Sapper\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySappers\",\n  \"Animation\": \"Throw\",\n  \"Pose\": \"Small\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Dynamite\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 2\n}"
+       "json": "{\n  \"Kind\": \"Sapper\",\n  \"Order\": 40,\n  \"Ability\": \"Sapper\",\n  \"Reach\": 4,\n  \"MinRange\": 1.2,\n  \"Aggro\": 7,\n  \"Damage\": 61,\n  \"Taken\": 0.75,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 545,\n  \"Heal\": 0,\n  \"Worth\": 12,\n  \"TrainingHours\": 8,\n  \"ScienceCost\": 1200,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"BlastingCharge\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Sapper\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlySappers\",\n  \"Animation\": \"Throw\",\n  \"Pose\": \"Small\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Dynamite\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 2,\n  \"Splash\": 1.3\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -682,7 +682,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Arquebusier\",\n  \"Reach\": 7,\n  \"MinRange\": 2,\n  \"Aggro\": 8.5,\n  \"Damage\": 115,\n  \"Taken\": 0.74,\n  \"Pace\": 0.78,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 12,\n  \"TrainingHours\": 3,\n  \"ScienceCost\": 1000,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Arquebus\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Arquebusier\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyArquebusiers\",\n  \"Animation\": \"Gun\",\n  \"Pose\": \"Gun\",\n  \"BanditGear\": [\n    \"ArquebusierGun.Beaver\",\n    \"ArquebusierHorn.Beaver\"\n  ],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Ball\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0.05,\n    \"Z\": 0.62\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Berserker\",\n  \"StrongFactor\": 2,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Arquebusier\",\n  \"Order\": 50,\n  \"Reach\": 7,\n  \"MinRange\": 2,\n  \"Aggro\": 8.5,\n  \"Damage\": 115,\n  \"Taken\": 0.74,\n  \"Pace\": 0.78,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 12,\n  \"TrainingHours\": 3,\n  \"ScienceCost\": 1000,\n  \"TrainingScience\": 0,\n  \"Weapon\": \"Arquebus\",\n  \"Upkeep\": \"\",\n  \"Outfit\": \"Arquebusier\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyArquebusiers\",\n  \"Animation\": \"Gun\",\n  \"Pose\": \"Gun\",\n  \"BanditGear\": [\n    \"ArquebusierGun.Beaver\",\n    \"ArquebusierHorn.Beaver\"\n  ],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"Ball\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0.05,\n    \"Z\": 0.62\n  },\n  \"Shoots\": true,\n  \"StrongAgainst\": \"Berserker\",\n  \"StrongFactor\": 2,\n  \"ZombieFactor\": 1\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",
@@ -726,7 +726,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Monk\",\n  \"Reach\": 5,\n  \"MinRange\": 0,\n  \"Aggro\": 8,\n  \"Damage\": 0,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 12,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 40,\n  \"Weapon\": \"\",\n  \"Upkeep\": \"Book\",\n  \"Outfit\": \"Monk\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMonks\",\n  \"Animation\": \"Convert\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Monk\",\n  \"Order\": 90,\n  \"Ability\": \"Preach\",\n  \"Trainer\": \"Monastery\",\n  \"Reach\": 5,\n  \"MinRange\": 0,\n  \"Aggro\": 8,\n  \"Damage\": 0,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 12,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 40,\n  \"Weapon\": \"\",\n  \"Upkeep\": \"Book\",\n  \"Outfit\": \"Monk\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMonks\",\n  \"Animation\": \"Convert\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1,\n  \"ChantNotBeforeHours\": 0.12,\n  \"ChantSureByHours\": 0.45,\n  \"FaithHours\": 3\n}"
       }
      ]
     }
@@ -754,7 +754,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Kind\": \"Monk\",\n  \"Reach\": 5,\n  \"MinRange\": 0,\n  \"Aggro\": 8,\n  \"Damage\": 0,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 12,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 40,\n  \"Weapon\": \"\",\n  \"Upkeep\": \"Book\",\n  \"Outfit\": \"Monk\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMonks\",\n  \"Animation\": \"Convert\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Kind\": \"Monk\",\n  \"Order\": 90,\n  \"Ability\": \"Preach\",\n  \"Trainer\": \"Monastery\",\n  \"Reach\": 5,\n  \"MinRange\": 0,\n  \"Aggro\": 8,\n  \"Damage\": 0,\n  \"Taken\": 1,\n  \"Pace\": 0.8,\n  \"MachineDamage\": 0,\n  \"StructureDamage\": 0,\n  \"Heal\": 0,\n  \"Worth\": 10,\n  \"TrainingHours\": 12,\n  \"ScienceCost\": 0,\n  \"TrainingScience\": 40,\n  \"Weapon\": \"\",\n  \"Upkeep\": \"Book\",\n  \"Outfit\": \"Monk\",\n  \"OptionalGear\": [],\n  \"Icon\": \"Sprites/TimberEmpires/Troops/OnlyMonks\",\n  \"Animation\": \"Convert\",\n  \"Pose\": \"Pole\",\n  \"BanditGear\": [],\n  \"BanditHaul\": 8,\n  \"Projectile\": \"\",\n  \"MuzzleOffset\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  },\n  \"Shoots\": false,\n  \"StrongAgainst\": \"\",\n  \"StrongFactor\": 1,\n  \"ZombieFactor\": 1,\n  \"ChantNotBeforeHours\": 0.12,\n  \"ChantSureByHours\": 0.45,\n  \"FaithHours\": 3\n}"
       },
       {
        "from": "FactionProfiles/TimberEmpiresStats.IronTeeth.blueprint.json",

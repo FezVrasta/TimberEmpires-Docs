@@ -12,26 +12,26 @@ With [Science per player](../settings.md#science-per-player) on, each player has
 
 ## District specializations
 
-Each district can pick a focus: Food, Wood, Water, Metal, Science or Power, the toolbar's tabs. Workplaces of that kind work faster, and the district's other production workplaces slower. Only the district's owner can pick it, and only once per cycle.
+Each District Center's panel has a **Specialization** dropdown: Food, Wood, Water, Metal, Science or Power. Workplaces of that kind work 25% faster, and the district's other production workplaces 10% slower. Only the district's owner can change it, once per cycle.
 
 ## Trading with other players
 
 Main articles: [Trading Post](../buildings/trading-post.md), [Power Exchange](../buildings/power-exchange.md), [Toll Station](../buildings/toll-station.md) and [Toll Tube Station](../buildings/toll-tube-station.md)
 {: .hatnote}
 
-- **Trading Post.** Two players trade goods through a pair built across the border between their districts. Both sides approve each deal.
+- **Trading Post.** A pair built across the border between two districts. Each side picks which goods it buys and sells, and what each is worth.
 - **Power Exchange.** Sells power across a border, paid in goods every hour.
 - **Toll stations.** Let your beavers ride another player's ziplines (Folktails) or tubeway (Iron Teeth) for a toll the network's owner sets.
 
-Pending deals raise a "Trade deal to approve" alert, and the Trades tab of the settlement panel lists every deal and power price you're part of.
+The Trades tab of the settlement panel lists every trade, power price and toll you're part of.
 
 ## Military production
 
 - **[Weaponsmith](../buildings/weaponsmith.md).** Spears, bows, shields and ballista bolts, plus swords (Iron Teeth) or slings (Folktails). Fuelled by logs.
-- **[Bladesmith](../buildings/bladesmith.md)** (Folktails). Swords and battle axes. Needs power.
+- **[Arms Workshop](../buildings/arms-workshop.md)** (Folktails). Swords and battle axes. Needs power.
 - **[Gunsmith](../buildings/gunsmith.md)** (Iron Teeth). Arquebuses and blasting charges. Needs power.
 - **[Stone Press](../buildings/stone-press.md).** Siege stones from scrap metal and logs, for catapults and trebuchets. Needs power.
-- **Herbalist** (Folktails). The game's own Herbalist also makes herbal kits for herbalist troops.
+- **Herbalist** (Folktails). Also makes herbal kits for [herbalist](../troops/herbalist.md) troops.
 - **[Wagon Yard](../buildings/wagon-yard.md).** Supply carts for troops in the field (see [Supply](../military/combat.md#supply)).
 - **[Small Armory](../buildings/small-armory.md) and [Medium Armory](../buildings/medium-armory.md).** Warehouses for weapons and ammunition only.
 

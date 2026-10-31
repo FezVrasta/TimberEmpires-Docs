@@ -7,4 +7,4 @@ nav_order: 19
 
 # Gunsmith
 
-The Iron Teeth workshop for arquebuses and blasting charges, the gear of the [Arquebusier](../troops/arquebusier.md) and the [Sapper](../troops/sapper.md). It needs power.
+The Iron Teeth workshop for arquebuses and blasting charges, the gear of the [Arquebusier](../troops/arquebusier.md) and the [Sapper](../troops/sapper.md). On Archipelago maps it makes muskets too. It needs power.

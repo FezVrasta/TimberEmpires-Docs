@@ -6,7 +6,7 @@ nav_order: 3
 
 # Siege warfare
 
-Siege machines are built by your builders or your troops; ladders and ramps only by troops. Their crew are your troops: send troops at a machine to board it, and use the Unload button in its panel to let them out. Aboard, troops are out of sight and out of the fight, and their needs and gear don't wear down.
+Siege machines are built by your builders or your troops. The crew are your troops: send them at a machine to board it, and use the Unload button in its panel to let them out. Aboard, troops are out of the fight.
 
 | Machine | Faction | What it's for |
 |---|---|---|
@@ -21,30 +21,28 @@ Siege machines are built by your builders or your troops; ladders and ramps only
 
 ## Crew
 
-A machine works with its minimum crew aboard, and better with more. Extra crew turn and aim it faster, push it faster (up to twice as fast), swing a ram faster, and keep it supplied while it keeps working (see below).
+A machine works with its minimum crew and better with more. Extra crew aim it faster, push it faster (up to twice as fast), swing a ram faster, and keep it supplied (see below).
 
 ## Firing
 
-Trebuchets, catapults and ballistas pick their target once aimed: click an enemy with the machine selected. They turn to face it and fire until nothing is left to hit. Shots land a little off target, and hurt every enemy near where they land.
+Click an enemy with a trebuchet, catapult or ballista selected: it turns to face the target and fires until nothing is left to hit. Shots land a little off target and hurt every enemy near where they land.
 
-Their panel says what they're doing: idle, too close or too far, needs a crew, out of ammunition, turning or firing.
+The panel says what the machine is doing: idle, too close or too far, needs a crew, out of ammunition, turning or firing.
 
 ## Moving
 
-Machines with wheels are pushed by their crew. They can't climb a level except up a [Field Ramp](../buildings/field-ramp.md), and can't cross water deeper than 0.3. Sent at a wall, they stop in front of it, facing it.
+Machines with wheels are pushed by their crew. They climb a level only up a [Field Ramp](../buildings/field-ramp.md) and can't cross water deeper than 0.3. Sent at a wall, they stop in front of it, facing it.
 
 ## Ammunition
 
 Every machine but the ram uses ammunition: siege stones for trebuchets and catapults (made at the [Stone Press](../buildings/stone-press.md)), ballista bolts for ballistas (made at the [Weaponsmith](../buildings/weaponsmith.md)), and logs or canola oil for hoardings.
 
-The crew fetch it themselves. One of them walks to the nearest store, warehouse, workshop or supply cart of yours with the good, nearby, carries back as much as a beaver can lift, and climbs back in.
+The crew fetch it themselves. One of them walks to the nearest store, warehouse, workshop or supply cart of yours that has the good, carries back as much as a beaver can lift, and climbs back in.
 
 - **Minimum crew.** They only go once it's empty, and the machine waits while they're away.
 - **Extra crew.** They go as soon as there's room for a full load, and the machine keeps firing. More crew keep a machine firing longer.
 
-Haulers bring ammunition too, while the machine is near your roads, like any building in a district. Engines also take ammunition from a supply cart close by.
-
-Out of ammunition, a machine shows a warning and stops.
+Haulers bring ammunition too while the machine is near your roads, and engines take it from a supply cart close by. Out of ammunition, a machine shows a warning and stops.
 
 ## What beats what
 

@@ -7,6 +7,6 @@ nav_order: 40
 
 # War Banner
 
-Troops near it hit harder. It stands on a wall or tower walk, or on the ground.
+Troops near it hit harder. It stands on a wall or tower walk, or on the ground. The [Hanging Banner](hanging-banner.md) is the version for the outside of a wall.
 
 Banners, [totems](carved-totem.md) and [shields](shield-rack.md) each stack with the other kinds but not with their own: two banners in range count once.

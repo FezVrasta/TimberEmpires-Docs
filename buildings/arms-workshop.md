@@ -10,4 +10,4 @@ redirect_from:
 
 # Arms Workshop
 
-The Folktails workshop for swords and battle axes. On archipelago maps it makes muskets too, for [musketeers](../troops/musketeer.md). It needs power. It used to be called the Bladesmith, and the Armory before that.
+The Folktails workshop for swords and battle axes. On Archipelago maps it makes muskets too, for [musketeers](../troops/musketeer.md). It needs power. It used to be called the Bladesmith.

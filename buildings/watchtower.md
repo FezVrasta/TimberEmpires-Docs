@@ -7,7 +7,7 @@ nav_order: 31
 
 # Watchtower
 
-Claims land, so other players can't build on it. It claims the land around it, more the higher it stands.
+Claims the land around it so other players can't build there, more the higher it stands.
 
 It burns logs, and claims only while lit and connected to its district. Cut off, it goes out and keeps its logs.
 

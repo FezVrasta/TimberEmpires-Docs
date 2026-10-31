@@ -17,7 +17,8 @@ nav_order: 4
 | Cannonball | 1 Metal Block | 2 | Weaponsmith |
 | Carronade | 2 Plank, 5 Metal Block | 8 | Weaponsmith |
 | <img class="icon" src="../assets/icons/HerbalKit.png" alt="">Herbal Kit | 2 Dandelion, 1 Paper | 3 | Herbalist |
-| Musket | 1 Metal Part, 1 Treated Plank | 2 | Arms Workshop, Gunsmith |
+| Musket | 1 Metal Part, 2 Plank, 1 Gear | 2 | Gunsmith |
+| Musket | 1 Metal Block, 2 Plank, 1 Gear | 2 | Arms Workshop |
 | <img class="icon" src="../assets/icons/Shield.png" alt="">Shield | 2 Plank, 1 Log | 3 | Weaponsmith |
 | <img class="icon" src="../assets/icons/SiegeStone.png" alt="">Siege stone | 1 Scrap Metal, 1 Log | 1.5 | Stone Press |
 | <img class="icon" src="../assets/icons/Sling.png" alt="">Sling | 2 Plank, 2 Berries | 2.5 | Weaponsmith |

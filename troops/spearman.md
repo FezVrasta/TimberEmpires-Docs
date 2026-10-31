@@ -6,4 +6,4 @@ nav_order: 1
 
 # Spearman
 
-Steady melee with a long reach. Spearmen are free to train, strong against [warriors](warrior.md) and the best troop at breaking siege machines. [Archers](archer.md) and [slingers](slinger.md) beat them.
+Melee with a long reach, free to train. Strong against [warriors](warrior.md) and the best troop at breaking siege machines. [Archers](archer.md) and [slingers](slinger.md) beat them.

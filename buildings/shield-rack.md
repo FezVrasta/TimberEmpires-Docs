@@ -7,4 +7,4 @@ nav_order: 44
 
 # Shield Rack
 
-Troops near it take less damage. It stands on a wall or tower walk, or on the ground.
+Troops near it take less damage. It stands on a wall or tower walk, or on the ground. [Hung Shields](hung-shields.md) is the version for the outside of a wall.

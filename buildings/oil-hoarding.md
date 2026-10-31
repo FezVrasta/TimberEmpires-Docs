@@ -7,11 +7,9 @@ nav_order: 5
 
 # Oil Hoarding
 
-An Iron Teeth gallery on the wall that pours boiling canola oil on the spot below, hurting everyone there, machines too. It drops on your command: the button in its panel, or an automation signal. Up to 10 pours can be queued.
+An Iron Teeth gallery on the wall that pours boiling canola oil at its foot, on enemies and their siege machines. It pours on your command: the button in its panel, or an automation signal. Up to 10 pours can be queued.
 
-It needs a troop aboard, and a second one reloads faster. The crew fetch the oil themselves (see [Ammunition](../military/siege.md#ammunition)). Boiling oil ignores shields, ranks and wall cover.
-
-It only reaches enemies at about the level of the wall's foot.
+It needs a troop aboard, and a second one reloads faster. The crew fetch the oil themselves (see [Ammunition](../military/siege.md#ammunition)). The oil ignores shields, ranks and wall cover, but only reaches enemies about level with the wall's foot.
 
 ## See also
 

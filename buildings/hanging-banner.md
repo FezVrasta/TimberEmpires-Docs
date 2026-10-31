@@ -7,4 +7,4 @@ nav_order: 41
 
 # Hanging Banner
 
-The war banner for the outside of a wall or tower. Same bonus, and the enemy sees it.
+The [War Banner](war-banner.md) for the outside of a wall or tower.

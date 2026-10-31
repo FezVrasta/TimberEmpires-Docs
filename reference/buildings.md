@@ -52,7 +52,7 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 | <img class="icon" src="../assets/icons/Forge.png" alt="">Weaponsmith | Folktails | 150 | 20 Log, 30 Plank | Spear, Bow, Sling, Shield, Ballista bolt, Swivel Gun, Cannon, Carronade, Cannonball |
 | <img class="icon" src="../assets/icons/Forge.png" alt="">Weaponsmith | Iron Teeth | 150 | 20 Log, 30 Plank | Spear, Bow, Sword, Shield, Ballista bolt, Swivel Gun, Cannon, Carronade, Cannonball |
 | <img class="icon" src="../assets/icons/Armory.png" alt="">Arms Workshop | Folktails | 400 | 40 Plank, 20 Gear, 10 Metal Block | Sword, Battle axe, Musket |
-| <img class="icon" src="../assets/icons/Gunsmith.png" alt="">Gunsmith | Iron Teeth | 400 | 40 Plank, 20 Gear, 20 Metal Part | Arquebus, Musket, Blasting Charge |
+| <img class="icon" src="../assets/icons/Gunsmith.png" alt="">Gunsmith | Iron Teeth | 400 | 40 Plank, 20 Gear, 20 Metal Part | Arquebus, Blasting Charge, Musket |
 | <img class="icon" src="../assets/icons/Barracks.png" alt="">Barracks | Both | 250 | 40 Log, 30 Plank |  |
 | <img class="icon" src="../assets/icons/ArcheryRange.png" alt="">Archery Range | Both | 450 | 30 Log, 30 Plank |  |
 | <img class="icon" src="../assets/icons/Monastery.png" alt="">Monastery | Folktails | 600 | 40 Log, 40 Plank, 20 Paper |  |
@@ -77,12 +77,12 @@ What each Timber Empires building costs and the science it takes to unlock. Wher
 
 | Building | Faction | Science | Cost | Makes |
 |---|---|---|---|---|
-| Cog | Folktails | 700 | 60 Log, 25 Plank, 15 Treated Plank, 8 Gear |  |
-| Shipyard | Both | 500 | 150 Log, 70 Plank, 40 Treated Plank, 20 Gear |  |
-| War Catamaran | Folktails | 1200 | 100 Log, 40 Plank, 30 Treated Plank, 15 Gear |  |
-| Paddle Frigate | Iron Teeth | 1200 | 100 Log, 40 Plank, 30 Treated Plank, 15 Gear |  |
-| Trade Post | Both | 250 | 60 Log, 40 Plank, 10 Gear |  |
-| Barge | Both | 500 | 40 Log, 30 Plank, 6 Gear |  |
+| <img class="icon" src="../assets/icons/Cog.png" alt="">Cog | Both | 1200 | 40 Log, 30 Plank, 8 Gear, 6 Metal Block |  |
+| Shipyard | Both | 200 | 30 Log, 30 Plank, 5 Gear |  |
+| War Catamaran | Folktails | 2500 | 60 Log, 40 Plank, 20 Treated Plank, 12 Gear, 15 Metal Block |  |
+| Paddle Frigate | Iron Teeth | 2500 | 60 Log, 40 Plank, 20 Treated Plank, 12 Gear, 15 Metal Block |  |
+| <img class="icon" src="../assets/icons/TradePost.png" alt="">Trade Post | Both | 200 | 20 Log, 15 Plank, 3 Gear |  |
+| <img class="icon" src="../assets/icons/Barge.png" alt="">Barge | Both | 150 | 15 Log, 15 Plank, 3 Gear |  |
 | Sun Lounger | Both | 80 | 4 Log, 6 Plank |  |
 
 ## Territory and trade

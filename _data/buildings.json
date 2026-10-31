@@ -75,13 +75,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"WallFoundation\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WallFoundation\",\n  \"Health\": 400,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WallFoundation\",\n  \"Health\": 400\n}"
       }
      ]
     }
@@ -153,13 +157,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"WallFoundation\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WallFoundation\",\n  \"Health\": 400,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WallFoundation\",\n  \"Health\": 400\n}"
       }
      ]
     }
@@ -246,13 +254,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Palisade\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Palisade\",\n  \"Health\": 310,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"Palisade\",\n  \"Health\": 310\n}"
       }
      ]
     }
@@ -339,13 +351,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Palisade\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Palisade\",\n  \"Health\": 310,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"Palisade\",\n  \"Health\": 310\n}"
       }
      ]
     }
@@ -457,13 +473,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Gatehouse\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Gatehouse\",\n  \"Health\": 780,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"Gatehouse\",\n  \"Health\": 780\n}"
       }
      ]
     }
@@ -564,13 +584,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Gatehouse\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Gatehouse\",\n  \"Health\": 780,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"Gatehouse\",\n  \"Health\": 780\n}"
       }
      ]
     }
@@ -687,6 +711,10 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Gatehouse\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -794,6 +822,10 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Gatehouse\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -894,13 +926,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Hoarding\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Hoarding.Folktails\",\n  \"Health\": 400,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0.85,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 111,\n  \"StructureDamage\": 18,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 6,\n  \"RollTilesPerSecond\": 3.5,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 5,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 1\n}"
+       "json": "{\n  \"Name\": \"Hoarding.Folktails\",\n  \"Health\": 400,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"ReloadHours\": 0.85,\n  \"Damage\": 111,\n  \"StructureDamage\": 18,\n  \"DropReach\": 6,\n  \"RollTilesPerSecond\": 3.5,\n  \"PerThrow\": 5,\n  \"ZombieFactor\": 1\n}"
       }
      ]
     }
@@ -1004,13 +1040,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"Hoarding\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Hoarding.IronTeeth\",\n  \"Health\": 400,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0.45,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 164,\n  \"StructureDamage\": 25,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0.9,\n  \"PourRadius\": 1.1,\n  \"PerThrow\": 1,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 2\n}"
+       "json": "{\n  \"Name\": \"Hoarding.IronTeeth\",\n  \"Health\": 400,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"ReloadHours\": 0.45,\n  \"Damage\": 164,\n  \"StructureDamage\": 25,\n  \"PourDistance\": 0.9,\n  \"PourRadius\": 1.1,\n  \"PerThrow\": 1,\n  \"ZombieFactor\": 2\n}"
       }
      ]
     }
@@ -1109,13 +1149,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"WallTower\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WallTower\",\n  \"Health\": 1220,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WallTower\",\n  \"Health\": 1220\n}"
       }
      ]
     }
@@ -1203,13 +1247,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"WallTower\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WallTower\",\n  \"Health\": 1220,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WallTower\",\n  \"Health\": 1220\n}"
       }
      ]
     }
@@ -1221,8 +1269,8 @@
   "mod": "te",
   "category": "Walls and towers",
   "category_slug": "walls-and-towers",
-  "description": "Taller than a wall tower, with an open top for a catapult, ballista or trebuchet. With a crew aboard, the machine on it shoots the nearest enemy in reach on its own.",
-  "flavor": "No roof. Plenty of rocks.",
+  "description": "Taller than a wall tower, with an open top for a siege machine.",
+  "flavor": "From up here, everyone's in range.",
   "icon": "RoundTowerFolktails",
   "factions": {
    "Folktails": {
@@ -1317,13 +1365,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"WallTower\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WallTower.Round\",\n  \"Health\": 1500,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WallTower.Round\",\n  \"Health\": 1500\n}"
       }
      ]
     }
@@ -1416,13 +1468,17 @@
       {
        "name": "WallSpec",
        "json": "{\n  \"Kind\": \"WallTower\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WallTower.Round\",\n  \"Health\": 1500,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WallTower.Round\",\n  \"Health\": 1500\n}"
       }
      ]
     }
@@ -1497,6 +1553,10 @@
       {
        "name": "WallBrazierSpec",
        "json": "{\n  \"Reach\": 2,\n  \"InjuryChance\": 0.1,\n  \"InjuryDamage\": 15\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],
@@ -1562,6 +1622,10 @@
       {
        "name": "WallBrazierSpec",
        "json": "{\n  \"Reach\": 2,\n  \"InjuryChance\": 0.1,\n  \"InjuryDamage\": 15\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],
@@ -1629,6 +1693,10 @@
       {
        "name": "ResinPuddleSpec",
        "json": "{\n  \"BurnHours\": 6,\n  \"DamagePerHour\": 60,\n  \"ZombieFactor\": 4,\n  \"CatchHours\": 0.1,\n  \"SpreadHours\": 0.3,\n  \"Flames\": [\n    \"Flame1\",\n    \"Flame2\",\n    \"Flame3\"\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],
@@ -1685,6 +1753,10 @@
       {
        "name": "ResinPuddleSpec",
        "json": "{\n  \"BurnHours\": 6,\n  \"DamagePerHour\": 60,\n  \"ZombieFactor\": 4,\n  \"CatchHours\": 0.1,\n  \"SpreadHours\": 0.3,\n  \"Flames\": [\n    \"Flame1\",\n    \"Flame2\",\n    \"Flame3\"\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],
@@ -1730,7 +1802,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallBanner.Folktails.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallBanner.Folktails.blueprint.json",
      "components": [
@@ -1757,6 +1829,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Banner\",\n  \"Damage\": 0.06,\n  \"Taken\": 0,\n  \"Mounted\": false\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -1791,7 +1867,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallBanner.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallBanner.IronTeeth.blueprint.json",
      "components": [
@@ -1818,6 +1894,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Banner\",\n  \"Damage\": 0.06,\n  \"Taken\": 0,\n  \"Mounted\": false\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -1863,7 +1943,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallBannerMounted.Folktails.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallBannerMounted.Folktails.blueprint.json",
      "components": [
@@ -1890,6 +1970,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Banner\",\n  \"Damage\": 0.06,\n  \"Taken\": 0,\n  \"Mounted\": true\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -1924,7 +2008,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallBannerMounted.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallBannerMounted.IronTeeth.blueprint.json",
      "components": [
@@ -1951,6 +2035,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Banner\",\n  \"Damage\": 0.06,\n  \"Taken\": 0,\n  \"Mounted\": true\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -1996,7 +2084,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallTotem.Folktails.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallTotem.Folktails.blueprint.json",
      "components": [
@@ -2023,6 +2111,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Totem\",\n  \"Damage\": 0.04,\n  \"Taken\": 0.03,\n  \"Mounted\": false\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2057,7 +2149,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallTotem.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallTotem.IronTeeth.blueprint.json",
      "components": [
@@ -2084,6 +2176,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Totem\",\n  \"Damage\": 0.04,\n  \"Taken\": 0.03,\n  \"Mounted\": false\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2129,7 +2225,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallTotemMounted.Folktails.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallTotemMounted.Folktails.blueprint.json",
      "components": [
@@ -2156,6 +2252,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Totem\",\n  \"Damage\": 0.04,\n  \"Taken\": 0.03,\n  \"Mounted\": true\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2190,7 +2290,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallTotemMounted.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallTotemMounted.IronTeeth.blueprint.json",
      "components": [
@@ -2217,6 +2317,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"Totem\",\n  \"Damage\": 0.04,\n  \"Taken\": 0.03,\n  \"Mounted\": true\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2262,7 +2366,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallShieldRack.Folktails.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallShieldRack.Folktails.blueprint.json",
      "components": [
@@ -2289,6 +2393,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"ShieldRack\",\n  \"Damage\": 0,\n  \"Taken\": 0.08,\n  \"Mounted\": false\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2323,7 +2431,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallShieldRack.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallShieldRack.IronTeeth.blueprint.json",
      "components": [
@@ -2350,6 +2458,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"ShieldRack\",\n  \"Damage\": 0,\n  \"Taken\": 0.08,\n  \"Mounted\": false\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2395,7 +2507,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallShieldRackMounted.Folktails.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallShieldRackMounted.Folktails.blueprint.json",
      "components": [
@@ -2422,6 +2534,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"ShieldRack\",\n  \"Damage\": 0,\n  \"Taken\": 0.08,\n  \"Mounted\": true\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2456,7 +2572,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WallShieldRackMounted.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Palisade/WallShieldRackMounted.IronTeeth.blueprint.json",
      "components": [
@@ -2483,6 +2599,10 @@
       {
        "name": "WallDecorationSpec",
        "json": "{\n  \"Kind\": \"ShieldRack\",\n  \"Damage\": 0,\n  \"Taken\": 0.08,\n  \"Mounted\": true\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Decor\"\n}"
       }
      ],
      "patches": [],
@@ -2496,7 +2616,7 @@
   "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "A healing tub on wheels for after a battle. Once no enemy is in sight, wounded troops take turns lying in it and heal fast while its doses last. A dose is 1 extract and 2 berries. Its crew only moves it.",
+  "description": "A healing tub on wheels for after a battle. Once no enemy is in sight, wounded troops take turns lying in it and heal fast while its doses last. Its crew only moves it.",
   "flavor": "The tub's warm. Don't ask what's in it.",
   "icon": "FieldInfirmary",
   "factions": {
@@ -2572,13 +2692,17 @@
       {
        "name": "FieldInfirmarySpec",
        "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"FieldInfirmary\",\n  \"Health\": 90,\n  \"TilesPerHour\": 0.9,\n  \"CrewCapacity\": 1,\n  \"MinCrew\": 1,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 60,\n  \"HealRadius\": 10,\n  \"HealBelow\": 0.9,\n  \"HealPerDose\": 120\n}"
+       "json": "{\n  \"Name\": \"FieldInfirmary\",\n  \"Health\": 90,\n  \"TilesPerHour\": 0.9,\n  \"CrewCapacity\": 1,\n  \"MinCrew\": 1,\n  \"HealRate\": 60,\n  \"HealRadius\": 10,\n  \"HealBelow\": 0.9,\n  \"HealPerDose\": 120,\n  \"Dose\": [\n    {\n      \"Id\": \"Extract\",\n      \"Amount\": 1\n    },\n    {\n      \"Id\": \"Berries\",\n      \"Amount\": 2\n    }\n  ]\n}"
       }
      ]
     }
@@ -2591,7 +2715,7 @@
   "category": "Siege machines",
   "category_slug": "siege",
   "description": "Lets your troops and carters climb a one-level step.",
-  "flavor": "\"Who needs stairs anyway?\" —Pina",
+  "flavor": "\"Who needs stairs anyway?\" (Pina)",
   "icon": "SiegeLadder",
   "factions": {
    "Folktails": {
@@ -2950,7 +3074,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"BatteringRam\",\n  \"Health\": 235,\n  \"TilesPerHour\": 6.5,\n  \"CrewCapacity\": 4,\n  \"MinCrew\": 2,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 62,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0.35,\n  \"DamDamage\": 0.2,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"BatteringRam\",\n  \"Health\": 235,\n  \"TilesPerHour\": 6.5,\n  \"CrewCapacity\": 4,\n  \"MinCrew\": 2,\n  \"Damage\": 62,\n  \"SwingHours\": 0.35,\n  \"DamDamage\": 0.2\n}"
       }
      ]
     }
@@ -3040,7 +3164,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"SiegeTower\",\n  \"Health\": 200,\n  \"TilesPerHour\": 2,\n  \"CrewCapacity\": 6,\n  \"MinCrew\": 2,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"SiegeTower\",\n  \"Health\": 200,\n  \"TilesPerHour\": 2,\n  \"CrewCapacity\": 6,\n  \"MinCrew\": 2\n}"
       }
      ]
     }
@@ -3052,8 +3176,8 @@
   "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "Hurls stones at a chosen target, hurting enemies and battering walls and siege engines. Its crew moves and aims it.",
-  "flavor": "\"Took them long enough.\" —Ma' Ngonel",
+  "description": "Hurls stones at a chosen target, hurting enemies and battering walls and siege engines.",
+  "flavor": "\"Took them long enough.\" (Ma' Ngonel)",
   "icon": "Catapult",
   "factions": {
    "Folktails": {
@@ -3128,13 +3252,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 800,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"SiegeStone\",\n      \"GoodPerHour\": 0.01\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Catapult\",\n  \"Health\": 200,\n  \"AmmoCapacity\": 8,\n  \"AmmoCapacityOnTower\": 13,\n  \"TilesPerHour\": 3,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 4,\n  \"MaxRange\": 16,\n  \"MinRangeOnTower\": 4,\n  \"MaxRangeOnTower\": 20,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.15,\n  \"Spread\": 1.2,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 54,\n  \"StructureDamage\": 298,\n  \"TurnDegreesPerHour\": 90,\n  \"TurnDegreesPerHourOnTower\": 135,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 1.5\n}"
+       "json": "{\n  \"Name\": \"Catapult\",\n  \"Health\": 200,\n  \"AmmoCapacity\": 8,\n  \"AmmoCapacityOnTower\": 13,\n  \"TilesPerHour\": 3,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 4,\n  \"MaxRange\": 16,\n  \"MinRangeOnTower\": 4,\n  \"MaxRangeOnTower\": 20,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.15,\n  \"Spread\": 1.2,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 54,\n  \"StructureDamage\": 298,\n  \"TurnDegreesPerHour\": 90,\n  \"TurnDegreesPerHourOnTower\": 135,\n  \"ZombieFactor\": 1.5\n}"
       }
      ]
     }
@@ -3211,13 +3339,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 800,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"SiegeStone\",\n      \"GoodPerHour\": 0.01\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Catapult\",\n  \"Health\": 200,\n  \"AmmoCapacity\": 8,\n  \"AmmoCapacityOnTower\": 13,\n  \"TilesPerHour\": 3,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 4,\n  \"MaxRange\": 16,\n  \"MinRangeOnTower\": 4,\n  \"MaxRangeOnTower\": 20,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.15,\n  \"Spread\": 1.2,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 54,\n  \"StructureDamage\": 298,\n  \"TurnDegreesPerHour\": 90,\n  \"TurnDegreesPerHourOnTower\": 135,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 1.5\n}"
+       "json": "{\n  \"Name\": \"Catapult\",\n  \"Health\": 200,\n  \"AmmoCapacity\": 8,\n  \"AmmoCapacityOnTower\": 13,\n  \"TilesPerHour\": 3,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 4,\n  \"MaxRange\": 16,\n  \"MinRangeOnTower\": 4,\n  \"MaxRangeOnTower\": 20,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.15,\n  \"Spread\": 1.2,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 54,\n  \"StructureDamage\": 298,\n  \"TurnDegreesPerHour\": 90,\n  \"TurnDegreesPerHourOnTower\": 135,\n  \"ZombieFactor\": 1.5\n}"
       }
      ]
     }
@@ -3229,7 +3361,7 @@
   "mod": "te",
   "category": "Siege machines",
   "category_slug": "siege",
-  "description": "Shoots heavy bolts flat and far: deadly to enemies, weak against walls. Its crew moves and aims it.",
+  "description": "Shoots heavy bolts flat and far: deadly to enemies, weak against walls.",
   "flavor": "One bolt, one problem solved.",
   "icon": "Ballista",
   "factions": {
@@ -3305,13 +3437,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 1000,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"BallistaBolt\",\n      \"GoodPerHour\": 0.01\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Ballista\",\n  \"Health\": 110,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 3,\n  \"MaxRange\": 22,\n  \"MinRangeOnTower\": 3,\n  \"MaxRangeOnTower\": 28,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.08,\n  \"Spread\": 0.5,\n  \"SplashRadius\": 0.7,\n  \"Damage\": 70,\n  \"StructureDamage\": 32,\n  \"TurnDegreesPerHour\": 150,\n  \"TurnDegreesPerHourOnTower\": 225,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 0.6\n}"
+       "json": "{\n  \"Name\": \"Ballista\",\n  \"Health\": 110,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 3,\n  \"MaxRange\": 22,\n  \"MinRangeOnTower\": 3,\n  \"MaxRangeOnTower\": 28,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.08,\n  \"Spread\": 0.5,\n  \"SplashRadius\": 0.7,\n  \"Damage\": 70,\n  \"StructureDamage\": 32,\n  \"TurnDegreesPerHour\": 150,\n  \"TurnDegreesPerHourOnTower\": 225,\n  \"ZombieFactor\": 0.6\n}"
       }
      ]
     }
@@ -3388,13 +3524,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 1000,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"BallistaBolt\",\n      \"GoodPerHour\": 0.01\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Ballista\",\n  \"Health\": 110,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 3,\n  \"MaxRange\": 22,\n  \"MinRangeOnTower\": 3,\n  \"MaxRangeOnTower\": 28,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.08,\n  \"Spread\": 0.5,\n  \"SplashRadius\": 0.7,\n  \"Damage\": 70,\n  \"StructureDamage\": 32,\n  \"TurnDegreesPerHour\": 150,\n  \"TurnDegreesPerHourOnTower\": 225,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 0.6\n}"
+       "json": "{\n  \"Name\": \"Ballista\",\n  \"Health\": 110,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 3,\n  \"MaxRange\": 22,\n  \"MinRangeOnTower\": 3,\n  \"MaxRangeOnTower\": 28,\n  \"ReloadHours\": 0.8,\n  \"FlightHours\": 0.08,\n  \"Spread\": 0.5,\n  \"SplashRadius\": 0.7,\n  \"Damage\": 70,\n  \"StructureDamage\": 32,\n  \"TurnDegreesPerHour\": 150,\n  \"TurnDegreesPerHourOnTower\": 225,\n  \"ZombieFactor\": 0.6\n}"
       }
      ]
     }
@@ -3478,13 +3618,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 1000,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"SiegeStone\",\n      \"GoodPerHour\": 0.01\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"SiegeTrebuchet\",\n  \"Health\": 150,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 10,\n  \"MaxRange\": 32,\n  \"MinRangeOnTower\": 10,\n  \"MaxRangeOnTower\": 38,\n  \"ReloadHours\": 0.55,\n  \"FlightHours\": 0.22,\n  \"Spread\": 1,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 45,\n  \"StructureDamage\": 174,\n  \"TurnDegreesPerHour\": 60,\n  \"TurnDegreesPerHourOnTower\": 90,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 1.5\n}"
+       "json": "{\n  \"Name\": \"SiegeTrebuchet\",\n  \"Health\": 150,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 10,\n  \"MaxRange\": 32,\n  \"MinRangeOnTower\": 10,\n  \"MaxRangeOnTower\": 38,\n  \"ReloadHours\": 0.55,\n  \"FlightHours\": 0.22,\n  \"Spread\": 1,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 45,\n  \"StructureDamage\": 174,\n  \"TurnDegreesPerHour\": 60,\n  \"TurnDegreesPerHourOnTower\": 90,\n  \"ZombieFactor\": 1.5\n}"
       }
      ]
     }
@@ -3557,13 +3701,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 1000,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"SiegeStone\",\n      \"GoodPerHour\": 0.01\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"SiegeTrebuchet\",\n  \"Health\": 150,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 10,\n  \"MaxRange\": 32,\n  \"MinRangeOnTower\": 10,\n  \"MaxRangeOnTower\": 38,\n  \"ReloadHours\": 0.55,\n  \"FlightHours\": 0.22,\n  \"Spread\": 1,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 45,\n  \"StructureDamage\": 174,\n  \"TurnDegreesPerHour\": 60,\n  \"TurnDegreesPerHourOnTower\": 90,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 1.5\n}"
+       "json": "{\n  \"Name\": \"SiegeTrebuchet\",\n  \"Health\": 150,\n  \"AmmoCapacity\": 10,\n  \"AmmoCapacityOnTower\": 16,\n  \"CrewCapacity\": 3,\n  \"MinCrew\": 2,\n  \"MinRange\": 10,\n  \"MaxRange\": 32,\n  \"MinRangeOnTower\": 10,\n  \"MaxRangeOnTower\": 38,\n  \"ReloadHours\": 0.55,\n  \"FlightHours\": 0.22,\n  \"Spread\": 1,\n  \"SplashRadius\": 1.4,\n  \"Damage\": 45,\n  \"StructureDamage\": 174,\n  \"TurnDegreesPerHour\": 60,\n  \"TurnDegreesPerHourOnTower\": 90,\n  \"ZombieFactor\": 1.5\n}"
       }
      ]
     }
@@ -3575,7 +3723,7 @@
   "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
-  "description": "Makes spears, bows, shields and ballista bolts, plus swords for the Iron Teeth and slings for the Folktails.",
+  "description": "Makes weapons, shields and ballista bolts.",
   "flavor": "Every beaver can chew. Only a few can temper steel.",
   "icon": "Forge",
   "factions": {
@@ -3690,6 +3838,10 @@
       },
       {
        "name": "MechanicalConnectorTargetSpec",
+       "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
        "json": "{}"
       }
      ],
@@ -3809,6 +3961,10 @@
       {
        "name": "MechanicalConnectorTargetSpec",
        "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -3886,7 +4042,7 @@
       },
       {
        "name": "ManufactorySpec",
-       "json": "{\n  \"ProductionRecipeIds\": [\n    \"Sword\",\n    \"BattleAxe\",\n    \"Musket\"\n  ]\n}"
+       "json": "{\n  \"ProductionRecipeIds\": [\n    \"Sword\",\n    \"BattleAxe\"\n  ]\n}"
       },
       {
        "name": "WorkshopSpec",
@@ -3927,6 +4083,14 @@
       {
        "name": "MechanicalConnectorTargetSpec",
        "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
+      },
+      {
+       "name": "WhenSpec",
+       "json": "{\n  \"Cases\": [\n    {\n      \"MapKinds\": [\n        \"Sea\"\n      ],\n      \"Patch\": {\n        \"ManufactorySpec\": {\n          \"ProductionRecipeIds#append\": [\n            \"Musket\"\n          ]\n        }\n      }\n    }\n  ]\n}"
       }
      ],
      "patches": [],
@@ -3974,12 +4138,12 @@
       "icon": "Arquebus"
      },
      {
-      "good": "Musket",
-      "icon": null
-     },
-     {
       "good": "Blasting Charge",
       "icon": "BlastingCharge"
+     },
+     {
+      "good": "Musket",
+      "icon": null
      }
     ],
     "trains": null,
@@ -4004,7 +4168,7 @@
       },
       {
        "name": "ManufactorySpec",
-       "json": "{\n  \"ProductionRecipeIds\": [\n    \"Arquebus\",\n    \"Musket\",\n    \"BlastingCharge\"\n  ]\n}"
+       "json": "{\n  \"ProductionRecipeIds\": [\n    \"Arquebus\",\n    \"BlastingCharge\"\n  ]\n}"
       },
       {
        "name": "WorkshopSpec",
@@ -4045,6 +4209,14 @@
       {
        "name": "MechanicalConnectorTargetSpec",
        "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
+      },
+      {
+       "name": "WhenSpec",
+       "json": "{\n  \"Cases\": [\n    {\n      \"MapKinds\": [\n        \"Sea\"\n      ],\n      \"Patch\": {\n        \"ManufactorySpec\": {\n          \"ProductionRecipeIds#append\": [\n            \"Musket.IronTeeth\"\n          ]\n        }\n      }\n    }\n  ]\n}"
       }
      ],
      "patches": [],
@@ -4058,7 +4230,7 @@
   "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
-  "description": "Trains its workers as troops: warriors, spearmen, or the faction's own kind.",
+  "description": "Trains its workers as troops.",
   "flavor": "Beavers were made for chewing, not fighting. These ones chew angrily.",
   "icon": "Barracks",
   "factions": {
@@ -4138,6 +4310,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Warrior\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4216,6 +4392,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Warrior\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4229,7 +4409,7 @@
   "mod": "te",
   "category": "Military buildings",
   "category_slug": "military",
-  "description": "Trains its workers to shoot from a distance: archers, or the faction's own kind.",
+  "description": "Trains its workers to shoot from a distance.",
   "flavor": "A beaver with a bow is still a beaver. A beaver with a bow and a grudge is an archer.",
   "icon": "ArcheryRange",
   "factions": {
@@ -4305,6 +4485,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Archer\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4383,6 +4567,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Archer\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4469,6 +4657,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Monk\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4544,6 +4736,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Monk\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4625,6 +4821,10 @@
       {
        "name": "WagonYardSpec",
        "json": "{\n  \"CartCapacity\": 100\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4695,6 +4895,10 @@
       {
        "name": "WagonYardSpec",
        "json": "{\n  \"CartCapacity\": 100\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4801,6 +5005,10 @@
       {
        "name": "MechanicalConnectorTargetSpec",
        "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -4895,6 +5103,10 @@
       },
       {
        "name": "MechanicalConnectorTargetSpec",
+       "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
        "json": "{}"
       }
      ],
@@ -5175,8 +5387,8 @@
   "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
-  "description": "Makes water mines from explosives and metal blocks.",
-  "flavor": "Workers here are paid extra and asked to sneeze outside.",
+  "description": "Makes water mines.",
+  "flavor": "Workers here are asked to sneeze outside.",
   "icon": "MineWorkshop",
   "factions": {
    "Folktails": {
@@ -5344,7 +5556,7 @@
   "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
-  "description": "Releases floating mines that drift with the current and explode against the first building they hit.",
+  "description": "Releases floating mines that drift with the current and explode on contact.",
   "flavor": "Rivers have always carried gifts downstream. Not always nice ones.",
   "icon": "MineLauncher",
   "factions": {
@@ -5503,7 +5715,7 @@
   "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
-  "description": "A mine anchored in the water. Goes off when a boat or a drifting mine comes close.",
+  "description": "A mine anchored in the water. Explodes on contact.",
   "flavor": "Out of sight, out of mind, out of boat.",
   "icon": "MooredMine",
   "factions": {
@@ -5628,8 +5840,8 @@
   "mod": "te",
   "category": "Water mines",
   "category_slug": "water-mines",
-  "description": "Launches boats packed with explosives that sail up the river and blow up against the first building or mine they hit.",
-  "flavor": "\"Technically, it's still a boat.\" —Suli",
+  "description": "Launches boats packed with explosives that sail up the river and explode on contact.",
+  "flavor": "\"Technically, it's still a boat.\" (Suli)",
   "icon": "BoatDock",
   "factions": {
    "Folktails": {
@@ -6069,34 +6281,34 @@
   "mod": "te",
   "category": "Sea",
   "category_slug": "sea",
-  "description": "Sails between islands. Place it on a Shipyard's slip, then send it to another island's coast to land there.",
+  "description": "Sails between islands. Build it at a Shipyard, then send it to another island's coast to land there.",
   "flavor": "“Grandpa sailed to the far island once. He came back with a hat and never said where he got it.” – Little Drizzik",
-  "icon": null,
+  "icon": "Cog",
   "factions": {
    "Folktails": {
     "faction": "Folktails",
     "template": "Cog.Folktails",
-    "science": 700,
+    "science": 1200,
     "cost": [
      {
-      "amount": 60,
+      "amount": 40,
       "good": "Log",
       "icon": "Log"
      },
      {
-      "amount": 25,
+      "amount": 30,
       "good": "Plank",
       "icon": "Plank"
-     },
-     {
-      "amount": 15,
-      "good": "Treated Plank",
-      "icon": "TreatedPlank"
      },
      {
       "amount": 8,
       "good": "Gear",
       "icon": "Gear"
+     },
+     {
+      "amount": 6,
+      "good": "Metal Block",
+      "icon": "MetalBlock"
      }
     ],
     "size": "3 × 7 × 3",
@@ -6105,19 +6317,19 @@
     "makes": [],
     "trains": null,
     "crew": "1 to 6",
-    "range": "0 to 9 tiles",
+    "range": " to 9 tiles",
     "speed": "45 tiles/h",
     "reload": "0.5 h",
     "damage": "4",
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "Cog.Folktails.jpg",
     "modder": {
      "file": "Buildings/Cog/Cog.Folktails.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 60\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 25\n    },\n    {\n      \"Id\": \"TreatedPlank\",\n      \"Amount\": 15\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 8\n    }\n  ],\n  \"ScienceCost\": 700,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"TE.SailSnap\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 8\n    },\n    {\n      \"Id\": \"MetalBlock\",\n      \"Amount\": 6\n    }\n  ],\n  \"ScienceCost\": 1200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6162,13 +6374,121 @@
       {
        "name": "WorkplaceSpec",
        "json": "{\n  \"MaxWorkers\": 2,\n  \"DefaultWorkers\": 2,\n  \"DefaultWorkerType\": \"Beaver\",\n  \"DisallowOtherWorkerTypes\": true,\n  \"WorkerTypeUnlockCosts\": []\n}"
+      },
+      {
+       "name": "ShipDeckSpec",
+       "json": "{\n  \"Spots\": [\n    {\n      \"X\": 1.84,\n      \"Y\": 0.99,\n      \"Z\": 4.69\n    },\n    {\n      \"X\": 1.5,\n      \"Y\": 1.26,\n      \"Z\": 1.86\n    },\n    {\n      \"X\": 1.5,\n      \"Y\": 1.1,\n      \"Z\": 6\n    }\n  ],\n  \"Facing\": 180,\n  \"Yaws\": [\n    145,\n    230,\n    290\n  ]\n}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Cog\",\n  \"Health\": 220,\n  \"TilesPerHour\": 45,\n  \"WindTilesPerHour\": 60,\n  \"CrewCapacity\": 6,\n  \"MinCrew\": 1,\n  \"MinRange\": 0,\n  \"MaxRange\": 9,\n  \"ReloadHours\": 0.5,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 4,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 360,\n  \"WindTurnDegreesPerHour\": 480,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"Cog\",\n  \"Health\": 220,\n  \"TilesPerHour\": 45,\n  \"WindTilesPerHour\": 60,\n  \"CrewCapacity\": 6,\n  \"MinCrew\": 1,\n  \"MaxRange\": 9,\n  \"ReloadHours\": 0.5,\n  \"Damage\": 4,\n  \"TurnDegreesPerHour\": 360,\n  \"WindTurnDegreesPerHour\": 480\n}"
+      }
+     ]
+    }
+   },
+   "IronTeeth": {
+    "faction": "Iron Teeth",
+    "template": "Cog.IronTeeth",
+    "science": 1200,
+    "cost": [
+     {
+      "amount": 40,
+      "good": "Log",
+      "icon": "Log"
+     },
+     {
+      "amount": 30,
+      "good": "Plank",
+      "icon": "Plank"
+     },
+     {
+      "amount": 8,
+      "good": "Gear",
+      "icon": "Gear"
+     },
+     {
+      "amount": 6,
+      "good": "Metal Block",
+      "icon": "MetalBlock"
+     }
+    ],
+    "size": "3 × 7 × 3",
+    "workers": 2,
+    "health": 220,
+    "makes": [],
+    "trains": null,
+    "crew": "1 to 6",
+    "range": " to 9 tiles",
+    "speed": "45 tiles/h",
+    "reload": "0.5 h",
+    "damage": "4",
+    "structure_damage": null,
+    "ammo": null,
+    "shot": "Cog.IronTeeth.jpg",
+    "modder": {
+     "file": "Buildings/Cog/Cog.IronTeeth.blueprint.json",
+     "components": [
+      {
+       "name": "BuildingSpec",
+       "json": "{\n  \"SelectionSoundName\": \"TE.SailSnap\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 8\n    },\n    {\n      \"Id\": \"MetalBlock\",\n      \"Amount\": 6\n    }\n  ],\n  \"ScienceCost\": 1200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
+      },
+      {
+       "name": "TemplateSpec",
+       "json": "{\n  \"TemplateName\": \"Cog.IronTeeth\",\n  \"BackwardCompatibleTemplateNames\": [],\n  \"RequiredFeatureToggle\": \"\",\n  \"DisablingFeatureToggle\": \"\"\n}"
+      },
+      {
+       "name": "BlockObjectSpec",
+       "json": "{\n  \"Size\": {\n    \"X\": 3,\n    \"Y\": 7,\n    \"Z\": 3\n  }\n}"
+      },
+      {
+       "name": "PlaceableBlockObjectSpec",
+       "json": "{\n  \"ToolGroupId\": \"TimberEmpiresSiege\",\n  \"ToolOrder\": 49,\n  \"ToolShape\": \"Square\",\n  \"Layout\": \"Single\",\n  \"CustomPivot\": {\n    \"HasCustomPivot\": false,\n    \"Coordinates\": {\n      \"X\": 0,\n      \"Y\": 0,\n      \"Z\": 0\n    }\n  },\n  \"CanBeAttachedToTerrainSide\": false,\n  \"DevModeTool\": false\n}"
+      },
+      {
+       "name": "ConstructionSiteBuildTimeSpec",
+       "json": "{\n  \"ConstructionTimeInHours\": 24\n}"
+      },
+      {
+       "name": "ShipCrewModeSpec",
+       "json": "{\n  \"Military\": false\n}"
+      },
+      {
+       "name": "ShipHoldSpec",
+       "json": "{\n  \"Slots\": 5,\n  \"Capacity\": 240\n}"
+      },
+      {
+       "name": "StructureHealthSpec",
+       "json": "{\n  \"Machine\": true\n}"
+      },
+      {
+       "name": "WarBoatSpec",
+       "json": "{}"
+      },
+      {
+       "name": "WarriorCrewSpec",
+       "json": "{\n  \"CrewAnimation\": \"\",\n  \"BoardsOverBow\": true\n}"
+      },
+      {
+       "name": "ShipArmamentSpec",
+       "json": "{\n  \"Hull\": {\n    \"X\": 0.275,\n    \"Y\": 0.2,\n    \"Width\": 2.45,\n    \"Length\": 6.6\n  },\n  \"Ports\": [\n    {\n      \"Side\": 1,\n      \"Position\": {\n        \"X\": 2.757,\n        \"Y\": 1.114,\n        \"Z\": 2.956\n      }\n    },\n    {\n      \"Side\": 1,\n      \"Position\": {\n        \"X\": 2.757,\n        \"Y\": 1.114,\n        \"Z\": 3.64\n      }\n    },\n    {\n      \"Side\": 1,\n      \"Position\": {\n        \"X\": 2.757,\n        \"Y\": 1.114,\n        \"Z\": 4.323\n      }\n    },\n    {\n      \"Side\": -1,\n      \"Position\": {\n        \"X\": 0.243,\n        \"Y\": 1.114,\n        \"Z\": 2.956\n      }\n    },\n    {\n      \"Side\": -1,\n      \"Position\": {\n        \"X\": 0.243,\n        \"Y\": 1.114,\n        \"Z\": 3.64\n      }\n    },\n    {\n      \"Side\": -1,\n      \"Position\": {\n        \"X\": 0.243,\n        \"Y\": 1.114,\n        \"Z\": 4.323\n      }\n    }\n  ]\n}"
+      },
+      {
+       "name": "WorkplaceSpec",
+       "json": "{\n  \"MaxWorkers\": 2,\n  \"DefaultWorkers\": 2,\n  \"DefaultWorkerType\": \"Beaver\",\n  \"DisallowOtherWorkerTypes\": true,\n  \"WorkerTypeUnlockCosts\": []\n}"
+      },
+      {
+       "name": "ShipDeckSpec",
+       "json": "{\n  \"Spots\": [\n    {\n      \"X\": 1.84,\n      \"Y\": 0.99,\n      \"Z\": 4.69\n    },\n    {\n      \"X\": 1.5,\n      \"Y\": 1.26,\n      \"Z\": 1.86\n    },\n    {\n      \"X\": 1.5,\n      \"Y\": 1.1,\n      \"Z\": 6\n    }\n  ],\n  \"Facing\": 180,\n  \"Yaws\": [\n    145,\n    230,\n    290\n  ]\n}"
+      }
+     ],
+     "patches": [],
+     "stats": [
+      {
+       "from": "Troops/TroopStats.blueprint.json",
+       "json": "{\n  \"Name\": \"Cog\",\n  \"Health\": 220,\n  \"TilesPerHour\": 45,\n  \"WindTilesPerHour\": 60,\n  \"CrewCapacity\": 6,\n  \"MinCrew\": 1,\n  \"MaxRange\": 9,\n  \"ReloadHours\": 0.5,\n  \"Damage\": 4,\n  \"TurnDegreesPerHour\": 360,\n  \"WindTurnDegreesPerHour\": 480\n}"
       }
      ]
     }
@@ -6180,37 +6500,32 @@
   "mod": "archipelago",
   "category": "Sea",
   "category_slug": "sea",
-  "description": "Builds ships. Put it on a shore with its slip in the shallows, then place a ship on the slip. Its workers also repair damaged ships sent back to it.",
+  "description": "Builds ships. Place it on a shore with its dock in the shallows, then place a ship on the dock. Its workers also repair damaged ships that come back to it.",
   "flavor": "Beavers have been building things that float for ages. This is the first one meant to.",
   "icon": null,
   "factions": {
    "Folktails": {
     "faction": "Folktails",
     "template": "NavalWorkshop.Folktails",
-    "science": 500,
+    "science": 200,
     "cost": [
      {
-      "amount": 150,
+      "amount": 30,
       "good": "Log",
       "icon": "Log"
      },
      {
-      "amount": 70,
+      "amount": 30,
       "good": "Plank",
       "icon": "Plank"
      },
      {
-      "amount": 40,
-      "good": "Treated Plank",
-      "icon": "TreatedPlank"
-     },
-     {
-      "amount": 20,
+      "amount": 5,
       "good": "Gear",
       "icon": "Gear"
      }
     ],
-    "size": "8 × 14 × 6",
+    "size": "3 × 13 × 5",
     "workers": 4,
     "health": 300,
     "makes": [],
@@ -6222,13 +6537,13 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "NavalWorkshop.Folktails.jpg",
     "modder": {
      "file": "Buildings/NavalWorkshop/NavalWorkshop.Folktails.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 150\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 70\n    },\n    {\n      \"Id\": \"TreatedPlank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 20\n    }\n  ],\n  \"ScienceCost\": 500,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"Archipelago.Rope\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 5\n    }\n  ],\n  \"ScienceCost\": 200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6236,11 +6551,11 @@
       },
       {
        "name": "BlockObjectSpec",
-       "json": "{\n  \"Size\": {\n    \"X\": 8,\n    \"Y\": 14,\n    \"Z\": 6\n  }\n}"
+       "json": "{\n  \"Size\": {\n    \"X\": 3,\n    \"Y\": 13,\n    \"Z\": 5\n  }\n}"
       },
       {
        "name": "PlaceableBlockObjectSpec",
-       "json": "{\n  \"ToolGroupId\": \"ArchipelagoSea\",\n  \"ToolOrder\": 49,\n  \"ToolShape\": \"Square\",\n  \"Layout\": \"Single\",\n  \"CustomPivot\": {\n    \"HasCustomPivot\": true,\n    \"Coordinates\": {\n      \"X\": 4,\n      \"Y\": 1.5,\n      \"Z\": 0\n    }\n  },\n  \"CanBeAttachedToTerrainSide\": false,\n  \"DevModeTool\": false\n}"
+       "json": "{\n  \"ToolGroupId\": \"ArchipelagoSea\",\n  \"ToolOrder\": 49,\n  \"ToolShape\": \"Square\",\n  \"Layout\": \"Single\",\n  \"CustomPivot\": {\n    \"HasCustomPivot\": true,\n    \"Coordinates\": {\n      \"X\": 1.5,\n      \"Y\": 1,\n      \"Z\": 0\n    }\n  },\n  \"CanBeAttachedToTerrainSide\": false,\n  \"DevModeTool\": false\n}"
       },
       {
        "name": "ConstructionSiteBuildTimeSpec",
@@ -6248,7 +6563,7 @@
       },
       {
        "name": "NavalWorkshopSpec",
-       "json": "{\n  \"SlipX\": 1,\n  \"SlipY\": 3,\n  \"SlipWidth\": 6,\n  \"SlipLength\": 11\n}"
+       "json": "{\n  \"SlipX\": -2,\n  \"SlipY\": 3,\n  \"SlipWidth\": 4,\n  \"SlipLength\": 10\n}"
       },
       {
        "name": "WorkplaceSpec",
@@ -6259,7 +6574,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"NavalWorkshop\",\n  \"Health\": 300,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"NavalWorkshop\",\n  \"Health\": 300\n}"
       }
      ]
     }
@@ -6267,30 +6582,25 @@
    "IronTeeth": {
     "faction": "Iron Teeth",
     "template": "NavalWorkshop.IronTeeth",
-    "science": 500,
+    "science": 200,
     "cost": [
      {
-      "amount": 150,
+      "amount": 30,
       "good": "Log",
       "icon": "Log"
      },
      {
-      "amount": 70,
+      "amount": 30,
       "good": "Plank",
       "icon": "Plank"
      },
      {
-      "amount": 40,
-      "good": "Treated Plank",
-      "icon": "TreatedPlank"
-     },
-     {
-      "amount": 20,
+      "amount": 5,
       "good": "Gear",
       "icon": "Gear"
      }
     ],
-    "size": "8 × 14 × 6",
+    "size": "3 × 13 × 5",
     "workers": 4,
     "health": 300,
     "makes": [],
@@ -6302,13 +6612,13 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "NavalWorkshop.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/NavalWorkshop/NavalWorkshop.IronTeeth.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 150\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 70\n    },\n    {\n      \"Id\": \"TreatedPlank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 20\n    }\n  ],\n  \"ScienceCost\": 500,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"Archipelago.Rope\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 5\n    }\n  ],\n  \"ScienceCost\": 200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6316,11 +6626,11 @@
       },
       {
        "name": "BlockObjectSpec",
-       "json": "{\n  \"Size\": {\n    \"X\": 8,\n    \"Y\": 14,\n    \"Z\": 6\n  }\n}"
+       "json": "{\n  \"Size\": {\n    \"X\": 3,\n    \"Y\": 13,\n    \"Z\": 5\n  }\n}"
       },
       {
        "name": "PlaceableBlockObjectSpec",
-       "json": "{\n  \"ToolGroupId\": \"ArchipelagoSea\",\n  \"ToolOrder\": 49,\n  \"ToolShape\": \"Square\",\n  \"Layout\": \"Single\",\n  \"CustomPivot\": {\n    \"HasCustomPivot\": true,\n    \"Coordinates\": {\n      \"X\": 4,\n      \"Y\": 1.5,\n      \"Z\": 0\n    }\n  },\n  \"CanBeAttachedToTerrainSide\": false,\n  \"DevModeTool\": false\n}"
+       "json": "{\n  \"ToolGroupId\": \"ArchipelagoSea\",\n  \"ToolOrder\": 49,\n  \"ToolShape\": \"Square\",\n  \"Layout\": \"Single\",\n  \"CustomPivot\": {\n    \"HasCustomPivot\": true,\n    \"Coordinates\": {\n      \"X\": 1.5,\n      \"Y\": 1,\n      \"Z\": 0\n    }\n  },\n  \"CanBeAttachedToTerrainSide\": false,\n  \"DevModeTool\": false\n}"
       },
       {
        "name": "ConstructionSiteBuildTimeSpec",
@@ -6328,7 +6638,7 @@
       },
       {
        "name": "NavalWorkshopSpec",
-       "json": "{\n  \"SlipX\": 1,\n  \"SlipY\": 3,\n  \"SlipWidth\": 6,\n  \"SlipLength\": 11\n}"
+       "json": "{\n  \"SlipX\": -2,\n  \"SlipY\": 3,\n  \"SlipWidth\": 4,\n  \"SlipLength\": 10\n}"
       },
       {
        "name": "WorkplaceSpec",
@@ -6339,7 +6649,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"NavalWorkshop\",\n  \"Health\": 300,\n  \"TilesPerHour\": 0,\n  \"CrewCapacity\": 0,\n  \"MinCrew\": 0,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 0,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"NavalWorkshop\",\n  \"Health\": 300\n}"
       }
      ]
     }
@@ -6351,17 +6661,17 @@
   "mod": "te",
   "category": "Sea",
   "category_slug": "sea",
-  "description": "Carries troops across the sea. Place it on the slip of a Naval Workshop. Once built and crewed, send it to another island's coast to land them.",
+  "description": "Carries troops across the sea. Build it at a Shipyard. Once crewed, send it to another island's coast to land them.",
   "flavor": "“It's two boats tied together, and it has never once tipped over.” – Shipwright Mirelle",
   "icon": null,
   "factions": {
    "Folktails": {
     "faction": "Folktails",
     "template": "WarBoat.Folktails",
-    "science": 1200,
+    "science": 2500,
     "cost": [
      {
-      "amount": 100,
+      "amount": 60,
       "good": "Log",
       "icon": "Log"
      },
@@ -6371,14 +6681,19 @@
       "icon": "Plank"
      },
      {
-      "amount": 30,
+      "amount": 20,
       "good": "Treated Plank",
       "icon": "TreatedPlank"
      },
      {
-      "amount": 15,
+      "amount": 12,
       "good": "Gear",
       "icon": "Gear"
+     },
+     {
+      "amount": 15,
+      "good": "Metal Block",
+      "icon": "MetalBlock"
      }
     ],
     "size": "4 × 10 × 3",
@@ -6387,19 +6702,19 @@
     "makes": [],
     "trains": null,
     "crew": "2 to 12",
-    "range": "0 to 10 tiles",
+    "range": " to 10 tiles",
     "speed": "36 tiles/h",
     "reload": "0.5 h",
     "damage": "4",
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WarBoat.Folktails.jpg",
     "modder": {
      "file": "Buildings/WarBoat/WarBoat.Folktails.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 100\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"TreatedPlank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 15\n    }\n  ],\n  \"ScienceCost\": 1200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"TE.SailSnap\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 60\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"TreatedPlank\",\n      \"Amount\": 20\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 12\n    },\n    {\n      \"Id\": \"MetalBlock\",\n      \"Amount\": 15\n    }\n  ],\n  \"ScienceCost\": 2500,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6444,13 +6759,17 @@
       {
        "name": "ShipCrewModeSpec",
        "json": "{\n  \"Military\": true\n}"
+      },
+      {
+       "name": "ShipDeckSpec",
+       "json": "{\n  \"Spots\": [\n    {\n      \"X\": 1.95,\n      \"Y\": 3.9,\n      \"Z\": 8.7\n    },\n    {\n      \"X\": 2.75,\n      \"Y\": 1.63,\n      \"Z\": 2.2\n    },\n    {\n      \"X\": 2,\n      \"Y\": 0.92,\n      \"Z\": 4\n    },\n    {\n      \"X\": 3.24,\n      \"Y\": 1.39,\n      \"Z\": 5.2\n    },\n    {\n      \"X\": 0.79,\n      \"Y\": 1.39,\n      \"Z\": 5.69\n    },\n    {\n      \"X\": 1.97,\n      \"Y\": 1.4,\n      \"Z\": 6.77\n    }\n  ],\n  \"Facing\": 180,\n  \"Yaws\": [\n    330,\n    150,\n    290,\n    100,\n    240,\n    180\n  ]\n}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WarBoat\",\n  \"Health\": 400,\n  \"TilesPerHour\": 36,\n  \"WindTilesPerHour\": 62,\n  \"CrewCapacity\": 12,\n  \"MinCrew\": 2,\n  \"MinRange\": 0,\n  \"MaxRange\": 10,\n  \"ReloadHours\": 0.5,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 4,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 420,\n  \"WindTurnDegreesPerHour\": 600,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WarBoat.Folktails\",\n  \"Health\": 400,\n  \"TilesPerHour\": 36,\n  \"WindTilesPerHour\": 62,\n  \"CrewCapacity\": 12,\n  \"MinCrew\": 2,\n  \"MaxRange\": 10,\n  \"ReloadHours\": 0.5,\n  \"Damage\": 4,\n  \"TurnDegreesPerHour\": 420,\n  \"WindTurnDegreesPerHour\": 600\n}"
       }
      ]
     }
@@ -6462,17 +6781,17 @@
   "mod": "te",
   "category": "Sea",
   "category_slug": "sea",
-  "description": "Carries troops across the sea. Place it on the slip of a Naval Workshop. Once built and crewed, send it to another island's coast to land them.",
+  "description": "Carries troops across the sea. Build it at a Shipyard. Once crewed, send it to another island's coast to land them.",
   "flavor": "The wind takes days off. The boiler doesn't.",
   "icon": null,
   "factions": {
    "IronTeeth": {
     "faction": "Iron Teeth",
     "template": "WarBoat.IronTeeth",
-    "science": 1200,
+    "science": 2500,
     "cost": [
      {
-      "amount": 100,
+      "amount": 60,
       "good": "Log",
       "icon": "Log"
      },
@@ -6482,14 +6801,19 @@
       "icon": "Plank"
      },
      {
-      "amount": 30,
+      "amount": 20,
       "good": "Treated Plank",
       "icon": "TreatedPlank"
      },
      {
-      "amount": 15,
+      "amount": 12,
       "good": "Gear",
       "icon": "Gear"
+     },
+     {
+      "amount": 15,
+      "good": "Metal Block",
+      "icon": "MetalBlock"
      }
     ],
     "size": "4 × 10 × 3",
@@ -6498,19 +6822,19 @@
     "makes": [],
     "trains": null,
     "crew": "2 to 12",
-    "range": "0 to 10 tiles",
+    "range": " to 10 tiles",
     "speed": "40 tiles/h",
     "reload": "0.5 h",
     "damage": "4",
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "WarBoat.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/WarBoat/WarBoat.IronTeeth.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 100\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"TreatedPlank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 15\n    }\n  ],\n  \"ScienceCost\": 1200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"TE.SailSnap\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 60\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"TreatedPlank\",\n      \"Amount\": 20\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 12\n    },\n    {\n      \"Id\": \"MetalBlock\",\n      \"Amount\": 15\n    }\n  ],\n  \"ScienceCost\": 2500,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6559,13 +6883,17 @@
       {
        "name": "ShipCrewModeSpec",
        "json": "{\n  \"Military\": true\n}"
+      },
+      {
+       "name": "ShipDeckSpec",
+       "json": "{\n  \"Spots\": [\n    {\n      \"X\": 1.48,\n      \"Y\": 2.93,\n      \"Z\": 1.59\n    },\n    {\n      \"X\": 2.99,\n      \"Y\": 2.38,\n      \"Z\": 4.05\n    },\n    {\n      \"X\": 1.15,\n      \"Y\": 2.38,\n      \"Z\": 5.2\n    },\n    {\n      \"X\": 2.61,\n      \"Y\": 2.34,\n      \"Z\": 5.25\n    }\n  ],\n  \"Facing\": 180,\n  \"Yaws\": [\n    210,\n    90,\n    290,\n    100\n  ]\n}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"WarBoat\",\n  \"Health\": 400,\n  \"TilesPerHour\": 36,\n  \"WindTilesPerHour\": 62,\n  \"CrewCapacity\": 12,\n  \"MinCrew\": 2,\n  \"MinRange\": 0,\n  \"MaxRange\": 10,\n  \"ReloadHours\": 0.5,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 4,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 420,\n  \"WindTurnDegreesPerHour\": 600,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"WarBoat.IronTeeth\",\n  \"Health\": 540,\n  \"TilesPerHour\": 40,\n  \"WindTilesPerHour\": 46,\n  \"CrewCapacity\": 12,\n  \"MinCrew\": 2,\n  \"MaxRange\": 10,\n  \"ReloadHours\": 0.5,\n  \"Damage\": 4,\n  \"TurnDegreesPerHour\": 220,\n  \"WindTurnDegreesPerHour\": 260\n}"
       }
      ]
     }
@@ -6577,27 +6905,27 @@
   "mod": "archipelago",
   "category": "Sea",
   "category_slug": "sea",
-  "description": "Ships moored by it trade goods. Set what it buys and sells and what each good is worth, and ships on a trade route call here. Build it on a shore with its pier in the water.",
-  "flavor": "“Two logs for a water? I've been robbed worse by my own brother.” – Bramwick the Haggler",
-  "icon": null,
+  "description": "Ships moored by it trade goods. Choose what it buys and sells and what each good is worth: ships on a trade route will stop here. Build it on a shore with its pier in the water.",
+  "flavor": "“Everything has a price. Mine is higher.” – Bramwick the Haggler",
+  "icon": "TradePost",
   "factions": {
    "Folktails": {
     "faction": "Folktails",
     "template": "TradePost.Folktails",
-    "science": 250,
+    "science": 200,
     "cost": [
      {
-      "amount": 60,
+      "amount": 20,
       "good": "Log",
       "icon": "Log"
      },
      {
-      "amount": 40,
+      "amount": 15,
       "good": "Plank",
       "icon": "Plank"
      },
      {
-      "amount": 10,
+      "amount": 3,
       "good": "Gear",
       "icon": "Gear"
      }
@@ -6614,13 +6942,13 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "TradePost.Folktails.jpg",
     "modder": {
      "file": "Buildings/TradePost/TradePost.Folktails.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 60\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 10\n    }\n  ],\n  \"ScienceCost\": 250,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"Archipelago.Coins\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 20\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 15\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 3\n    }\n  ],\n  \"ScienceCost\": 200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6662,20 +6990,20 @@
    "IronTeeth": {
     "faction": "Iron Teeth",
     "template": "TradePost.IronTeeth",
-    "science": 250,
+    "science": 200,
     "cost": [
      {
-      "amount": 60,
+      "amount": 20,
       "good": "Log",
       "icon": "Log"
      },
      {
-      "amount": 40,
+      "amount": 15,
       "good": "Plank",
       "icon": "Plank"
      },
      {
-      "amount": 10,
+      "amount": 3,
       "good": "Gear",
       "icon": "Gear"
      }
@@ -6692,13 +7020,13 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "TradePost.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/TradePost/TradePost.IronTeeth.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 60\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 10\n    }\n  ],\n  \"ScienceCost\": 250,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"Archipelago.Coins\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 20\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 15\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 3\n    }\n  ],\n  \"ScienceCost\": 200,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": false,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6744,27 +7072,27 @@
   "mod": "archipelago",
   "category": "Sea",
   "category_slug": "sea",
-  "description": "A cargo boat with a big open hold. Place it on the slip of a Shipyard.",
+  "description": "A cargo boat with a big open hold. Build it at a Shipyard.",
   "flavor": "Whatever doesn't fit gets tied on top.",
-  "icon": null,
+  "icon": "Barge",
   "factions": {
    "Folktails": {
     "faction": "Folktails",
     "template": "Barge.Folktails",
-    "science": 500,
+    "science": 150,
     "cost": [
      {
-      "amount": 40,
+      "amount": 15,
       "good": "Log",
       "icon": "Log"
      },
      {
-      "amount": 30,
+      "amount": 15,
       "good": "Plank",
       "icon": "Plank"
      },
      {
-      "amount": 6,
+      "amount": 3,
       "good": "Gear",
       "icon": "Gear"
      }
@@ -6781,13 +7109,13 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "Barge.Folktails.jpg",
     "modder": {
      "file": "Buildings/Barge/Barge.Folktails.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 6\n    }\n  ],\n  \"ScienceCost\": 500,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"Archipelago.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 15\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 15\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 3\n    }\n  ],\n  \"ScienceCost\": 150,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6816,6 +7144,18 @@
       {
        "name": "BoatSpec",
        "json": "{\n  \"TilesPerHour\": 35,\n  \"WindTilesPerHour\": 45,\n  \"TurnDegreesPerHour\": 300,\n  \"WindTurnDegreesPerHour\": 380,\n  \"Draft\": 0.4\n}"
+      },
+      {
+       "name": "DistrictCenterSpec",
+       "json": "{}"
+      },
+      {
+       "name": "PathSpec",
+       "json": "{\n  \"MainPathCoordinates\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  }\n}"
+      },
+      {
+       "name": "ShipDeckSpec",
+       "json": "{\n  \"Spots\": [\n    {\n      \"X\": 0.68,\n      \"Y\": 1.03,\n      \"Z\": 3\n    },\n    {\n      \"X\": 1.59,\n      \"Y\": 1.01,\n      \"Z\": 3.02\n    },\n    {\n      \"X\": 0.77,\n      \"Y\": 1,\n      \"Z\": 6.06\n    }\n  ],\n  \"Facing\": 180,\n  \"Yaws\": [\n    210,\n    150,\n    290\n  ]\n}"
       }
      ],
      "patches": [
@@ -6844,7 +7184,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Barge\",\n  \"Health\": 260,\n  \"TilesPerHour\": 35,\n  \"WindTilesPerHour\": 45,\n  \"CrewCapacity\": 10,\n  \"MinCrew\": 2,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0.5,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 300,\n  \"WindTurnDegreesPerHour\": 380,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"Barge\",\n  \"Health\": 260,\n  \"TilesPerHour\": 35,\n  \"WindTilesPerHour\": 45,\n  \"CrewCapacity\": 10,\n  \"MinCrew\": 2,\n  \"ReloadHours\": 0.5,\n  \"TurnDegreesPerHour\": 300,\n  \"WindTurnDegreesPerHour\": 380\n}"
       }
      ]
     }
@@ -6852,20 +7192,20 @@
    "IronTeeth": {
     "faction": "Iron Teeth",
     "template": "Barge.IronTeeth",
-    "science": 500,
+    "science": 150,
     "cost": [
      {
-      "amount": 40,
+      "amount": 15,
       "good": "Log",
       "icon": "Log"
      },
      {
-      "amount": 30,
+      "amount": 15,
       "good": "Plank",
       "icon": "Plank"
      },
      {
-      "amount": 6,
+      "amount": 3,
       "good": "Gear",
       "icon": "Gear"
      }
@@ -6882,13 +7222,13 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "Barge.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Barge/Barge.IronTeeth.blueprint.json",
      "components": [
       {
        "name": "BuildingSpec",
-       "json": "{\n  \"SelectionSoundName\": \"TE.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 40\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 30\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 6\n    }\n  ],\n  \"ScienceCost\": 500,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
+       "json": "{\n  \"SelectionSoundName\": \"Archipelago.Water\",\n  \"LoopingSoundName\": \"\",\n  \"BuildingCost\": [\n    {\n      \"Id\": \"Log\",\n      \"Amount\": 15\n    },\n    {\n      \"Id\": \"Plank\",\n      \"Amount\": 15\n    },\n    {\n      \"Id\": \"Gear\",\n      \"Amount\": 3\n    }\n  ],\n  \"ScienceCost\": 150,\n  \"PlaceFinished\": false,\n  \"FinishableWithBeaversOnSite\": true,\n  \"DrawRangeBoundsOnIt\": false\n}"
       },
       {
        "name": "TemplateSpec",
@@ -6917,6 +7257,18 @@
       {
        "name": "BoatSpec",
        "json": "{\n  \"TilesPerHour\": 35,\n  \"WindTilesPerHour\": 45,\n  \"TurnDegreesPerHour\": 300,\n  \"WindTurnDegreesPerHour\": 380,\n  \"Draft\": 0.4\n}"
+      },
+      {
+       "name": "DistrictCenterSpec",
+       "json": "{}"
+      },
+      {
+       "name": "PathSpec",
+       "json": "{\n  \"MainPathCoordinates\": {\n    \"X\": 0,\n    \"Y\": 0,\n    \"Z\": 0\n  }\n}"
+      },
+      {
+       "name": "ShipDeckSpec",
+       "json": "{\n  \"Spots\": [\n    {\n      \"X\": 1.51,\n      \"Y\": 1.01,\n      \"Z\": 2.98\n    },\n    {\n      \"X\": 0.46,\n      \"Y\": 1.01,\n      \"Z\": 3.02\n    },\n    {\n      \"X\": 0.63,\n      \"Y\": 1.06,\n      \"Z\": 6.01\n    }\n  ],\n  \"Facing\": 180,\n  \"Yaws\": [\n    145,\n    230,\n    290\n  ]\n}"
       }
      ],
      "patches": [
@@ -6945,7 +7297,7 @@
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Barge\",\n  \"Health\": 260,\n  \"TilesPerHour\": 35,\n  \"WindTilesPerHour\": 45,\n  \"CrewCapacity\": 10,\n  \"MinCrew\": 2,\n  \"MinRange\": 0,\n  \"MaxRange\": 0,\n  \"ReloadHours\": 0.5,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 0,\n  \"Damage\": 0,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 300,\n  \"WindTurnDegreesPerHour\": 380,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0\n}"
+       "json": "{\n  \"Name\": \"Barge\",\n  \"Health\": 260,\n  \"TilesPerHour\": 35,\n  \"WindTilesPerHour\": 45,\n  \"CrewCapacity\": 10,\n  \"MinCrew\": 2,\n  \"ReloadHours\": 0.5,\n  \"TurnDegreesPerHour\": 300,\n  \"WindTurnDegreesPerHour\": 380\n}"
       }
      ]
     }
@@ -6957,7 +7309,7 @@
   "mod": "archipelago",
   "category": "Sea",
   "category_slug": "sea",
-  "description": "One beaver at a time stretches out in the sun. Build it on a beach.",
+  "description": "Beavers stretch out here in the sun. Build it on a beach.",
   "flavor": "“Ten more minutes, then I'll go gnaw something. Promise.” – Lazy Pelloo",
   "icon": null,
   "factions": {
@@ -6989,7 +7341,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "SunLounger.Folktails.jpg",
     "modder": {
      "file": "Buildings/SunLounger/SunLounger.Folktails.blueprint.json",
      "components": [
@@ -7050,7 +7402,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "SunLounger.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/SunLounger/SunLounger.IronTeeth.blueprint.json",
      "components": [
@@ -7247,7 +7599,7 @@
   "mod": "te",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
-  "description": "Trains militia from logs and scouts from berries.",
+  "description": "Trains militia and scouts.",
   "flavor": "A log in each paw, and off they go.",
   "icon": null,
   "factions": {
@@ -7266,7 +7618,16 @@
     "workers": 4,
     "health": 160,
     "makes": [],
-    "trains": null,
+    "trains": [
+     {
+      "name": "Militia",
+      "slug": "militia"
+     },
+     {
+      "name": "Scout",
+      "slug": "scout"
+     }
+    ],
     "crew": null,
     "range": null,
     "speed": null,
@@ -7274,7 +7635,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "MusterPost.Folktails.jpg",
     "modder": {
      "file": "Buildings/MusterPost/MusterPost.Folktails.blueprint.json",
      "components": [
@@ -7305,6 +7666,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Militia\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -7326,7 +7691,16 @@
     "workers": 4,
     "health": 160,
     "makes": [],
-    "trains": null,
+    "trains": [
+     {
+      "name": "Militia",
+      "slug": "militia"
+     },
+     {
+      "name": "Scout",
+      "slug": "scout"
+     }
+    ],
     "crew": null,
     "range": null,
     "speed": null,
@@ -7334,7 +7708,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "MusterPost.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/MusterPost/MusterPost.IronTeeth.blueprint.json",
      "components": [
@@ -7365,6 +7739,10 @@
       {
        "name": "WorkplaceWorkerOutfitSpec",
        "json": "{\n  \"WorkerOutfit\": \"Militia\"\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
@@ -7609,7 +7987,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "ResinIgniter.Folktails.jpg",
     "modder": {
      "file": "Buildings/ResinIgniter/ResinIgniter.Folktails.blueprint.json",
      "components": [
@@ -7640,6 +8018,10 @@
       {
        "name": "UnderstructureConstraintSpec",
        "json": "{\n  \"UnderstructureTemplateNames\": [\n    \"ResinPuddle.Folktails\",\n    \"ResinPuddle.IronTeeth\"\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],
@@ -7674,7 +8056,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "ResinIgniter.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/ResinIgniter/ResinIgniter.IronTeeth.blueprint.json",
      "components": [
@@ -7705,6 +8087,10 @@
       {
        "name": "UnderstructureConstraintSpec",
        "json": "{\n  \"UnderstructureTemplateNames\": [\n    \"ResinPuddle.Folktails\",\n    \"ResinPuddle.IronTeeth\"\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],
@@ -7893,7 +8279,7 @@
   "mod": "te",
   "category": "Territory and trade",
   "category_slug": "territory-and-trade",
-  "description": "Burns the horde in a cone in front of it, using up extract as it fires. Short range, deadly to zombies. Its crew moves and aims it, on the ground or on a tower.",
+  "description": "Burns the horde in a cone in front of it, using up extract as it fires. Short range, deadly to zombies.",
   "flavor": "Extract in, ashes out.",
   "icon": "Flamethrower",
   "factions": {
@@ -7930,7 +8316,7 @@
     "damage": "700, 1 tiles around",
     "structure_damage": null,
     "ammo": "Extract, holds 30",
-    "shot": null,
+    "shot": "Flamethrower.Folktails.jpg",
     "modder": {
      "file": "Buildings/Flamethrower/Flamethrower.Folktails.blueprint.json",
      "components": [
@@ -7955,10 +8341,6 @@
        "json": "{}"
       },
       {
-       "name": "HordeOnlySpec",
-       "json": "{}"
-      },
-      {
        "name": "SiegeMoverSpec",
        "json": "{\n  \"CrewRange\": 0\n}"
       },
@@ -7973,13 +8355,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 300,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"Extract\",\n      \"GoodPerHour\": 0.1\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Flamethrower\",\n  \"Health\": 170,\n  \"AmmoCapacity\": 30,\n  \"AmmoCapacityOnTower\": 48,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 0.8,\n  \"MaxRange\": 7,\n  \"MinRangeOnTower\": 0.8,\n  \"MaxRangeOnTower\": 9,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 1,\n  \"Damage\": 700,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 120,\n  \"TurnDegreesPerHourOnTower\": 180,\n  \"FuelPerHour\": 15,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 6\n}"
+       "json": "{\n  \"Name\": \"Flamethrower\",\n  \"Health\": 170,\n  \"AmmoCapacity\": 30,\n  \"AmmoCapacityOnTower\": 48,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 0.8,\n  \"MaxRange\": 7,\n  \"MinRangeOnTower\": 0.8,\n  \"MaxRangeOnTower\": 9,\n  \"SplashRadius\": 1,\n  \"Damage\": 700,\n  \"TurnDegreesPerHour\": 120,\n  \"TurnDegreesPerHourOnTower\": 180,\n  \"FuelPerHour\": 15,\n  \"ZombieFactor\": 6\n}"
       }
      ]
     }
@@ -8017,7 +8403,7 @@
     "damage": "700, 1 tiles around",
     "structure_damage": null,
     "ammo": "Extract, holds 30",
-    "shot": null,
+    "shot": "Flamethrower.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/Flamethrower/Flamethrower.IronTeeth.blueprint.json",
      "components": [
@@ -8042,10 +8428,6 @@
        "json": "{}"
       },
       {
-       "name": "HordeOnlySpec",
-       "json": "{}"
-      },
-      {
        "name": "SiegeMoverSpec",
        "json": "{\n  \"CrewRange\": 0\n}"
       },
@@ -8060,13 +8442,17 @@
       {
        "name": "GoodConsumingBuildingSpec",
        "json": "{\n  \"FullInventoryWorkHours\": 300,\n  \"ConsumedGoods\": [\n    {\n      \"GoodId\": \"Extract\",\n      \"GoodPerHour\": 0.1\n    }\n  ]\n}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{}"
       }
      ],
      "patches": [],
      "stats": [
       {
        "from": "Troops/TroopStats.blueprint.json",
-       "json": "{\n  \"Name\": \"Flamethrower\",\n  \"Health\": 170,\n  \"AmmoCapacity\": 30,\n  \"AmmoCapacityOnTower\": 48,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 0.8,\n  \"MaxRange\": 7,\n  \"MinRangeOnTower\": 0.8,\n  \"MaxRangeOnTower\": 9,\n  \"ReloadHours\": 0,\n  \"FlightHours\": 0,\n  \"Spread\": 0,\n  \"SplashRadius\": 1,\n  \"Damage\": 700,\n  \"StructureDamage\": 0,\n  \"TurnDegreesPerHour\": 120,\n  \"TurnDegreesPerHourOnTower\": 180,\n  \"FuelPerHour\": 15,\n  \"SwingHours\": 0,\n  \"DamDamage\": 0,\n  \"DropReach\": 0,\n  \"RollTilesPerSecond\": 0,\n  \"PourDistance\": 0,\n  \"PourRadius\": 0,\n  \"PerThrow\": 0,\n  \"HealRate\": 0,\n  \"HealRadius\": 0,\n  \"HealBelow\": 0,\n  \"HealPerDose\": 0,\n  \"ZombieFactor\": 6\n}"
+       "json": "{\n  \"Name\": \"Flamethrower\",\n  \"Health\": 170,\n  \"AmmoCapacity\": 30,\n  \"AmmoCapacityOnTower\": 48,\n  \"TilesPerHour\": 1,\n  \"CrewCapacity\": 2,\n  \"MinCrew\": 1,\n  \"MinRange\": 0.8,\n  \"MaxRange\": 7,\n  \"MinRangeOnTower\": 0.8,\n  \"MaxRangeOnTower\": 9,\n  \"SplashRadius\": 1,\n  \"Damage\": 700,\n  \"TurnDegreesPerHour\": 120,\n  \"TurnDegreesPerHourOnTower\": 180,\n  \"FuelPerHour\": 15,\n  \"ZombieFactor\": 6\n}"
       }
      ]
     }
@@ -8360,7 +8746,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "TripWire.Folktails.jpg",
     "modder": {
      "file": "Buildings/TripWire/TripWire.Folktails.blueprint.json",
      "components": [
@@ -8403,6 +8789,10 @@
       {
        "name": "FloodableObjectBlockerSpec",
        "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],
@@ -8437,7 +8827,7 @@
     "damage": null,
     "structure_damage": null,
     "ammo": null,
-    "shot": null,
+    "shot": "TripWire.IronTeeth.jpg",
     "modder": {
      "file": "Buildings/TripWire/TripWire.IronTeeth.blueprint.json",
      "components": [
@@ -8480,6 +8870,10 @@
       {
        "name": "FloodableObjectBlockerSpec",
        "json": "{}"
+      },
+      {
+       "name": "HordeRewardSpec",
+       "json": "{\n  \"Category\": \"Traps\"\n}"
       }
      ],
      "patches": [],

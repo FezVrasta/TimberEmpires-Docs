@@ -6,4 +6,4 @@ nav_order: 10
 
 # Militia
 
-The cheapest troops there are, trained at the [Muster Post](../buildings/muster-post.md) for logs. No weapon to make and no science.
+The cheapest troops, trained at the [Muster Post](../buildings/muster-post.md) for logs. They need no weapon and no science.
