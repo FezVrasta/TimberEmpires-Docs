@@ -24,12 +24,7 @@ Ship a blueprint like this in your mod, in a file of its own (`TimberEmpires/Tim
     "FactionId": "Emberpelts",
     "Base": "Folktails",
     "Barracks": [ "Spearman", "Warrior", "Berserker" ],
-    "Range": [ "Archer", "Slinger" ],
-    "Goods": [
-      { "Good": "TreatedPlank", "With": "Brick" },
-      { "Good": "Paper", "With": "Brick" },
-      { "Good": "Dandelion", "With": "Pepper" }
-    ]
+    "Range": [ "Archer", "Slinger" ]
   }
 }
 ```
@@ -41,7 +36,6 @@ Ship a blueprint like this in your mod, in a file of its own (`TimberEmpires/Tim
 | `Barracks` | The troop kinds its barracks train, in the order the barracks lists them. A new barracks trains spearmen if the list has them, else the first. Left out, the base's |
 | `Range` | The kinds its archery range trains. Left out, the base's |
 | `BanditShooters`, `BanditElite` | The shooters bandit camps have in a game of your faction, and the heavy hitter the strongest camps add. Left out, the base's |
-| `Goods` | Goods your faction uses where Timber Empires' buildings use one it doesn't have (see below) |
 | `AIPlayable` | AI opponents can play your faction. Leave it out unless you've watched the AI build and fight with it |
 | `Default` | Only for profiles a mod ships for someone else's faction: any profile without it takes its place |
 
@@ -51,11 +45,21 @@ The kinds for `Barracks` and `Range` are `Warrior`, `Spearman`, `Archer`, `Herba
 
 How each kind fights and what it costs is in `Troops/TroopStats.blueprint.json`, and your faction can change any of it (see below). Spearmen and archers cost no science and the rest need unlocking, so list a free kind first or a new barracks can't train anyone until the player pays for it.
 
+**The base's buildings.** BeaverBuddies loads a faction's buildings from its collections, so list the base's Timber Empires and Halloween buildings for your faction in a `FactionCollectionsSpec` blueprint of its own, next to the profile. A second one with `"RequiredMod": "archipelago"` adds the base's ships when Archipelago is there:
+
+```json
+{
+  "FactionCollectionsSpec": {
+    "FactionId": "Emberpelts",
+    "Collections": [ "TimberEmpires.Buildings.Folktails", "BeaverBuddies.Buildings.Folktails", "TimberEmpires.Horde.Folktails" ]
+  }
+}
+```
+
 **Why its own file.** The game reads a blueprint only when something asks for a spec in it. Without Timber Empires nothing asks for `TimberEmpiresFactionSpec`, so the file sits unread. Put the spec inside your faction's own blueprint and the game reads it while loading factions, doesn't know the spec, and stops.
 
-**What the base gives you.** Timber Empires adds its base's buildings to your faction's toolbar, and the base's material collection to your faction's materials (those buildings are drawn with them). Its troops start from the base's numbers too (a faction built on Folktails walks as fast as Folktails do). Your faction keeps its own District Center, homes, food and goods. Timber Empires' weapons and siege goods are in the `Common` good collection, which every faction gets.
+**What the base gives you.** Timber Empires adds the base's material collection to your faction's materials (its buildings are drawn with them). Its troops start from the base's numbers too (a faction built on Folktails walks as fast as Folktails do). Your faction keeps its own District Center, homes, food and goods. Timber Empires' weapons and siege goods are in the `Common` good collection, which every faction gets.
 
-**Goods.** A few of the base's buildings cost or use goods only that base has: Treated Planks and Paper for Folktails, Treated Planks and Metal Parts for Iron Teeth, and some recipes use Dandelions. The game won't load a building that costs a good it doesn't know, so as a game starts Timber Empires swaps each good your faction lacks for the one `Goods` names. A good with no substitute is left out of the cost or recipe. The log lists every swap (`[Factions]` lines). In a mixed-factions game every faction's goods are loaded, so nothing is swapped.
 
 A troop's `Upkeep` good (the monk's books) isn't swapped. If your faction has no books, set your monks' `Upkeep` in your stats (see below), as Iron Teeth do with coffee.
 
@@ -148,9 +152,9 @@ A war boat is blueprints only (it needs Archipelago installed). Copy `Buildings/
 
 ## Mixed games
 
-In a game with other players, everyone plays the faction they pick, and their toolbar has only that faction's buildings. A mixed game loads every installed faction, yours included, so a player can join with any of them without the host reloading. A Timber Empires building is in the toolbar of every faction built on its base: Iron Teeth and a faction built on Iron Teeth both get `Barracks.IronTeeth`. Which troops a building trains and how they walk follows the faction of the district it's in.
+Every player plays the faction they pick, and their toolbar has only that faction's buildings. Every game loads every installed faction, yours included, so a player can join with any of them without the host reloading. A Timber Empires building is in the toolbar of every faction built on its base: Iron Teeth and a faction built on Iron Teeth both get `Barracks.IronTeeth`. Which troops a building trains and how they walk follows the faction of the district it's in.
 
-The "My faction" setting lists every faction the game has.
+BeaverBuddies' My faction setting and its lobby list every faction the game has.
 
 ## Multiplayer
 
@@ -160,7 +164,7 @@ A profile has to be the same on every machine. A blueprint is. From code, regist
 
 ## Game modes
 
-Timber Empires adds PvE (`timberempires.pve`) and PvP (`timberempires.pvp`) to BeaverBuddies' Multiplayer mode list, next to its Co-op (`bb.coop`). A mod can add its own modes through BeaverBuddies' `AddGameMode`: see its [Modding.md](https://github.com/FezVrasta/BeaverBuddies-CoOp-PvP-Edition/blob/master/BeaverBuddies/Doc/Modding.md#game-modes). Timber Empires plays any mode it doesn't know as PvP. Horde (`timberempires.horde`) is a mode too.
+Timber Empires adds PvE (`timberempires.pve`), PvP (`timberempires.pvp`) and Horde (`timberempires.horde`) to the Game Modes mod's list, next to BeaverBuddies' Co-op (`bb.coop`). A mod can add its own modes the same way, through the Game Modes mod's `GameModes.Modes.Add`. Timber Empires plays any mode it doesn't know as PvP. Horde (`timberempires.horde`) is a mode too.
 
 ## The API
 
@@ -201,11 +205,10 @@ Bind the rest the same way, with delegate types matching the signatures below. L
 | `int Version()` | The API's version, currently 1. A method that changes meaning bumps it; new methods don't |
 | `void RegisterFaction(string factionId, string base, string[] barracks, string[] range)` | A faction's profile from code, over any blueprint. Null lists take the base's. Call it as your mod starts |
 | `void SetAIPlayable(string factionId, bool playable)` | Whether AI opponents can play your faction, over `AIPlayable` in its profile. Call it as your mod starts |
-| `void RegisterGoodSubstitute(string factionId, string good, string with)` | A good your faction uses in place of one it doesn't have, like `Goods` in the profile. Wins over the profile's for that good |
 | `string BaseFactionOf(string factionId)` | `Folktails` or `IronTeeth` |
 | `string[] BarracksKinds(string factionId)`, `string[] RangeKinds(string factionId)` | The troop kinds the faction trains, by name |
 | `string[] TroopKinds()` | Every troop kind there is, monks included |
-| `string FactionOf(BaseComponent building)` | The faction a building belongs to: its toolbar's, or in a mixed game the faction of its district |
+| `string FactionOf(BaseComponent building)` | The faction a building belongs to: its toolbar's, or the faction of its district |
 | `string OwnerOf(BaseComponent entity)` | The player a building, beaver or machine belongs to, as their BeaverBuddies player ID, or null. A machine a monk converted belongs to the monk's side |
 | `string PlayerName(string playerID)`, `Color PlayerColor(string playerID)` | What other players see. The color is clear until the player has one |
 | `bool IsTroop(BaseComponent beaver)`, `string TroopKindOf(BaseComponent beaver)` | Whether a beaver is a troop (or a recruit), and its kind by name |
@@ -218,10 +221,10 @@ Everything that reads the game (`FactionOf`, `OwnerOf`, the troop queries) answe
 
 1. Add a `TimberEmpiresFactionSpec` blueprint in a file of its own.
 2. Pick the base whose buildings fit your faction's look, and the troops it trains.
-3. Name substitutes for the base's goods your faction doesn't have, and an `Upkeep` for its monks if it has no books.
+3. Set an `Upkeep` for its monks if your faction has no books.
 4. Change your troops' and machines' numbers in a `TimberEmpiresFactionStatsSpec` blueprint, if they should fight differently.
 5. Ship your own troop outfits, supply cart and banner where the base's look out of place.
-6. Start a game with your faction and Timber Empires, read the `[Factions]` lines in the log, then a mixed one with each base faction.
+6. Start a game with your faction and Timber Empires, read the `[Factions]` lines in the log, then play it next to each base faction.
 7. Play it in multiplayer with BeaverBuddies' debug mode on.
 
 ## Blueprint specs

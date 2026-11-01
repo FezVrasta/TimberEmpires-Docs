@@ -43,7 +43,7 @@ A PvP match where the undead raccoons climb out of the ruins every few nights an
 
 ## Playing alone
 
-Pick PvE, PvP, Horde or Classic. It needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins. Start without waiting for anyone.
+Pick PvE, PvP, Horde or Classic. PvE, PvP and Horde need [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, even though nobody joins: without it there are no owned districts or fog of war. Start without waiting for anyone.
 
 **PvE.** Your colony against the bandits. Clear every bandit camp to win.
 

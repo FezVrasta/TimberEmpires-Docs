@@ -33,7 +33,6 @@ Timber Empires has two kinds of settings.
 | [Night rewards](#night-rewards) | 100% | Game | Horde |
 | [Horde growth](#horde-growth) | +70% a cycle | Game | Horde |
 | [Hordes adapt to you](#hordes-adapt-to-you) | 100% | Game | Horde |
-| [My faction](#my-faction) | Host's faction | Yours | |
 | [Show district owner colors](#show-district-owner-colors) | On | Yours | |
 | [Fog quality](#fog-quality) | Moving fog | Yours | |
 | [Undead raccoons drawn](#undead-raccoons-drawn) | 4,000 | Yours | |
@@ -127,10 +126,6 @@ How much bigger the hordes get each cycle: +20% to +150%.
 Hordes get bigger when you handle them well and ease off when you take losses: 0% to 200%. At 0% they don't adapt.
 
 The New Game difficulties (Easy, Normal and Hard) fill in First undead night, Zombie toughness, Night rewards, Horde growth and Hordes adapt to you. You can still edit them. Horde size doesn't follow the difficulty.
-
-## My faction
-
-The faction you build with in a multiplayer game: the host's, or any faction installed (other mods' too). It takes effect when the game loads.
 
 ## Show district owner colors
 

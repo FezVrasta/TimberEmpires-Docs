@@ -13,7 +13,7 @@ They play by your rules. They only see what their own [fog of war](playing/terri
 
 On the New Game screens' last page, click Customize: **AI opponents** is the last setting under Timber Empires. Set how many you want, up to three, and a difficulty for each. It shows in PvP and Horde games, alone or hosted.
 
-A game alone with AI opponents needs [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327) installed, like any game of Timber Empires.
+AI opponents need [BeaverBuddies Co-Op/PvP Edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3813984327), even in a game alone. Without it the setting doesn't show.
 
 ## Founding
 

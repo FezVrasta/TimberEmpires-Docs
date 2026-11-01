@@ -13,7 +13,7 @@ The mods build on each other, and each has a page here.
 | [Timber Empires](timber-empires.md) | Add a faction with one blueprint, change its troops' and machines' numbers, give it a look, ship war boats, and call the API from code. |
 | [Archipelago](archipelago.md) | Add ships, put goods in a hold, hook into boats and the sea, grow plants on sand and in the sea. |
 | [Timber Atlas](timber-atlas.md) | Color the map's dots, hide things from it, mark places on its rim, draw fog of war. |
-| [BeaverBuddies](https://github.com/FezVrasta/BeaverBuddies-CoOp-PvP-Edition/blob/master/BeaverBuddies/Doc/Modding.md) | Keep a mod in sync in multiplayer, and add game modes. Its guide is in its repo. |
+| [BeaverBuddies](https://github.com/FezVrasta/BeaverBuddies-CoOp-PvP-Edition/blob/master/BeaverBuddies/Doc/Modding.md) | Keep a mod in sync in multiplayer, and add buildings to every faction. Its guide is in its repo. |
 
 ## Bridges
 
