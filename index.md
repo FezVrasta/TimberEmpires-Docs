@@ -11,9 +11,10 @@ hero: true
     <div class="te-frame-head"><h2 class="te-plaque">Archipelago</h2></div>
     <div class="te-horde-body">
       <div class="te-pic te-trailer">
-        <video id="te-trailer" preload="metadata" playsinline poster="{{ '/assets/video/archipelago-trailer.jpg' | relative_url }}"></video>
-        <!-- Placeholder: give the video a source and the click handler of the other trailers -->
-        <button type="button" class="te-trailer-play"><span class="te-trailer-label"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z" fill="#6fcfc3"></path></svg>Launch trailer</span></button>
+        <video id="te-trailer" preload="metadata" playsinline poster="{{ '/assets/video/archipelago-trailer.jpg' | relative_url }}">
+          <source src="{{ '/assets/video/archipelago-trailer.mp4' | relative_url }}" type="video/mp4">
+        </video>
+        <button type="button" class="te-trailer-play" onclick="var v = document.getElementById('te-trailer'); v.controls = true; v.play(); this.hidden = true;"><span class="te-trailer-label"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z" fill="#6fcfc3"></path></svg>Launch trailer</span></button>
       </div>
       <div class="te-horde-text">
         <span class="te-horde-tag">Naval expansion</span>
