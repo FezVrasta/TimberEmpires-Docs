@@ -28,7 +28,6 @@ Most of it needs no code, and no bridge.
   "WindTilesPerHour": 45,
   "TurnDegreesPerHour": 300,
   "WindTurnDegreesPerHour": 380,
-  "EngineTilesPerHour": 0,
   "Draft": 0.4
 }
 ```
@@ -37,8 +36,17 @@ Most of it needs no code, and no bridge.
 |---|---|
 | `TilesPerHour`, `WindTilesPerHour` | How fast it sails with no wind and in the strongest wind, in tiles an hour. The wind's strength in between. Without `WindTilesPerHour` the wind makes no difference |
 | `TurnDegreesPerHour`, `WindTurnDegreesPerHour` | How fast it turns, the same way. Without `TurnDegreesPerHour` it turns on the spot |
-| `EngineTilesPerHour` | How fast an engine drives it whatever the wind. It goes by sail or engine, whichever is faster. 0 is no engine |
 | `Draft` | How deep it sits in the water, in tiles |
+
+**A steam engine.** A `BoatEngineSpec` on the same blueprint burns its fuels from the hold while the ship sails, and drives it at `SpeedBoost` times its calm pace whatever the wind, by sail or engine, whichever is faster. Out of any fuel, or worn past `BreaksAtWear`, it sails as it would without one. Iron Teeth's war boat has one:
+
+```json
+"BoatEngineSpec": {
+  "Fuels": [ { "Good": "Log", "PerHour": 0.03 }, { "Good": "Water", "PerHour": 0.1 } ],
+  "SpeedBoost": 1.5,
+  "BreaksAtWear": 0.5
+}
+```
 
 The hold, the crew and the deck are components of the same blueprint (`ShipHoldSpec`, the workplace's workers, `ShipDeckSpec`), like the Barge's.
 
@@ -70,7 +78,7 @@ Only what changes while the game runs: who sails a ship, whether it's sunk, who 
 |---|---|---|
 | `CanSail` | `Func<BaseComponent, bool>` | Whether it can sail now (a crew aboard). Every handler has to say yes. |
 | `Afloat` | `Func<BaseComponent, bool>` | Whether it isn't sunk. |
-| `TilesPerHour`, `WindTilesPerHour`, `EngineTilesPerHour`, `TurnDegreesPerHour`, `WindTurnDegreesPerHour` | `Func<BaseComponent, float>` | The same numbers as `BoatSpec`'s, for a ship whose pace changes while the game runs (its effort, an engine switched on). The last handler that answers above zero counts, over the blueprint's. |
+| `Effort` | `Func<BaseComponent, float>` | How hard its crew drives it, as a share of the pace its `BoatSpec` gives (a war boat's troops rowing). The answers multiply. |
 | `SailsWithoutWorkers` | `Func<BaseComponent, bool>` | Whether the mod's own crew sails it instead of its workers, who then leave it. |
 | `Wear`, `Mend` | `Func<BaseComponent, float>`, `Action<BaseComponent, float>` | How worn the hull is, 0 to 1 (above zero it can be sent to a Shipyard), and the share of it a Shipyard's workers mended. |
 | `Sees` | `Func<Vector2, bool>` | Whether this machine's player sees a spot of the drawn sea (fog of war). Every handler has to say yes. |
